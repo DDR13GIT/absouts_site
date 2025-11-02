@@ -1,0 +1,56 @@
+## ✅ Brand Color Palette
+
+### Core Brand (Trust & Corporate Identity)
+| Token | Hex | Usage |
+|------|------|------|
+| `--brand-primary` | #0B0B44 | Global identity: Logo, H1, important elements |
+| `--brand-secondary` | #2B3990 | Primary buttons, active nav links |
+| `--brand-accent` | #27AAE1 | Links, accents, icons, highlights |
+
+### Soft UI Neutrals (Modern & Clean Experience)
+| Token | Hex | Usage |
+|------|------|------|
+| `--bg-base` | #FFFDF5 | Default background (hero, white spaces) |
+| `--bg-section` | #D0D9F5 | Alternating content sections |
+| `--bg-surface` | #FFFFFF | Cards, dropdowns, modals |
+
+### Friendly Accents (Sparingly Used)
+| Token | Hex | Usage |
+|------|------|------|
+| `--accent-success` | #E7F1AB | Badges, micro highlights, success states |
+
+### Neutrals for Typography & Structure
+| Token | Hex | Usage |
+|------|------|------|
+| `--text-primary` | #0B0B44 | Headlines & focus text |
+| `--text-secondary` | #6E6F72 | Body text |
+| `--text-muted` | #939598 | Helper text, labels |
+| `--neutral-dark` | #333333 | Footer text, strong contrast |
+| `--shadow-color` | rgba(0,0,0,0.06) | Subtle shadows on cards & floating components |
+
+---
+
+## ✅ Component-wise Color Assignments
+
+| Component | Color Token(s) | Hex | Reason |
+|----------|---------------|-----|------|
+| Navbar Background | `--bg-base` | #FFFDF5 | Clean, premium space |
+| Navbar Text | `--text-primary` | #0B0B44 | Trust + consistency |
+| Navbar Active/Highlight | `--brand-secondary` | #2B3990 | Clear navigation focus |
+| Nav Hover | Darkened brand-secondary | ~#22307A | Subtle feedback |
+| Primary Button | `--brand-secondary` + white text | #2B3990 | High contrast & conversion |
+| Primary Button Hover | Darker secondary | ~#1E2E70 | Clear interaction state |
+| Secondary Button | White + `--brand-accent` border | #27AAE1 | Lightweight CTA |
+| Hero Background | `--bg-base` | #FFFDF5 | Welcoming, safe space |
+| Hero Headline | `--brand-primary` | #0B0B44 | Strength + clarity |
+| Hero Subtext | `--text-secondary` | #6E6F72 | Readability |
+| Hero CTA Accent | `--accent-success` small usage | #E7F1AB | Modern SaaS feel |
+| Cards Background | `--bg-surface` | #FFFFFF | Sharp focus |
+| Card Heading | `--brand-primary` | #0B0B44 | Brand retention |
+| Card Text | `--text-secondary` | #6E6F72 | Eye comfort |
+| Card Hover | `--shadow-color` | rgba(0,0,0,0.06) | Modern elevation |
+| Icons | `--brand-accent` | #27AAE1 | Light-friendly visual identity |
+| Icon Badges | Very soft Lavender tint | #F0F4FF | Differentiates without noise |
+| Section Background Alternation | `--bg-section` | #D0D9F5 | Layout rhythm |
+| Footer Background | `--neutral-dark` | #333333 | Structural baseline for page end |
+| Footer Text | White + accent links | #FFFFFF / #27AAE1 | Strong contrast & clarity |
