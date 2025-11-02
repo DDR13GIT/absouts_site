@@ -55,6 +55,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   try {
     if (!supabase) {
+      console.error('Supabase client not initialized');
       return res.status(500).json({
         success: false,
         message: "Database not configured"
@@ -63,22 +64,51 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     const { id } = req.query;
 
+    console.log('Request query:', req.query);
+    console.log('Job ID from query:', id);
+
     if (!id || typeof id !== 'string') {
+      console.error('Invalid or missing job ID:', id);
       return res.status(400).json({ error: 'Job ID is required' });
     }
 
     console.log(`Fetching job with ID: ${id}`);
 
+    // First, try to get the job without the status filter to see if it exists
+    const { data: jobCheck, error: checkError } = await supabase
+      .from('absoutsjobs')
+      .select('id, status')
+      .eq('id', id)
+      .maybeSingle();
+
+    console.log('Job check result:', { jobCheck, checkError });
+
+    // Now get the full job with status filter
     const { data: job, error } = await supabase
       .from('absoutsjobs')
       .select('*')
       .eq('id', id)
       .eq('status', 'published')
-      .single();
+      .maybeSingle();
 
-    if (error || !job) {
-      console.error('Job not found or error:', error);
-      return res.status(404).json({ error: "Job not found" });
+    console.log('Full job query result:', { hasJob: !!job, error });
+
+    if (error) {
+      console.error('Supabase error fetching job:', error);
+      return res.status(500).json({
+        error: "Database error",
+        details: error.message
+      });
+    }
+
+    if (!job) {
+      console.error('Job not found with ID:', id, 'Check result:', jobCheck);
+      return res.status(404).json({
+        error: "Job not found",
+        id: id,
+        exists: !!jobCheck,
+        status: jobCheck?.status
+      });
     }
 
     const transformedJob = {
