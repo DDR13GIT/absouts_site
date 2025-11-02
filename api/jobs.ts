@@ -62,7 +62,60 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       });
     }
 
-    console.log('Fetching jobs from Supabase...');
+    // Check if this is a request for a specific job ID
+    // URL pattern: /api/jobs or /api/jobs?id=xxx or /api/jobs/xxx
+    const jobId = req.query.id || req.url?.split('/api/jobs/')[1]?.split('?')[0];
+
+    if (jobId && typeof jobId === 'string') {
+      // Fetch specific job
+      console.log(`Fetching job with ID: ${jobId}`);
+
+      const { data: job, error } = await supabase
+        .from('absoutsjobs')
+        .select('*')
+        .eq('id', jobId)
+        .eq('status', 'published')
+        .maybeSingle();
+
+      console.log('Job query result:', { hasJob: !!job, error: error?.message });
+
+      if (error) {
+        console.error('Supabase error fetching job:', error);
+        return res.status(500).json({
+          error: "Database error",
+          details: error.message
+        });
+      }
+
+      if (!job) {
+        console.error('Job not found with ID:', jobId);
+        return res.status(404).json({
+          error: "Job not found",
+          id: jobId
+        });
+      }
+
+      const transformedJob = {
+        id: job.id,
+        title: job.job_title,
+        location: job.is_remote ? 'Remote' : (job.location || 'Not specified'),
+        type: formatJobType(job.job_type),
+        postedDate: job.posted_at || job.created_at || new Date().toISOString(),
+        description: job.job_short_description,
+        skills: job.required_skills || [],
+        salary: formatSalary(job.salary_min, job.salary_max, job.salary_currency) || 'Competitive',
+        requirements: Array.isArray(job.requirements) ? job.requirements.join('\n') : 'To be discussed during interview',
+        experience: Array.isArray(job.qualifications) ? job.qualifications.join('\n') : 'Will be discussed during interview',
+        benefits: 'See company benefits section below',
+        contact: 'careers@absouts.com',
+        deadline: null
+      };
+
+      return res.status(200).json(transformedJob);
+    }
+
+    // Fetch all jobs
+    console.log('Fetching all jobs from Supabase...');
 
     const { data: jobs, error } = await supabase
       .from('absoutsjobs')

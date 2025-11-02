@@ -4,6 +4,10 @@
   "outputDirectory": "dist/public",
   "rewrites": [
     {
+      "source": "/api/jobs/:id",
+      "destination": "/api/jobs?id=:id"
+    },
+    {
       "source": "/api/:path*",
       "destination": "/api/:path*"
     },
