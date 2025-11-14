@@ -19,6 +19,7 @@ export default {
         },
         bg: {
           base: "var(--bg-base)",
+          "base-darker": "var(--bg-base-darker)",
           section: "var(--bg-section)",
           surface: "var(--bg-surface)",
         },

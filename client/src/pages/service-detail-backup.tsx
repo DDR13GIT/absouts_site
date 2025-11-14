@@ -271,100 +271,123 @@ function AIDetail() {
 
 /**
  * BPO Service Detail
- * Custom sections for accounting, payroll, tax, and image editing services
+ * Custom sections for accounting, payroll, and tax services
  */
 function BPOServiceDetail() {
   const { t } = useTranslation();
 
-  const cloudAccountingServices = [
+  const bpoServices = [
     {
       icon: SERVICE_ICONS.cloud,
-      title: "Virtual Accounting",
-      description: "Remote accounting services providing flexibility and reducing need for in-house staff."
+      title: "Virtual Accounting Services",
+      subtitle: "Professional accounting support without the overhead",
+      description: "Access experienced accounting professionals remotely, providing your business with expert financial management without the costs and commitments of full-time staff. Our virtual accounting team integrates seamlessly with your operations, delivering comprehensive financial oversight tailored to your business needs and growth stage.",
+      whatWeProvide: [
+        "Dedicated accounting professionals assigned to your business",
+        "Flexible engagement models (part-time, full-time, or project-based)",
+        "Remote access to real-time financial data and reports",
+        "Scalable support that grows with your business requirements"
+      ],
+      advantage: "Cost-effective access to professional accounting expertise, reduced overhead expenses, and the flexibility to scale services as your business evolves",
+      gradient: "from-blue-50/50 to-cyan-50/50"
     },
     {
       icon: SERVICE_ICONS.calculator,
-      title: "Book-keeping",
-      description: "Recording financial transactions (sales, expenses, payments) for accurate financial records."
+      title: "Professional Book-keeping",
+      subtitle: "Accurate financial record-keeping you can trust",
+      description: "Meticulous recording of every financial transaction to keep your financial house in order. We ensure all sales, expenses, and payments are properly documented and categorized, creating a solid foundation for financial analysis, tax compliance, and informed decision-making.",
+      whatWeProvide: [
+        "Daily sales and revenue transactions",
+        "Business expenses and vendor payments",
+        "Employee payroll and benefits disbursements",
+        "Tax payments and statutory obligations"
+      ],
+      advantage: "Clean, organized financial records that maintain accuracy for better decision-making, provide confidence in business assessments, and ensure audit-ready documentation",
+      gradient: "from-purple-50/50 to-pink-50/50"
     },
     {
       icon: SERVICE_ICONS.scale,
-      title: "Bank Reconciliation",
-      description: "Matching company records with bank statements to ensure accuracy and detect discrepancies."
+      title: "Bank Reconciliation Services",
+      subtitle: "Ensuring every dollar is accounted for",
+      description: "Systematic matching of your internal financial records against bank statements to verify accuracy and identify discrepancies. This critical process acts as your financial safety net, detecting errors, unauthorized transactions, and potential fraud before they escalate into major problems.",
+      whatWeProvide: [
+        "Monthly reconciliation of all bank accounts",
+        "Investigation and resolution of discrepancies",
+        "Documentation of reconciliation findings",
+        "Proactive alerts for unusual or suspicious activity"
+      ],
+      advantage: "Early detection of errors and fraud, ensured accuracy in financial reporting, prevention of cash flow issues, and maintained integrity of your financial data",
+      gradient: "from-green-50/50 to-emerald-50/50"
     },
     {
       icon: SERVICE_ICONS.report,
-      title: "MIS Reporting",
-      description: "Generating management reports for business insights and strategic decision-making."
+      title: "MIS Reporting & Analytics",
+      subtitle: "Transform data into actionable business intelligence",
+      description: "Comprehensive reports that translate complex financial data into clear, actionable insights. Our customized MIS reports provide the intelligence needed to identify trends, spot opportunities, assess performance, and make confident strategic and operational decisions.",
+      whatWeProvide: [
+        "Profit & loss analysis by department or product line",
+        "Cash flow forecasting and trend analysis",
+        "Budget vs. actual performance tracking",
+        "Key performance indicator (KPI) dashboards"
+      ],
+      advantage: "Informed strategic and operational decision-making, early identification of business trends, performance monitoring against goals, and data-driven insights for growth",
+      gradient: "from-amber-50/50 to-orange-50/50"
     },
     {
       icon: SERVICE_ICONS.bank,
-      title: "Accounts Payable & Receivable",
-      description: "Tracking outgoing and incoming payments to maintain healthy cash flow."
+      title: "AP/AR Management Services",
+      subtitle: "Optimize your cash flow cycle",
+      description: "Systematic tracking and management of outgoing and incoming payments to maintain healthy cash flow. We monitor outstanding invoices, manage payment schedules, and optimize collection processes, helping you maintain financial stability and positive relationships with customers and vendors.",
+      whatWeProvide: [
+        "Vendor bill processing and payment scheduling",
+        "Early payment discount optimization",
+        "Customer invoice tracking and follow-up",
+        "Aging analysis and collection management"
+      ],
+      advantage: "Maintained healthy cash flow and financial stability, reduced late fees and finance charges, stronger business relationships, and improved working capital management",
+      gradient: "from-indigo-50/50 to-violet-50/50"
     },
     {
       icon: SERVICE_ICONS.document,
-      title: "Inventory Management",
-      description: "Monitoring stock levels and tracking purchases/sales for efficient supply chain operations."
-    }
-  ];
-
-  const imageEditingServices = [
-    {
-      icon: SERVICE_ICONS.search,
-      title: "Background Removal",
-      description: "Professional background removal and replacement for product photography and portraits.",
-      image: IMAGE_EDITING_EXAMPLES.backgroundRemoval,
-      gradient: "from-blue-500 to-cyan-500"
+      title: "Inventory Management Services",
+      subtitle: "Right products, right quantities, right time",
+      description: "Complete visibility and control over your inventory with real-time tracking and intelligent analysis. We monitor stock levels, track purchases and sales, and help you maintain optimal inventory levels, ensuring efficient supply chain operations while preventing stockouts or overstocking issues.",
+      whatWeProvide: [
+        "Current stock levels across all locations",
+        "Purchase orders, receiving, and sales transactions",
+        "Inventory turnover rates and movement patterns",
+        "Reorder points and optimal order quantities"
+      ],
+      advantage: "Efficient supply chain operations, prevention of stockouts and lost sales, elimination of excess inventory costs, reduced waste from obsolescence, and minimized working capital requirements",
+      gradient: "from-teal-50/50 to-cyan-50/50"
     },
     {
-      icon: SERVICE_ICONS.media,
-      title: "Color Correction",
-      description: "Advanced color grading and correction for vibrant, professional-looking images.",
-      image: IMAGE_EDITING_EXAMPLES.colorCorrection,
-      gradient: "from-purple-500 to-pink-500"
-    },
-    {
-      icon: SERVICE_ICONS.people,
-      title: "Face Swapping",
-      description: "Seamless face replacement and digital makeup for portrait enhancement.",
-      image: IMAGE_EDITING_EXAMPLES.faceSwapping,
-      gradient: "from-green-500 to-emerald-500"
-    },
-    {
-      icon: SERVICE_ICONS.shield,
-      title: "Image Masking",
-      description: "Precise image masking for complex selections and detailed editing work.",
-      image: IMAGE_EDITING_EXAMPLES.imageMasking,
-      gradient: "from-orange-500 to-red-500"
-    },
-    {
-      icon: SERVICE_ICONS.lightbulb,
-      title: "Photo Manipulation",
-      description: "Creative photo manipulation and artistic enhancement for stunning visual effects.",
-      image: IMAGE_EDITING_EXAMPLES.photoManipulation,
-      gradient: "from-indigo-500 to-purple-500"
-    },
-    {
-      icon: SERVICE_ICONS.clock,
-      title: "Shadow & Reflection",
-      description: "Professional shadow creation and reflection effects for product photography.",
-      image: IMAGE_EDITING_EXAMPLES.shadowReflection,
-      gradient: "from-teal-500 to-blue-500"
-    },
-    {
-      icon: SERVICE_ICONS.report,
-      title: "Photo Retouching",
-      description: "Professional photo retouching for flawless skin, beauty enhancement, and detail refinement.",
-      image: IMAGE_EDITING_EXAMPLES.photoRetouching,
-      gradient: "from-rose-500 to-pink-500"
+      icon: SERVICE_ICONS.team,
+      title: "Payroll Management Services",
+      subtitle: "Seamless payroll processing for a satisfied workforce",
+      description: "Processing employee salaries, tax deductions, and benefits with precision and timeliness. Our comprehensive payroll management ensures accurate compensation delivery while maintaining full compliance with evolving tax laws and labour regulations. By automating routine tasks, we reduce your administrative burden and eliminate the risk of costly errors.",
+      whatWeProvide: [
+        "Salary and wage calculations including overtime and bonuses",
+        "Tax deductions and statutory compliance (EPF, ESI, TDS)",
+        "Benefits administration and leave management",
+        "Quarterly and annual tax filing requirements"
+      ],
+      advantage: "Accurate and timely payroll processing maintains employee satisfaction and compliance, keeps businesses up to date with regulatory changes, and reduces administrative burden through automation",
+      gradient: "from-rose-50/50 to-pink-50/50"
     },
     {
       icon: SERVICE_ICONS.hands,
-      title: "Product Enhancement",
-      description: "Jewelry, clothing, and product enhancement for e-commerce and marketing materials.",
-      image: IMAGE_EDITING_EXAMPLES.jewelryRetouch,
-      gradient: "from-yellow-500 to-orange-500"
+      title: "Tax Planning & Compliance",
+      subtitle: "Comprehensive tax solutions for optimal financial outcomes",
+      description: "Expert preparation of direct and indirect tax returns including Income Tax, GST, and VAT. We ensure accurate and on-time tax compliance, minimizing risk while our specialized guidance helps identify deductions and credits to optimize your tax liabilities. Our team supports you through audits and liaises with tax authorities on your behalf when needed.",
+      whatWeProvide: [
+        "Income Tax return preparation and filing",
+        "GST registration, filing, and compliance",
+        "Year-round deduction and credit identification",
+        "Tax audit support and documentation preparation"
+      ],
+      advantage: "Accurate and on-time tax compliance minimizes risk, expert guidance optimizes tax liabilities through strategic deductions and credits, and professional representation supports businesses during audits and dealings with tax authorities",
+      gradient: "from-lime-50/50 to-green-50/50"
     }
   ];
 
@@ -372,7 +395,7 @@ function BPOServiceDetail() {
     <div className="pt-16" data-testid="bpo-service-detail">
       <section className="py-20 bg-bg-base">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
+          <div className="mb-12">
             <Link href="/services">
               <Button variant="ghost" className="text-brand-accent hover:text-brand-accent/80 mb-4">
                 <ArrowLeft className="mr-2 h-4 w-4" />
@@ -385,75 +408,48 @@ function BPOServiceDetail() {
             </p>
           </div>
 
-          {/* Cloud Accounting Services */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-brand-primary mb-8">Cloud Accounting Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {cloudAccountingServices.map((service, index) => (
-                <div key={index} className="bg-white rounded-xl p-6 shadow-medium hover:shadow-strong transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-brand-primary rounded-lg flex items-center justify-center mb-4">
-                    <img src={service.icon} alt={service.title} className="w-8 h-8 object-contain" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-brand-primary mb-3">{service.title}</h3>
-                  <p className="text-text-secondary">{service.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Payroll & Tax Services */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div className="bg-white rounded-xl shadow-medium p-8">
-              <div className="w-16 h-16 bg-brand-primary rounded-lg flex items-center justify-center mb-6">
-                <img src={SERVICE_ICONS.team} alt="Payroll" className="w-10 h-10 object-contain" />
-              </div>
-              <h3 className="text-2xl font-bold text-brand-primary mb-4">Payroll Management</h3>
-              <p className="text-text-secondary mb-4">
-                Accurate and compliant payroll processing services to streamline employee payments and tax calculations.
-              </p>
-              <ul className="space-y-2 text-text-secondary">
-                <li className="flex items-start"><span className="mr-2">•</span> Salary calculations and disbursements</li>
-                <li className="flex items-start"><span className="mr-2">•</span> Tax deductions and compliance</li>
-                <li className="flex items-start"><span className="mr-2">•</span> Benefits administration</li>
-                <li className="flex items-start"><span className="mr-2">•</span> Time and attendance tracking</li>
-              </ul>
-            </div>
-            <div className="bg-white rounded-xl shadow-medium p-8">
-              <div className="w-16 h-16 bg-brand-primary rounded-lg flex items-center justify-center mb-6">
-                <img src={SERVICE_ICONS.document} alt="Tax" className="w-10 h-10 object-contain" />
-              </div>
-              <h3 className="text-2xl font-bold text-brand-primary mb-4">Tax Services</h3>
-              <p className="text-text-secondary mb-4">
-                Comprehensive tax planning, preparation, and compliance services for individuals and businesses.
-              </p>
-              <ul className="space-y-2 text-text-secondary">
-                <li className="flex items-start"><span className="mr-2">•</span> Tax planning and strategy</li>
-                <li className="flex items-start"><span className="mr-2">•</span> Corporate tax preparation</li>
-                <li className="flex items-start"><span className="mr-2">•</span> VAT and GST compliance</li>
-                <li className="flex items-start"><span className="mr-2">•</span> International tax advisory</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Image Editing Services */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-brand-primary mb-8">Image Editing Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {imageEditingServices.map((service, index) => (
-                <div key={index} className={`bg-gradient-to-br ${service.gradient} rounded-xl p-6 text-white shadow-medium hover:shadow-strong transform hover:-translate-y-2 transition-all duration-300`}>
-                  <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
-                    <img src={service.icon} alt={service.title} className="w-8 h-8 object-contain" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                  <p className="text-white/90 text-sm mb-4">{service.description}</p>
-                  {service.image && (
-                    <div className="mt-4 rounded-lg overflow-hidden">
-                      <img src={service.image} alt={`${service.title} example`} className="w-full h-32 object-cover" />
+          {/* BPO Services Grid */}
+          <div className="space-y-8">
+            {bpoServices.map((service, index) => (
+              <div key={index} className={`bg-gradient-to-br ${service.gradient} rounded-2xl shadow-medium hover:shadow-strong transition-all duration-300 overflow-hidden border border-gray-100`}>
+                <div className="p-8 bg-white/80 backdrop-blur-sm">
+                  {/* Header with Icon and Title */}
+                  <div className="flex items-start gap-6 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-xl flex items-center justify-center flex-shrink-0 shadow-medium">
+                      <img src={service.icon} alt={service.title} className="w-10 h-10 object-contain brightness-0 invert" />
                     </div>
-                  )}
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-brand-primary mb-2">{service.title}</h3>
+                      <p className="text-lg text-brand-accent font-medium">{service.subtitle}</p>
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-text-secondary leading-relaxed mb-6">
+                    {service.description}
+                  </p>
+
+                  {/* What We Provide Section */}
+                  <div className="mb-6">
+                    <h4 className="text-lg font-bold text-brand-primary mb-3">What We Provide:</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                      {service.whatWeProvide.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-2">
+                          <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-2 flex-shrink-0"></div>
+                          <span className="text-text-secondary text-sm">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* The Advantage Section */}
+                  <div className="bg-gradient-to-r from-success/10 to-brand-accent/10 rounded-xl p-4 border-l-4 border-brand-accent">
+                    <h4 className="text-sm font-bold text-brand-primary mb-2">The Advantage:</h4>
+                    <p className="text-text-secondary text-sm leading-relaxed">{service.advantage}</p>
+                  </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

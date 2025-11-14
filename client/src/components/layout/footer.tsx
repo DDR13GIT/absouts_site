@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Twitter, Facebook, Mail, Phone, MapPin, FileText } from "lucide-react";
-import logoImage1 from "@assets/Absouts Logo Transparent 01_1757063958530.png";
+import logoImage2 from "@assets/Absouts Logo Transparent 02_1757063961279.png";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,7 +13,7 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <img src={logoImage1} alt="Absouts Logo" className="h-8 w-auto brightness-0 invert" />
+              <img src={logoImage2} alt="Absouts Logo" className="h-8 w-auto" />
             </div>
             <p className="text-white/80 mb-4">
               Global outsourcing solutions for Cloud Accounting, BPO, and Software Development.
@@ -113,9 +113,9 @@ export function Footer() {
             © {currentYear} Absouts. All rights reserved.
           </p>
           <div className="flex space-x-6 text-white/60 text-sm mt-4 md:mt-0">
-            <a href="#" className="hover:text-brand-accent transition-colors" data-testid="footer-privacy">Privacy Policy</a>
-            <a href="#" className="hover:text-brand-accent transition-colors" data-testid="footer-terms">Terms of Service</a>
-            <a href="#" className="hover:text-brand-accent transition-colors" data-testid="footer-cookies">Cookie Policy</a>
+            <Link href="/privacy-policy" className="hover:text-brand-accent transition-colors" data-testid="footer-privacy">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-brand-accent transition-colors" data-testid="footer-terms">Terms of Service</Link>
+            <Link href="/cookie-policy" className="hover:text-brand-accent transition-colors" data-testid="footer-cookies">Cookie Policy</Link>
           </div>
         </div>
       </div>

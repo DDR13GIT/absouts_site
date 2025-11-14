@@ -135,51 +135,147 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="py-20 bg-bg-section relative">
+      {/* Service Categories Grid */}
+      <section className="py-20 bg-bg-base-darker relative">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand-accent/5 to-transparent"></div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Section Header */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-bg-surface border border-brand-accent/20 mb-6">
-              <Target className="w-3 h-3 text-brand-accent animate-pulse" />
-              <span className="text-sm font-medium text-text-primary">{t.home.services.badge}</span>
+            <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-success/30 border border-brand-accent/20 mb-6">
+              <Settings className="w-3 h-3 text-brand-accent animate-pulse" />
+              <span className="text-sm font-medium text-text-primary">Our Services</span>
             </div>
-            
-            <h2 className="text-4xl font-bold text-brand-primary mb-4" data-testid="services-title">{t.home.services.title}</h2>
-            <p className="text-xl text-text-secondary max-w-3xl mx-auto" data-testid="services-description">
-              {t.home.services.subtitle}
+
+            <h2 className="text-4xl md:text-5xl font-bold text-brand-primary mb-4">Comprehensive Outsourcing Solutions</h2>
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+              We provide end-to-end solutions for your business needs
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <ServiceCard
-              title={t.home.services.bpo.title}
-              description={t.home.services.bpo.description}
-              features={[
-                "Cloud Accounting Services",
-                "Payroll Management", 
-                "Tax Services",
-                "Image Editing"
-              ]}
-              logoSrc={peopleIcon}
-              variant="primary"
-              onLearnMore={() => window.location.href = "/services/bpo"}
-            />
-            
-            <ServiceCard
-              title={t.home.services.software.title}
-              description={t.home.services.software.description}
-              features={[
-                "Custom Software Development",
-                "Mobile Applications",
-                "Cloud Infrastructure",
-                "Test Automation"
-              ]}
-              logoSrc={gearsIcon}
-              variant="secondary"
-              onLearnMore={() => window.location.href = "/services/software"}
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Card 1 - Cloud Accounting */}
+            <div className="relative rounded-3xl p-8 bg-gradient-to-br from-orange-100 to-orange-50 overflow-hidden group hover:shadow-xl transition-all duration-300">
+              {/* Background decorative shapes */}
+              <div className="absolute top-0 right-0 w-64 h-64 opacity-30">
+                <div className="absolute top-8 right-8 w-40 h-40 bg-orange-300 rounded-[3rem] transform rotate-12"></div>
+                <div className="absolute top-24 right-0 w-32 h-32 bg-orange-200 rounded-[2.5rem] transform -rotate-6"></div>
+                <div className="absolute top-2 right-20 w-36 h-36 bg-orange-200 rounded-[3rem]"></div>
+              </div>
+
+              <div className="relative z-10">
+                <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/80 mb-6">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                  <span className="text-xs font-medium text-gray-700">Finance Ready</span>
+                </div>
+
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">Cloud Accounting</h3>
+                <p className="text-gray-700 mb-8 leading-relaxed">
+                  End-to-end bookkeeping, reporting, and compliance handled with precision and automation. Removes manual workload and enforces consistent financial accuracy.
+                </p>
+
+                <Link href="/cloud-accounting">
+                  <button className="inline-flex items-center text-gray-900 font-medium border-b-2 border-gray-900 pb-1 hover:border-orange-500 hover:text-orange-500 transition-colors duration-300">
+                    Explore Cloud Accounting
+                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 2 - Business Process Outsourcing */}
+            <div className="relative rounded-3xl p-8 bg-gradient-to-br from-gray-100 to-gray-50 overflow-hidden group hover:shadow-xl transition-all duration-300">
+              {/* Background decorative shapes */}
+              <div className="absolute top-0 right-0 w-64 h-64 opacity-30">
+                <div className="absolute top-6 right-6 w-40 h-40 bg-gray-400 rounded-full"></div>
+                <div className="absolute top-28 right-16 w-32 h-32 bg-gray-300 rounded-full"></div>
+                <div className="absolute bottom-8 right-4 w-28 h-28 bg-gray-300 rounded-full"></div>
+              </div>
+
+              <div className="relative z-10">
+                <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/80 mb-6">
+                  <div className="w-2 h-2 bg-gray-900 rounded-full"></div>
+                  <span className="text-xs font-medium text-gray-700">Efficiency Guaranteed</span>
+                </div>
+
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">Business Process Outsourcing</h3>
+                <p className="text-gray-700 mb-8 leading-relaxed">
+                  Delegated operational tasks executed with consistent accuracy and measurable efficiency gains. Reduces operational overhead and stabilizes process quality.
+                </p>
+
+                <Link href="/bpo-services">
+                  <button className="inline-flex items-center text-gray-900 font-medium border-b-2 border-gray-900 pb-1 hover:border-gray-500 hover:text-gray-600 transition-colors duration-300">
+                    Explore BPO
+                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 3 - Software Development */}
+            <div className="relative rounded-3xl p-8 bg-gradient-to-br from-purple-100 to-purple-50 overflow-hidden group hover:shadow-xl transition-all duration-300">
+              {/* Background decorative shapes */}
+              <div className="absolute top-0 right-0 w-64 h-64 opacity-30">
+                <div className="absolute top-12 right-8 w-48 h-48 bg-purple-300 rounded-[4rem] transform rotate-45"></div>
+                <div className="absolute bottom-8 right-12 w-40 h-40 bg-purple-200 rounded-[3rem]"></div>
+              </div>
+
+              <div className="relative z-10">
+                <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/80 mb-6">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                  <span className="text-xs font-medium text-gray-700">Built for Scale</span>
+                </div>
+
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">Software Development</h3>
+                <p className="text-gray-700 mb-8 leading-relaxed">
+                  Custom software engineered for scale, reliability, and long-term maintainability. Covers full-cycle delivery from architecture to deployment.
+                </p>
+
+                <Link href="/services/software">
+                  <button className="inline-flex items-center text-gray-900 font-medium border-b-2 border-gray-900 pb-1 hover:border-purple-500 hover:text-purple-500 transition-colors duration-300">
+                    Explore Software Development
+                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Card 4 - Image Editing Service */}
+            <div className="relative rounded-3xl p-8 bg-gradient-to-br from-green-100 to-green-50 overflow-hidden group hover:shadow-xl transition-all duration-300">
+              {/* Background decorative shapes */}
+              <div className="absolute top-0 right-0 w-64 h-64 opacity-40">
+                <div className="absolute top-8 right-8 w-40 h-48 bg-green-600 rounded-[2rem]"></div>
+                <div className="absolute top-24 right-4 w-32 h-40 bg-green-400 rounded-[2rem]"></div>
+                <div className="absolute bottom-4 right-12 w-36 h-44 bg-green-300 rounded-[2rem]"></div>
+              </div>
+
+              <div className="relative z-10">
+                <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/80 mb-6">
+                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <span className="text-xs font-medium text-gray-700">Precision Assured</span>
+                </div>
+
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">Image Editing Service</h3>
+                <p className="text-gray-700 mb-8 leading-relaxed">
+                  High-volume, detail-accurate image processing optimized for speed and brand consistency. Built for teams requiring fast turnaround with uniform output quality.
+                </p>
+
+                <Link href="/image-editing">
+                  <button className="inline-flex items-center text-gray-900 font-medium border-b-2 border-gray-900 pb-1 hover:border-green-600 hover:text-green-600 transition-colors duration-300">
+                    Explore Image Editing
+                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -187,7 +283,7 @@ export default function Home() {
       {/* Why Choose Us */}
       <section className="py-20 bg-bg-base relative">
         <div className="absolute inset-0 bg-gradient-to-l from-brand-secondary/5 to-transparent"></div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -195,12 +291,12 @@ export default function Home() {
                 <Users className="w-3 h-3 text-brand-accent animate-pulse" />
                 <span className="text-sm font-medium text-text-primary">{t.about.values.badge}</span>
               </div>
-              
+
               <h2 className="text-4xl font-bold text-brand-primary mb-6" data-testid="why-choose-title">{t.career.whyChoose.title}</h2>
               <p className="text-lg text-text-secondary mb-8" data-testid="why-choose-description">
                 {t.about.description}
               </p>
-              
+
               <div className="space-y-6">
                 <div className="group flex items-start space-x-4 p-4 rounded-2xl hover:bg-bg-surface hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="feature-global-reach">
                   <div className="w-12 h-12 bg-brand-accent rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-subtle">
@@ -233,11 +329,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
             <div>
-              <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Professional team collaboration" 
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                alt="Professional team collaboration"
                 className="rounded-2xl shadow-medium w-full h-auto"
                 data-testid="team-image"
               />
@@ -246,6 +342,6 @@ export default function Home() {
         </div>
       </section>
 
-      </div>
+    </div>
   );
 }

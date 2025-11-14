@@ -12,11 +12,11 @@ import { apiRequest } from "@/lib/queryClient";
 import { Loader2 } from "lucide-react";
 
 const contactFormSchema = z.object({
-  firstName: z.string().min(1, "First name is required"),
-  lastName: z.string().min(1, "Last name is required"),
-  email: z.string().email("Please enter a valid email address"),
+  name: z.string().min(1, "Name is required"),
   company: z.string().optional(),
-  serviceInterest: z.string().optional(),
+  phone: z.string().optional(),
+  email: z.string().email("Please enter a valid email address"),
+  subject: z.string().min(1, "Subject is required"),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
@@ -29,11 +29,11 @@ export function ContactForm() {
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
-      firstName: "",
-      lastName: "",
-      email: "",
+      name: "",
       company: "",
-      serviceInterest: "",
+      phone: "",
+      email: "",
+      subject: "",
       message: "",
     },
   });
@@ -62,19 +62,23 @@ export function ContactForm() {
   };
 
   return (
-    <div className="bg-bg-surface rounded-2xl shadow-medium p-8" data-testid="contact-form">
-      <h2 className="text-2xl font-bold text-brand-primary mb-6">Send us a message</h2>
+    <div className="space-y-6" data-testid="contact-form">
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <FormField
               control={form.control}
-              name="firstName"
+              name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>First Name *</FormLabel>
+                  <FormLabel className="text-text-secondary">Name</FormLabel>
                   <FormControl>
-                    <Input {...field} data-testid="input-first-name" />
+                    <Input
+                      {...field}
+                      placeholder="Name"
+                      className="bg-bg-base border-0"
+                      data-testid="input-name"
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -82,82 +86,95 @@ export function ContactForm() {
             />
             <FormField
               control={form.control}
-              name="lastName"
+              name="company"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Last Name *</FormLabel>
+                  <FormLabel className="text-text-secondary">Company</FormLabel>
                   <FormControl>
-                    <Input {...field} data-testid="input-last-name" />
+                    <Input
+                      {...field}
+                      placeholder="Company"
+                      className="bg-bg-base border-0"
+                      data-testid="input-company"
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
           </div>
-          
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Email Address *</FormLabel>
-                <FormControl>
-                  <Input type="email" {...field} data-testid="input-email" />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          
-          <FormField
-            control={form.control}
-            name="company"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Company</FormLabel>
-                <FormControl>
-                  <Input {...field} data-testid="input-company" />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          
-          <FormField
-            control={form.control}
-            name="serviceInterest"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Services Interested In</FormLabel>
-                <Select onValueChange={field.onChange} value={field.value}>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <FormField
+              control={form.control}
+              name="phone"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-text-secondary">Phone</FormLabel>
                   <FormControl>
-                    <SelectTrigger data-testid="select-service-interest">
-                      <SelectValue placeholder="Select a service" />
-                    </SelectTrigger>
+                    <Input
+                      {...field}
+                      placeholder="Phone"
+                      className="bg-bg-base border-0"
+                      data-testid="input-phone"
+                    />
                   </FormControl>
-                  <SelectContent>
-                    <SelectItem value="bpo" data-testid="service-option-bpo">Business Process Outsourcing</SelectItem>
-                    <SelectItem value="software" data-testid="service-option-software">Software Development</SelectItem>
-                    <SelectItem value="accounting" data-testid="service-option-accounting">Cloud Accounting</SelectItem>
-                    <SelectItem value="both" data-testid="service-option-multiple">Multiple Services</SelectItem>
-                  </SelectContent>
-                </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-text-secondary">Email</FormLabel>
+                  <FormControl>
+                    <Input
+                      type="email"
+                      {...field}
+                      placeholder="Email"
+                      className="bg-bg-base border-0"
+                      data-testid="input-email"
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+
+          <FormField
+            control={form.control}
+            name="subject"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="text-text-secondary">Subject</FormLabel>
+                <FormControl>
+                  <Input
+                    {...field}
+                    placeholder="Subject"
+                    className="bg-bg-base border-0"
+                    data-testid="input-subject"
+                  />
+                </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
-          
+
           <FormField
             control={form.control}
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Message *</FormLabel>
+                <FormLabel className="text-text-secondary">Message</FormLabel>
                 <FormControl>
-                  <Textarea 
-                    rows={5} 
-                    placeholder="Tell us about your project requirements..." 
+                  <Textarea
+                    rows={5}
+                    placeholder="Message"
                     {...field}
+                    className="bg-bg-base border-0 resize-none"
                     data-testid="textarea-message"
                   />
                 </FormControl>
@@ -165,20 +182,20 @@ export function ContactForm() {
               </FormItem>
             )}
           />
-          
-          <Button 
-            type="submit" 
-            className="w-full bg-brand-secondary hover:bg-brand-secondary/90 text-white rounded-full shadow-medium hover:shadow-strong transform hover:-translate-y-0.5 transition-all duration-300"
+
+          <Button
+            type="submit"
+            className="w-full bg-brand-accent hover:bg-brand-accent/90 text-white rounded-lg shadow-medium hover:shadow-strong transform hover:-translate-y-0.5 transition-all duration-300"
             disabled={isSubmitting}
             data-testid="button-submit-contact"
           >
             {isSubmitting ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Sending Message...
+                Sending...
               </>
             ) : (
-              "Send Message"
+              "Send"
             )}
           </Button>
         </form>
