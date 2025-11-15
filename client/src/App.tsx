@@ -12,6 +12,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import Home from "@/pages/home";
 import About from "@/pages/about";
 import Services from "@/pages/services";
+import SoftwareDevelopment from "@/pages/software-development";
 import CloudAccounting from "@/pages/cloud-accounting";
 import BPOServices from "@/pages/bpo-services";
 import ImageEditingService from "@/pages/image-editing-service";
@@ -41,6 +42,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/services" component={Services} />
+        <Route path="/services/:slug" component={SoftwareDevelopment} />
         <Route path="/cloud-accounting" component={CloudAccounting} />
         <Route path="/bpo-services" component={BPOServices} />
         <Route path="/image-editing" component={ImageEditingService} />

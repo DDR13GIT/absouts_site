@@ -17,6 +17,17 @@ export default {
           secondary: "var(--brand-secondary)",
           accent: "var(--brand-accent)",
         },
+        /* Mediterranean Palette */
+        mediterranean: {
+          olive: "var(--olive-branch)",
+          herb: "var(--herb-garden)",
+          french: "var(--french-blue)",
+          clementine: "var(--clementine)",
+          calendula: "var(--calendula)",
+          sky: "var(--sicilian-sky)",
+          terra: "var(--terra-cotta)",
+          linen: "var(--linen)",
+        },
         bg: {
           base: "var(--bg-base)",
           "base-darker": "var(--bg-base-darker)",

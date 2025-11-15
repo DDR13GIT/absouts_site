@@ -12,6 +12,4 @@ export { legaltechConfig } from "./legaltech.config";
 export { webportalConfig } from "./webportal.config";
 export { fintechConfig } from "./fintech.config";
 export { aiConfig } from "./ai.config";
-
-// Note: BPO and Software services have custom sections
-// and are handled separately in service-detail.tsx
+export { softwareConfig } from "./software.config";

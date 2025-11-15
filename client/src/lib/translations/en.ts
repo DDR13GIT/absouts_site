@@ -12,8 +12,8 @@ export const en = {
   home: {
     hero: {
       badge: "Global Outsourcing Excellence",
-      title: "Operate Efficiently. Innovate. Grow Sustainably.",
-      subtitle: "We deliver comprehensive outsourcing services—from Cloud Accounting and BPO to custom Software Development—by aligning the latest technology with industry best practices to help you operate efficiently and grow.",
+      title: "Transform Your Business with Expert Outsourcing Solutions",
+      subtitle: "We deliver comprehensive outsourcing services—from Cloud Accounting and BPO to Software Development—by aligning the latest technology with industry best practices to help you operate efficiently and grow.",
       downloadBrochure: "Download Brochure",
       startProject: "Start a Project",
       findTalent: "Find Talent",

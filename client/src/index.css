@@ -8,7 +8,17 @@
   --brand-primary: #0B0B44;
   --brand-secondary: #2B3990;
   --brand-accent: #27AAE1;
-  
+
+  /* Mediterranean Palette - Natural & Warm Tones */
+  --olive-branch: #9CAA8C;      /* Muted sage green */
+  --herb-garden: #5D6F5F;       /* Deeper earthy green */
+  --french-blue: #6B8DB2;       /* Soft dusty blue */
+  --clementine: #DC8B6A;        /* Warm coral-orange */
+  --calendula: #F5C56B;         /* Soft golden yellow */
+  --sicilian-sky: #B5C9D9;      /* Pale powdery blue */
+  --terra-cotta: #A6704E;       /* Warm rust-brown */
+  --linen: #EAE6DC;             /* Soft off-white/cream */
+
   /* Backgrounds */
   --bg-base: #FFFDF5;
   --bg-base-darker: #f8f5ee;

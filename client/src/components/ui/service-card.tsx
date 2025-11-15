@@ -21,12 +21,12 @@ export function ServiceCard({ title, description, features, icon, logoSrc, varia
   };
 
   return (
-    <Card className="group service-card h-full bg-bg-surface border border-border shadow-medium hover:shadow-strong transform hover:-translate-y-3 transition-all duration-500 cursor-pointer relative overflow-hidden rounded-2xl" data-testid={`service-card-${title.toLowerCase().replace(/\s+/g, '-')}`}>
+    <Card className="group service-card h-full bg-mediterranean-linen border border-mediterranean-olive/20 shadow-medium hover:shadow-strong transform hover:-translate-y-3 transition-all duration-500 cursor-pointer relative overflow-hidden rounded-2xl" data-testid={`service-card-${title.toLowerCase().replace(/\s+/g, '-')}`}>
       {/* Hover gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-brand-secondary/5 to-brand-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-      
+      <div className="absolute inset-0 bg-gradient-to-r from-mediterranean-olive/10 to-mediterranean-sky/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-brand-accent/10 to-transparent rounded-bl-full transform scale-0 group-hover:scale-100 transition-transform duration-500"></div>
+      <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-mediterranean-calendula/20 to-transparent rounded-bl-full transform scale-0 group-hover:scale-100 transition-transform duration-500"></div>
       
       <CardHeader className="relative z-10">
         <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${variantStyles[variant]} group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>

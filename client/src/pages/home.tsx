@@ -298,32 +298,32 @@ export default function Home() {
               </p>
 
               <div className="space-y-6">
-                <div className="group flex items-start space-x-4 p-4 rounded-2xl hover:bg-bg-surface hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="feature-global-reach">
-                  <div className="w-12 h-12 bg-brand-accent rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-subtle">
+                <div className="group flex items-start space-x-4 p-4 rounded-2xl hover:bg-mediterranean-linen hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="feature-global-reach">
+                  <div className="w-12 h-12 bg-mediterranean-french rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-subtle">
                     <Globe className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-brand-primary mb-2 group-hover:text-brand-accent transition-colors duration-300">{t.about.values.globalPartnership.title}</h3>
+                    <h3 className="text-xl font-semibold text-brand-primary mb-2 group-hover:text-mediterranean-herb transition-colors duration-300">{t.about.values.globalPartnership.title}</h3>
                     <p className="text-text-secondary">{t.about.values.globalPartnership.description}</p>
                   </div>
                 </div>
 
-                <div className="group flex items-start space-x-4 p-4 rounded-2xl hover:bg-bg-surface hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="feature-expert-leadership">
-                  <div className="w-12 h-12 bg-brand-secondary rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-subtle">
+                <div className="group flex items-start space-x-4 p-4 rounded-2xl hover:bg-mediterranean-linen hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="feature-expert-leadership">
+                  <div className="w-12 h-12 bg-mediterranean-calendula rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-subtle">
                     <Award className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-brand-primary mb-2 group-hover:text-brand-accent transition-colors duration-300">{t.about.values.excellence.title}</h3>
+                    <h3 className="text-xl font-semibold text-brand-primary mb-2 group-hover:text-mediterranean-herb transition-colors duration-300">{t.about.values.excellence.title}</h3>
                     <p className="text-text-secondary">{t.about.values.excellence.description}</p>
                   </div>
                 </div>
 
-                <div className="group flex items-start space-x-4 p-4 rounded-2xl hover:bg-bg-surface hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="feature-trusted-partnership">
-                  <div className="w-12 h-12 bg-brand-primary rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-subtle">
+                <div className="group flex items-start space-x-4 p-4 rounded-2xl hover:bg-mediterranean-linen hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="feature-trusted-partnership">
+                  <div className="w-12 h-12 bg-mediterranean-olive rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-subtle">
                     <Shield className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-brand-primary mb-2 group-hover:text-brand-accent transition-colors duration-300">{t.about.values.integrity.title}</h3>
+                    <h3 className="text-xl font-semibold text-brand-primary mb-2 group-hover:text-mediterranean-herb transition-colors duration-300">{t.about.values.integrity.title}</h3>
                     <p className="text-text-secondary">{t.about.values.integrity.description}</p>
                   </div>
                 </div>

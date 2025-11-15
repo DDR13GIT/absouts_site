@@ -205,12 +205,24 @@ export default function Services() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {servicePillars.map((pillar, index) => {
                 const IconComponent = pillar.icon;
+                const pillarColors = [
+                  'bg-mediterranean-calendula',
+                  'bg-mediterranean-french',
+                  'bg-mediterranean-olive',
+                  'bg-mediterranean-clementine'
+                ];
+                const bgColors = [
+                  'hover:bg-mediterranean-linen',
+                  'hover:bg-mediterranean-sky/20',
+                  'hover:bg-mediterranean-olive/10',
+                  'hover:bg-mediterranean-clementine/10'
+                ];
                 return (
-                  <div key={index} className="group text-center p-6 rounded-2xl hover:bg-white/70 hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid={`pillar-${pillar.title.toLowerCase().replace(/\s+/g, '-')}`}>
-                    <div className="w-16 h-16 bg-gradient-to-r from-brand-accent to-brand-secondary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-medium">
+                  <div key={index} className={`group text-center p-6 rounded-2xl ${bgColors[index]} hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 cursor-pointer`} data-testid={`pillar-${pillar.title.toLowerCase().replace(/\s+/g, '-')}`}>
+                    <div className={`w-16 h-16 ${pillarColors[index]} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-medium`}>
                       <IconComponent className="h-8 w-8 text-white group-hover:scale-110 transition-transform duration-300" />
                     </div>
-                    <h3 className="text-xl font-semibold text-brand-primary mb-3 group-hover:text-brand-accent transition-colors duration-300">{pillar.title}</h3>
+                    <h3 className="text-xl font-semibold text-brand-primary mb-3 group-hover:text-mediterranean-herb transition-colors duration-300">{pillar.title}</h3>
                     <p className="text-text-secondary leading-relaxed">{pillar.description}</p>
                   </div>
                 );
@@ -219,20 +231,25 @@ export default function Services() {
           </div>
 
           {/* Benefits */}
-          <div className="group bg-white/70 backdrop-blur-sm border-0 shadow-medium hover:shadow-strong transform hover:-translate-y-2 transition-all duration-500 hover:bg-white/90 cursor-pointer relative overflow-hidden rounded-2xl p-8" data-testid="benefits-section">
+          <div className="group bg-mediterranean-linen/80 backdrop-blur-sm border-0 shadow-medium hover:shadow-strong transform hover:-translate-y-2 transition-all duration-500 hover:bg-mediterranean-linen cursor-pointer relative overflow-hidden rounded-2xl p-8" data-testid="benefits-section">
             {/* Hover gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-brand-accent/5 to-brand-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-mediterranean-sky/10 to-mediterranean-olive/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
-            <h2 className="text-3xl font-bold text-brand-primary mb-8 text-center group-hover:text-brand-accent transition-colors duration-300 relative z-10">{t.services.benefits.title}</h2>
+            <h2 className="text-3xl font-bold text-brand-primary mb-8 text-center group-hover:text-mediterranean-herb transition-colors duration-300 relative z-10">{t.services.benefits.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
               {benefits.map((benefit, index) => {
                 const IconComponent = benefit.icon;
+                const benefitColors = [
+                  'bg-mediterranean-french',
+                  'bg-mediterranean-terra',
+                  'bg-mediterranean-herb'
+                ];
                 return (
                   <div key={index} className="text-center" data-testid={`benefit-${benefit.title.toLowerCase().replace(/\s+/g, '-')}`}>
-                    <div className="w-12 h-12 bg-gradient-to-r from-brand-accent to-brand-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-medium">
+                    <div className={`w-12 h-12 ${benefitColors[index]} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-medium`}>
                       <IconComponent className="h-6 w-6 text-white group-hover:scale-110 transition-transform duration-300" />
                     </div>
-                    <h3 className="text-lg font-semibold text-brand-primary mb-2 group-hover:text-brand-accent transition-colors duration-300">{benefit.title}</h3>
+                    <h3 className="text-lg font-semibold text-brand-primary mb-2 group-hover:text-mediterranean-herb transition-colors duration-300">{benefit.title}</h3>
                     <p className="text-text-secondary leading-relaxed">{benefit.description}</p>
                   </div>
                 );

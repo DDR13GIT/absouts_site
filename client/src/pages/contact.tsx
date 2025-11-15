@@ -54,7 +54,7 @@ export default function Contact() {
       {/* Contact Section */}
       <section className="py-20 bg-bg-base">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl shadow-strong overflow-hidden">
+          <div className="bg-bg-base-darker rounded-3xl shadow-strong overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               {/* Left Side - Get in touch */}
               <div className="bg-gradient-to-br from-bg-section/50 to-bg-surface p-8 md:p-12">
