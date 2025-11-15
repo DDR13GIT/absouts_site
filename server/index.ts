@@ -12,8 +12,22 @@ app.use((req, res, next) => {
   // Get the blocked countries from environment variable
   const blockedCountries = process.env.NEXT_PUBLIC_BLOCKED_COUNTRIES || '';
 
+  // Debug: Always log for first request to verify middleware is working
+  const country = req.headers['x-vercel-ip-country'] as string || 'UNKNOWN';
+
+  console.log('[Geoblocking] Middleware executed');
+  console.log('[Geoblocking] ENV var NEXT_PUBLIC_BLOCKED_COUNTRIES:', blockedCountries);
+  console.log('[Geoblocking] Country from header:', country);
+  console.log('[Geoblocking] x-vercel-ip-country header:', req.headers['x-vercel-ip-country']);
+  console.log('[Geoblocking] All Vercel headers:', {
+    'x-vercel-ip-country': req.headers['x-vercel-ip-country'],
+    'x-vercel-ip-city': req.headers['x-vercel-ip-city'],
+    'x-forwarded-for': req.headers['x-forwarded-for'],
+  });
+
   // If no countries are configured, allow all requests
   if (!blockedCountries) {
+    console.log('[Geoblocking] No blocked countries configured, allowing request');
     return next();
   }
 
@@ -23,22 +37,17 @@ app.use((req, res, next) => {
     .map(country => country.trim().toUpperCase())
     .filter(country => country.length > 0);
 
+  console.log('[Geoblocking] Blocked country list:', blockedCountryList);
+
   // If no valid countries in the list, allow all requests
   if (blockedCountryList.length === 0) {
+    console.log('[Geoblocking] Empty blocked list, allowing request');
     return next();
-  }
-
-  // Get the country code from Vercel's geolocation headers
-  // Vercel provides this in the x-vercel-ip-country header
-  const country = req.headers['x-vercel-ip-country'] as string || 'UNKNOWN';
-
-  // Debug logging
-  if (process.env.NODE_ENV === 'development') {
-    log(`[Geoblocking] Country: ${country}, Blocked list: ${blockedCountryList.join(', ')}, Headers: ${JSON.stringify(req.headers)}`);
   }
 
   // Check if the country is blocked
   if (blockedCountryList.includes(country.toUpperCase())) {
+    console.log('[Geoblocking] BLOCKING REQUEST - Country is in blocked list');
     // Return a 403 Forbidden response with a custom message
     return res.status(403).send(`
       <!DOCTYPE html>
@@ -97,6 +106,7 @@ app.use((req, res, next) => {
   }
 
   // Allow the request to proceed
+  console.log('[Geoblocking] Allowing request - country not in blocked list');
   next();
 });
 
