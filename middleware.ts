@@ -1,51 +1,41 @@
-/**
- * Vercel Edge Middleware for Geoblocking
- * Auto-detected by Vercel for all frameworks
- */
+import { NextRequest, NextResponse } from 'next/server';
 
-export default async function middleware(request) {
-  const url = new URL(request.url);
+export const config = {
+  matcher: '/:path*',
+};
 
-  console.log('[Edge Middleware] Intercepting:', url.pathname);
+export function middleware(request: NextRequest) {
+  console.log('[Middleware] Request:', request.nextUrl.pathname);
 
-  // Get the blocked countries from environment variable
+  // Get blocked countries from environment
   const blockedCountries = process.env.NEXT_PUBLIC_BLOCKED_COUNTRIES || '';
 
-  console.log('[Edge Middleware] Blocked countries env:', blockedCountries);
-
-  // If no countries are configured, allow the request to continue
   if (!blockedCountries) {
-    console.log('[Edge Middleware] No geoblocking configured');
-    return;
+    console.log('[Middleware] No geoblocking configured');
+    return NextResponse.next();
   }
 
-  // Parse the comma-separated list of country codes
-  const blockedCountryList = blockedCountries
+  // Parse blocked countries list
+  const blockedList = blockedCountries
     .split(',')
-    .map(country => country.trim().toUpperCase())
-    .filter(country => country.length > 0);
+    .map(c => c.trim().toUpperCase())
+    .filter(c => c.length > 0);
 
-  console.log('[Edge Middleware] Parsed blocked list:', blockedCountryList);
-
-  // If no valid countries in the list, allow the request
-  if (blockedCountryList.length === 0) {
-    console.log('[Edge Middleware] Empty blocked list');
-    return;
+  if (blockedList.length === 0) {
+    console.log('[Middleware] Empty blocked list');
+    return NextResponse.next();
   }
 
-  // Get the country code from Vercel's geolocation
-  // Vercel provides this in request.geo for Edge Runtime
+  // Get country from Vercel geo
   const country = request.geo?.country || 'UNKNOWN';
 
-  console.log('[Edge Middleware] Request from country:', country);
-  console.log('[Edge Middleware] Full geo data:', JSON.stringify(request.geo));
+  console.log('[Middleware] Country:', country);
 
-  // Check if the country is blocked
-  if (blockedCountryList.includes(country.toUpperCase())) {
-    console.log('[Edge Middleware] BLOCKING access from:', country);
+  // Check if blocked
+  if (blockedList.includes(country.toUpperCase())) {
+    console.log('[Middleware] BLOCKING:', country);
 
-    // Return a 403 Forbidden response with a custom blocked page
-    return new Response(
+    return new NextResponse(
       `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -107,7 +97,6 @@ export default async function middleware(request) {
     );
   }
 
-  // Allow the request to continue to the origin
-  console.log('[Edge Middleware] Allowing access from:', country);
-  // Returning nothing allows the request to proceed
+  console.log('[Middleware] Allowing:', country);
+  return NextResponse.next();
 }

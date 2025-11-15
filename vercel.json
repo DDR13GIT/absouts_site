@@ -2,11 +2,6 @@
   "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist/public",
-  "functions": {
-    "middleware.js": {
-      "runtime": "edge"
-    }
-  },
   "rewrites": [
     {
       "source": "/api/jobs/:id",
