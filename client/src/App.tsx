@@ -7,6 +7,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { TranslationProvider } from "@/lib/translation-context";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Home from "@/pages/home";
 import About from "@/pages/about";
 import Services from "@/pages/services";
@@ -67,6 +69,8 @@ function App() {
             <Footer />
           </div>
           <Toaster />
+          <Analytics />
+          <SpeedInsights />
         </TooltipProvider>
       </TranslationProvider>
     </QueryClientProvider>
