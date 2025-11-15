@@ -18,7 +18,7 @@ To block countries, you need to add redirect rules in `vercel.json`. Each blocke
 {
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/((?!blocked\\.html$).*)",
       "has": [
         {
           "type": "header",
@@ -30,7 +30,7 @@ To block countries, you need to add redirect rules in `vercel.json`. Each blocke
       "permanent": false
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!blocked\\.html$).*)",
       "has": [
         {
           "type": "header",
@@ -44,6 +44,8 @@ To block countries, you need to add redirect rules in `vercel.json`. Each blocke
   ]
 }
 ```
+
+**Important:** The pattern `/((?!blocked\\.html$).*)` uses a negative lookahead to exclude `/blocked.html` from being redirected, preventing an infinite redirect loop.
 
 **To block additional countries:** Add more redirect objects with different country codes.
 

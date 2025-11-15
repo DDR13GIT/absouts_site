@@ -4,7 +4,7 @@
   "outputDirectory": "dist/public",
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/((?!blocked\\.html$).*)",
       "has": [
         {
           "type": "header",
