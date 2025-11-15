@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -9,6 +9,33 @@ import logoImage1 from "@assets/Absouts Logo Transparent 01_1757063958530.png";
 export function Navbar() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Show navbar when at top of page
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      }
+      // Show navbar when scrolling up, hide when scrolling down
+      else if (currentScrollY < lastScrollY) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsVisible(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
 
   const navigationItems = [
     { path: "/", label: "Home" },
@@ -25,7 +52,12 @@ export function Navbar() {
   };
 
   return (
-    <nav className="fixed w-full top-0 z-50" data-testid="navbar">
+    <nav
+      className={`fixed w-full z-50 transition-transform duration-300 ease-in-out ${
+        isVisible ? 'translate-y-0' : '-translate-y-full'
+      }`}
+      data-testid="navbar"
+    >
       <div className="max-w-[1400px] mx-auto px-8 lg:px-16 py-6">
         <div className="flex items-center justify-between">
           {/* Logo - Left (Small and Minimal) */}

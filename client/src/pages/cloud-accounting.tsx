@@ -24,7 +24,10 @@ export default function CloudAccounting() {
         "Scalable support that grows with your business requirements"
       ],
       advantage: "Cost-effective access to professional accounting expertise, reduced overhead expenses, and the flexibility to scale services as your business evolves",
-      bgColor: "bg-mediterranean-sky/30"
+      bgColor: "bg-mediterranean-sky",
+      textColor: "text-gray-900",
+      subtitleColor: "text-gray-700",
+      iconBg: "from-gray-700 to-gray-900"
     },
     {
       icon: SERVICE_ICONS.calculator,
@@ -38,7 +41,10 @@ export default function CloudAccounting() {
         "Tax payments and statutory obligations"
       ],
       advantage: "Clean, organized financial records that maintain accuracy for better decision-making, provide confidence in business assessments, and ensure audit-ready documentation",
-      bgColor: "bg-mediterranean-linen"
+      bgColor: "bg-mediterranean-linen",
+      textColor: "text-gray-900",
+      subtitleColor: "text-gray-700",
+      iconBg: "from-gray-700 to-gray-900"
     },
     {
       icon: SERVICE_ICONS.scale,
@@ -52,7 +58,10 @@ export default function CloudAccounting() {
         "Proactive alerts for unusual or suspicious activity"
       ],
       advantage: "Early detection of errors and fraud, ensured accuracy in financial reporting, prevention of cash flow issues, and maintained integrity of your financial data",
-      bgColor: "bg-mediterranean-olive/25"
+      bgColor: "bg-mediterranean-sky",
+      textColor: "text-gray-900",
+      subtitleColor: "text-gray-700",
+      iconBg: "from-gray-700 to-gray-900"
     },
     {
       icon: SERVICE_ICONS.report,
@@ -66,7 +75,10 @@ export default function CloudAccounting() {
         "Key performance indicator (KPI) dashboards"
       ],
       advantage: "Informed strategic and operational decision-making, early identification of business trends, performance monitoring against goals, and data-driven insights for growth",
-      bgColor: "bg-mediterranean-calendula/30"
+      bgColor: "bg-mediterranean-linen",
+      textColor: "text-gray-900",
+      subtitleColor: "text-gray-700",
+      iconBg: "from-gray-700 to-gray-900"
     },
     {
       icon: SERVICE_ICONS.bank,
@@ -80,7 +92,10 @@ export default function CloudAccounting() {
         "Aging analysis and collection management"
       ],
       advantage: "Maintained healthy cash flow and financial stability, reduced late fees and finance charges, stronger business relationships, and improved working capital management",
-      bgColor: "bg-mediterranean-french/30"
+      bgColor: "bg-mediterranean-sky",
+      textColor: "text-gray-900",
+      subtitleColor: "text-gray-700",
+      iconBg: "from-gray-700 to-gray-900"
     },
     {
       icon: SERVICE_ICONS.document,
@@ -94,7 +109,10 @@ export default function CloudAccounting() {
         "Reorder points and optimal order quantities"
       ],
       advantage: "Efficient supply chain operations, prevention of stockouts and lost sales, elimination of excess inventory costs, reduced waste from obsolescence, and minimized working capital requirements",
-      bgColor: "bg-mediterranean-herb/20"
+      bgColor: "bg-mediterranean-linen",
+      textColor: "text-gray-900",
+      subtitleColor: "text-gray-700",
+      iconBg: "from-gray-700 to-gray-900"
     },
     {
       icon: SERVICE_ICONS.team,
@@ -108,7 +126,10 @@ export default function CloudAccounting() {
         "Quarterly and annual tax filing requirements"
       ],
       advantage: "Accurate and timely payroll processing maintains employee satisfaction and compliance, keeps businesses up to date with regulatory changes, and reduces administrative burden through automation",
-      bgColor: "bg-mediterranean-clementine/25"
+      bgColor: "bg-mediterranean-sky",
+      textColor: "text-gray-900",
+      subtitleColor: "text-gray-700",
+      iconBg: "from-gray-700 to-gray-900"
     },
     {
       icon: SERVICE_ICONS.hands,
@@ -122,7 +143,10 @@ export default function CloudAccounting() {
         "Tax audit support and documentation preparation"
       ],
       advantage: "Accurate and on-time tax compliance minimizes risk, expert guidance optimizes tax liabilities through strategic deductions and credits, and professional representation supports businesses during audits and dealings with tax authorities",
-      bgColor: "bg-mediterranean-terra/25"
+      bgColor: "bg-mediterranean-linen",
+      textColor: "text-gray-900",
+      subtitleColor: "text-gray-700",
+      iconBg: "from-gray-700 to-gray-900"
     }
   ];
 
@@ -146,41 +170,41 @@ export default function CloudAccounting() {
           {/* Accounting Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {accountingServices.map((service, index) => (
-              <div key={index} className={`${service.bgColor} rounded-[2rem] shadow-medium hover:shadow-strong transition-all duration-300 overflow-hidden border border-gray-200/50 group hover:-translate-y-1`}>
+              <div key={index} className={`${service.bgColor} rounded-[2rem] shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-black/10 group hover:-translate-y-2`}>
                 <div className="p-10">
                   {/* Header with Icon and Title */}
                   <div className="flex items-start gap-6 mb-8">
-                    <div className="w-20 h-20 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-[1.25rem] flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <img src={service.icon} alt={service.title} className="w-12 h-12 object-contain brightness-0 invert" />
+                    <div className={`w-20 h-20 bg-gradient-to-br ${service.iconBg} rounded-[1.25rem] flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                      <img src={service.icon} alt={service.title} className={`w-12 h-12 object-contain ${service.textColor === 'text-white' ? 'brightness-0' : 'brightness-0 invert'}`} />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-3xl font-bold text-brand-primary mb-3 leading-tight">{service.title}</h3>
-                      <p className="text-xl text-mediterranean-herb font-semibold">{service.subtitle}</p>
+                      <h3 className={`text-3xl font-bold ${service.textColor} mb-3 leading-tight`}>{service.title}</h3>
+                      <p className={`text-xl ${service.subtitleColor} font-semibold`}>{service.subtitle}</p>
                     </div>
                   </div>
 
                   {/* Description */}
-                  <p className="text-text-secondary text-lg leading-relaxed mb-8">
+                  <p className={`${service.textColor} text-lg leading-relaxed mb-8 opacity-90`}>
                     {service.description}
                   </p>
 
                   {/* What We Provide Section */}
                   <div className="mb-8">
-                    <h4 className="text-xl font-bold text-brand-primary mb-5">What We Provide:</h4>
+                    <h4 className={`text-xl font-bold ${service.textColor} mb-5`}>What We Provide:</h4>
                     <div className="space-y-3">
                       {service.whatWeProvide.map((item, idx) => (
                         <div key={idx} className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-mediterranean-herb rounded-full mt-2.5 flex-shrink-0"></div>
-                          <span className="text-text-secondary text-base leading-relaxed">{item}</span>
+                          <div className={`w-2 h-2 ${service.textColor === 'text-white' ? 'bg-white' : 'bg-gray-900'} rounded-full mt-2.5 flex-shrink-0 opacity-70`}></div>
+                          <span className={`${service.textColor} text-base leading-relaxed opacity-90`}>{item}</span>
                         </div>
                       ))}
                     </div>
                   </div>
 
                   {/* The Advantage Section */}
-                  <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border-l-4 border-mediterranean-herb shadow-sm">
-                    <h4 className="text-base font-bold text-brand-primary mb-3 uppercase tracking-wide">The Advantage:</h4>
-                    <p className="text-text-secondary text-base leading-relaxed">{service.advantage}</p>
+                  <div className={`${service.textColor === 'text-white' ? 'bg-white/20' : 'bg-black/5'} backdrop-blur-sm rounded-2xl p-6 border-l-4 ${service.textColor === 'text-white' ? 'border-white' : 'border-gray-900'} shadow-sm`}>
+                    <h4 className={`text-base font-bold ${service.textColor} mb-3 uppercase tracking-wide`}>The Advantage:</h4>
+                    <p className={`${service.textColor} text-base leading-relaxed opacity-90`}>{service.advantage}</p>
                   </div>
                 </div>
               </div>

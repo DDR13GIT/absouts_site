@@ -6,19 +6,58 @@ export default function Contact() {
   const { t } = useTranslation();
   const contactInfo = [
     {
-      icon: MapPin,
-      title: t.contact.info.office,
-      details: ["Dhaka, Bangladesh", "Global Service Delivery"]
-    },
-    {
       icon: Mail,
       title: t.contact.info.email,
-      details: ["support@absouts.com", "hello@absouts.com"]
+      details: ["contact@absouts.com"]
     },
     {
       icon: Phone,
-      title: t.contact.info.phone,
-      details: ["Phone : +880 1234 567 890", "Fax : +880 1234 567 891"]
+      title: "Telephone",
+      details: [
+        "+880 2 223 315 204",
+        "+880 2 223 315 191",
+        "+44 020 7794 5045 (London)"
+      ]
+    },
+    {
+      icon: Phone,
+      title: "Mobile",
+      details: [
+        "+880 1717 435 794",
+        "+880 1645 193 991",
+        "+44 079 1612 0280 (London)"
+      ]
+    }
+  ];
+
+  const officeLocations = [
+    {
+      title: "Bangladesh Registered Office",
+      address: [
+        "232/232(2), West Agargaon",
+        "A K Khan Tower, Level-7",
+        "Sher-E-Bangla Nagar",
+        "Dhaka-1207, Bangladesh"
+      ],
+      bgColor: "bg-mediterranean-sky"
+    },
+    {
+      title: "Bangladesh Corporate Office",
+      address: [
+        "House 05, Level 5, Road 137",
+        "Gulshan 1",
+        "Dhaka 1212, Bangladesh"
+      ],
+      bgColor: "bg-mediterranean-linen"
+    },
+    {
+      title: "UK Office",
+      address: [
+        "434 Finchley Road",
+        "London, NW2 2HY",
+        "United Kingdom"
+      ],
+      bgColor: "bg-mediterranean-sky"
     }
   ];
 
@@ -63,7 +102,7 @@ export default function Contact() {
                     Get in touch
                   </h2>
                   <p className="text-text-secondary leading-relaxed">
-                    Sociosqu viverra lectus placerat sem efficitur malesuada vehicula cubilia leo etiam nam.
+                  Send your message and our team will respond with the details you need.
                   </p>
                 </div>
 
@@ -120,10 +159,42 @@ export default function Contact() {
             </div>
           </div>
         </div>
+
+        {/* Office Locations - Separate Cards */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-brand-primary mb-4">Our Office Locations</h2>
+            <p className="text-xl text-text-secondary">Visit us at any of our offices worldwide</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {officeLocations.map((location, index) => (
+              <div
+                key={index}
+                className={`${location.bgColor} rounded-[2rem] p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-black/10 hover:-translate-y-2 group`}
+              >
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-14 h-14 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <MapPin className="h-7 w-7 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 leading-tight pt-2">{location.title}</h3>
+                </div>
+
+                <div className="space-y-2">
+                  {location.address.map((line, idx) => (
+                    <p key={idx} className="text-gray-900 text-base leading-relaxed opacity-90">
+                      {line}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Map Section */}
-      <section className="h-96 bg-bg-section relative">
+      <section className="h-96 bg-bg-section relative mt-20">
         <div className="w-full h-full">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8970097242474!2d90.38750831498152!3d23.750842494584695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1234567890123!5m2!1sen!2sbd"
