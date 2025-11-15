@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { createClient } from '@supabase/supabase-js';
+import { checkGeoblocking } from './_middleware/geoblocking';
 
 // Initialize Supabase
 const supabaseUrl = process.env.SUPABASE_URL;
@@ -38,6 +39,11 @@ function formatSalary(min: number | null, max: number | null, currency: string |
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  // Check geoblocking first
+  if (checkGeoblocking(req, res)) {
+    return; // Request was blocked
+  }
+
   // Set CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
