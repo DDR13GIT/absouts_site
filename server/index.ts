@@ -32,6 +32,11 @@ app.use((req, res, next) => {
   // Vercel provides this in the x-vercel-ip-country header
   const country = req.headers['x-vercel-ip-country'] as string || 'UNKNOWN';
 
+  // Debug logging
+  if (process.env.NODE_ENV === 'development') {
+    log(`[Geoblocking] Country: ${country}, Blocked list: ${blockedCountryList.join(', ')}, Headers: ${JSON.stringify(req.headers)}`);
+  }
+
   // Check if the country is blocked
   if (blockedCountryList.includes(country.toUpperCase())) {
     // Return a 403 Forbidden response with a custom message
