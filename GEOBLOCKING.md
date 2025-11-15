@@ -1,39 +1,56 @@
 # Geoblocking Configuration
 
-This application (Vite + Express) uses Vercel Edge Middleware to implement geoblocking functionality, allowing you to restrict access from specific countries.
+This application (Vite + Express) uses **Vercel's built-in geo-aware redirects** to implement geoblocking functionality, allowing you to restrict access from specific countries.
 
 ## How It Works
 
-The Edge Middleware (`middleware.js`) runs on Vercel's Edge Network and intercepts ALL incoming requests (including static files, API routes, and page requests) BEFORE they reach your application. It checks the visitor's country using Vercel's built-in geolocation data. If the country is in the blocked list, the user receives a 403 Forbidden page.
+Vercel's infrastructure checks the `x-vercel-ip-country` header for ALL incoming requests. When a request comes from a blocked country, Vercel automatically redirects to a blocked page (`/blocked.html`) BEFORE serving any content. This works for static files, API routes, and all page requests.
 
 ## Configuration
 
-### Environment Variable
+### Blocked Countries List
 
-Add the following environment variable to configure which countries to block:
+To block countries, you need to add redirect rules in `vercel.json`. Each blocked country needs its own redirect rule.
 
-```bash
-NEXT_PUBLIC_BLOCKED_COUNTRIES=CN,RU,KP
+**Edit `vercel.json`:**
+
+```json
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "BD"
+        }
+      ],
+      "destination": "/blocked.html",
+      "permanent": false
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "CN"
+        }
+      ],
+      "destination": "/blocked.html",
+      "permanent": false
+    }
+  ]
+}
 ```
+
+**To block additional countries:** Add more redirect objects with different country codes.
 
 **Format:**
-- Comma-separated list of ISO 3166-1 alpha-2 country codes
-- Country codes should be 2 letters (e.g., US, GB, CN)
-- Case insensitive (automatically converted to uppercase)
-- Spaces are automatically trimmed
-
-**Examples:**
-
-```bash
-# Block China, Russia, and North Korea
-NEXT_PUBLIC_BLOCKED_COUNTRIES=CN,RU,KP
-
-# Block a single country
-NEXT_PUBLIC_BLOCKED_COUNTRIES=CN
-
-# Allow all countries (leave empty)
-NEXT_PUBLIC_BLOCKED_COUNTRIES=
-```
+- Country codes must be ISO 3166-1 alpha-2 (2 letters)
+- Country codes are case-sensitive in vercel.json (use UPPERCASE)
+- Each blocked country needs its own redirect rule
 
 ### Common Country Codes
 
@@ -65,14 +82,10 @@ NEXT_PUBLIC_BLOCKED_COUNTRIES=CN,RU
 
 ### 2. Vercel Deployment
 
-1. Go to your Vercel project dashboard
-2. Navigate to **Settings** → **Environment Variables**
-3. Add a new environment variable:
-   - **Name:** `NEXT_PUBLIC_BLOCKED_COUNTRIES`
-   - **Value:** Your comma-separated country codes (e.g., `CN,RU,KP`)
-   - **Environments:** Select Production, Preview, and/or Development as needed
-4. Click **Save**
-5. Redeploy your application for changes to take effect
+1. Edit `vercel.json` and add redirect rules for each country you want to block
+2. Commit and push your changes to trigger a deployment
+3. Vercel will automatically apply the geoblocking rules
+4. No environment variables needed - configuration is in `vercel.json`
 
 ### 3. Testing
 
@@ -88,20 +101,19 @@ To test the geoblocking feature:
    - Local testing will always show `country: UNKNOWN` and allow access
    - For local testing, you can modify the middleware to simulate countries
 
-## Middleware Details
+## Implementation Details
 
 **Files:**
-- `middleware.js` - Edge Middleware function
-- `middleware.config.json` - Matcher configuration
-- `vercel.json` - Edge runtime configuration
+- `vercel.json` - Redirect configuration with geo-targeting
+- `public/blocked.html` - Blocked page HTML
+- API routes use `shared/geoblocking.ts` for additional serverless-level blocking
 
 **Features:**
-- Runs on Vercel Edge Network (ultra-fast, global)
-- Minimal performance impact
-- Custom 403 blocked page with country information
+- Uses Vercel's native redirect functionality (ultra-fast, no custom code)
+- Minimal performance impact (runs at CDN level)
+- Custom blocked page with professional design
 - Intercepts ALL requests (static files, API routes, pages)
-- Safe fallback if no countries are configured
-- Works with Vite + Express (non-Next.js) projects
+- Works with ANY framework (Vite, Next.js, Express, etc.)
 
 **Performance:**
 - Runs at the edge (closest to the user)
@@ -147,10 +159,9 @@ When a user from a blocked country tries to access the site, they see a custom p
 
 To disable geoblocking entirely:
 
-1. Remove or empty the `NEXT_PUBLIC_BLOCKED_COUNTRIES` environment variable in Vercel
-2. Redeploy the application
-
-Or delete the `middleware.ts` file to completely remove the feature.
+1. Remove the `redirects` array from `vercel.json`
+2. Commit and push your changes
+3. The site will be accessible from all countries
 
 ## Security Considerations
 
