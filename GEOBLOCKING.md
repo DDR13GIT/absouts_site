@@ -1,10 +1,10 @@
 # Geoblocking Configuration
 
-This application uses Vercel Edge Middleware to implement geoblocking functionality, allowing you to restrict access from specific countries.
+This application (Vite + Express) uses Vercel Edge Middleware to implement geoblocking functionality, allowing you to restrict access from specific countries.
 
 ## How It Works
 
-The middleware intercepts all incoming requests and checks the visitor's country using Vercel's built-in geolocation headers. If the country is in the blocked list, the user receives a 403 Forbidden page.
+The Edge Middleware (`middleware.js`) runs on Vercel's Edge Network and intercepts ALL incoming requests (including static files, API routes, and page requests) BEFORE they reach your application. It checks the visitor's country using Vercel's built-in geolocation data. If the country is in the blocked list, the user receives a 403 Forbidden page.
 
 ## Configuration
 
@@ -90,14 +90,18 @@ To test the geoblocking feature:
 
 ## Middleware Details
 
-**File:** `middleware.ts`
+**Files:**
+- `middleware.js` - Edge Middleware function
+- `middleware.config.json` - Matcher configuration
+- `vercel.json` - Edge runtime configuration
 
 **Features:**
 - Runs on Vercel Edge Network (ultra-fast, global)
 - Minimal performance impact
 - Custom 403 blocked page with country information
-- Excludes API routes, static files, and images
+- Intercepts ALL requests (static files, API routes, pages)
 - Safe fallback if no countries are configured
+- Works with Vite + Express (non-Next.js) projects
 
 **Performance:**
 - Runs at the edge (closest to the user)

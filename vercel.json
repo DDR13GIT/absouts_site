@@ -4,7 +4,7 @@
   "outputDirectory": "dist/public",
   "functions": {
     "middleware.js": {
-      "runtime": "@vercel/node@2.0.0"
+      "runtime": "edge"
     }
   },
   "rewrites": [
