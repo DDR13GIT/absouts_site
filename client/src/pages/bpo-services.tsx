@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
 import { SERVICE_ICONS } from "@/lib/assets";
+import bpoServiceBg from "@/assets/bpo_service_bg.svg";
+import bpoServiceBgInverted from "@/assets/bpo_service_bg_inverted.svg";
 
 /**
  * Business Process Outsourcing Service Detail Page
@@ -30,7 +32,9 @@ export default function BPOServices() {
         "Compliance with data retention requirements"
       ],
       advantage: "Improved operational efficiency through quick document access, enhanced data security and backup protection, reduced physical storage costs, and ensured compliance with record retention regulations",
-      gradient: "from-blue-50/50 to-cyan-50/50"
+      backgroundImage: bpoServiceBg,
+      textColor: "#F7E6D4",
+      isDark: true
     },
     {
       icon: SERVICE_ICONS.document,
@@ -50,7 +54,9 @@ export default function BPOServices() {
         "Returns and exchange processing"
       ],
       advantage: "Faster order turnaround times, reduced processing errors, improved customer satisfaction through timely deliveries, and real-time visibility into order status and inventory levels",
-      gradient: "from-purple-50/50 to-pink-50/50"
+      backgroundImage: bpoServiceBgInverted,
+      textColor: "#61605D",
+      isDark: false
     },
     {
       icon: SERVICE_ICONS.network,
@@ -70,7 +76,9 @@ export default function BPOServices() {
         "Multi-channel support integration"
       ],
       advantage: "Improved response times enhance customer satisfaction, professional communication maintains brand reputation, freed internal resources for core activities, and comprehensive tracking ensures no inquiry goes unanswered",
-      gradient: "from-green-50/50 to-emerald-50/50"
+      backgroundImage: bpoServiceBg,
+      textColor: "#F7E6D4",
+      isDark: true
     },
     {
       icon: SERVICE_ICONS.team,
@@ -90,7 +98,9 @@ export default function BPOServices() {
         "Claims coordination and vendor liaison"
       ],
       advantage: "Accurate employee records support better workforce management, streamlined benefits administration improves employee satisfaction, reduced HR administrative burden, and ensured compliance with employment documentation requirements",
-      gradient: "from-amber-50/50 to-orange-50/50"
+      backgroundImage: bpoServiceBgInverted,
+      textColor: "#61605D",
+      isDark: false
     },
     {
       icon: SERVICE_ICONS.scale,
@@ -116,7 +126,9 @@ export default function BPOServices() {
         "Remediation planning and implementation"
       ],
       advantage: "Reduced legal and financial risks through proactive compliance, peace of mind with expert regulatory guidance, audit-ready documentation and processes, and protection of business reputation through adherence to standards",
-      gradient: "from-indigo-50/50 to-violet-50/50"
+      backgroundImage: bpoServiceBg,
+      textColor: "#F7E6D4",
+      isDark: true
     }
   ];
 
@@ -140,21 +152,36 @@ export default function BPOServices() {
           {/* BPO Services Grid */}
           <div className="space-y-8">
             {bpoServices.map((service, index) => (
-              <div key={index} className={`bg-gradient-to-br ${service.gradient} rounded-2xl shadow-medium hover:shadow-strong transition-all duration-300 overflow-hidden border border-gray-100`}>
-                <div className="p-8 bg-white/80 backdrop-blur-sm">
+              <div
+                key={index}
+                className="rounded-2xl shadow-medium hover:shadow-strong transition-all duration-300 overflow-hidden border border-gray-200"
+                style={{
+                  backgroundImage: `url(${service.backgroundImage})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center'
+                }}
+              >
+                <div className="p-8">
                   {/* Header with Icon and Title */}
                   <div className="flex items-start gap-6 mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-xl flex items-center justify-center flex-shrink-0 shadow-medium">
-                      <img src={service.icon} alt={service.title} className="w-10 h-10 object-contain brightness-0 invert" />
+                    <div
+                      className="w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0 shadow-medium"
+                      style={{ backgroundColor: service.isDark ? '#F7E6D4' : '#61605D' }}
+                    >
+                      <img
+                        src={service.icon}
+                        alt={service.title}
+                        className={`w-10 h-10 object-contain ${service.isDark ? 'brightness-0' : 'brightness-0 invert'}`}
+                      />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-brand-primary mb-2">{service.title}</h3>
-                      <p className="text-lg text-brand-accent font-medium">{service.subtitle}</p>
+                      <h3 className="text-4xl font-extrabold mb-2" style={{ color: service.textColor }}>{service.title}</h3>
+                      <p className="text-lg font-light" style={{ color: service.textColor, opacity: 0.9 }}>{service.subtitle}</p>
                     </div>
                   </div>
 
                   {/* Description */}
-                  <p className="text-text-secondary leading-relaxed mb-6">
+                  <p className="leading-relaxed mb-6 font-semibold" style={{ color: service.textColor, opacity: 0.85 }}>
                     {service.description}
                   </p>
 
@@ -162,12 +189,12 @@ export default function BPOServices() {
                   {/* Document Management */}
                   {service.whatWeManage && (
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold text-brand-primary mb-3">What We Manage:</h4>
+                      <h4 className="text-xl font-bold mb-3" style={{ color: service.textColor }}>What We Manage:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {service.whatWeManage.map((item, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-text-secondary text-sm">{item}</span>
+                            <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
+                            <span className="text-sm font-semibold" style={{ color: service.textColor, opacity: 0.85 }}>{item}</span>
                           </div>
                         ))}
                       </div>
@@ -176,12 +203,12 @@ export default function BPOServices() {
 
                   {service.ourApproach && (
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold text-brand-primary mb-3">Our Approach:</h4>
+                      <h4 className="text-lg font-bold mb-3" style={{ color: service.textColor }}>Our Approach:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {service.ourApproach.map((item, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-text-secondary text-sm">{item}</span>
+                            <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
+                            <span className="text-sm" style={{ color: service.textColor, opacity: 0.85 }}>{item}</span>
                           </div>
                         ))}
                       </div>
@@ -191,12 +218,12 @@ export default function BPOServices() {
                   {/* Order Processing */}
                   {service.orderProcessing && (
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold text-brand-primary mb-3">Order Processing:</h4>
+                      <h4 className="text-lg font-bold mb-3" style={{ color: service.textColor }}>Order Processing:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {service.orderProcessing.map((item, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-text-secondary text-sm">{item}</span>
+                            <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
+                            <span className="text-sm" style={{ color: service.textColor, opacity: 0.85 }}>{item}</span>
                           </div>
                         ))}
                       </div>
@@ -205,12 +232,12 @@ export default function BPOServices() {
 
                   {service.fulfillmentCoordination && (
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold text-brand-primary mb-3">Fulfillment Coordination:</h4>
+                      <h4 className="text-lg font-bold mb-3" style={{ color: service.textColor }}>Fulfillment Coordination:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {service.fulfillmentCoordination.map((item, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-text-secondary text-sm">{item}</span>
+                            <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
+                            <span className="text-sm" style={{ color: service.textColor, opacity: 0.85 }}>{item}</span>
                           </div>
                         ))}
                       </div>
@@ -220,12 +247,12 @@ export default function BPOServices() {
                   {/* Email & Chat Support */}
                   {service.whatWeHandle && (
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold text-brand-primary mb-3">What We Handle:</h4>
+                      <h4 className="text-lg font-bold mb-3" style={{ color: service.textColor }}>What We Handle:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {service.whatWeHandle.map((item, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-text-secondary text-sm">{item}</span>
+                            <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
+                            <span className="text-sm" style={{ color: service.textColor, opacity: 0.85 }}>{item}</span>
                           </div>
                         ))}
                       </div>
@@ -234,12 +261,12 @@ export default function BPOServices() {
 
                   {service.serviceStandards && (
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold text-brand-primary mb-3">Our Service Standards:</h4>
+                      <h4 className="text-lg font-bold mb-3" style={{ color: service.textColor }}>Our Service Standards:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {service.serviceStandards.map((item, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-text-secondary text-sm">{item}</span>
+                            <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
+                            <span className="text-sm" style={{ color: service.textColor, opacity: 0.85 }}>{item}</span>
                           </div>
                         ))}
                       </div>
@@ -249,12 +276,12 @@ export default function BPOServices() {
                   {/* HR Support */}
                   {service.employeeRecordManagement && (
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold text-brand-primary mb-3">Employee Record Management:</h4>
+                      <h4 className="text-lg font-bold mb-3" style={{ color: service.textColor }}>Employee Record Management:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {service.employeeRecordManagement.map((item, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-text-secondary text-sm">{item}</span>
+                            <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
+                            <span className="text-sm" style={{ color: service.textColor, opacity: 0.85 }}>{item}</span>
                           </div>
                         ))}
                       </div>
@@ -263,12 +290,12 @@ export default function BPOServices() {
 
                   {service.benefitsAdministration && (
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold text-brand-primary mb-3">Benefits Administration:</h4>
+                      <h4 className="text-lg font-bold mb-3" style={{ color: service.textColor }}>Benefits Administration:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {service.benefitsAdministration.map((item, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-text-secondary text-sm">{item}</span>
+                            <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
+                            <span className="text-sm" style={{ color: service.textColor, opacity: 0.85 }}>{item}</span>
                           </div>
                         ))}
                       </div>
@@ -278,12 +305,12 @@ export default function BPOServices() {
                   {/* Compliance */}
                   {service.complianceMonitoring && (
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold text-brand-primary mb-3">Compliance Monitoring:</h4>
+                      <h4 className="text-lg font-bold mb-3" style={{ color: service.textColor }}>Compliance Monitoring:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {service.complianceMonitoring.map((item, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-text-secondary text-sm">{item}</span>
+                            <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
+                            <span className="text-sm" style={{ color: service.textColor, opacity: 0.85 }}>{item}</span>
                           </div>
                         ))}
                       </div>
@@ -292,12 +319,12 @@ export default function BPOServices() {
 
                   {service.documentationReporting && (
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold text-brand-primary mb-3">Documentation & Reporting:</h4>
+                      <h4 className="text-lg font-bold mb-3" style={{ color: service.textColor }}>Documentation & Reporting:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {service.documentationReporting.map((item, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-text-secondary text-sm">{item}</span>
+                            <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
+                            <span className="text-sm" style={{ color: service.textColor, opacity: 0.85 }}>{item}</span>
                           </div>
                         ))}
                       </div>
@@ -306,12 +333,12 @@ export default function BPOServices() {
 
                   {service.auditReadiness && (
                     <div className="mb-6">
-                      <h4 className="text-lg font-bold text-brand-primary mb-3">Audit Readiness:</h4>
+                      <h4 className="text-lg font-bold mb-3" style={{ color: service.textColor }}>Audit Readiness:</h4>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {service.auditReadiness.map((item, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-text-secondary text-sm">{item}</span>
+                            <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
+                            <span className="text-sm" style={{ color: service.textColor, opacity: 0.85 }}>{item}</span>
                           </div>
                         ))}
                       </div>
@@ -319,9 +346,15 @@ export default function BPOServices() {
                   )}
 
                   {/* The Advantage Section */}
-                  <div className="bg-gradient-to-r from-success/10 to-brand-accent/10 rounded-xl p-4 border-l-4 border-brand-accent">
-                    <h4 className="text-sm font-bold text-brand-primary mb-2">The Advantage:</h4>
-                    <p className="text-text-secondary text-sm leading-relaxed">{service.advantage}</p>
+                  <div
+                    className="rounded-xl p-4 border-l-4"
+                    style={{
+                      backgroundColor: service.isDark ? 'rgba(247, 230, 212, 0.1)' : 'rgba(97, 96, 93, 0.1)',
+                      borderLeftColor: service.textColor
+                    }}
+                  >
+                    <h4 className="text-sm font-bold mb-2" style={{ color: service.textColor }}>The Advantage:</h4>
+                    <p className="text-sm leading-relaxed" style={{ color: service.textColor, opacity: 0.85 }}>{service.advantage}</p>
                   </div>
                 </div>
               </div>
