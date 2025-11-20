@@ -44,7 +44,11 @@ export default function Home() {
                 </h1>
 
                 <p className="text-base text-text-secondary leading-relaxed max-w-xl" data-testid="hero-description">
-                  {t.home.hero.subtitle}
+                  We deliver comprehensive outsourcing services—from{" "}
+                  <span className="font-semibold">Cloud Accounting</span> and{" "}
+                  <span className="font-semibold">BPO</span> to{" "}
+                  <span className="font-semibold">Software Development</span>
+                  —by aligning the latest technology with industry best practices to help you operate efficiently and grow.
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-2">
