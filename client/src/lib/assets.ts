@@ -62,6 +62,18 @@ import faceSwapping from "@assets/Photoshop-Swapping-Facesa_1758366312457.jpg";
 import colorCorrection from "@assets/unnamed (10)_1758366312457.jpg";
 import shadowReflectionExample from "@assets/Untitled-1-26-1024x615_1758366312458.jpg";
 
+// BPO Service Backgrounds
+import bpoServiceBG1 from "@assets/bpoServiceBG1.svg";
+import bpoServiceBG2 from "@assets/bpoServiceBG2.svg";
+
+// Cloud Accounting Service Backgrounds
+import caServiceBG1 from "@assets/caServiceBG1.svg";
+import caServiceBG2 from "@assets/caServiceBG2.svg";
+
+// Image Editing Service Backgrounds
+import ieServiceBG1 from "@assets/ieServiceBG1.svg";
+import ieServiceBG2 from "@assets/ieServiceBG2.svg";
+
 /**
  * Technology logos organized by category
  */
@@ -146,7 +158,34 @@ export const IMAGE_EDITING_EXAMPLES = {
   shadowReflection: shadowReflectionExample,
 } as const;
 
+/**
+ * BPO Service backgrounds
+ */
+export const BPO_BACKGROUNDS = {
+  bg1: bpoServiceBG1,
+  bg2: bpoServiceBG2,
+} as const;
+
+/**
+ * Cloud Accounting Service backgrounds
+ */
+export const CA_BACKGROUNDS = {
+  bg1: caServiceBG1,
+  bg2: caServiceBG2,
+} as const;
+
+/**
+ * Image Editing Service backgrounds
+ */
+export const IE_BACKGROUNDS = {
+  bg1: ieServiceBG1,
+  bg2: ieServiceBG2,
+} as const;
+
 // Type exports for better TypeScript support
 export type TechnologyLogo = keyof typeof TECHNOLOGY_LOGOS;
 export type ServiceIcon = keyof typeof SERVICE_ICONS;
 export type ImageEditingExample = keyof typeof IMAGE_EDITING_EXAMPLES;
+export type BPOBackground = keyof typeof BPO_BACKGROUNDS;
+export type CABackground = keyof typeof CA_BACKGROUNDS;
+export type IEBackground = keyof typeof IE_BACKGROUNDS;

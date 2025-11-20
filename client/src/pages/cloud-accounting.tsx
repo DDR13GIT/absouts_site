@@ -1,8 +1,8 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, CheckCircle } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
-import { SERVICE_ICONS } from "@/lib/assets";
+import { SERVICE_ICONS, CA_BACKGROUNDS } from "@/lib/assets";
 
 /**
  * Cloud Accounting Service Detail Page
@@ -166,52 +166,73 @@ export default function CloudAccounting() {
               End-to-end bookkeeping, reporting, and compliance handled with precision and automation. Removes manual workload and enforces consistent financial accuracy.
             </p>
           </div>
-
-          {/* Accounting Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {accountingServices.map((service, index) => (
-              <div key={index} className={`${service.bgColor} rounded-[2rem] shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-black/10 group hover:-translate-y-2`}>
-                <div className="p-10">
-                  {/* Header with Icon and Title */}
-                  <div className="flex items-start gap-6 mb-8">
-                    <div className={`w-20 h-20 bg-gradient-to-br ${service.iconBg} rounded-[1.25rem] flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                      <img src={service.icon} alt={service.title} className={`w-12 h-12 object-contain ${service.textColor === 'text-white' ? 'brightness-0' : 'brightness-0 invert'}`} />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className={`text-3xl font-bold ${service.textColor} mb-3 leading-tight`}>{service.title}</h3>
-                      <p className={`text-xl ${service.subtitleColor} font-semibold`}>{service.subtitle}</p>
-                    </div>
-                  </div>
-
-                  {/* Description */}
-                  <p className={`${service.textColor} text-lg leading-relaxed mb-8 opacity-90`}>
-                    {service.description}
-                  </p>
-
-                  {/* What We Provide Section */}
-                  <div className="mb-8">
-                    <h4 className={`text-xl font-bold ${service.textColor} mb-5`}>What We Provide:</h4>
-                    <div className="space-y-3">
-                      {service.whatWeProvide.map((item, idx) => (
-                        <div key={idx} className="flex items-start gap-3">
-                          <div className={`w-2 h-2 ${service.textColor === 'text-white' ? 'bg-white' : 'bg-gray-900'} rounded-full mt-2.5 flex-shrink-0 opacity-70`}></div>
-                          <span className={`${service.textColor} text-base leading-relaxed opacity-90`}>{item}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* The Advantage Section */}
-                  <div className={`${service.textColor === 'text-white' ? 'bg-white/20' : 'bg-black/5'} backdrop-blur-sm rounded-2xl p-6 border-l-4 ${service.textColor === 'text-white' ? 'border-white' : 'border-gray-900'} shadow-sm`}>
-                    <h4 className={`text-base font-bold ${service.textColor} mb-3 uppercase tracking-wide`}>The Advantage:</h4>
-                    <p className={`${service.textColor} text-base leading-relaxed opacity-90`}>{service.advantage}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
+
+      {/* Accounting Services - Full Width Sections */}
+      {accountingServices.map((service, index) => {
+        const isEven = index % 2 === 0;
+        const bgClass = isEven ? 'bg-bg-base' : 'bg-bg-base-darker';
+        const iconBgColor = isEven ? 'bg-brand-accent' : 'bg-brand-primary';
+        const backgroundImage = isEven ? CA_BACKGROUNDS.bg1 : CA_BACKGROUNDS.bg2;
+
+        return (
+          <section
+            key={index}
+            className={`relative py-20 ${bgClass}`}
+            style={{
+              backgroundImage: `url(${backgroundImage})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            {/* Content Container */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              {/* Service Header */}
+              <div className="mb-12">
+                <div className="flex mb-6">
+                  <div
+                    className={`w-20 h-20 rounded-xl flex items-center justify-center shadow-medium ${iconBgColor}`}
+                  >
+                    <img
+                      src={service.icon}
+                      alt={service.title}
+                      className="w-12 h-12 object-contain brightness-0 invert"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-4xl font-bold mb-4 text-gray-900">{service.title}</h3>
+                <p className="text-lg font-medium max-w-3xl text-gray-800">{service.subtitle}</p>
+              </div>
+
+              {/* Description */}
+              <p className="text-base font-normal mb-12 max-w-4xl text-gray-700">
+                {service.description}
+              </p>
+
+              {/* What We Provide Section */}
+              <div className="mb-8">
+                <h4 className="text-xl font-semibold mb-6 text-gray-900">What We Provide</h4>
+                <div className="space-y-3">
+                  {service.whatWeProvide.map((item, idx) => (
+                    <div key={idx} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-accent" />
+                      <span className="text-base leading-relaxed text-gray-800">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* The Advantage Section */}
+              <div className="mt-8">
+                <h4 className="text-xl font-semibold mb-6 text-gray-900">The Advantage</h4>
+                <p className="text-base leading-relaxed text-gray-700">{service.advantage}</p>
+              </div>
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 }

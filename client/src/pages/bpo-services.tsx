@@ -1,10 +1,8 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, CheckCircle } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
-import { SERVICE_ICONS } from "@/lib/assets";
-import bpoServiceBg from "@/assets/bpo_service_bg.svg";
-import bpoServiceBgInverted from "@/assets/bpo_service_bg_inverted.svg";
+import { SERVICE_ICONS, BPO_BACKGROUNDS } from "@/lib/assets";
 
 /**
  * Business Process Outsourcing Service Detail Page
@@ -30,10 +28,7 @@ export default function BPOServices() {
         "Regular audits and archival procedures",
         "Compliance with data retention requirements"
       ],
-      advantage: "Improved operational efficiency through quick document access, enhanced data security and backup protection, reduced physical storage costs, and ensured compliance with record retention regulations.",
-      backgroundImage: bpoServiceBg,
-      textColor: "#F7E6D4",
-      isDark: true
+      advantage: "Improved operational efficiency through quick document access, enhanced data security and backup protection, reduced physical storage costs, and ensured compliance with record retention regulations."
     },
     {
       icon: SERVICE_ICONS.document,
@@ -51,10 +46,7 @@ export default function BPOServices() {
         "Tracking number generation and customer notifications",
         "Returns and exchange processing"
       ],
-      advantage: "Faster order turnaround times, reduced processing errors, improved customer satisfaction through timely deliveries, and real-time visibility into order status and inventory levels.",
-      backgroundImage: bpoServiceBgInverted,
-      textColor: "#61605D",
-      isDark: false
+      advantage: "Faster order turnaround times, reduced processing errors, improved customer satisfaction through timely deliveries, and real-time visibility into order status and inventory levels."
     },
     {
       icon: SERVICE_ICONS.network,
@@ -72,10 +64,7 @@ export default function BPOServices() {
         "Issue escalation and resolution tracking",
         "Multi-channel support integration"
       ],
-      advantage: "Improved response times enhance customer satisfaction, professional communication maintains brand reputation, freed internal resources for core activities, and comprehensive tracking ensures no inquiry goes unanswered.",
-      backgroundImage: bpoServiceBg,
-      textColor: "#F7E6D4",
-      isDark: true
+      advantage: "Improved response times enhance customer satisfaction, professional communication maintains brand reputation, freed internal resources for core activities, and comprehensive tracking ensures no inquiry goes unanswered."
     },
     {
       icon: SERVICE_ICONS.team,
@@ -93,10 +82,7 @@ export default function BPOServices() {
         "Employee benefits communication and support",
         "Claims coordination and vendor liaison"
       ],
-      advantage: "Accurate employee records support better workforce management, streamlined benefits administration improves employee satisfaction, reduced HR administrative burden, and ensured compliance with employment documentation requirements.",
-      backgroundImage: bpoServiceBgInverted,
-      textColor: "#61605D",
-      isDark: false
+      advantage: "Accurate employee records support better workforce management, streamlined benefits administration improves employee satisfaction, reduced HR administrative burden, and ensured compliance with employment documentation requirements."
     },
     {
       icon: SERVICE_ICONS.scale,
@@ -120,10 +106,7 @@ export default function BPOServices() {
         "Regulatory authority liaison and communication",
         "Remediation planning and implementation"
       ],
-      advantage: "Reduced legal and financial risks through proactive compliance, peace of mind with expert regulatory guidance, audit-ready documentation and processes, and protection of business reputation through adherence to standards.",
-      backgroundImage: bpoServiceBg,
-      textColor: "#F7E6D4",
-      isDark: true
+      advantage: "Reduced legal and financial risks through proactive compliance, peace of mind with expert regulatory guidance, audit-ready documentation and processes, and protection of business reputation through adherence to standards."
     }
   ];
 
@@ -144,223 +127,224 @@ export default function BPOServices() {
             </p>
           </div>
 
-          {/* BPO Services Grid */}
-          <div className="space-y-8">
-            {bpoServices.map((service, index) => (
-              <div
-                key={index}
-                className="rounded-2xl shadow-medium hover:shadow-strong transition-all duration-300 overflow-hidden border border-gray-200 relative"
-              >
-                {/* Background with reduced opacity */}
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    backgroundImage: `url(${service.backgroundImage})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
-                />
-
-                {/* Content */}
-                <div className="relative p-12">
-                  {/* Primary Tier: Service Name + Value Statement */}
-                  <div className="flex items-start gap-6 mb-4">
-                    <div
-                      className="w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0 shadow-medium"
-                      style={{ backgroundColor: service.isDark ? '#F7E6D4' : '#61605D' }}
-                    >
-                      <img
-                        src={service.icon}
-                        alt={service.title}
-                        className={`w-10 h-10 object-contain ${service.isDark ? 'brightness-0' : 'brightness-0 invert'}`}
-                      />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-3xl font-bold mb-2" style={{ color: service.textColor }}>{service.title}</h3>
-                      <p className="text-base font-medium" style={{ color: service.textColor, opacity: 0.8 }}>{service.subtitle}</p>
-                    </div>
-                  </div>
-
-                  {/* Advantage as closing line */}
-                  <p className="text-base font-normal mb-8" style={{ color: service.textColor, opacity: 0.9 }}>
-                    {service.advantage}
-                  </p>
-
-                  {/* Secondary Tier: Grouped Sections */}
-                  <div className="space-y-4">
-                    {/* Document Management */}
-                    {service.whatWeManage && (
-                      <div>
-                        <h4 className="text-lg font-semibold mt-10 mb-4" style={{ color: service.textColor }}>What We Manage:</h4>
-                        <div className="space-y-2">
-                          {service.whatWeManage.map((item, idx) => (
-                            <div key={idx} className="flex items-start gap-3">
-                              <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
-                              <span className="text-sm leading-relaxed" style={{ color: service.textColor, opacity: 0.9 }}>{item}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {service.ourApproach && (
-                      <div>
-                        <h4 className="text-lg font-semibold mt-10 mb-4" style={{ color: service.textColor }}>Our Approach:</h4>
-                        <div className="space-y-2">
-                          {service.ourApproach.map((item, idx) => (
-                            <div key={idx} className="flex items-start gap-3">
-                              <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
-                              <span className="text-sm leading-relaxed" style={{ color: service.textColor, opacity: 0.9 }}>{item}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Order Processing */}
-                  <div className="space-y-4">
-                    {service.orderProcessing && (
-                      <div>
-                        <h4 className="text-lg font-semibold mt-10 mb-4" style={{ color: service.textColor }}>Order Processing:</h4>
-                        <div className="space-y-2">
-                          {service.orderProcessing.map((item, idx) => (
-                            <div key={idx} className="flex items-start gap-3">
-                              <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
-                              <span className="text-sm leading-relaxed" style={{ color: service.textColor, opacity: 0.9 }}>{item}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {service.fulfillmentCoordination && (
-                      <div>
-                        <h4 className="text-lg font-semibold mt-10 mb-4" style={{ color: service.textColor }}>Fulfillment Coordination:</h4>
-                        <div className="space-y-2">
-                          {service.fulfillmentCoordination.map((item, idx) => (
-                            <div key={idx} className="flex items-start gap-3">
-                              <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
-                              <span className="text-sm leading-relaxed" style={{ color: service.textColor, opacity: 0.9 }}>{item}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Email & Chat Support */}
-                  <div className="space-y-4">
-                    {service.whatWeHandle && (
-                      <div>
-                        <h4 className="text-lg font-semibold mt-10 mb-4" style={{ color: service.textColor }}>What We Handle:</h4>
-                        <div className="space-y-2">
-                          {service.whatWeHandle.map((item, idx) => (
-                            <div key={idx} className="flex items-start gap-3">
-                              <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
-                              <span className="text-sm leading-relaxed" style={{ color: service.textColor, opacity: 0.9 }}>{item}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {service.serviceStandards && (
-                      <div>
-                        <h4 className="text-lg font-semibold mt-10 mb-4" style={{ color: service.textColor }}>Our Service Standards:</h4>
-                        <div className="space-y-2">
-                          {service.serviceStandards.map((item, idx) => (
-                            <div key={idx} className="flex items-start gap-3">
-                              <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
-                              <span className="text-sm leading-relaxed" style={{ color: service.textColor, opacity: 0.9 }}>{item}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* HR Support */}
-                  <div className="space-y-4">
-                    {service.employeeRecordManagement && (
-                      <div>
-                        <h4 className="text-lg font-semibold mt-10 mb-4" style={{ color: service.textColor }}>Employee Record Management:</h4>
-                        <div className="space-y-2">
-                          {service.employeeRecordManagement.map((item, idx) => (
-                            <div key={idx} className="flex items-start gap-3">
-                              <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
-                              <span className="text-sm leading-relaxed" style={{ color: service.textColor, opacity: 0.9 }}>{item}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {service.benefitsAdministration && (
-                      <div>
-                        <h4 className="text-lg font-semibold mt-10 mb-4" style={{ color: service.textColor }}>Benefits Administration:</h4>
-                        <div className="space-y-2">
-                          {service.benefitsAdministration.map((item, idx) => (
-                            <div key={idx} className="flex items-start gap-3">
-                              <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
-                              <span className="text-sm leading-relaxed" style={{ color: service.textColor, opacity: 0.9 }}>{item}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Compliance */}
-                  <div className="space-y-4">
-                    {service.complianceMonitoring && (
-                      <div>
-                        <h4 className="text-lg font-semibold mt-10 mb-4" style={{ color: service.textColor }}>Compliance Monitoring:</h4>
-                        <div className="space-y-2">
-                          {service.complianceMonitoring.map((item, idx) => (
-                            <div key={idx} className="flex items-start gap-3">
-                              <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
-                              <span className="text-sm leading-relaxed" style={{ color: service.textColor, opacity: 0.9 }}>{item}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {service.documentationReporting && (
-                      <div>
-                        <h4 className="text-lg font-semibold mt-10 mb-4" style={{ color: service.textColor }}>Documentation & Reporting:</h4>
-                        <div className="space-y-2">
-                          {service.documentationReporting.map((item, idx) => (
-                            <div key={idx} className="flex items-start gap-3">
-                              <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
-                              <span className="text-sm leading-relaxed" style={{ color: service.textColor, opacity: 0.9 }}>{item}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {service.auditReadiness && (
-                      <div>
-                        <h4 className="text-lg font-semibold mt-10 mb-4" style={{ color: service.textColor }}>Audit Readiness:</h4>
-                        <div className="space-y-2">
-                          {service.auditReadiness.map((item, idx) => (
-                            <div key={idx} className="flex items-start gap-3">
-                              <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: service.textColor }}></div>
-                              <span className="text-sm leading-relaxed" style={{ color: service.textColor, opacity: 0.9 }}>{item}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
+
+      {/* BPO Services Sections - Full Width Backgrounds */}
+      {bpoServices.map((service, index) => {
+        const isEven = index % 2 === 0;
+        const bgClass = isEven ? 'bg-bg-base' : 'bg-bg-base-darker';
+        const iconBgColor = isEven ? 'bg-brand-accent' : 'bg-brand-primary';
+        const backgroundImage = isEven ? BPO_BACKGROUNDS.bg1 : BPO_BACKGROUNDS.bg2;
+
+        return (
+          <section
+            key={index}
+            className={`relative py-20 ${bgClass}`}
+            style={{
+              backgroundImage: `url(${backgroundImage})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            {/* Content Container */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              {/* Primary Tier: Service Name + Value Statement */}
+              <div className="mb-12">
+                <div className="flex mb-6">
+                  <div
+                    className={`w-20 h-20 rounded-xl flex items-center justify-center shadow-medium ${iconBgColor}`}
+                  >
+                    <img
+                      src={service.icon}
+                      alt={service.title}
+                      className="w-12 h-12 object-contain brightness-0 invert"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-4xl font-bold mb-4 text-gray-900">{service.title}</h3>
+                <p className="text-lg font-medium max-w-3xl text-gray-800">{service.subtitle}</p>
+              </div>
+
+              {/* Advantage as closing line */}
+              <p className="text-base font-normal mb-12 max-w-4xl text-gray-700">
+                {service.advantage}
+              </p>
+
+              {/* Secondary Tier: Grouped Sections */}
+              <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                {/* Document Management */}
+                {service.whatWeManage && (
+                  <div>
+                    <h4 className="text-xl font-semibold mb-6 text-gray-900">What We Manage</h4>
+                    <div className="space-y-3">
+                      {service.whatWeManage.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-accent" />
+                          <span className="text-base leading-relaxed text-gray-800">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {service.ourApproach && (
+                  <div>
+                    <h4 className="text-xl font-semibold mb-6 text-gray-900">Our Approach</h4>
+                    <div className="space-y-3">
+                      {service.ourApproach.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-accent" />
+                          <span className="text-base leading-relaxed text-gray-800">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Order Processing */}
+              <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mt-12">
+                {service.orderProcessing && (
+                  <div>
+                    <h4 className="text-xl font-semibold mb-6 text-gray-900">Order Processing</h4>
+                    <div className="space-y-3">
+                      {service.orderProcessing.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-accent" />
+                          <span className="text-base leading-relaxed text-gray-800">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {service.fulfillmentCoordination && (
+                  <div>
+                    <h4 className="text-xl font-semibold mb-6 text-gray-900">Fulfillment Coordination</h4>
+                    <div className="space-y-3">
+                      {service.fulfillmentCoordination.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-accent" />
+                          <span className="text-base leading-relaxed text-gray-800">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Email & Chat Support */}
+              <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mt-12">
+                {service.whatWeHandle && (
+                  <div>
+                    <h4 className="text-xl font-semibold mb-6 text-gray-900">What We Handle</h4>
+                    <div className="space-y-3">
+                      {service.whatWeHandle.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-accent" />
+                          <span className="text-base leading-relaxed text-gray-800">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {service.serviceStandards && (
+                  <div>
+                    <h4 className="text-xl font-semibold mb-6 text-gray-900">Our Service Standards</h4>
+                    <div className="space-y-3">
+                      {service.serviceStandards.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-accent" />
+                          <span className="text-base leading-relaxed text-gray-800">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* HR Support */}
+              <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mt-12">
+                {service.employeeRecordManagement && (
+                  <div>
+                    <h4 className="text-xl font-semibold mb-6 text-gray-900">Employee Record Management</h4>
+                    <div className="space-y-3">
+                      {service.employeeRecordManagement.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-accent" />
+                          <span className="text-base leading-relaxed text-gray-800">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {service.benefitsAdministration && (
+                  <div>
+                    <h4 className="text-xl font-semibold mb-6 text-gray-900">Benefits Administration</h4>
+                    <div className="space-y-3">
+                      {service.benefitsAdministration.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-accent" />
+                          <span className="text-base leading-relaxed text-gray-800">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Compliance */}
+              <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12">
+                {service.complianceMonitoring && (
+                  <div>
+                    <h4 className="text-xl font-semibold mb-6 text-gray-900">Compliance Monitoring</h4>
+                    <div className="space-y-3">
+                      {service.complianceMonitoring.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-accent" />
+                          <span className="text-base leading-relaxed text-gray-800">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {service.documentationReporting && (
+                  <div>
+                    <h4 className="text-xl font-semibold mb-6 text-gray-900">Documentation & Reporting</h4>
+                    <div className="space-y-3">
+                      {service.documentationReporting.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-accent" />
+                          <span className="text-base leading-relaxed text-gray-800">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {service.auditReadiness && (
+                  <div>
+                    <h4 className="text-xl font-semibold mb-6 text-gray-900">Audit Readiness</h4>
+                    <div className="space-y-3">
+                      {service.auditReadiness.map((item, idx) => (
+                        <div key={idx} className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-accent" />
+                          <span className="text-base leading-relaxed text-gray-800">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 }

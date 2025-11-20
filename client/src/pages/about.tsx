@@ -10,6 +10,12 @@ import razwanKaderPhoto from "@assets/razwan_kader_1757771450332.png";
 // Import custom icons for mission and vision
 import lightbulbIcon from "@assets/Asset 3_1757767623439.png";
 import globeIcon from "@assets/Asset 1_1757767623438.png";
+import foundationBG from "@assets/foundationBG.svg";
+import baseDarkerBG from "@assets/baseDarkerBG.svg";
+import baseBG from "@assets/baseBG.svg";
+import missionBG from "@assets/missionBG.svg";
+import visionBG from "@assets/visionBG.svg";
+import valuesBG from "@assets/valuesBG.svg";
 
 export default function About() {
   const { t } = useTranslation();
@@ -102,73 +108,103 @@ export default function About() {
           </div>
 
           {/* Foundation - Moved to Top */}
-          <div className="mb-20">
-            <div className="group bg-mediterranean-linen rounded-[2rem] shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden border-2 border-black/10 p-10" data-testid="foundation-card">
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">{t.about.foundation.title}</h2>
-              <p className="text-gray-900 text-lg mb-6 leading-relaxed opacity-90">
-                {t.about.foundation.description1}
-              </p>
-              <p className="text-gray-900 text-lg leading-relaxed opacity-90">
-                {t.about.foundation.description2}
-              </p>
+          <div className="mb-20 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+            <div
+              className="relative min-h-[600px] lg:min-h-[700px] bg-cover bg-center bg-no-repeat flex items-center"
+              style={{ backgroundImage: `url(${foundationBG})` }}
+              data-testid="foundation-card"
+            >
+              {/* Text Content - Positioned on the right */}
+              <div className="w-full lg:w-1/2 ml-auto p-12 lg:p-16 lg:pr-20 max-w-7xl">
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-8 leading-tight">
+                  {t.about.foundation.title}
+                </h2>
+                <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+                  {t.about.foundation.description1}
+                </p>
+                <p className="text-gray-700 text-lg leading-relaxed">
+                  {t.about.foundation.description2}
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Mission & Vision */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
-            <div className="group bg-mediterranean-sky rounded-[2rem] shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden border-2 border-black/10 p-10" data-testid="mission-card">
-              <div className="w-20 h-20 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
-                <img
-                  src={lightbulbIcon}
-                  alt="Mission icon"
-                  className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t.about.mission.title}</h2>
-              <p className="text-gray-900 text-lg leading-relaxed opacity-90">
-                {t.about.mission.description}
-              </p>
-            </div>
+          <div className="mb-20 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+            <div
+              className="py-20"
+              style={{ backgroundImage: `url(${baseDarkerBG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+            >
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Vision Card */}
+                <div
+                  className="relative rounded-[4rem] overflow-hidden min-h-[500px] p-12 flex flex-col justify-start"
+                  style={{ backgroundImage: `url(${visionBG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                  data-testid="vision-card"
+                >
+                  <h2 className="text-4xl lg:text-5xl font-bold text-[#B8735F] mb-8">
+                    {t.about.vision.title}
+                  </h2>
+                  <p className="text-gray-900 text-lg leading-relaxed max-w-md">
+                    {t.about.vision.description}
+                  </p>
+                </div>
 
-            <div className="group bg-mediterranean-linen rounded-[2rem] shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden border-2 border-black/10 p-10" data-testid="vision-card">
-              <div className="w-20 h-20 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
-                <img
-                  src={globeIcon}
-                  alt="Vision icon"
-                  className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
-                />
+                {/* Mission Card */}
+                <div
+                  className="relative rounded-[4rem] overflow-hidden min-h-[500px] p-12 flex flex-col justify-start"
+                  style={{ backgroundImage: `url(${missionBG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                  data-testid="mission-card"
+                >
+                  <h2 className="text-4xl lg:text-5xl font-bold text-[#2C5F4E] mb-8">
+                    {t.about.mission.title}
+                  </h2>
+                  <p className="text-gray-900 text-lg leading-relaxed max-w-md">
+                    {t.about.mission.description}
+                  </p>
+                </div>
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t.about.vision.title}</h2>
-              <p className="text-gray-900 text-lg leading-relaxed opacity-90">
-                {t.about.vision.description}
-              </p>
             </div>
           </div>
 
           {/* Values */}
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-success/30 border border-brand-accent/20 mb-6">
-                <div className="w-2 h-2 bg-brand-accent rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium text-text-primary">{t.about.values.badge}</span>
-              </div>
-              <h2 className="text-4xl font-bold text-brand-primary" data-testid="values-title">{t.about.values.title}</h2>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {values.map((value, index) => {
-                const IconComponent = value.icon;
-                const bgColor = index % 2 === 0 ? 'bg-mediterranean-sky' : 'bg-mediterranean-linen';
-                return (
-                  <div key={index} className={`group ${bgColor} rounded-[2rem] shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden border-2 border-black/10 p-8`} data-testid={`value-${value.title.toLowerCase()}`}>
-                    <div className="w-16 h-16 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
-                      <IconComponent className="h-8 w-8 text-white group-hover:scale-110 transition-transform duration-300" />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">{value.title}</h3>
-                    <p className="text-gray-900 leading-relaxed text-center opacity-90">{value.description}</p>
+          <div className="mb-20 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+            <div
+              className="py-20"
+              style={{ backgroundImage: `url(${baseBG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+            >
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-12">
+                  <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-success/30 border border-brand-accent/20 mb-6">
+                    <div className="w-2 h-2 bg-brand-accent rounded-full animate-pulse"></div>
+                    <span className="text-sm font-medium text-text-primary">{t.about.values.badge}</span>
                   </div>
-                );
-              })}
+                  <h2 className="text-5xl font-bold text-[#AB98D0]" data-testid="values-title">{t.about.values.title}</h2>
+                </div>
+
+                {/* Single Card with all values */}
+                <div
+                  className="relative rounded-[4rem] overflow-hidden p-16 lg:p-20 min-h-[600px]"
+                  style={{ backgroundImage: `url(${valuesBG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                >
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
+                    {values.map((value, index) => {
+                      const IconComponent = value.icon;
+                      return (
+                        <div key={index} className="flex flex-col" data-testid={`value-${value.title.toLowerCase()}`}>
+                          <div className="flex items-center gap-3 mb-3">
+                            <div className="w-10 h-10 bg-[#FFFDF5] rounded-full flex items-center justify-center flex-shrink-0">
+                              <IconComponent className="h-5 w-5 text-[#AB98D0]" />
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-900">{value.title}</h3>
+                          </div>
+                          <p className="text-gray-800 text-base leading-relaxed pl-13">{value.description}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
