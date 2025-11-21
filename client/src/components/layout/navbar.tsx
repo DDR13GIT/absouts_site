@@ -69,15 +69,15 @@ export function Navbar() {
 
           {/* Desktop Navigation - Center Pill Container */}
           <div className="hidden md:flex items-center justify-center absolute left-1/2 transform -translate-x-1/2">
-            <div className="bg-gray-100/20 backdrop-blur-md rounded-full shadow-[0_0_20px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.04)] border border-gray-200/30 px-8 py-3 flex items-center gap-8">
+            <div className="bg-gray-100/20 backdrop-blur-md rounded-full shadow-[0_0_20px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.04)] border border-gray-200/30 px-8 py-3 flex items-center gap-2">
               {navigationItems.map((item) => (
                 <Link
                   key={item.path}
                   href={item.path}
-                  className={`text-sm font-light tracking-wide transition-all duration-200 whitespace-nowrap ${
+                  className={`text-sm font-light tracking-wide transition-all duration-200 whitespace-nowrap px-3 py-1 rounded-full ${
                     isActiveLink(item.path)
                       ? "text-brand-secondary font-medium"
-                      : "text-text-primary hover:text-brand-accent hover:opacity-70"
+                      : "text-text-primary hover:bg-neutral-dark hover:text-white hover:py-2"
                   }`}
                   data-testid={`nav-link-${item.label.toLowerCase().replace(" ", "-")}`}
                 >

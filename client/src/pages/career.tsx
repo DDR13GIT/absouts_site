@@ -100,8 +100,8 @@ export default function Career() {
   }
 
   return (
-    <div className="pt-16" data-testid="career-page">
-      <section className="py-20 bg-bg-base relative overflow-hidden">
+    <div data-testid="career-page">
+      <section className="py-20 pt-28 bg-bg-base relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-gradient-to-r from-brand-secondary/5 to-transparent"></div>
 

@@ -1,6 +1,8 @@
 import { ContactForm } from "@/components/forms/contact-form";
 import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
+import bdLocationBG from "@assets/bdLocationBG.svg";
+import ukLocationBG from "@assets/ukLocationBG.svg";
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -39,7 +41,8 @@ export default function Contact() {
         "Sher-E-Bangla Nagar",
         "Dhaka-1207, Bangladesh"
       ],
-      bgColor: "bg-mediterranean-sky"
+      bgImage: bdLocationBG,
+      iconColor: "from-emerald-500 to-teal-600"
     },
     {
       title: "Bangladesh Corporate Office",
@@ -48,7 +51,8 @@ export default function Contact() {
         "Gulshan 1",
         "Dhaka 1212, Bangladesh"
       ],
-      bgColor: "bg-mediterranean-linen"
+      bgImage: bdLocationBG,
+      iconColor: "from-emerald-500 to-teal-600"
     },
     {
       title: "UK Office",
@@ -57,7 +61,8 @@ export default function Contact() {
         "London, NW2 2HY",
         "United Kingdom"
       ],
-      bgColor: "bg-mediterranean-sky"
+      bgImage: ukLocationBG,
+      iconColor: "from-blue-500 to-indigo-600"
     }
   ];
 
@@ -69,9 +74,9 @@ export default function Contact() {
   ];
 
   return (
-    <div className="pt-16" data-testid="contact-page">
+    <div data-testid="contact-page">
       {/* Hero Banner */}
-      <section className="py-20 bg-bg-base relative overflow-hidden">
+      <section className="py-20 pt-28 bg-bg-base relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-gradient-to-r from-brand-secondary/5 to-transparent"></div>
 
@@ -107,7 +112,7 @@ export default function Contact() {
                     Get in touch
                   </h2>
                   <p className="text-text-secondary leading-relaxed">
-                  Send your message and our team will respond with the details you need.
+                    Send your message and our team will respond with the details you need.
                   </p>
                 </div>
 
@@ -172,25 +177,46 @@ export default function Contact() {
             <p className="text-xl text-text-secondary">Visit us at any of our offices worldwide</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
             {officeLocations.map((location, index) => (
               <div
                 key={index}
-                className={`${location.bgColor} rounded-[2rem] p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-black/10 hover:-translate-y-2 group`}
+                className="group relative h-full rounded-[2.75rem] border border-white/20 bg-white/20 p-[1px] shadow-strong transition-all duration-500 hover:-translate-y-2 hover:border-brand-accent/50"
               >
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="w-14 h-14 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <MapPin className="h-7 w-7 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 leading-tight pt-2">{location.title}</h3>
-                </div>
+                <div className="relative h-full rounded-[2.65rem] bg-gradient-to-b from-white/50 via-white/40 to-white/30 p-8 shadow-medium backdrop-blur-md transition-all duration-500 group-hover:shadow-strong">
+                  <div
+                    className="pointer-events-none absolute inset-0 opacity-60 mix-blend-normal transition-opacity duration-500 group-hover:opacity-80 rounded-[2.65rem]"
+                    style={{
+                      backgroundImage: `url(${location.bgImage})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat"
+                    }}
+                  ></div>
 
-                <div className="space-y-2">
-                  {location.address.map((line, idx) => (
-                    <p key={idx} className="text-gray-900 text-base leading-relaxed opacity-90">
-                      {line}
-                    </p>
-                  ))}
+                  <div className="relative z-10 flex h-full flex-col gap-6">
+                    <div className="flex items-center justify-between gap-4">
+                      <div className={`w-16 h-16 bg-gradient-to-br ${location.iconColor} rounded-2xl flex items-center justify-center shadow-xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3`}>
+                        <MapPin className="h-8 w-8 text-white drop-shadow-md" />
+                      </div>
+                    
+                    </div>
+
+                    <div>
+                      <h3 className="text-2xl font-bold text-brand-primary leading-tight mb-2">{location.title}</h3>
+                      <p className="text-sm text-text-secondary">
+                        Meet our team schedule executive sessions tailored to your needs.
+                      </p>
+                    </div>
+
+                    <div className="space-y-2 rounded-2xl border border-white/60 p-5 shadow-inner">
+                      {location.address.map((line, idx) => (
+                        <p key={idx} className="text-gray-800 text-base leading-relaxed font-semibold">
+                          {line}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}

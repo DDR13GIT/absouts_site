@@ -23,7 +23,7 @@
 
 import { useLocation, Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ShoppingCart, Smartphone, Cloud, TestTube, Scale, Globe, CreditCard, Sparkles } from "lucide-react";
+import { ArrowLeft, ShoppingCart, Smartphone, Cloud, TestTube, Scale, Globe, CreditCard, Sparkles, CheckCircle } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
 
 // Import modular service components and configurations
@@ -77,15 +77,15 @@ function NotFoundService() {
 
   return (
     <div className="pt-16" data-testid="service-not-found">
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-bg-base">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold text-primary mb-6">Service Not Found</h1>
           <p className="text-xl text-muted-foreground mb-8">
             The service you're looking for doesn't exist.
           </p>
           <Link href="/services">
-            <Button className="text-accent hover:text-accent/80">
-              <ArrowLeft className="mr-2 h-4 w-4" />
+            <Button variant="outline" className="mb-6">
+              <ArrowLeft className="h-4 w-4 mr-2" />
               {t.common.backToServices}
             </Button>
           </Link>
@@ -397,8 +397,8 @@ function BPOServiceDetail() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
             <Link href="/services">
-              <Button variant="ghost" className="text-brand-accent hover:text-brand-accent/80 mb-4">
-                <ArrowLeft className="mr-2 h-4 w-4" />
+              <Button variant="outline" className="mb-6">
+                <ArrowLeft className="h-4 w-4 mr-2" />
                 {t.common.backToServices}
               </Button>
             </Link>
@@ -469,49 +469,65 @@ function SoftwareServiceDetail() {
       id: "ecommerce",
       Icon: ShoppingCart,
       config: ecommerceConfig,
-      bgColor: "bg-blue-50/50"
+      bgColor: "bg-blue-100/80",
+      iconBgColor: "bg-blue-200/60",
+      hoverBgColor: "hover:bg-blue-600 hover:text-white"
     },
     {
       id: "mobile",
       Icon: Smartphone,
       config: mobileConfig,
-      bgColor: "bg-purple-50/50"
+      bgColor: "bg-purple-100/80",
+      iconBgColor: "bg-purple-200/60",
+      hoverBgColor: "hover:bg-purple-600 hover:text-white"
     },
     {
       id: "cloud",
       Icon: Cloud,
       config: cloudConfig,
-      bgColor: "bg-cyan-50/50"
+      bgColor: "bg-cyan-100/80",
+      iconBgColor: "bg-cyan-200/60",
+      hoverBgColor: "hover:bg-cyan-600 hover:text-white"
     },
     {
       id: "testing",
       Icon: TestTube,
       config: testingConfig,
-      bgColor: "bg-green-50/50"
+      bgColor: "bg-green-100/80",
+      iconBgColor: "bg-green-200/60",
+      hoverBgColor: "hover:bg-green-600 hover:text-white"
     },
     {
       id: "legaltech",
       Icon: Scale,
       config: legaltechConfig,
-      bgColor: "bg-indigo-50/50"
+      bgColor: "bg-indigo-100/80",
+      iconBgColor: "bg-indigo-200/60",
+      hoverBgColor: "hover:bg-indigo-600 hover:text-white"
     },
     {
       id: "webportal",
       Icon: Globe,
       config: webportalConfig,
-      bgColor: "bg-teal-50/50"
+      bgColor: "bg-teal-100/80",
+      iconBgColor: "bg-teal-200/60",
+      hoverBgColor: "hover:bg-teal-600 hover:text-white"
     },
     {
       id: "fintech",
       Icon: CreditCard,
       config: fintechConfig,
-      bgColor: "bg-amber-50/50"
+      bgColor: "bg-amber-100/80",
+      iconBgColor: "bg-amber-200/60",
+      hoverBgColor: "hover:bg-amber-600 hover:text-white"
     },
     {
       id: "ai",
       Icon: Sparkles,
       config: aiConfig,
-      bgColor: "bg-rose-50/50"
+      bgColor: "bg-rose-100/80",
+      iconBgColor: "bg-rose-200/60",
+      hoverBgColor: "hover:bg-rose-600 hover:text-white"
     }
   ];
 
@@ -528,8 +544,8 @@ function SoftwareServiceDetail() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
             <Link href="/services">
-              <Button variant="ghost" className="text-brand-accent hover:text-brand-accent/80 mb-4">
-                <ArrowLeft className="mr-2 h-4 w-4" />
+              <Button variant="outline" className="mb-6">
+                <ArrowLeft className="h-4 w-4 mr-2" />
                 {t.common.backToServices}
               </Button>
             </Link>
@@ -544,17 +560,23 @@ function SoftwareServiceDetail() {
             {services.map((service) => {
               const IconComponent = service.Icon;
               return (
-                <button
+                <div
                   key={service.id}
-                  onClick={() => scrollToSection(service.id)}
-                  className={`${service.bgColor} border border-brand-primary/10 rounded-xl p-6 text-left shadow-subtle hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 cursor-pointer`}
+                  className={`${service.bgColor} border border-brand-primary/10 rounded-xl p-6 shadow-subtle hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 flex flex-col`}
                 >
-                  <div className="w-16 h-16 bg-white/80 rounded-lg flex items-center justify-center mb-4 shadow-subtle">
-                    <IconComponent className="w-8 h-8 text-brand-primary" />
+                  <div className={`w-12 h-12 ${service.iconBgColor} rounded-lg flex items-center justify-center mb-4 shadow-subtle`}>
+                    <IconComponent className="w-6 h-6 text-brand-primary" />
                   </div>
-                  <h3 className="text-lg font-bold text-brand-primary mb-2">{service.config.title}</h3>
-                  <p className="text-sm text-text-secondary line-clamp-3">{service.config.description}</p>
-                </button>
+                  <h3 className="text-xl font-bold text-brand-primary mb-2">{service.config.title}</h3>
+                  <p className="text-sm text-text-secondary line-clamp-3 mb-4 flex-1">{service.config.description}</p>
+                  <Button
+                    onClick={() => scrollToSection(service.id)}
+                    variant="outline"
+                    className={`w-full mt-auto border-brand-primary/20 hover:border-transparent transition-all duration-300 ${service.hoverBgColor}`}
+                  >
+                    See Details
+                  </Button>
+                </div>
               );
             })}
           </div>
@@ -567,7 +589,7 @@ function SoftwareServiceDetail() {
                 {/* Section Header */}
                 <div className={`${service.bgColor} border border-brand-primary/10 rounded-2xl p-8 mb-8`}>
                   <div className="flex items-start gap-6">
-                    <div className="w-20 h-20 bg-white rounded-xl flex items-center justify-center shadow-medium flex-shrink-0">
+                    <div className={`w-20 h-20 ${service.iconBgColor} rounded-xl flex items-center justify-center shadow-medium flex-shrink-0`}>
                       <IconComponent className="w-12 h-12 text-brand-primary" />
                     </div>
                     <div className="flex-1">
@@ -582,16 +604,20 @@ function SoftwareServiceDetail() {
                   <h3 className="text-2xl font-bold text-brand-primary mb-6">
                     {(service.config as any).coreFeaturesTitle || "Key Features"}
                   </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {service.config.coreFeatures.map((feature, idx) => (
-                      <div key={idx} className="bg-white rounded-xl p-6 shadow-subtle hover:shadow-medium transition-shadow duration-300">
-                        <div className="w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center mb-4">
-                          <img src={feature.icon} alt={feature.title} className="w-8 h-8 object-contain" />
+                  <div className="bg-bg-base-darker rounded-xl p-8 shadow-subtle">
+                    <div className="space-y-6">
+                      {service.config.coreFeatures.map((feature, idx) => (
+                        <div key={idx} className="flex items-start gap-4">
+                          <div className="w-10 h-10 bg-brand-primary rounded-full flex items-center justify-center flex-shrink-0 shadow-medium">
+                            <span className="text-white font-bold text-lg">{idx + 1}</span>
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="text-lg font-semibold text-brand-primary mb-2">{feature.title}</h4>
+                            <p className="text-sm text-text-secondary">{feature.description}</p>
+                          </div>
                         </div>
-                        <h4 className="text-lg font-semibold text-brand-primary mb-2">{feature.title}</h4>
-                        <p className="text-sm text-text-secondary">{feature.description}</p>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
 
@@ -599,11 +625,11 @@ function SoftwareServiceDetail() {
                 {service.config.additionalFeatures && service.config.additionalFeatures.length > 0 && (
                   <div className="mb-8">
                     <h3 className="text-2xl font-bold text-brand-primary mb-6">Additional Capabilities</h3>
-                    <div className="bg-white rounded-xl p-6 shadow-subtle">
+                    <div className="bg-bg-base-darker rounded-xl p-6 shadow-subtle">
                       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         {service.config.additionalFeatures.map((feature, idx) => (
-                          <div key={idx} className="flex items-center gap-2">
-                            <div className="w-2 h-2 bg-brand-accent rounded-full flex-shrink-0"></div>
+                          <div key={idx} className="flex items-center gap-3">
+                            <CheckCircle className="w-5 h-5 text-success flex-shrink-0" />
                             <span className="text-text-secondary">{feature}</span>
                           </div>
                         ))}
@@ -618,12 +644,10 @@ function SoftwareServiceDetail() {
                     <h3 className="text-2xl font-bold text-brand-primary mb-6">
                       {(service.config as any).techStackSubtitle || "Technology Stack"}
                     </h3>
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+                    <div className="flex flex-wrap gap-8 justify-center items-center">
                       {service.config.technologies.map((tech, idx) => (
-                        <div key={idx} className="bg-white rounded-xl p-4 shadow-subtle hover:shadow-medium transition-shadow duration-300 flex flex-col items-center text-center">
-                          <img src={tech.icon} alt={tech.name} className="w-16 h-16 object-contain mb-3" />
-                          <p className="text-sm font-semibold text-brand-primary mb-1">{tech.name}</p>
-                          <p className="text-xs text-text-secondary">{tech.description}</p>
+                        <div key={idx} className="flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                          <img src={tech.icon} alt={tech.name} className="w-16 h-16 object-contain" title={tech.name} />
                         </div>
                       ))}
                     </div>

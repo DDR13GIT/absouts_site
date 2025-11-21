@@ -62,15 +62,7 @@ export default function About() {
       photo: kdRoyPhoto
     },
     {
-      initials: "RK",
-      name: "Razwan Kader",
-      position: "Chief Technology Officer", 
-      description: "A seasoned technology leader with deep expertise in software engineering and system architecture. Drives the company's technology vision, aligning technical strategy with business objectives. Excels at building high-performing teams and delivering scalable, reliable solutions.",
-      bgColor: "bg-secondary",
-      photo: razwanKaderPhoto
-    },
-    {
-      initials: "EK", 
+      initials: "EK",
       name: "Enam H. Khan, FCA (ICAB), ACA (ICAEW), FCCA",
       position: "Chief Operating Officer",
       description: "Ensures smooth daily operations by refining processes, guiding cross-functional teams, and enforcing quality and compliance. Delivers reliable BPO and software services that drive company growth while fostering continuous improvement and accountability.",
@@ -78,8 +70,16 @@ export default function About() {
       photo: enamKhanPhoto
     },
     {
+      initials: "RK",
+      name: "Razwan Kader",
+      position: "Chief Technology Officer",
+      description: "A seasoned technology leader with deep expertise in software engineering and system architecture. Drives the company's technology vision, aligning technical strategy with business objectives. Excels at building high-performing teams and delivering scalable, reliable solutions.",
+      bgColor: "bg-secondary",
+      photo: razwanKaderPhoto
+    },
+    {
       initials: "PD",
-      name: "Pritam Kumar Das", 
+      name: "Pritam Kumar Das",
       position: "Head of Business Development",
       description: "Drives the seamless delivery of all BPO and software solutions by overseeing every project to meet international quality and compliance standards. Closely monitors daily operations and upholds excellence so clients consistently receive reliable and efficient services.",
       bgColor: "bg-primary",
@@ -88,8 +88,8 @@ export default function About() {
   ];
 
   return (
-    <div className="pt-16" data-testid="about-page">
-      <section className="py-20 bg-bg-base relative overflow-hidden">
+    <div data-testid="about-page">
+      <section className="py-20 pt-28 bg-bg-base relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-gradient-to-r from-brand-secondary/5 to-transparent"></div>
 
@@ -189,14 +189,14 @@ export default function About() {
 
                 {/* Single Card with all values */}
                 <div
-                  className="relative rounded-[4rem] overflow-hidden p-16 lg:p-20 min-h-[600px]"
+                  className="relative rounded-[4rem] overflow-hidden p-16 lg:p-20 flex flex-col min-h-[700px]"
                   style={{ backgroundImage: `url(${valuesBG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                 >
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 flex-1 auto-rows-fr">
                     {values.map((value, index) => {
                       const IconComponent = value.icon;
                       return (
-                        <div key={index} className="flex flex-col" data-testid={`value-${value.title.toLowerCase()}`}>
+                        <div key={index} className="flex flex-col justify-center" data-testid={`value-${value.title.toLowerCase()}`}>
                           <div className="flex items-center gap-3 mb-3">
                             <div className="w-10 h-10 bg-[#FFFDF5] rounded-full flex items-center justify-center flex-shrink-0">
                               <IconComponent className="h-5 w-5 text-[#AB98D0]" />
@@ -215,38 +215,44 @@ export default function About() {
 
           {/* Leadership Team */}
           <div>
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-success/30 border border-brand-accent/20 mb-6">
                 <div className="w-2 h-2 bg-brand-accent rounded-full animate-pulse"></div>
                 <span className="text-sm font-medium text-text-primary">{t.about.leadership.badge}</span>
               </div>
-              <h2 className="text-4xl font-bold text-brand-primary" data-testid="leadership-title">{t.about.leadership.title}</h2>
+              <h2 className="text-4xl font-bold text-brand-primary mb-4" data-testid="leadership-title">{t.about.leadership.title}</h2>
+              <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+                Meet the visionary leaders driving our mission forward
+              </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {leaders.map((leader, index) => {
-                const bgColor = index % 2 === 0 ? 'bg-mediterranean-linen' : 'bg-mediterranean-sky';
-                return (
-                  <div key={index} className={`group ${bgColor} rounded-[2rem] shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden border-2 border-black/10 p-10`} data-testid={`leader-${leader.initials.toLowerCase()}`}>
-                    <div className="flex items-center mb-8">
-                      <div className="w-24 h-24 rounded-2xl mr-6 group-hover:scale-110 transition-all duration-300 shadow-lg overflow-hidden">
-                        <img
-                          src={leader.photo}
-                          alt={leader.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">{leader.name}</h3>
-                        <p className="text-gray-700 font-semibold">{leader.position}</p>
-                      </div>
-                    </div>
-                    <p className="text-gray-900 text-base leading-relaxed opacity-90">
-                      {leader.description}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {leaders.map((leader, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-3xl shadow-md overflow-hidden"
+                  data-testid={`leader-${leader.initials.toLowerCase()}`}
+                >
+                  {/* Photo Container */}
+                  <div className="relative w-full aspect-[3/4] overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+                    <img
+                      src={leader.photo}
+                      alt={leader.name}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
+
+                  {/* Info Container */}
+                  <div className="p-6 text-center bg-white">
+                    <h3 className="text-lg font-bold text-gray-900 mb-2 leading-tight">
+                      {leader.name}
+                    </h3>
+                    <p className="text-sm text-gray-600 font-medium">
+                      {leader.position}
                     </p>
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
           </div>
         </div>

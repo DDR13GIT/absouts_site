@@ -45,16 +45,16 @@ export default function Home() {
 
                 <p className="text-base text-text-secondary leading-relaxed max-w-xl" data-testid="hero-description">
                   We deliver comprehensive outsourcing services—from{" "}
-                  <span className="font-semibold">Cloud Accounting</span> and{" "}
-                  <span className="font-semibold">BPO</span> to{" "}
-                  <span className="font-semibold">Software Development</span>
+                  <span className="font-extrabold">Cloud Accounting</span> and{" "}
+                  <span className="font-extrabold">BPO</span> to{" "}
+                  <span className="font-extrabold">Software Development</span>
                   —by aligning the latest technology with industry best practices to help you operate efficiently and grow.
                 </p>
 
                 <div className="flex flex-wrap gap-4 pt-2">
                   <Link href="/career">
                     <Button
-                      className="bg-neutral-dark hover:bg-neutral-dark/90 text-white px-8 py-6 text-base font-medium rounded-lg shadow-medium hover:shadow-strong transition-all duration-300"
+                      className="bg-neutral-dark hover:bg-slate-950 text-white px-8 py-6 text-base font-medium rounded-lg shadow-medium hover:shadow-strong transition-all duration-300"
                       data-testid="button-find-talent"
                     >
                       {t.home.hero.findTalent}

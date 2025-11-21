@@ -36,7 +36,7 @@ export function JobListing({ job, onApply }: JobListingProps) {
   };
 
   return (
-    <Card className="border border-border shadow-lg" data-testid={`job-listing-${job.id}`}>
+    <Card className="bg-bg-base-darker border border-border shadow-lg" data-testid={`job-listing-${job.id}`}>
       <CardHeader>
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
           <div>
@@ -63,9 +63,9 @@ export function JobListing({ job, onApply }: JobListingProps) {
             </div>
           </div>
           <div className="flex gap-2 mt-4 md:mt-0">
-            <Button 
-              onClick={() => onApply(job.id, job.title)} 
-              className="bg-accent hover:bg-accent/90 text-accent-foreground"
+            <Button
+              onClick={() => onApply(job.id, job.title)}
+              className="bg-neutral-dark hover:bg-slate-950 text-white rounded-full transition-all duration-300"
               data-testid={`button-apply-${job.id}`}
             >
               Apply Now
@@ -73,6 +73,7 @@ export function JobListing({ job, onApply }: JobListingProps) {
             <Button
               variant="outline"
               onClick={() => window.location.href = `/job/${job.id}`}
+              className="border-2 border-neutral-dark text-neutral-dark hover:bg-neutral-dark hover:text-white rounded-full transition-all duration-300"
               data-testid={`button-details-${job.id}`}
             >
               Show Details

@@ -33,11 +33,11 @@ export function ServiceHero({
         <div className="mb-8">
           <Link href="/services">
             <Button
-              variant="ghost"
-              className="text-accent hover:text-accent/80 mb-4"
+              variant="outline"
+              className="mb-6"
               data-testid="button-back-to-services"
             >
-              <ArrowLeft className="mr-2 h-4 w-4" />
+              <ArrowLeft className="h-4 w-4 mr-2" />
               {t.common.backToServices}
             </Button>
           </Link>

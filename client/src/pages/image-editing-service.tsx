@@ -129,8 +129,8 @@ export default function ImageEditingService() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
             <Link href="/services">
-              <Button variant="ghost" className="text-brand-accent hover:text-brand-accent/80 mb-4">
-                <ArrowLeft className="mr-2 h-4 w-4" />
+              <Button variant="outline" className="mb-6">
+                <ArrowLeft className="h-4 w-4 mr-2" />
                 {t.common.backToServices}
               </Button>
             </Link>

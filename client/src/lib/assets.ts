@@ -76,40 +76,41 @@ import ieServiceBG2 from "@assets/ieServiceBG2.svg";
 
 /**
  * Technology logos organized by category
+ * Using high-quality SVGs from CDNs
  */
 export const TECHNOLOGY_LOGOS = {
   // Frontend
-  react: restApiLogo,
-  angular: angularJsLogo,
-  css3: css3Logo,
+  react: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  angular: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+  css3: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
 
   // Backend
-  nodejs: joutLogo,
-  django: djangoLogo,
-  aspnet: aspNetLogo,
-  go: goLogo,
+  nodejs: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  django: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+  aspnet: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
+  go: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
 
   // Databases
-  postgresql: postgreSQLLogo,
-  sqlserver: sqlServerLogo,
-  oracle: oracleLogo,
-  elasticsearch: elasticsearchLogo,
+  postgresql: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  sqlserver: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg",
+  oracle: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
+  elasticsearch: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg",
 
   // Cloud & DevOps
-  aws: awsLogo,
-  docker: dockerLogo,
-  firebase: firebaseLogo,
-  gitlab: gitLabLogo,
+  aws: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+  docker: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+  firebase: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+  gitlab: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
 
   // APIs & Services
-  graphql: graphQLLogo,
+  graphql: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
 
   // Testing
-  jmeter: jmeterLogo,
-  appium: appiumLogo,
+  jmeter: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg",
+  appium: "https://raw.githubusercontent.com/appium/appium/master/packages/appium/docs/en/assets/images/appium-logo-horiz.png",
 
   // AI/ML
-  tensorflow: tensorFlowLogo,
+  tensorflow: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
   gemini: geminiLogo,
 } as const;
 

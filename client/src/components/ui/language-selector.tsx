@@ -52,16 +52,16 @@ export const LanguageSelector = memo(function LanguageSelector() {
       onValueChange={handleLanguageChange}
       data-testid="language-selector"
     >
-      <SelectTrigger className="w-auto min-w-[120px] gap-2 bg-gray-700 hover:bg-gray-600 hover:scale-105 text-white border-0 rounded-full font-light text-sm tracking-wide transition-all duration-200 shadow-medium">
+      <SelectTrigger className="w-auto min-w-[120px] gap-2 bg-neutral-dark hover:bg-slate-900 hover:scale-105 text-white border-0 rounded-full font-light text-sm tracking-wide transition-all duration-200 shadow-medium">
         <SelectValue placeholder="Language" />
       </SelectTrigger>
-      <SelectContent className="bg-bg-surface border-brand-accent/20">
+      <SelectContent className="bg-bg-base-darker border-brand-accent/20">
         {languages.map((lang) => (
           <SelectItem
             key={lang.code}
             value={lang.code}
             data-testid={`language-${lang.code}`}
-            className="cursor-pointer hover:bg-brand-accent/10 text-text-primary"
+            className="cursor-pointer hover:bg-slate-950 text-text-primary rounded-full"
           >
             <div className="flex items-center gap-2">
               {getFlagIcon(lang.code)}
