@@ -10,12 +10,12 @@ import razwanKaderPhoto from "@assets/razwan_kader_1757771450332.png";
 // Import custom icons for mission and vision
 import lightbulbIcon from "@assets/Asset 3_1757767623439.png";
 import globeIcon from "@assets/Asset 1_1757767623438.png";
-import foundationBG from "@assets/foundationBG.svg";
-import baseDarkerBG from "@assets/baseDarkerBG.svg";
-import baseBG from "@assets/baseBG.svg";
-import missionBG from "@assets/missionBG.svg";
-import visionBG from "@assets/visionBG.svg";
-import valuesBG from "@assets/valuesBG.svg";
+import foundationBG from "@assets/foundationBG.svg?url";
+import baseDarkerBG from "@assets/baseDarkerBG.svg?url";
+import baseBG from "@assets/baseBG.svg?url";
+import missionBG from "@assets/missionBG.svg?url";
+import visionBG from "@assets/visionBG.svg?url";
+import valuesBG from "@assets/valuesBG.svg?url";
 
 export default function About() {
   const { t } = useTranslation();
