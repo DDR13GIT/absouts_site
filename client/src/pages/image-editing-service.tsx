@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle, Scissors, Palette, UserCircle, Layers, Wand2, Sun, Sparkles, Package } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
 import { SERVICE_ICONS, IMAGE_EDITING_EXAMPLES, IE_BACKGROUNDS } from "@/lib/assets";
+import { SEO } from "@/components/seo/SEO";
+import { ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 export default function ImageEditingService() {
   const { t } = useTranslation();
@@ -124,6 +126,24 @@ export default function ImageEditingService() {
 
   return (
     <div className="pt-16" data-testid="image-editing-service-page">
+      <SEO
+        title="Image Editing Services - Photo Retouching & Background Removal | Absouts"
+        description="Professional image editing services including background removal, color correction, retouching, clipping path, and photo manipulation. High-quality editing for e-commerce, photography, and marketing."
+        keywords="image editing services, photo retouching, background removal, color correction, clipping path, photo manipulation, product photography editing, e-commerce image editing"
+        url="https://absouts.com/image-editing"
+      />
+      <ServiceSchema
+        name="Image Editing Services"
+        description="Professional image editing including background removal, color correction, photo retouching, clipping path, and manipulation services."
+        url="https://absouts.com/image-editing"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://absouts.com' },
+          { name: 'Services', url: 'https://absouts.com/services' },
+          { name: 'Image Editing', url: 'https://absouts.com/image-editing' }
+        ]}
+      />
       {/* Hero Section */}
       <section className="py-20 bg-bg-base">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

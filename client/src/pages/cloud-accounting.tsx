@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
 import { SERVICE_ICONS, CA_BACKGROUNDS } from "@/lib/assets";
+import { SEO } from "@/components/seo/SEO";
+import { ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 /**
  * Cloud Accounting Service Detail Page
@@ -152,6 +154,24 @@ export default function CloudAccounting() {
 
   return (
     <div className="pt-16" data-testid="cloud-accounting-detail">
+      <SEO
+        title="Cloud Accounting Services - Virtual Bookkeeping & Tax Compliance | Absouts"
+        description="Professional cloud accounting services including virtual bookkeeping, payroll management, tax planning, AP/AR management, and financial reporting. Expert remote accounting solutions for your business."
+        keywords="cloud accounting, virtual bookkeeping, online accounting services, payroll management, tax compliance, AP AR management, MIS reporting, inventory management, remote accounting"
+        url="https://absouts.com/cloud-accounting"
+      />
+      <ServiceSchema
+        name="Cloud Accounting Services"
+        description="Comprehensive cloud accounting including virtual accounting, bookkeeping, payroll, tax compliance, and financial reporting services."
+        url="https://absouts.com/cloud-accounting"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://absouts.com' },
+          { name: 'Services', url: 'https://absouts.com/services' },
+          { name: 'Cloud Accounting', url: 'https://absouts.com/cloud-accounting' }
+        ]}
+      />
       <section className="py-20 bg-bg-base">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">

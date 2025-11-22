@@ -1,6 +1,14 @@
+import { SEO } from "@/components/seo/SEO";
+
 export default function TermsOfService() {
   return (
     <div className="pt-16" data-testid="terms-of-service-page">
+      <SEO
+        title="Terms of Service - Absouts | User Agreement & Terms of Use"
+        description="Read Absouts' terms of service including user agreements, service conditions, intellectual property rights, and legal policies. Understand your rights and responsibilities."
+        keywords="terms of service, user agreement, terms and conditions, service terms, legal agreement"
+        url="https://absouts.com/terms-of-service"
+      />
       {/* Hero Banner */}
       <section className="py-20 bg-bg-base relative overflow-hidden">
         {/* Background decoration */}
@@ -223,7 +231,6 @@ export default function TermsOfService() {
               </p>
               <div className="bg-bg-section p-6 rounded-lg">
                 <p className="text-text-primary font-semibold mb-2">Absouts</p>
-                <p className="text-text-secondary">Email: legal@absouts.com</p>
                 <p className="text-text-secondary">Email: support@absouts.com</p>
                 <p className="text-text-secondary">Phone: +880 1234 567 890</p>
                 <p className="text-text-secondary">Address: Dhaka, Bangladesh</p>

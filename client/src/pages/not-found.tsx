@@ -1,9 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle } from "lucide-react";
+import { SEO } from "@/components/seo/SEO";
 
 export default function NotFound() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
+      <SEO
+        title="404 - Page Not Found | Absouts"
+        description="The page you're looking for doesn't exist. Return to Absouts homepage to explore our cloud accounting, BPO, and software development services."
+        keywords="404, page not found, error page"
+        url="https://absouts.com/404"
+      />
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-transparent"></div>
       

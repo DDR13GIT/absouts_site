@@ -25,6 +25,8 @@ import { useLocation, Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ShoppingCart, Smartphone, Cloud, TestTube, Scale, Globe, CreditCard, Sparkles, CheckCircle } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
+import { SEO } from "@/components/seo/SEO";
+import { ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 // Import modular service components and configurations
 import { ServiceDetailTemplate } from "@/components/services";
@@ -540,6 +542,24 @@ function SoftwareServiceDetail() {
 
   return (
     <div className="pt-16" data-testid="software-service-detail">
+      <SEO
+        title="Software Development Services - Custom Software, Mobile Apps & Cloud Solutions | Absouts"
+        description="Expert software development services including custom software, mobile app development, cloud infrastructure, e-commerce solutions, fintech, legal tech, and AI solutions. Full-stack development from Bangladesh."
+        keywords="software development, custom software, mobile app development, cloud solutions, e-commerce development, fintech solutions, legal tech, AI development, software outsourcing, Bangladesh"
+        url="https://absouts.com/services/software"
+      />
+      <ServiceSchema
+        name="Software Development & IT Solutions"
+        description="Comprehensive software development including custom applications, mobile development, cloud infrastructure, and specialized industry solutions."
+        url="https://absouts.com/services/software"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://absouts.com' },
+          { name: 'Services', url: 'https://absouts.com/services' },
+          { name: 'Software Development', url: 'https://absouts.com/services/software' }
+        ]}
+      />
       <section className="py-20 bg-bg-base">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">

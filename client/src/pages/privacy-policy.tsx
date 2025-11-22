@@ -1,6 +1,14 @@
+import { SEO } from "@/components/seo/SEO";
+
 export default function PrivacyPolicy() {
   return (
     <div className="pt-16" data-testid="privacy-policy-page">
+      <SEO
+        title="Privacy Policy - Absouts | Data Protection & User Privacy"
+        description="Read Absouts' privacy policy to understand how we collect, use, and protect your personal information. Committed to data security and user privacy."
+        keywords="privacy policy, data protection, user privacy, information security, GDPR compliance"
+        url="https://absouts.com/privacy-policy"
+      />
       {/* Hero Banner */}
       <section className="py-20 bg-bg-base relative overflow-hidden">
         {/* Background decoration */}
@@ -151,11 +159,8 @@ export default function PrivacyPolicy() {
             {/* Cookies and Tracking */}
             <div className="mb-12">
               <h2 className="text-3xl font-bold text-brand-primary mb-4">Cookies and Tracking Technologies</h2>
-              <p className="text-text-secondary leading-relaxed mb-4">
-                We use cookies and similar tracking technologies to track activity on our website and store certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our website.
-              </p>
               <p className="text-text-secondary leading-relaxed">
-                For more information about how we use cookies, please refer to our Cookie Policy.
+                We use cookies and similar tracking technologies to track activity on our website and store certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our website.
               </p>
             </div>
 
@@ -191,7 +196,6 @@ export default function PrivacyPolicy() {
               </p>
               <div className="bg-bg-section p-6 rounded-lg">
                 <p className="text-text-primary font-semibold mb-2">Absouts</p>
-                <p className="text-text-secondary">Email: privacy@absouts.com</p>
                 <p className="text-text-secondary">Email: support@absouts.com</p>
                 <p className="text-text-secondary">Phone: +880 1234 567 890</p>
                 <p className="text-text-secondary">Address: Dhaka, Bangladesh</p>

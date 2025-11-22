@@ -2,10 +2,11 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Users, ServerCog, Server, GraduationCap, Rocket, BarChart, SquareArrowOutUpLeft, Building2, Monitor } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
-import poBg from "@assets/bpo_bg.svg";
-import caBg from "@assets/ca_bg.svg";
-import sdBg from "@assets/sd_bg.svg";
-import ieBg from "@assets/ie_bg.svg";
+import { SEO } from "@/components/seo/SEO";
+import poBg from "@assets/bpo_bg.webp";
+import caBg from "@assets/ca_bg.webp";
+import sdBg from "@assets/sd_bg.webp";
+import ieBg from "@assets/ie_bg.webp";
 
 export default function Services() {
   const { t } = useTranslation();
@@ -53,6 +54,12 @@ export default function Services() {
 
   return (
     <div data-testid="services-page">
+      <SEO
+        title="Our Services - Cloud Accounting, BPO, Software Development | Absouts"
+        description="Comprehensive outsourcing services including Cloud Accounting, Business Process Outsourcing (BPO), Custom Software Development, and Professional Image Editing. Quality service delivery with cutting-edge technology."
+        keywords="outsourcing services, cloud accounting services, BPO services, software development, image editing, virtual accounting, payroll services, tax services, accounting outsourcing, custom software"
+        url="https://absouts.com/services"
+      />
       <section className="py-20 pt-28 bg-bg-base relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-gradient-to-r from-brand-secondary/5 to-transparent"></div>
@@ -82,8 +89,9 @@ export default function Services() {
               <div className="absolute inset-0">
                 <img
                   src={caBg}
-                  alt=""
+                  alt="Cloud Accounting Services"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
 
@@ -114,8 +122,9 @@ export default function Services() {
               <div className="absolute inset-0">
                 <img
                   src={poBg}
-                  alt=""
+                  alt="Business Process Outsourcing Services"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
 
@@ -146,8 +155,9 @@ export default function Services() {
               <div className="absolute inset-0">
                 <img
                   src={sdBg}
-                  alt=""
+                  alt="Software Development Services"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
 
@@ -178,8 +188,9 @@ export default function Services() {
               <div className="absolute inset-0">
                 <img
                   src={ieBg}
-                  alt=""
+                  alt="Image Editing Services"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
 

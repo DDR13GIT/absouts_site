@@ -63,24 +63,24 @@ import colorCorrection from "@assets/unnamed (10)_1758366312457.jpg";
 import shadowReflectionExample from "@assets/Untitled-1-26-1024x615_1758366312458.jpg";
 
 // BPO Service Backgrounds
-import bpoServiceBG1 from "@assets/bpoServiceBG1.svg";
-import bpoServiceBG2 from "@assets/bpoServiceBG2.svg";
+import bpoServiceBG1 from "@assets/bpoServiceBG1.webp";
+import bpoServiceBG2 from "@assets/bpoServiceBG2.webp";
 
 // Cloud Accounting Service Backgrounds
-import caServiceBG1 from "@assets/caServiceBG1.svg";
-import caServiceBG2 from "@assets/caServiceBG2.svg";
+import caServiceBG1 from "@assets/caServiceBG1.webp";
+import caServiceBG2 from "@assets/caServiceBG2.webp";
 
 // Image Editing Service Backgrounds
-import ieServiceBG1 from "@assets/ieServiceBG1.svg";
-import ieServiceBG2 from "@assets/ieServiceBG2.svg";
+import ieServiceBG1 from "@assets/ieServiceBG1.webp";
+import ieServiceBG2 from "@assets/ieServiceBG2.webp";
 
 // About Page Backgrounds
-import foundationBG from "@assets/foundationBG.svg?url";
-import baseDarkerBG from "@assets/baseDarkerBG.svg?url";
-import baseBG from "@assets/baseBG.svg?url";
-import missionBG from "@assets/missionBG.svg?url";
-import visionBG from "@assets/visionBG.svg?url";
-import valuesBG from "@assets/valuesBG.svg?url";
+import foundationBG from "@assets/foundationBG.webp";
+import baseDarkerBG from "@assets/baseDarkerBG.webp";
+import baseBG from "@assets/baseBG.webp";
+import missionBG from "@assets/missionBG.webp";
+import visionBG from "@assets/visionBG.webp";
+import valuesBG from "@assets/valuesBG.webp";
 
 /**
  * Technology logos organized by category

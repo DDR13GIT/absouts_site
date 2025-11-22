@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
 import { SERVICE_ICONS, BPO_BACKGROUNDS } from "@/lib/assets";
+import { SEO } from "@/components/seo/SEO";
+import { ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 /**
  * Business Process Outsourcing Service Detail Page
@@ -112,6 +114,24 @@ export default function BPOServices() {
 
   return (
     <div className="pt-16" data-testid="bpo-services-detail">
+      <SEO
+        title="BPO Services - Business Process Outsourcing | Absouts"
+        description="Comprehensive BPO services including Document Management, Order Processing, Customer Support, HR Management, and Compliance. Streamline operations with Absouts' expert outsourcing solutions."
+        keywords="BPO services, business process outsourcing, document management, order processing, customer support outsourcing, HR outsourcing, compliance management, Bangladesh BPO"
+        url="https://absouts.com/bpo-services"
+      />
+      <ServiceSchema
+        name="Business Process Outsourcing (BPO)"
+        description="End-to-end BPO services including document management, order processing, customer support, HR management, and compliance services."
+        url="https://absouts.com/bpo-services"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://absouts.com' },
+          { name: 'Services', url: 'https://absouts.com/services' },
+          { name: 'BPO Services', url: 'https://absouts.com/bpo-services' }
+        ]}
+      />
       <section className="py-20 bg-bg-base">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">

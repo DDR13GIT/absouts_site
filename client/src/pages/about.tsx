@@ -1,6 +1,7 @@
 import { Star, Lightbulb, Handshake, Trophy, Users, Globe } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
 import { ABOUT_BACKGROUNDS } from "@/lib/assets";
+import { SEO } from "@/components/seo/SEO";
 
 // Import leadership team photos
 import kdRoyPhoto from "@assets/k_d_roy_1757771450330.jpeg";
@@ -84,6 +85,12 @@ export default function About() {
 
   return (
     <div data-testid="about-page">
+      <SEO
+        title="About Us - Absouts | Expert Leadership in Global Outsourcing"
+        description="Learn about Absouts' mission, vision, and values. Meet our expert leadership team including K D Roy (CEO), Enam H. Khan (COO), and Razwan Kader (CTO). Founded to deliver excellence in outsourcing."
+        keywords="about absouts, outsourcing company leadership, cloud accounting experts, BPO company Bangladesh, software development team, Dhaka outsourcing, company mission vision"
+        url="https://absouts.com/about"
+      />
       <section className="py-20 pt-28 bg-bg-base relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-gradient-to-r from-brand-secondary/5 to-transparent"></div>

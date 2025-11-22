@@ -3,16 +3,19 @@ import { Button } from "@/components/ui/button";
 import { ServiceCard } from "@/components/ui/service-card";
 import { Globe, Award, Shield, Target, Users, TrendingUp, Settings } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
+import { SEO } from "@/components/seo/SEO";
+import { OrganizationSchema } from "@/components/seo/StructuredData";
 
 // Import icons for service cards
 import peopleIcon from "@assets/Asset 17_1757767623440.png";
 import gearsIcon from "@assets/Asset 5_1757767623439.png";
 import heroBg1 from "@assets/hero-bg1.jpg";
 import heroBg2 from "@assets/hero-bg2.jpg"
-import poBg from "@assets/bpo_bg.svg"
-import caBg from "@assets/ca_bg.svg"
-import sdBg from "@assets/sd_bg.svg"
-import ieBg from "@assets/ie_bg.svg"
+import poBg from "@assets/bpo_bg.webp"
+import caBg from "@assets/ca_bg.webp"
+import sdBg from "@assets/sd_bg.webp"
+import ieBg from "@assets/ie_bg.webp"
+import whyChooseUsBG from "@assets/whyChooseUsBG.webp"
 
 export default function Home() {
   const { t } = useTranslation();
@@ -23,6 +26,13 @@ export default function Home() {
 
   return (
     <div data-testid="home-page">
+      <SEO
+        title="Absouts - Global Outsourcing Solutions | Cloud Accounting, BPO & Software Development"
+        description="Transform your business with Absouts' comprehensive outsourcing services. Expert Cloud Accounting, BPO, Software Development, and Image Editing solutions. Serving clients globally from Bangladesh."
+        keywords="cloud accounting services, BPO outsourcing, software development company, image editing services, accounting outsourcing, payroll management, tax compliance, virtual accounting, Bangladesh BPO, offshore outsourcing"
+        url="https://absouts.com"
+      />
+      <OrganizationSchema />
       {/* Hero Section */}
       <section className="bg-bg-base py-16 pt-28 pb-20 relative overflow-hidden">
         {/* Background decoration */}
@@ -172,8 +182,9 @@ export default function Home() {
               <div className="absolute inset-0">
                 <img
                   src={caBg}
-                  alt=""
+                  alt="Cloud Accounting Services Background"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
 
@@ -204,8 +215,9 @@ export default function Home() {
               <div className="absolute inset-0">
                 <img
                   src={poBg}
-                  alt=""
+                  alt="Business Process Outsourcing Services Background"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
 
@@ -236,8 +248,9 @@ export default function Home() {
               <div className="absolute inset-0">
                 <img
                   src={sdBg}
-                  alt=""
+                  alt="Software Development Services Background"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
 
@@ -268,8 +281,9 @@ export default function Home() {
               <div className="absolute inset-0">
                 <img
                   src={ieBg}
-                  alt=""
+                  alt="Image Editing Services Background"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
 
@@ -317,7 +331,7 @@ export default function Home() {
 
               <div className="space-y-6">
                 <div className="group flex items-start space-x-4 p-4 rounded-2xl hover:bg-mediterranean-linen hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="feature-global-reach">
-                  <div className="w-12 h-12 bg-mediterranean-french rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-subtle">
+                  <div className="w-12 h-12 bg-mediterranean-french rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-subtle">
                     <Globe className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -327,7 +341,7 @@ export default function Home() {
                 </div>
 
                 <div className="group flex items-start space-x-4 p-4 rounded-2xl hover:bg-mediterranean-linen hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="feature-expert-leadership">
-                  <div className="w-12 h-12 bg-mediterranean-calendula rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-subtle">
+                  <div className="w-12 h-12 bg-mediterranean-french rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-subtle">
                     <Award className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -337,7 +351,7 @@ export default function Home() {
                 </div>
 
                 <div className="group flex items-start space-x-4 p-4 rounded-2xl hover:bg-mediterranean-linen hover:shadow-medium transform hover:-translate-y-1 transition-all duration-300 cursor-pointer" data-testid="feature-trusted-partnership">
-                  <div className="w-12 h-12 bg-mediterranean-olive rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-subtle">
+                  <div className="w-12 h-12 bg-mediterranean-french rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-subtle">
                     <Shield className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -348,11 +362,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
+            <div className="flex justify-start ml-16">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                src={whyChooseUsBG}
                 alt="Professional team collaboration"
-                className="rounded-2xl shadow-medium w-full h-auto"
+                className="w-full max-w-lg h-auto"
                 data-testid="team-image"
               />
             </div>

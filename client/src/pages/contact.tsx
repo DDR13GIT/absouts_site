@@ -1,8 +1,10 @@
 import { ContactForm } from "@/components/forms/contact-form";
 import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
-import bdLocationBG from "@assets/bdLocationBG.svg";
-import ukLocationBG from "@assets/ukLocationBG.svg";
+import { SEO } from "@/components/seo/SEO";
+import { LazyMap } from "@/components/map/LazyMap";
+import bdLocationBG from "@assets/bdLocationBG.webp";
+import ukLocationBG from "@assets/ukLocationBG.webp";
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -75,6 +77,12 @@ export default function Contact() {
 
   return (
     <div data-testid="contact-page">
+      <SEO
+        title="Contact Us - Get in Touch | Absouts"
+        description="Contact Absouts for Cloud Accounting, BPO, and Software Development services. Offices in Dhaka, Bangladesh and London, UK. Email: contact@absouts.com | Phone: +880 2 223 315 204"
+        keywords="contact absouts, outsourcing inquiry, BPO contact, cloud accounting contact, Dhaka office, London office, business inquiry, get quote"
+        url="https://absouts.com/contact"
+      />
       {/* Hero Banner */}
       <section className="py-20 pt-28 bg-bg-base relative overflow-hidden">
         {/* Background decoration */}
@@ -226,18 +234,10 @@ export default function Contact() {
 
       {/* Map Section */}
       <section className="h-96 bg-bg-section relative mt-20">
-        <div className="w-full h-full">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8970097242474!2d90.38750831498152!3d23.750842494584695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1234567890123!5m2!1sen!2sbd"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Office Location Map"
-          ></iframe>
-        </div>
+        <LazyMap
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8970097242474!2d90.38750831498152!3d23.750842494584695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1234567890123!5m2!1sen!2sbd"
+          title="Office Location Map"
+        />
       </section>
     </div>
   );

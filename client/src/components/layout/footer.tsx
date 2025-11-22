@@ -75,15 +75,19 @@ export function Footer() {
             <h3 className="text-xl font-bold mb-6">Contact</h3>
             <ul className="space-y-3 text-white/80">
               <li className="flex items-center" data-testid="footer-email">
-                <Mail className="h-4 w-4 mr-3 text-brand-accent" />
-                info@absouts.com
+                <Mail className="h-4 w-4 mr-3 text-brand-accent flex-shrink-0" />
+                contact@absouts.com
               </li>
-              <li className="flex items-center" data-testid="footer-phone">
-                <Phone className="h-4 w-4 mr-3 text-brand-accent" />
-                +1 (555) 123-4567
+              <li className="flex items-start" data-testid="footer-phone">
+                <Phone className="h-4 w-4 mr-3 text-brand-accent flex-shrink-0 mt-1" />
+                <div className="flex flex-col space-y-1">
+                  <span>+880 2 223 315 204</span>
+                  <span>+880 2 223 315 191</span>
+                  <span>+44 020 7794 5045</span>
+                </div>
               </li>
               <li className="flex items-center" data-testid="footer-location">
-                <MapPin className="h-4 w-4 mr-3 text-brand-accent" />
+                <MapPin className="h-4 w-4 mr-3 text-brand-accent flex-shrink-0" />
                 Dhaka, Bangladesh
               </li>
             </ul>
@@ -115,7 +119,6 @@ export function Footer() {
           <div className="flex space-x-6 text-white/60 text-sm mt-4 md:mt-0">
             <Link href="/privacy-policy" className="hover:text-brand-accent transition-colors" data-testid="footer-privacy">Privacy Policy</Link>
             <Link href="/terms-of-service" className="hover:text-brand-accent transition-colors" data-testid="footer-terms">Terms of Service</Link>
-            <Link href="/cookie-policy" className="hover:text-brand-accent transition-colors" data-testid="footer-cookies">Cookie Policy</Link>
           </div>
         </div>
       </div>

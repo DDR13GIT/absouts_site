@@ -7,6 +7,8 @@ import { useQuery } from "@tanstack/react-query";
 import { Skeleton } from "@/components/ui/skeleton";
 import { TrendingUp, Globe, Users } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
+import { SEO } from "@/components/seo/SEO";
+import { BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 interface Job {
   id: string;
@@ -101,6 +103,18 @@ export default function Career() {
 
   return (
     <div data-testid="career-page">
+      <SEO
+        title="Careers at Absouts - Join Our Global Team | Job Opportunities"
+        description="Explore exciting career opportunities at Absouts. Join our team in cloud accounting, BPO, software development, and more. Competitive benefits, growth opportunities, and collaborative work environment."
+        keywords="careers absouts, job opportunities, hiring, cloud accounting jobs, BPO jobs, software developer jobs, Bangladesh careers, remote work opportunities"
+        url="https://absouts.com/career"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://absouts.com' },
+          { name: 'Career', url: 'https://absouts.com/career' }
+        ]}
+      />
       <section className="py-20 pt-28 bg-bg-base relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-gradient-to-r from-brand-secondary/5 to-transparent"></div>
