@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { checkGeoblocking } from '../shared/geoblocking';
+import { checkGeoblocking } from '../shared/geoblocking.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Check geoblocking first

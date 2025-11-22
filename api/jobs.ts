@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { createClient } from '@supabase/supabase-js';
-import { checkGeoblocking } from '../shared/geoblocking';
+import { checkGeoblocking } from '../shared/geoblocking.js';
 
 // Initialize Supabase
 const supabaseUrl = process.env.SUPABASE_URL;
