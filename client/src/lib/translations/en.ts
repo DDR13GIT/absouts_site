@@ -263,7 +263,8 @@ export const en = {
         description: "Onboarding and team integration"
       }
     },
-    noJobs: "No current job openings available. Please check back later."
+    noJobs: "No current job openings available. Please check back later.",
+    jobsUnavailable: "We are currently not hiring or have no openings available at this time. Please check back later for new opportunities."
   },
 
   // Contact Page

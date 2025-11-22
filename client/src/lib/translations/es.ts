@@ -265,7 +265,8 @@ export const es: TranslationKeys = {
         description: "Incorporación e integración al equipo"
       }
     },
-    noJobs: "No hay vacantes disponibles actualmente. Por favor, vuelve a consultar más tarde."
+    noJobs: "No hay vacantes disponibles actualmente. Por favor, vuelve a consultar más tarde.",
+    jobsUnavailable: "Actualmente no estamos contratando o no tenemos vacantes disponibles en este momento. Por favor, vuelve a consultar más tarde para nuevas oportunidades."
   },
 
   // Contact Page

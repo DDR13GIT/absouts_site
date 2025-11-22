@@ -51,7 +51,7 @@ export default function Career() {
     },
     {
       icon: Globe,
-      title: t.career.whyChoose.global.title, 
+      title: t.career.whyChoose.global.title,
       description: t.career.whyChoose.global.description
     },
     {
@@ -69,14 +69,14 @@ export default function Career() {
       bgColor: "bg-brand-accent"
     },
     {
-      number: 2, 
+      number: 2,
       title: t.career.process.review.title,
       description: t.career.process.review.description,
       bgColor: "bg-brand-primary"
     },
     {
       number: 3,
-      title: t.career.process.interview.title, 
+      title: t.career.process.interview.title,
       description: t.career.process.interview.description,
       bgColor: "bg-brand-secondary"
     },
@@ -87,19 +87,6 @@ export default function Career() {
       bgColor: "bg-brand-accent"
     }
   ];
-
-  if (error) {
-    return (
-      <div className="pt-16" data-testid="career-page-error">
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl font-bold text-destructive mb-4">{t.common.loadingError}</h1>
-            <p className="text-text-secondary">{t.common.tryAgainLater}</p>
-          </div>
-        </section>
-      </div>
-    );
-  }
 
   return (
     <div data-testid="career-page">
@@ -130,7 +117,7 @@ export default function Career() {
               <div className="w-2 h-2 bg-brand-accent rounded-full animate-pulse"></div>
               <span className="text-sm font-medium text-text-primary">{t.career.badge}</span>
             </div>
-            
+
             <h1 className="text-5xl font-bold text-brand-primary mb-6" data-testid="career-title">{t.career.title}</h1>
             <p className="text-xl text-text-secondary max-w-4xl mx-auto" data-testid="career-description">
               {t.career.description}
@@ -146,7 +133,7 @@ export default function Career() {
               </div>
               <h2 className="text-3xl font-bold text-brand-primary" data-testid="why-choose-title">{t.career.whyChoose.title}</h2>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {whyChooseUs.map((reason, index) => {
                 const IconComponent = reason.icon;
@@ -172,7 +159,7 @@ export default function Career() {
               </div>
               <h2 className="text-3xl font-bold text-brand-primary" data-testid="current-openings-title">{t.career.openings.title}</h2>
             </div>
-            
+
             <div className="space-y-6">
               {isLoading ? (
                 // Loading skeletons
@@ -192,6 +179,11 @@ export default function Career() {
                     </div>
                   </div>
                 ))
+              ) : error ? (
+                // Fallback message when API fails
+                <div className="text-center py-12" data-testid="jobs-unavailable-message">
+                  <p className="text-text-secondary text-lg">{t.career.jobsUnavailable}</p>
+                </div>
               ) : jobs && jobs.length > 0 ? (
                 jobs.map((job) => (
                   <JobListing
@@ -202,7 +194,7 @@ export default function Career() {
                 ))
               ) : (
                 <div className="text-center py-12" data-testid="no-jobs-message">
-                  <p className="text-text-secondary text-lg">No current job openings available. Please check back later.</p>
+                  <p className="text-text-secondary text-lg">{t.career.noJobs}</p>
                 </div>
               )}
             </div>
@@ -212,7 +204,7 @@ export default function Career() {
           <div className="group bg-bg-surface backdrop-blur-sm border-0 shadow-medium hover:shadow-strong transform hover:-translate-y-2 transition-all duration-500 hover:bg-white/90 cursor-pointer relative overflow-hidden rounded-2xl p-8" data-testid="application-process">
             {/* Hover gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-brand-secondary/5 to-brand-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-            
+
             <h2 className="text-3xl font-bold text-brand-primary mb-6 text-center group-hover:text-brand-accent transition-colors duration-300 relative z-10">Application Process</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
               {applicationProcess.map((step, index) => (
