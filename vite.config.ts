@@ -27,6 +27,7 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    assetsInlineLimit: 0, // Force all assets to be emitted as files (no inlining)
     chunkSizeWarningLimit: 1000, // Increase warning limit to 1000 kB
     rollupOptions: {
       output: {

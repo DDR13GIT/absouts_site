@@ -75,12 +75,12 @@ import ieServiceBG1 from "@assets/ieServiceBG1.svg";
 import ieServiceBG2 from "@assets/ieServiceBG2.svg";
 
 // About Page Backgrounds
-import foundationBG from "@assets/foundationBG.svg";
-import baseDarkerBG from "@assets/baseDarkerBG.svg";
-import baseBG from "@assets/baseBG.svg";
-import missionBG from "@assets/missionBG.svg";
-import visionBG from "@assets/visionBG.svg";
-import valuesBG from "@assets/valuesBG.svg";
+import foundationBG from "@assets/foundationBG.svg?url";
+import baseDarkerBG from "@assets/baseDarkerBG.svg?url";
+import baseBG from "@assets/baseBG.svg?url";
+import missionBG from "@assets/missionBG.svg?url";
+import visionBG from "@assets/visionBG.svg?url";
+import valuesBG from "@assets/valuesBG.svg?url";
 
 /**
  * Technology logos organized by category
