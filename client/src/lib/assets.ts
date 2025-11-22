@@ -74,6 +74,14 @@ import caServiceBG2 from "@assets/caServiceBG2.svg";
 import ieServiceBG1 from "@assets/ieServiceBG1.svg";
 import ieServiceBG2 from "@assets/ieServiceBG2.svg";
 
+// About Page Backgrounds
+import foundationBG from "@assets/foundationBG.svg";
+import baseDarkerBG from "@assets/baseDarkerBG.svg";
+import baseBG from "@assets/baseBG.svg";
+import missionBG from "@assets/missionBG.svg";
+import visionBG from "@assets/visionBG.svg";
+import valuesBG from "@assets/valuesBG.svg";
+
 /**
  * Technology logos organized by category
  * Using high-quality SVGs from CDNs
@@ -183,6 +191,18 @@ export const IE_BACKGROUNDS = {
   bg2: ieServiceBG2,
 } as const;
 
+/**
+ * About Page backgrounds
+ */
+export const ABOUT_BACKGROUNDS = {
+  foundation: foundationBG,
+  baseDarker: baseDarkerBG,
+  base: baseBG,
+  mission: missionBG,
+  vision: visionBG,
+  values: valuesBG,
+} as const;
+
 // Type exports for better TypeScript support
 export type TechnologyLogo = keyof typeof TECHNOLOGY_LOGOS;
 export type ServiceIcon = keyof typeof SERVICE_ICONS;
@@ -190,3 +210,4 @@ export type ImageEditingExample = keyof typeof IMAGE_EDITING_EXAMPLES;
 export type BPOBackground = keyof typeof BPO_BACKGROUNDS;
 export type CABackground = keyof typeof CA_BACKGROUNDS;
 export type IEBackground = keyof typeof IE_BACKGROUNDS;
+export type AboutBackground = keyof typeof ABOUT_BACKGROUNDS;

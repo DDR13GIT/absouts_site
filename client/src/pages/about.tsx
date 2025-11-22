@@ -1,5 +1,6 @@
 import { Star, Lightbulb, Handshake, Trophy, Users, Globe } from "lucide-react";
 import { useTranslation } from "@/lib/translation-context";
+import { ABOUT_BACKGROUNDS } from "@/lib/assets";
 
 // Import leadership team photos
 import kdRoyPhoto from "@assets/k_d_roy_1757771450330.jpeg";
@@ -10,12 +11,6 @@ import razwanKaderPhoto from "@assets/razwan_kader_1757771450332.png";
 // Import custom icons for mission and vision
 import lightbulbIcon from "@assets/Asset 3_1757767623439.png";
 import globeIcon from "@assets/Asset 1_1757767623438.png";
-import foundationBG from "@assets/foundationBG.svg?url";
-import baseDarkerBG from "@assets/baseDarkerBG.svg?url";
-import baseBG from "@assets/baseBG.svg?url";
-import missionBG from "@assets/missionBG.svg?url";
-import visionBG from "@assets/visionBG.svg?url";
-import valuesBG from "@assets/valuesBG.svg?url";
 
 export default function About() {
   const { t } = useTranslation();
@@ -116,7 +111,7 @@ export default function About() {
           <div className="mb-20 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
             <div
               className="relative min-h-[600px] lg:min-h-[700px] bg-cover bg-center bg-no-repeat flex items-center"
-              style={{ backgroundImage: `url(${foundationBG})` }}
+              style={{ backgroundImage: `url(${ABOUT_BACKGROUNDS.foundation})` }}
               data-testid="foundation-card"
             >
               {/* Text Content - Positioned on the right */}
@@ -138,13 +133,13 @@ export default function About() {
           <div className="mb-20 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
             <div
               className="py-20"
-              style={{ backgroundImage: `url(${baseDarkerBG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: `url(${ABOUT_BACKGROUNDS.baseDarker})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Vision Card */}
                 <div
                   className="relative rounded-[4rem] overflow-hidden min-h-[500px] p-12 flex flex-col justify-start"
-                  style={{ backgroundImage: `url(${visionBG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                  style={{ backgroundImage: `url(${ABOUT_BACKGROUNDS.vision})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                   data-testid="vision-card"
                 >
                   <h2 className="text-4xl lg:text-5xl font-bold text-[#B8735F] mb-8">
@@ -158,7 +153,7 @@ export default function About() {
                 {/* Mission Card */}
                 <div
                   className="relative rounded-[4rem] overflow-hidden min-h-[500px] p-12 flex flex-col justify-start"
-                  style={{ backgroundImage: `url(${missionBG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                  style={{ backgroundImage: `url(${ABOUT_BACKGROUNDS.mission})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                   data-testid="mission-card"
                 >
                   <h2 className="text-4xl lg:text-5xl font-bold text-[#2C5F4E] mb-8">
@@ -176,7 +171,7 @@ export default function About() {
           <div className="mb-20 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
             <div
               className="py-20"
-              style={{ backgroundImage: `url(${baseBG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: `url(${ABOUT_BACKGROUNDS.base})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
@@ -190,7 +185,7 @@ export default function About() {
                 {/* Single Card with all values */}
                 <div
                   className="relative rounded-[4rem] overflow-hidden p-16 lg:p-20 flex flex-col min-h-[700px]"
-                  style={{ backgroundImage: `url(${valuesBG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                  style={{ backgroundImage: `url(${ABOUT_BACKGROUNDS.values})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                 >
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 flex-1 auto-rows-fr">
                     {values.map((value, index) => {
