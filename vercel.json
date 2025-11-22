@@ -9,7 +9,7 @@
         {
           "type": "header",
           "key": "x-vercel-ip-country",
-          "value": "BD"
+          "value": "KP"
         }
       ],
       "destination": "/blocked.html",
