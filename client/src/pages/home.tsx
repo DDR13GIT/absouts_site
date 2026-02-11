@@ -177,40 +177,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Card 1 - Cloud Accounting */}
-            <div className="relative rounded-3xl p-8 overflow-hidden group hover:shadow-xl transition-all duration-300 min-h-[350px]">
-              <div className="absolute inset-0">
-                <img
-                  src={caBg}
-                  alt="Cloud Accounting Services Background"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-
-              <div className="relative z-10">
-                <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/80 mb-6">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                  <span className="text-xs font-medium text-gray-700">Finance Ready</span>
-                </div>
-
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">Cloud Accounting</h3>
-                <p className="text-gray-700 mb-8 leading-relaxed font-medium">
-                  End-to-end bookkeeping, reporting, and compliance handled with precision and automation. Removes manual workload and enforces consistent financial accuracy.
-                </p>
-              </div>
-
-              <Link href="/cloud-accounting" className="absolute bottom-8 left-8 z-20">
-                <button className="inline-flex items-center text-gray-900 font-medium border-b-2 border-gray-900 pb-1 hover:border-orange-500 hover:text-orange-500 transition-colors duration-300">
-                  Explore
-                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </button>
-              </Link>
-            </div>
-
-            {/* Card 2 - Business Process Outsourcing */}
+            {/* Card - Business Process Outsourcing */}
             <div className="relative rounded-3xl p-8 overflow-hidden group hover:shadow-xl transition-all duration-300 min-h-[350px]">
               <div className="absolute inset-0">
                 <img
@@ -243,7 +210,40 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Card 3 - Software Development */}
+             {/* Card - Image Editing Service */}
+             <div className="relative rounded-3xl p-8 overflow-hidden group hover:shadow-xl transition-all duration-300 min-h-[350px]">
+              <div className="absolute inset-0">
+                <img
+                  src={ieBg}
+                  alt="Image Editing Services Background"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              <div className="relative z-10">
+                <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/80 mb-6">
+                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <span className="text-xs font-medium text-gray-700">Precision Assured</span>
+                </div>
+
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">Image Editing Service</h3>
+                <p className="text-gray-700 mb-8 leading-relaxed font-medium">
+                  High-volume, detail-accurate image processing optimized for speed and brand consistency. Built for teams requiring fast turnaround with uniform output quality.
+                </p>
+              </div>
+
+              <Link href="/image-editing" className="absolute bottom-8 left-8 z-20">
+                <button className="inline-flex items-center text-gray-900 font-medium border-b-2 border-gray-900 pb-1 hover:border-green-600 hover:text-green-600 transition-colors duration-300">
+                  Explore
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </button>
+              </Link>
+            </div>
+
+            {/* Card - Software Development */}
             <div className="relative rounded-3xl p-8 overflow-hidden group hover:shadow-xl transition-all duration-300 min-h-[350px]">
               <div className="absolute inset-0">
                 <img
@@ -276,12 +276,12 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Card 4 - Image Editing Service */}
+            {/* Card - Cloud Accounting */}
             <div className="relative rounded-3xl p-8 overflow-hidden group hover:shadow-xl transition-all duration-300 min-h-[350px]">
               <div className="absolute inset-0">
                 <img
-                  src={ieBg}
-                  alt="Image Editing Services Background"
+                  src={caBg}
+                  alt="Cloud Accounting Services Background"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -289,25 +289,25 @@ export default function Home() {
 
               <div className="relative z-10">
                 <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-white/80 mb-6">
-                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
-                  <span className="text-xs font-medium text-gray-700">Precision Assured</span>
+                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                  <span className="text-xs font-medium text-gray-700">Finance Ready</span>
                 </div>
 
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">Image Editing Service</h3>
+                <h3 className="text-3xl font-bold text-gray-900 mb-4">Cloud Accounting</h3>
                 <p className="text-gray-700 mb-8 leading-relaxed font-medium">
-                  High-volume, detail-accurate image processing optimized for speed and brand consistency. Built for teams requiring fast turnaround with uniform output quality.
+                  End-to-end bookkeeping, reporting, and compliance handled with precision and automation. Removes manual workload and enforces consistent financial accuracy.
                 </p>
               </div>
 
-              <Link href="/image-editing" className="absolute bottom-8 left-8 z-20">
-                <button className="inline-flex items-center text-gray-900 font-medium border-b-2 border-gray-900 pb-1 hover:border-green-600 hover:text-green-600 transition-colors duration-300">
+              <Link href="/cloud-accounting" className="absolute bottom-8 left-8 z-20">
+                <button className="inline-flex items-center text-gray-900 font-medium border-b-2 border-gray-900 pb-1 hover:border-orange-500 hover:text-orange-500 transition-colors duration-300">
                   Explore
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </button>
               </Link>
-            </div>
+            </div>           
           </div>
         </div>
       </section>
