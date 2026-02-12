@@ -5,6 +5,7 @@ import { useTranslation } from "@/lib/translation-context";
 import { SERVICE_ICONS, IMAGE_EDITING_EXAMPLES, IE_BACKGROUNDS } from "@/lib/assets";
 import { SEO } from "@/components/seo/SEO";
 import { ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import ShinyText from "@/components/ShinyText";
 
 export default function ImageEditingService() {
   const { t } = useTranslation();
@@ -12,115 +13,107 @@ export default function ImageEditingService() {
   const imageEditingServices = [
     {
       icon: Scissors,
-      title: "Background Removal Services",
+      title: "Background\nRemoval",
       subtitle: "Clean, professional backgrounds for product photography",
       description: "Precision background removal and replacement that makes your products stand out. Our skilled editors handle complex edges, fine details, and transparent objects with meticulous attention, delivering pixel-perfect results that enhance your product presentation across all platforms.",
       image: IMAGE_EDITING_EXAMPLES.backgroundRemoval,
-      whatWeProvide: [
-        "Clean background removal for e-commerce products",
-        "Complex edge detection for hair, fur, and transparent objects",
-        "Background replacement with custom colors or scenes",
-        "Shadow and reflection preservation options"
-      ],
-      advantage: "Professional background removal enhances product presentation, increases conversion rates, maintains brand consistency across catalogs, and provides ready-to-use images for multiple channels"
+      features: [
+        "Clean background removal",
+        "Complex edge detection",
+        "Background replacement",
+        "Shadow preservation"
+      ]
     },
     {
       icon: Palette,
-      title: "Color Correction Services",
+      title: "Color\nCorrection",
       subtitle: "Vibrant, accurate colors that capture attention",
       description: "Advanced color grading and correction that brings your images to life. We adjust white balance, exposure, contrast, and saturation to ensure your images display true-to-life colors with optimal vibrancy, making them visually appealing while maintaining natural appearance.",
       image: IMAGE_EDITING_EXAMPLES.colorCorrection,
-      whatWeProvide: [
-        "White balance adjustment for accurate color representation",
-        "Exposure and contrast optimization",
-        "Color saturation and vibrancy enhancement",
-        "Batch processing for consistent color across image sets"
-      ],
-      advantage: "Accurate color representation builds customer trust, enhances visual appeal, reduces product returns from color mismatches, and creates cohesive brand aesthetics across all marketing materials"
+      features: [
+        "White balance adjustment",
+        "Exposure optimization",
+        "Color saturation",
+        "Batch processing"
+      ]
     },
     {
       icon: UserCircle,
-      title: "Portrait Retouching Services",
+      title: "Portrait\nRetouching",
       subtitle: "Natural beauty enhancement for professional portraits",
       description: "Expert portrait retouching that enhances natural beauty while maintaining authentic appearance. Our editors skillfully remove blemishes, smooth skin, brighten eyes, and refine features, creating polished professional portraits that look naturally flawless.",
       image: IMAGE_EDITING_EXAMPLES.faceSwapping,
-      whatWeProvide: [
-        "Skin smoothing and blemish removal",
-        "Eye and teeth brightening",
-        "Face contouring and feature refinement",
-        "Hair enhancement and flyaway removal"
-      ],
-      advantage: "Professional portrait retouching enhances subject confidence, creates polished professional images, maintains natural appearance, and produces consistent quality across large photo sets"
+      features: [
+        "Skin smoothing",
+        "Eye brightening",
+        "Face contouring",
+        "Hair enhancement"
+      ]
     },
     {
       icon: Layers,
-      title: "Image Masking Services",
+      title: "Image\nMasking",
       subtitle: "Precise selections for complex editing requirements",
       description: "Advanced image masking techniques for objects with complex edges and fine details. We create precise masks for hair, fur, glass, and transparent objects, enabling sophisticated editing effects while preserving natural edges and intricate details.",
       image: IMAGE_EDITING_EXAMPLES.imageMasking,
-      whatWeProvide: [
-        "Layer masking for complex edge preservation",
-        "Alpha channel masking for transparency",
-        "Clipping path creation for sharp-edged objects",
-        "Advanced masking for hair and fur details"
-      ],
-      advantage: "Precise masking enables sophisticated editing effects, preserves fine details and natural edges, provides flexibility for multiple output variations, and maintains professional quality in complex compositions"
+      features: [
+        "Layer masking",
+        "Alpha channel masking",
+        "Clipping path creation",
+        "Advanced hair masking"
+      ]
     },
     {
       icon: Wand2,
-      title: "Photo Manipulation Services",
+      title: "Photo\nManipulation",
       subtitle: "Creative image composition for stunning visuals",
       description: "Artistic photo manipulation that transforms ordinary images into extraordinary visual stories. We seamlessly blend multiple elements, create imaginative scenes, and add creative effects while maintaining photorealistic quality that captivates your audience.",
       image: IMAGE_EDITING_EXAMPLES.photoManipulation,
-      whatWeProvide: [
-        "Multi-image compositing and blending",
-        "Creative scene creation and enhancement",
-        "Object addition and removal",
-        "Artistic effects and stylization"
-      ],
-      advantage: "Creative manipulation enables unique marketing visuals, stands out in competitive markets, tells compelling visual stories, and creates memorable brand imagery without expensive photoshoots"
+      features: [
+        "Multi-image compositing",
+        "Creative scene creation",
+        "Object manipulation",
+        "Artistic effects"
+      ]
     },
     {
       icon: Sun,
-      title: "Shadow & Reflection Services",
+      title: "Shadow \u0026\nReflection",
       subtitle: "Realistic depth for product photography",
       description: "Professional shadow creation and reflection effects that add depth and realism to product photography. Our editors craft natural-looking shadows and reflections that ground your products and create appealing three-dimensional presentation.",
       image: IMAGE_EDITING_EXAMPLES.shadowReflection,
-      whatWeProvide: [
-        "Natural drop shadow creation",
-        "Reflection effects for surfaces",
-        "Shadow consistency across product lines",
-        "Customizable shadow intensity and direction"
-      ],
-      advantage: "Realistic shadows and reflections add depth and dimension, create professional product presentation, enhance perceived value, and provide consistent visual language across product catalogs"
+      features: [
+        "Drop shadow creation",
+        "Reflection effects",
+        "Shadow consistency",
+        "Custom intensity"
+      ]
     },
     {
       icon: Sparkles,
-      title: "Photo Enhancement Services",
+      title: "Photo\nEnhancement",
       subtitle: "Optimize every image detail for maximum impact",
       description: "Comprehensive photo enhancement that optimizes sharpness, clarity, and overall image quality. We refine details, reduce noise, enhance textures, and ensure your images look crisp and professional across all viewing platforms and print materials.",
       image: IMAGE_EDITING_EXAMPLES.photoRetouching,
-      whatWeProvide: [
-        "Sharpness and clarity enhancement",
-        "Noise reduction and grain removal",
-        "Detail enhancement and texture refinement",
-        "Image resolution upscaling when needed"
-      ],
-      advantage: "Enhanced image quality improves professional appearance, increases customer engagement, ensures print-ready output, and maintains brand standards across all marketing channels"
+      features: [
+        "Sharpness enhancement",
+        "Noise reduction",
+        "Detail refinement",
+        "Resolution upscaling"
+      ]
     },
     {
       icon: Package,
-      title: "Product Enhancement Services",
+      title: "Product\nEnhancement",
       subtitle: "Jewelry, clothing, and product perfection",
       description: "Specialized product enhancement for jewelry, clothing, and e-commerce items. We remove imperfections, enhance textures, adjust proportions, and ensure your products look their absolute best, driving customer interest and purchase decisions.",
       image: IMAGE_EDITING_EXAMPLES.jewelryRetouch,
-      whatWeProvide: [
-        "Jewelry retouching and metal enhancement",
-        "Clothing wrinkle removal and fabric refinement",
-        "Product shape and proportion adjustment",
-        "Texture and material enhancement"
-      ],
-      advantage: "Product enhancement increases perceived value, reduces return rates, improves conversion rates, and creates professional e-commerce presentations that build customer confidence and drive sales"
+      features: [
+        "Jewelry retouching",
+        "Clothing refinement",
+        "Shape adjustment",
+        "Texture enhancement"
+      ]
     }
   ];
 
@@ -144,7 +137,8 @@ export default function ImageEditingService() {
           { name: 'Image Editing', url: 'https://absouts.com/image-editing' }
         ]}
       />
-      {/* Hero Section */}
+
+      {/* Hero Section - Original Design */}
       <section className="py-20 bg-bg-base">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
@@ -162,18 +156,17 @@ export default function ImageEditingService() {
         </div>
       </section>
 
-      {/* Image Editing Services - Full Width Sections */}
+      {/* Services - Minimalist Asymmetric Layout with Original Backgrounds */}
       {imageEditingServices.map((service, index) => {
         const isEven = index % 2 === 0;
         const bgClass = isEven ? 'bg-bg-base' : 'bg-bg-base-darker';
-        const iconBgColor = isEven ? 'bg-brand-accent' : 'bg-brand-primary';
         const backgroundImage = isEven ? IE_BACKGROUNDS.bg1 : IE_BACKGROUNDS.bg2;
         const IconComponent = service.icon;
-
+        
         return (
           <section
             key={index}
-            className={`relative py-20 ${bgClass}`}
+            className={`relative py-24 sm:py-32 ${bgClass}`}
             style={{
               backgroundImage: `url(${backgroundImage})`,
               backgroundSize: 'cover',
@@ -181,56 +174,112 @@ export default function ImageEditingService() {
               backgroundRepeat: 'no-repeat'
             }}
           >
-            {/* Content Container */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              {/* Service Header */}
-              <div className="mb-12">
-                <div className="flex mb-6">
-                  <div
-                    className={`w-20 h-20 rounded-xl flex items-center justify-center shadow-medium ${iconBgColor}`}
-                  >
-                    <IconComponent className="w-12 h-12 text-white" />
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+              <div className={`grid lg:grid-cols-2 gap-16 lg:gap-24 items-center ${isEven ? '' : 'lg:grid-flow-dense'}`}>
+                
+                {/* Text Content */}
+                <div className={`${isEven ? '' : 'lg:col-start-2'}`}>
+                  {/* Service Number */}
+                  <div className="text-sm font-medium text-gray-400 mb-6 tracking-widest">
+                    {String(index + 1).padStart(2, '0')}
                   </div>
-                </div>
-                <h3 className="text-4xl font-bold mb-4 text-gray-900">{service.title}</h3>
-                <p className="text-lg font-medium max-w-3xl text-gray-800">{service.subtitle}</p>
-              </div>
-
-              {/* Description */}
-              <p className="text-base font-normal mb-12 max-w-4xl text-gray-700">
-                {service.description}
-              </p>
-
-              {/* Image Example */}
-              {service.image && (
-                <div className="mb-12 max-w-4xl">
-                  <div className="rounded-2xl overflow-hidden shadow-strong border-2 border-gray-900/10">
-                    <img
-                      src={service.image}
-                      alt={`${service.title} example`}
-                      className="w-full h-auto object-cover"
-                    />
-                  </div>
-                </div>
-              )}
-
-              {/* What We Provide Section */}
-              <div className="mb-8">
-                <h4 className="text-xl font-semibold mb-6 text-gray-900">What We Provide</h4>
-                <div className="space-y-3">
-                  {service.whatWeProvide.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-accent" />
-                      <span className="text-base leading-relaxed text-gray-800">{item}</span>
+                  
+                  {/* Large Title with Shiny Effect */}
+                  <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight mb-6">
+                    {service.title.split('\n').map((line, i) => (
+                      <span key={i} className="block">
+                        <ShinyText
+                          text={line}
+                          speed={3}
+                          color="#111827"
+                          shineColor="#50816C"
+                          spread={140}
+                          className="font-bold"
+                        />
+                      </span>
+                    ))}
+                  </h2>
+                  
+                  {/* Icon Badge */}
+                  <div className="flex items-center gap-3 mb-8">
+                    <div className="w-12 h-12 rounded-full bg-white/50 flex items-center justify-center">
+                      <IconComponent className="w-5 h-5 text-gray-700" />
                     </div>
-                  ))}
+                    <span className="text-sm font-medium text-gray-500 uppercase tracking-wider">
+                      {service.subtitle}
+                    </span>
+                  </div>
+                  
+                  {/* Description - Reduced */}
+                  <p className="text-lg text-gray-600 font-light leading-relaxed mb-10 max-w-lg">
+                    {service.description}
+                  </p>
+                  
+                  {/* Capabilities Section */}
+                  <div className="mt-12">
+                    {/* Section Header */}
+                    <div className="flex items-center gap-4 mb-10">
+                      <div className="w-16 h-px bg-green-700" />
+                      <span className="text-sm font-medium text-green-800 uppercase tracking-[0.25em]">
+                        Capabilities
+                      </span>
+                    </div>
+                    
+                    {/* Features Grid - 2x2 with Checkmarks */}
+                    <div className="grid grid-cols-2 gap-x-12 gap-y-8">
+                      {service.features.map((feature, idx) => {
+                        const featureLabels = [
+                          { title: "E-commerce Ready", subtitle: "Clean product backgrounds" },
+                          { title: "Complex Edges", subtitle: "Hair, fur & transparency" },
+                          { title: "Custom Scenes", subtitle: "Any background you need" },
+                          { title: "Natural Shadows", subtitle: "Preserved reflections" }
+                        ];
+                        const label = featureLabels[idx] || { title: feature, subtitle: "" };
+                        
+                        return (
+                          <div key={idx} className="flex items-start gap-4">
+                            <div className="flex-shrink-0 w-6 h-6 rounded-full border border-green-700 flex items-center justify-center mt-0.5">
+                              <CheckCircle className="w-4 h-4 text-green-800" strokeWidth={1.5} />
+                            </div>
+                            <div>
+                              <h4 className="text-base font-semibold text-gray-900 mb-1">
+                                {label.title}
+                              </h4>
+                              <p className="text-sm text-gray-500 font-light">
+                                {label.subtitle}
+                              </p>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              {/* The Advantage Section */}
-              <div className="mt-8">
-                <h4 className="text-xl font-semibold mb-6 text-gray-900">The Advantage</h4>
-                <p className="text-base leading-relaxed text-gray-700">{service.advantage}</p>
+                
+                {/* Large Image */}
+                <div className={`${isEven ? '' : 'lg:col-start-1'}`}>
+                  {service.image && (
+                    <div className="relative group">
+                      {/* Decorative frame */}
+                      <div className="absolute -inset-4 bg-white/30 to-transparent rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform duration-500" />
+                      
+                      <div className="relative overflow-hidden rounded-2xl shadow-strong border-2 border-gray-900/10">
+                        <img
+                          src={service.image}
+                          alt={`${service.title.replace('\n', ' ')} example`}
+                          className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
+                        />
+                        
+                        {/* Hover overlay with subtle gradient */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      </div>
+                      
+                      {/* Floating accent */}
+                      <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-green-700/10 rounded-full blur-2xl" />
+                    </div>
+                  )}
+                </div>
+                
               </div>
             </div>
           </section>
