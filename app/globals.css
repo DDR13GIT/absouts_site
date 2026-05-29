@@ -41,6 +41,113 @@
   100% { transform: translate3d(0,0,0) scale(1); }
 }
 
+/* ─── UI primitive animation keyframes ─────────────────────────────────────
+   Restrained motion per Emil Kowalski:
+   - Enter from scale(0.95) + opacity 0, never from scale(0)
+   - Exit faster than enter (asymmetric)
+   - ease-out for entering UI elements (immediate, responsive feel)
+   - Durations: 150-300ms for UI elements
+   - prefers-reduced-motion: keep opacity only, strip transforms
+   ──────────────────────────────────────────────────────────────────────── */
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes zoom-in-95 {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes zoom-out-95 {
+  from { opacity: 1; transform: scale(1); }
+  to   { opacity: 0; transform: scale(0.95); }
+}
+
+/* Toast: slides up from bottom on enter */
+@keyframes slide-in-from-bottom {
+  from { opacity: 0; transform: translateY(1rem); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Toast: slides right on exit (swipe gesture feel) */
+@keyframes slide-out-to-right {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(100%); }
+}
+
+/* Utility classes used by dialog, select, toast components */
+@utility animate-in {
+  animation-fill-mode: both;
+}
+
+@utility animate-out {
+  animation-fill-mode: both;
+}
+
+@utility fade-in {
+  animation-name: fade-in;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@utility fade-out {
+  animation-name: fade-out;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@utility zoom-in-95 {
+  animation-name: zoom-in-95;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@utility zoom-out-95 {
+  animation-name: zoom-out-95;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@utility slide-in-from-bottom-4 {
+  animation-name: slide-in-from-bottom;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@utility slide-out-to-right-full {
+  animation-name: slide-out-to-right;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Duration overrides used in components */
+@utility duration-125 { animation-duration: 125ms; }
+@utility duration-150 { animation-duration: 150ms; }
+@utility duration-175 { animation-duration: 175ms; }
+@utility duration-200 { animation-duration: 200ms; }
+@utility duration-300 { animation-duration: 300ms; }
+
+/* Reduced motion: strip transforms, keep opacity */
+@media (prefers-reduced-motion: reduce) {
+  @keyframes zoom-in-95 {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes zoom-out-95 {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  @keyframes slide-in-from-bottom {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes slide-out-to-right {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+}
+
 @layer base {
   body {
     background: var(--color-bg-base);
