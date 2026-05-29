@@ -1,5 +1,4 @@
 node_modules
-dist
 .DS_Store
 *.tar.gz
 .local
@@ -7,6 +6,7 @@ dist
 # Next.js
 .next/
 out/
+tsconfig.tsbuildinfo
 
 # Environment variables
 .env
