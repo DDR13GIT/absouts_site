@@ -17,6 +17,218 @@
       "title": "Desarrollo de Software"
     }
   },
+  "home": {
+    "hero": {
+      "badge": "Excelencia Global en Subcontratación",
+      "title": "Opera Eficientemente. Innova. Crece Sosteniblemente.",
+      "subtitle": "Subcontratación integral en Contabilidad en la Nube, BPO y Desarrollo de Software, alineando la última tecnología con las mejores prácticas de la industria.",
+      "findTalent": "Encontrar Talento",
+      "learnMore": "Saber Más",
+      "metrics": {
+        "talents": "540+",
+        "talentsLabel": "Talentos Contratados",
+        "clients": "40+",
+        "clientsLabel": "Clientes de Confianza",
+        "retention": "95%",
+        "retentionLabel": "Tasa de Retención"
+      },
+      "imageAlt1": "Un equipo de subcontratación colaborando en una oficina moderna",
+      "imageAlt2": "Un profesional revisando informes financieros en pantalla"
+    },
+    "services": {
+      "badge": "Nuestros Servicios",
+      "title": "Soluciones Integrales de Subcontratación",
+      "subtitle": "Soluciones de extremo a extremo para tus necesidades operativas y tecnológicas, entregadas por un único socio responsable.",
+      "explore": "Explorar",
+      "cloudAccounting": {
+        "title": "Contabilidad en la Nube",
+        "description": "Contabilidad virtual, nómina, teneduría de libros y cumplimiento fiscal sobre plataformas en la nube seguras, con experiencia práctica atendiendo a empresas con sede en EE. UU."
+      },
+      "bpo": {
+        "title": "Subcontratación de Procesos de Negocio",
+        "description": "Optimiza las funciones comerciales esenciales y mejora la eficiencia operativa con nuestros servicios integrales de BPO."
+      },
+      "software": {
+        "title": "Desarrollo de Software",
+        "description": "Desarrollo de software personalizado y soluciones TI adaptadas para diversas industrias y necesidades comerciales."
+      }
+    },
+    "whyChooseUs": {
+      "badge": "Por Qué Absouts",
+      "title": "Un Socio Construido sobre Confianza y Precisión",
+      "subtitle": "Respaldados por una herencia de contaduría pública y un modelo de entrega global que escala con tu ambición.",
+      "items": {
+        "expertise": {
+          "title": "Experiencia Profesional Certificada",
+          "description": "Propiedad de una división dedicada de una reconocida firma de Contadores Públicos, lo que fundamenta cada proyecto en rigor profesional."
+        },
+        "global": {
+          "title": "Entrega Global",
+          "description": "Un equipo distribuido que atiende a clientes en EE. UU., Reino Unido y más allá, alineado con tu zona horaria y estándares."
+        },
+        "security": {
+          "title": "Seguridad de Datos",
+          "description": "Infraestructura avanzada y estrictas prácticas de cumplimiento protegen tus datos en cada paso."
+        },
+        "scalability": {
+          "title": "Diseñado para Escalar",
+          "description": "Modelos de colaboración flexibles que crecen con tu negocio, desde una sola función hasta una oficina administrativa completa."
+        }
+      }
+    },
+    "cta": {
+      "title": "Construyamos Juntos tu Oficina Administrativa",
+      "description": "Cuéntanos qué necesitas subcontratar. Diseñaremos un modelo de entrega en torno a tus objetivos, estándares y zona horaria.",
+      "primary": "Contáctanos",
+      "secondary": "Ver Servicios"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Líder Global en Subcontratación",
+      "title": "Acerca de Absouts",
+      "subtitle": "Una entidad global de subcontratación enfocada en Contabilidad en la Nube, Subcontratación de Procesos de Negocio y Desarrollo de Software, simplificando los procesos comerciales y la gestión tecnológica para clientes en todo el mundo."
+    },
+    "foundation": {
+      "title": "Nuestra Fundación y Asociación",
+      "description1": "Absouts es propiedad de K D Roy & CO, una división dedicada de la reconocida firma de Contadores Públicos Adhikary Roy & Co., en colaboración estratégica con LTR Consultants, una prominente firma consultora y asesora legal con sede en Bangladesh.",
+      "description2": "Esta asociación aprovecha una amplia experiencia profesional, liderazgo en la industria y una reputación establecida para entregar soluciones integrales de subcontratación y consultoría a nivel global."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Proporcionar soluciones integradas de contabilidad, BPO y subcontratación de software que empoderen a las empresas de todo el mundo para operar eficientemente, innovar y crecer de manera sostenible."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Convertirnos en un líder global confiable conocido por resolver desafíos comerciales y tecnológicos a través de servicios de subcontratación confiables."
+    },
+    "values": {
+      "badge": "Valores Fundamentales",
+      "title": "Nuestros Valores",
+      "excellence": {
+        "title": "Excelencia",
+        "description": "Entregamos consistentemente servicios de alta calidad, mejorando continuamente y utilizando las mejores prácticas."
+      },
+      "innovation": {
+        "title": "Innovación",
+        "description": "Utilizamos la tecnología más reciente y métodos creativos para entregar soluciones avanzadas."
+      },
+      "integrity": {
+        "title": "Integridad",
+        "description": "Siempre operamos de manera honesta, transparente y responsable, protegiendo los datos del cliente."
+      },
+      "clientSuccess": {
+        "title": "Éxito del Cliente",
+        "description": "Entendemos las necesidades únicas de nuestros clientes y entregamos soluciones que apoyan directamente sus objetivos comerciales."
+      },
+      "collaboration": {
+        "title": "Colaboración",
+        "description": "Construimos relaciones sólidas con clientes y socios, trabajando juntos hacia el éxito compartido."
+      },
+      "globalPartnership": {
+        "title": "Asociación Global",
+        "description": "Estamos comprometidos a construir relaciones confiables y a largo plazo con clientes de todo el mundo."
+      }
+    },
+    "leadership": {
+      "badge": "Equipo de Liderazgo",
+      "title": "Nuestro Liderazgo",
+      "subtitle": "Profesionales experimentados que guían a Absouts con profunda experiencia en contabilidad, operaciones y tecnología.",
+      "kdRoy": {
+        "name": "K D Roy, FCA (ICAB), ACA (ICAEW)",
+        "position": "Director Ejecutivo",
+        "description": "Lidera la entidad estableciendo su dirección y objetivos generales. Responsable de desarrollar nuevas oportunidades de negocio en todo el mundo y de garantizar que las actividades de la entidad respalden tanto sus objetivos como el éxito del cliente. Cuenta con amplia experiencia práctica gestionando servicios de contabilidad virtual y nómina para empresas con sede en EE. UU."
+      },
+      "enamKhan": {
+        "name": "Enam H. Khan, FCA (ICAB), ACA (ICAEW), FCCA",
+        "position": "Director de Operaciones",
+        "description": "Garantiza operaciones diarias fluidas perfeccionando procesos, guiando equipos multifuncionales y haciendo cumplir la calidad y el cumplimiento. Entrega servicios confiables de BPO y software que impulsan el crecimiento de la empresa, fomentando la mejora continua y la responsabilidad."
+      },
+      "razwanKader": {
+        "name": "Razwan Kader",
+        "position": "Director de Tecnología",
+        "description": "Un líder tecnológico experimentado con profunda experiencia en ingeniería de software y arquitectura de sistemas. Impulsa la visión tecnológica de la empresa, alineando la estrategia técnica con los objetivos comerciales. Sobresale en la construcción de equipos de alto rendimiento y en la entrega de soluciones escalables y confiables."
+      },
+      "pritamKumarDas": {
+        "name": "Pritam Kumar Das",
+        "position": "Jefe de Desarrollo de Negocios",
+        "description": "Impulsa la entrega fluida de todas las soluciones de BPO y software supervisando cada proyecto para cumplir con los estándares internacionales de calidad y cumplimiento. Monitorea de cerca las operaciones diarias y mantiene la excelencia para que los clientes reciban consistentemente servicios confiables y eficientes."
+      }
+    },
+    "cta": {
+      "title": "Trabaja con un Equipo que Respalda sus Estándares",
+      "description": "Desde la contabilidad en la nube hasta el software, nuestros equipos de liderazgo y entrega mantienen cada proyecto en el mismo nivel profesional.",
+      "primary": "Explorar Nuestros Servicios",
+      "secondary": "Contáctanos"
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "Soluciones Integrales",
+      "title": "Nuestros Servicios",
+      "subtitle": "Soluciones integrales de subcontratación diseñadas para satisfacer las diversas demandas operativas y tecnológicas de las empresas de hoy."
+    },
+    "departments": {
+      "explore": "Explorar",
+      "cloudAccounting": {
+        "title": "Contabilidad en la Nube",
+        "description": "Contabilidad virtual, nómina, teneduría de libros y cumplimiento fiscal sobre plataformas en la nube seguras, con experiencia comprobada atendiendo a empresas con sede en EE. UU.",
+        "button": "Explorar Contabilidad en la Nube"
+      },
+      "bpo": {
+        "title": "Subcontratación de Procesos de Negocio",
+        "description": "Optimiza las funciones comerciales esenciales y mejora la eficiencia operativa con nuestros servicios integrales de BPO.",
+        "button": "Explorar Servicios BPO"
+      },
+      "software": {
+        "title": "Desarrollo de Software",
+        "description": "Desarrollo de software personalizado y soluciones TI adaptadas para diversas industrias y necesidades comerciales.",
+        "button": "Explorar Soluciones TI"
+      }
+    },
+    "pillars": {
+      "badge": "Pilares de Servicio",
+      "title": "Nuestros Pilares de Servicio Integrados",
+      "subtitle": "Cuatro disciplinas que sustentan cada proyecto, desde la primera consulta hasta el soporte continuo.",
+      "clientRelationship": {
+        "title": "Gestión de Relaciones con Clientes",
+        "description": "Participación activa desde la consulta hasta la finalización y soporte continuo."
+      },
+      "serviceDelivery": {
+        "title": "Entrega de Servicios",
+        "description": "Ejecución integral utilizando procesos estandarizados y tecnologías avanzadas."
+      },
+      "technology": {
+        "title": "Tecnología e Infraestructura",
+        "description": "Infraestructura tecnológica avanzada que garantiza la seguridad de datos y el cumplimiento."
+      },
+      "talent": {
+        "title": "Desarrollo de Talento",
+        "description": "Reclutamiento estratégico y capacitación continua para una fuerza laboral capacitada."
+      }
+    },
+    "benefits": {
+      "title": "Por Qué Nuestros Servicios Se Destacan",
+      "vendorManagement": {
+        "title": "Gestión Simplificada de Proveedores",
+        "description": "Gestión simplificada con soluciones integradas."
+      },
+      "efficiency": {
+        "title": "Mayor Eficiencia",
+        "description": "Eficiencia operativa mejorada en todas las funciones."
+      },
+      "scalability": {
+        "title": "Escalabilidad Robusta",
+        "description": "Soluciones que crecen con las necesidades de tu negocio."
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Subcontratar con Confianza?",
+      "description": "Elige un departamento o combínalos. Definiremos el alcance del trabajo, asignaremos el equipo adecuado y entregaremos según tus estándares.",
+      "primary": "Contáctanos",
+      "secondary": "Acerca de Absouts"
+    }
+  },
   "footer": {
     "tagline": "Externalización de precisión para un mundo conectado. Contabilidad en la nube, BPO y desarrollo de software que escala con tu ambición.",
     "servicesHeading": "Servicios",

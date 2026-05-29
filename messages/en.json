@@ -17,6 +17,218 @@
       "title": "Software Development"
     }
   },
+  "home": {
+    "hero": {
+      "badge": "Global Outsourcing Excellence",
+      "title": "Operate Efficiently. Innovate. Grow Sustainably.",
+      "subtitle": "Comprehensive outsourcing across Cloud Accounting, BPO, and Software Development, aligning the latest technology with industry best practices.",
+      "findTalent": "Find Talent",
+      "learnMore": "Learn More",
+      "metrics": {
+        "talents": "540+",
+        "talentsLabel": "Talents Hired",
+        "clients": "40+",
+        "clientsLabel": "Trusted Clients",
+        "retention": "95%",
+        "retentionLabel": "Retention Rate"
+      },
+      "imageAlt1": "An outsourcing team collaborating in a modern office",
+      "imageAlt2": "A professional reviewing financial reports on screen"
+    },
+    "services": {
+      "badge": "Our Services",
+      "title": "Comprehensive Outsourcing Solutions",
+      "subtitle": "End-to-end solutions for your operational and technological needs, delivered by one accountable partner.",
+      "explore": "Explore",
+      "cloudAccounting": {
+        "title": "Cloud Accounting",
+        "description": "Virtual accounting, payroll, bookkeeping, and tax compliance run on secure cloud platforms, with hands-on experience serving US-based companies."
+      },
+      "bpo": {
+        "title": "Business Process Outsourcing",
+        "description": "Streamline essential business functions and enhance operational efficiency with our comprehensive BPO services."
+      },
+      "software": {
+        "title": "Software Development",
+        "description": "Custom software development and IT solutions tailored for various industries and business needs."
+      }
+    },
+    "whyChooseUs": {
+      "badge": "Why Absouts",
+      "title": "A Partner Built on Trust and Precision",
+      "subtitle": "Backed by a chartered accountancy heritage and a global delivery model that scales with your ambition.",
+      "items": {
+        "expertise": {
+          "title": "Chartered Expertise",
+          "description": "Owned by a dedicated wing of a renowned Chartered Accountancy firm, grounding every engagement in professional rigor."
+        },
+        "global": {
+          "title": "Global Delivery",
+          "description": "A distributed team serving clients across the US, UK, and beyond, aligned to your timezone and standards."
+        },
+        "security": {
+          "title": "Data Security",
+          "description": "Advanced infrastructure and strict compliance practices protect your data at every step."
+        },
+        "scalability": {
+          "title": "Built to Scale",
+          "description": "Flexible engagement models that grow with your business, from a single function to a full back office."
+        }
+      }
+    },
+    "cta": {
+      "title": "Let's Build Your Back Office, Together",
+      "description": "Tell us what you need to outsource. We will design a delivery model around your goals, standards, and timezone.",
+      "primary": "Get in Touch",
+      "secondary": "View Services"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Global Outsourcing Leader",
+      "title": "About Absouts",
+      "subtitle": "A global outsourcing entity focused on Cloud Accounting, Business Process Outsourcing, and Software Development, simplifying business processes and technology management for clients worldwide."
+    },
+    "foundation": {
+      "title": "Our Foundation and Partnership",
+      "description1": "Absouts is owned by K D Roy & CO, a dedicated wing of the renowned Chartered Accountancy firm Adhikary Roy & Co., in strategic collaboration with LTR Consultants, a prominent consultancy and legal advisory firm based in Bangladesh.",
+      "description2": "This partnership leverages extensive professional experience, industry leadership and an established reputation to deliver comprehensive outsourcing and consulting solutions globally."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To provide integrated accounting, BPO, and software outsourcing solutions that empower businesses worldwide to operate efficiently, innovate and grow sustainably."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become a trusted global leader known for solving business and technology challenges through reliable outsourcing services."
+    },
+    "values": {
+      "badge": "Core Values",
+      "title": "Our Values",
+      "excellence": {
+        "title": "Excellence",
+        "description": "We consistently deliver high-quality services, continuously improving and using best practices."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We use the latest technology and creative methods to deliver advanced solutions."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "We always operate honestly, transparently, and responsibly, protecting client data."
+      },
+      "clientSuccess": {
+        "title": "Client Success",
+        "description": "We understand our clients' unique needs and deliver solutions that directly support their business objectives."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "We build strong relationships with clients and partners, working together towards shared success."
+      },
+      "globalPartnership": {
+        "title": "Global Partnership",
+        "description": "We are committed to building trusted, long-term relationships with clients around the world."
+      }
+    },
+    "leadership": {
+      "badge": "Leadership Team",
+      "title": "Our Leadership",
+      "subtitle": "Seasoned professionals guiding Absouts with deep expertise across accounting, operations, and technology.",
+      "kdRoy": {
+        "name": "K D Roy, FCA (ICAB), ACA (ICAEW)",
+        "position": "Chief Executive Officer",
+        "description": "Leads the entity by setting its overall direction and goals. Responsible for developing new business opportunities worldwide and ensuring that the entity's activities support both its objectives and client success. Has extensive hands-on experience managing virtual accounting and payroll services for US-based companies."
+      },
+      "enamKhan": {
+        "name": "Enam H. Khan, FCA (ICAB), ACA (ICAEW), FCCA",
+        "position": "Chief Operating Officer",
+        "description": "Ensures smooth daily operations by refining processes, guiding cross-functional teams, and enforcing quality and compliance. Delivers reliable BPO and software services that drive company growth while fostering continuous improvement and accountability."
+      },
+      "razwanKader": {
+        "name": "Razwan Kader",
+        "position": "Chief Technology Officer",
+        "description": "A seasoned technology leader with deep expertise in software engineering and system architecture. Drives the company's technology vision, aligning technical strategy with business objectives. Excels at building high-performing teams and delivering scalable, reliable solutions."
+      },
+      "pritamKumarDas": {
+        "name": "Pritam Kumar Das",
+        "position": "Head of Business Development",
+        "description": "Drives the seamless delivery of all BPO and software solutions by overseeing every project to meet international quality and compliance standards. Closely monitors daily operations and upholds excellence so clients consistently receive reliable and efficient services."
+      }
+    },
+    "cta": {
+      "title": "Work With a Team That Stands Behind Its Standards",
+      "description": "From cloud accounting to software, our leadership and delivery teams hold every engagement to the same professional bar.",
+      "primary": "Explore Our Services",
+      "secondary": "Get in Touch"
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "Comprehensive Solutions",
+      "title": "Our Services",
+      "subtitle": "Comprehensive outsourcing solutions designed to meet the diverse operational and technological demands of businesses today."
+    },
+    "departments": {
+      "explore": "Explore",
+      "cloudAccounting": {
+        "title": "Cloud Accounting",
+        "description": "Virtual accounting, payroll, bookkeeping, and tax compliance run on secure cloud platforms, with proven experience serving US-based companies.",
+        "button": "Explore Cloud Accounting"
+      },
+      "bpo": {
+        "title": "Business Process Outsourcing",
+        "description": "Streamline essential business functions and enhance operational efficiency with our comprehensive BPO services.",
+        "button": "Explore BPO Services"
+      },
+      "software": {
+        "title": "Software Development",
+        "description": "Custom software development and IT solutions tailored for various industries and business needs.",
+        "button": "Explore IT Solutions"
+      }
+    },
+    "pillars": {
+      "badge": "Service Pillars",
+      "title": "Our Integrated Service Pillars",
+      "subtitle": "Four disciplines that underpin every engagement, from first consultation to ongoing support.",
+      "clientRelationship": {
+        "title": "Client Relationship Management",
+        "description": "Active engagement from consultation to completion and continuous support."
+      },
+      "serviceDelivery": {
+        "title": "Service Delivery",
+        "description": "Comprehensive execution utilizing standardized processes and advanced technologies."
+      },
+      "technology": {
+        "title": "Technology and Infrastructure",
+        "description": "Advanced technological infrastructure ensuring data security and compliance."
+      },
+      "talent": {
+        "title": "Talent Development",
+        "description": "Strategic recruitment and continuous training for a skilled workforce."
+      }
+    },
+    "benefits": {
+      "title": "Why Our Services Stand Out",
+      "vendorManagement": {
+        "title": "Streamlined Vendor Management",
+        "description": "Simplified management with integrated solutions."
+      },
+      "efficiency": {
+        "title": "Increased Efficiency",
+        "description": "Enhanced operational efficiency across all functions."
+      },
+      "scalability": {
+        "title": "Robust Scalability",
+        "description": "Solutions that grow with your business needs."
+      }
+    },
+    "cta": {
+      "title": "Ready to Outsource With Confidence?",
+      "description": "Pick a department or bundle them. We will scope the work, assign the right team, and deliver to your standards.",
+      "primary": "Get in Touch",
+      "secondary": "About Absouts"
+    }
+  },
   "footer": {
     "tagline": "Precision outsourcing for a connected world. Cloud accounting, BPO, and software development that scales with your ambition.",
     "servicesHeading": "Services",

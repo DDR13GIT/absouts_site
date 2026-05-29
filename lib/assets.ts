@@ -76,11 +76,11 @@ export const ABOUT = {
 } as const;
 
 // Leadership team photos — match actual filenames in public/assets.
-// Note: "enam khan" maps to mohammed_shariful_islam (the file found in assets;
-// enam_khan was not present — closest match by upload batch).
+// Four leaders in the last-live lineup: K D Roy (CEO), Enam H. Khan (COO),
+// Razwan Kader (CTO), Pritam Kumar Das (Head of Business Development).
 export const LEADERSHIP_PHOTOS = {
-  kdRoy:              "/assets/k_d_roy_1757771450330.jpeg",
-  mohammedShariful:   "/assets/mohammed_shariful_islam_1757771450331.png",
-  razwanKader:        "/assets/razwan_kader_1757771450332.png",
-  pritamKumarDas:     "/assets/pritam_kumar_das_1757771450332.png",
+  kdRoy:          "/assets/k_d_roy_1757771450330.jpeg",
+  enamKhan:       "/assets/PHOTO-2025-09-19-15-52-54_1758373122811.jpg",
+  razwanKader:    "/assets/razwan_kader_1757771450332.png",
+  pritamKumarDas: "/assets/pritam_kumar_das_1757771450332.png",
 } as const;
