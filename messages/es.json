@@ -1,1 +1,31 @@
-{ "nav": { "home": "Inicio", "about": "Acerca de", "services": "Servicios", "careers": "Carrera", "contact": "Contacto" } }
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "careers": "Carrera",
+    "contact": "Contacto"
+  },
+  "departments": {
+    "cloudAccounting": {
+      "title": "Contabilidad en la Nube"
+    },
+    "bpo": {
+      "title": "Subcontratación de Procesos de Negocio"
+    },
+    "software": {
+      "title": "Desarrollo de Software"
+    }
+  },
+  "footer": {
+    "tagline": "Externalización de precisión para un mundo conectado. Contabilidad en la nube, BPO y desarrollo de software que escala con tu ambición.",
+    "servicesHeading": "Servicios",
+    "companyHeading": "Empresa",
+    "contactHeading": "Contacto",
+    "getInTouch": "Contáctanos",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "rights": "Todos los derechos reservados.",
+    "followUs": "Síguenos"
+  }
+}

@@ -82,6 +82,23 @@
   to   { opacity: 0; transform: translateX(100%); }
 }
 
+/* Navbar mobile drawer: slides down from top on enter, up on exit */
+@keyframes slide-in-from-top {
+  from { opacity: 0; transform: translateY(-100%); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-out-to-top {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-100%); }
+}
+
+/* Subtle slide for staggered nav items (small translateY) */
+@keyframes slide-in-from-top-2 {
+  from { opacity: 0; transform: translateY(-0.5rem); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 /* Utility classes used by dialog, select, toast components */
 @utility animate-in {
   animation-fill-mode: both;
@@ -121,6 +138,21 @@
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+@utility slide-in-from-top {
+  animation-name: slide-in-from-top;
+  animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+@utility slide-out-to-top {
+  animation-name: slide-out-to-top;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@utility slide-in-from-top-2 {
+  animation-name: slide-in-from-top-2;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 /* Duration overrides used in components */
 @utility duration-125 { animation-duration: 125ms; }
 @utility duration-150 { animation-duration: 150ms; }
@@ -145,6 +177,18 @@
   @keyframes slide-out-to-right {
     from { opacity: 1; }
     to   { opacity: 0; }
+  }
+  @keyframes slide-in-from-top {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes slide-out-to-top {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  @keyframes slide-in-from-top-2 {
+    from { opacity: 0; }
+    to   { opacity: 1; }
   }
 }
 
