@@ -344,37 +344,284 @@
     }
   },
   "subservices": {
+    "detail": {
+      "back": "Volver a Software",
+      "badge": "Servicio de Software",
+      "additionalBadge": "Alcance de Entrega",
+      "additionalTitle": "Capacidades Adicionales",
+      "techTitle": "Stack Tecnológico"
+    },
     "ecommerce": {
       "title": "Desarrollo de E-commerce",
-      "short": "Soluciones completas de comercio electrónico con plataformas modernas, integración de pagos e interfaces amigables diseñadas para impulsar ventas y mejorar la experiencia del cliente."
+      "short": "Soluciones completas de comercio electrónico con plataformas modernas, integración de pagos e interfaces amigables diseñadas para impulsar ventas y mejorar la experiencia del cliente.",
+      "description": "Diseñamos y construimos plataformas de comercio que conectan descubrimiento de productos, checkout, pagos, inventario, cumplimiento y atención al cliente en una experiencia de compra confiable. Cada desarrollo se adapta a la conversión, el control operativo y la capacidad de crecer sin reemplazar la plataforma más adelante.",
+      "coreFeaturesTitle": "Bases de comercio creadas para crecer",
+      "coreFeaturesSubtitle": "Desde la arquitectura del escaparate hasta los flujos de pago, nos enfocamos en los sistemas que mantienen el comercio digital rápido, medible y fácil de gestionar.",
+      "coreFeatures": [
+        {
+          "title": "Escaparates Personalizados",
+          "description": "Experiencias de compra responsivas con navegación clara de catálogo, páginas de producto, carrito y checkout diseñados para generar confianza."
+        },
+        {
+          "title": "Integración de Pagos",
+          "description": "Configuración segura de pasarelas de pago, manejo de transacciones, lógica fiscal, confirmaciones de pedido y estados de error según requisitos regionales."
+        },
+        {
+          "title": "Inventario y Pedidos",
+          "description": "Herramientas administrativas para datos de producto, visibilidad de stock, procesamiento de pedidos, cumplimiento, devoluciones y cuentas de cliente."
+        },
+        {
+          "title": "Optimización de Rendimiento",
+          "description": "Páginas de carga rápida, estructura preparada para buscadores, instrumentación analítica y mejoras enfocadas en conversión para crecimiento sostenido."
+        }
+      ],
+      "additionalFeatures": [
+        "Gestión de catálogo y variantes de producto",
+        "Cuentas de cliente y direcciones guardadas",
+        "Promociones, cupones y páginas de campaña",
+        "Integración de envíos, impuestos y cumplimiento",
+        "Paneles de análisis para ventas y comportamiento del cliente",
+        "Herramientas administrativas para merchandising y contenido"
+      ],
+      "techStackSubtitle": "Combinamos frameworks frontend modernos, servicios API, bases de datos, hosting en la nube y tooling de despliegue para mantener plataformas de comercio rápidas y mantenibles."
     },
     "mobile": {
       "title": "Desarrollo de Aplicaciones Móviles",
-      "short": "Aplicaciones móviles nativas y multiplataforma para iOS y Android con diseño UI/UX moderno y experiencia de usuario fluida."
+      "short": "Aplicaciones móviles nativas y multiplataforma para iOS y Android con diseño UI/UX moderno y experiencia de usuario fluida.",
+      "description": "Construimos aplicaciones móviles que se sienten naturales en cada dispositivo y siguen siendo prácticas de mantener durante las versiones del producto. Nuestros equipos cubren flujos de producto, sistemas de interfaz, integración backend, pruebas, soporte de lanzamiento y mejoras posteriores.",
+      "coreFeaturesTitle": "Productos móviles con una ruta clara de lanzamiento",
+      "coreFeaturesSubtitle": "Cada app se planifica alrededor del recorrido del usuario, las limitaciones del dispositivo, las dependencias de API y el trabajo operativo necesario después del lanzamiento.",
+      "coreFeatures": [
+        {
+          "title": "Entrega Multiplataforma",
+          "description": "Bases de código móvil compartidas cuando aportan valor, con patrones de interacción de calidad nativa para usuarios de iOS y Android."
+        },
+        {
+          "title": "UX y UI de Producto",
+          "description": "Pantallas mobile-first, navegación, onboarding, formularios, gestos y detalles de accesibilidad diseñados para uso diario real."
+        },
+        {
+          "title": "Integración Backend",
+          "description": "Conexiones seguras a APIs, autenticación, notificaciones push, manejo de archivos, pagos, servicios de ubicación y analítica."
+        },
+        {
+          "title": "Preparación para Tiendas",
+          "description": "Pipelines de build, pruebas en dispositivos, empaquetado de versiones, soporte para publicación en tiendas y monitoreo tras el lanzamiento."
+        }
+      ],
+      "additionalFeatures": [
+        "Autenticación y gestión de perfiles",
+        "Notificaciones push y mensajes dentro de la app",
+        "Flujos preparados para trabajar con redes inestables",
+        "Integraciones de cámara, archivos, ubicación y pagos",
+        "Reportes de fallos y analítica de producto",
+        "Versiones de mantenimiento por cambios de sistemas operativos y dispositivos"
+      ],
+      "techStackSubtitle": "Nuestro stack móvil conecta React, Node.js, Firebase, GraphQL, PostgreSQL, AWS y Docker en pipelines confiables de entrega de apps."
     },
     "cloud": {
       "title": "Soluciones de Infraestructura en la Nube",
-      "short": "Infraestructura en la nube escalable con despliegue automatizado, monitoreo y optimización para máxima confiabilidad y rendimiento."
+      "short": "Infraestructura en la nube escalable con despliegue automatizado, monitoreo y optimización para máxima confiabilidad y rendimiento.",
+      "description": "Ayudamos a los equipos a pasar de hosting frágil a entornos cloud estructurados con prácticas claras de despliegue, monitoreo, seguridad y escalado. El resultado es una infraestructura que sostiene el crecimiento del producto sin convertirse en una carga operativa.",
+      "coreFeaturesTitle": "Entornos cloud en los que los equipos pueden confiar",
+      "coreFeaturesSubtitle": "Diseñamos infraestructura alrededor de confiabilidad, entrega repetible, observabilidad y controles de costo necesarios para operar con estabilidad.",
+      "coreFeatures": [
+        {
+          "title": "Arquitectura Cloud",
+          "description": "Planificación de entornos, selección de servicios, redes, almacenamiento, cómputo y patrones de escalado alineados con la carga de la aplicación."
+        },
+        {
+          "title": "Automatización de Despliegues",
+          "description": "Pipelines CI/CD, flujos con contenedores, verificaciones de release, rutas de rollback y promoción de entornos para una entrega predecible."
+        },
+        {
+          "title": "Monitoreo y Alertas",
+          "description": "Health checks, logs, métricas, alertas y visibilidad de incidentes para que los equipos respondan antes de que los usuarios perciban el impacto."
+        },
+        {
+          "title": "Seguridad y Optimización",
+          "description": "Control de accesos, manejo de secretos, planes de backup, ajuste de rendimiento y revisiones de costo para mantener plataformas seguras y eficientes."
+        }
+      ],
+      "additionalFeatures": [
+        "Planificación y ejecución de migraciones cloud",
+        "Containerización y configuración de runtime",
+        "Despliegue de bases de datos y estrategia de backup",
+        "Separación de entornos de desarrollo y producción",
+        "Documentación de infraestructura y runbooks",
+        "Revisiones de optimización de costo y rendimiento"
+      ],
+      "techStackSubtitle": "AWS, Docker, GitLab, Node.js, Django, PostgreSQL y Elasticsearch nos dan una base práctica para operaciones cloud resilientes."
     },
     "testing": {
       "title": "Pruebas de Software y QA",
-      "short": "Servicios integrales de aseguramiento de calidad y pruebas para mantener el software confiable, seguro y eficiente en distintas plataformas."
+      "short": "Servicios integrales de aseguramiento de calidad y pruebas para mantener el software confiable, seguro y eficiente en distintas plataformas.",
+      "description": "Brindamos soporte de pruebas y QA que reduce el riesgo de lanzamiento y da a los equipos evidencia clara sobre la calidad del producto. Nuestro enfoque cubre validación manual, automatización, regresión, rendimiento y reportes de incidencias que los desarrolladores pueden resolver con rapidez.",
+      "coreFeaturesTitle": "Cobertura de calidad durante todo el ciclo de release",
+      "coreFeaturesSubtitle": "Las pruebas se planifican alrededor de rutas críticas del negocio, plataformas soportadas, cadencia de lanzamiento y defectos con mayor impacto para los clientes.",
+      "coreFeatures": [
+        {
+          "title": "Pruebas Funcionales",
+          "description": "Validación basada en escenarios para flujos de usuario, formularios, permisos, integraciones, casos límite y criterios de aceptación."
+        },
+        {
+          "title": "Estrategia de Automatización",
+          "description": "Suites automatizadas de regresión para flujos de alto valor, integradas en pipelines CI cuando ayudan a acelerar los lanzamientos."
+        },
+        {
+          "title": "Verificaciones de Rendimiento",
+          "description": "Pruebas de carga, capacidad de respuesta, estabilidad y uso de recursos para detectar problemas antes de que el tráfico de producción los exponga."
+        },
+        {
+          "title": "Reporte de Defectos",
+          "description": "Pasos claros de reproducción, severidad, capturas, detalles de entorno y notas de retest para una resolución eficiente."
+        }
+      ],
+      "additionalFeatures": [
+        "Suites de regresión para ciclos recurrentes de release",
+        "Pruebas cross-browser y cross-device",
+        "Pruebas de API y validación de datos",
+        "Soporte de revisión de accesibilidad y usabilidad",
+        "Documentación de aprobación de release",
+        "Configuración de procesos QA para equipos de ingeniería en crecimiento"
+      ],
+      "techStackSubtitle": "Docker, GitLab, Node.js, Django, PostgreSQL, Elasticsearch y AWS soportan entornos de prueba confiables y controles de calidad automatizados."
     },
     "legaltech": {
       "title": "Soluciones LegalTech",
-      "short": "Gestión de casos legales, automatización documental, soluciones de cumplimiento y optimización de flujos para prácticas legales modernas."
+      "short": "Gestión de casos legales, automatización documental, soluciones de cumplimiento y optimización de flujos para prácticas legales modernas.",
+      "description": "Construimos plataformas legaltech que organizan datos de asuntos, documentos, vencimientos, comunicación y flujos de cumplimiento en sistemas digitales seguros. Cada solución se diseña para trazabilidad, permisos y adopción práctica por equipos legales.",
+      "coreFeaturesTitle": "Flujos digitales para equipos legales modernos",
+      "coreFeaturesSubtitle": "El software legal necesita más que formularios y almacenamiento. Necesita registros estructurados, acceso seguro, auditabilidad y herramientas que reflejen el trabajo real de los casos.",
+      "coreFeatures": [
+        {
+          "title": "Gestión de Casos",
+          "description": "Registros de asuntos, seguimiento de tareas, vencimientos, contactos, notas e historial de actividad organizados alrededor de la operación legal diaria."
+        },
+        {
+          "title": "Automatización Documental",
+          "description": "Generación de documentos con plantillas, flujos de revisión, control de versiones, almacenamiento, búsqueda y metadatos estructurados."
+        },
+        {
+          "title": "Flujos de Cumplimiento",
+          "description": "Modelos de permisos, trazas de auditoría, rutas de aprobación, lógica de retención y reportes para procesos legales regulados."
+        },
+        {
+          "title": "Búsqueda y Reportes",
+          "description": "Acceso rápido a asuntos, documentos, cláusulas, actividad y datos de rendimiento mediante paneles y filtros a medida."
+        }
+      ],
+      "additionalFeatures": [
+        "Acceso por roles para usuarios internos y externos",
+        "Portales seguros para clientes e intercambio documental",
+        "Calendarios, vencimientos y flujos de recordatorios",
+        "Intake de asuntos y soporte para revisión de conflictos",
+        "Logs de auditoría y reportes de cumplimiento",
+        "Migración desde hojas de cálculo y herramientas heredadas"
+      ],
+      "techStackSubtitle": "Django, PostgreSQL, React, ASP.NET, Elasticsearch, Docker y AWS soportan plataformas legales seguras, buscables y mantenibles."
     },
     "webportal": {
       "title": "Desarrollo de Portales Web",
-      "short": "Portales empresariales, portales de clientes y sistemas de gestión de contenido con arquitectura moderna y experiencia de usuario fluida."
+      "short": "Portales empresariales, portales de clientes y sistemas de gestión de contenido con arquitectura moderna y experiencia de usuario fluida.",
+      "description": "Creamos portales web que reúnen usuarios, contenido, servicios, datos y flujos de trabajo en un destino digital coherente. Los portales se construyen alrededor de permisos, gestión de contenido, puntos de integración y recorridos de usuario que deben seguir claros a medida que la plataforma crece.",
+      "coreFeaturesTitle": "Portales que conectan personas y flujos de trabajo",
+      "coreFeaturesSubtitle": "Un portal útil entrega a cada usuario la información, acciones y estado correctos en el momento correcto, sin obligar a los equipos a coordinar todo manualmente.",
+      "coreFeatures": [
+        {
+          "title": "Arquitectura de Portal",
+          "description": "Arquitectura de información, rutas, modelos de contenido, permisos y sistemas de páginas diseñados para mantenerse en el tiempo."
+        },
+        {
+          "title": "Paneles de Usuario",
+          "description": "Vistas por rol para clientes, socios, empleados o administradores con las tareas y datos que necesita cada grupo."
+        },
+        {
+          "title": "CMS y Herramientas de Contenido",
+          "description": "Áreas editables, flujos de publicación, manejo de medios, datos estructurados y gobierno para equipos no técnicos."
+        },
+        {
+          "title": "Integración de Sistemas",
+          "description": "Conexiones con APIs, CRMs, bases de datos, proveedores de autenticación, analítica y sistemas internos de negocio."
+        }
+      ],
+      "additionalFeatures": [
+        "Flujos para portales de clientes, socios y empleados",
+        "Navegación y control de acceso por roles",
+        "Flujos de publicación y aprobación de contenido",
+        "Búsqueda, filtros y bases de conocimiento de autoservicio",
+        "Notificaciones, formularios y seguimiento de solicitudes",
+        "Paneles operativos para administradores"
+      ],
+      "techStackSubtitle": "React, Node.js, GraphQL, PostgreSQL, AWS, Docker y GitLab nos permiten construir portales rápidos, conectados y fáciles de evolucionar."
     },
     "fintech": {
       "title": "Soluciones Fintech",
-      "short": "Aplicaciones financieras, soluciones bancarias, procesamiento de pagos y plataformas de tecnología financiera con seguridad y cumplimiento robustos."
+      "short": "Aplicaciones financieras, soluciones bancarias, procesamiento de pagos y plataformas de tecnología financiera con seguridad y cumplimiento robustos.",
+      "description": "Desarrollamos plataformas fintech donde la seguridad, la integridad de datos, la auditabilidad y la confianza del usuario son requisitos centrales del producto. Nuestro trabajo abarca flujos de pago, paneles financieros, sistemas transaccionales, soporte de cumplimiento y herramientas operativas.",
+      "coreFeaturesTitle": "Software financiero construido alrededor de la confianza",
+      "coreFeaturesSubtitle": "La entrega fintech exige manejo cuidadoso de transacciones, identidad, permisos, reportes y controles operativos detrás de cada flujo.",
+      "coreFeatures": [
+        {
+          "title": "Flujos de Pago",
+          "description": "Inicio de pagos, procesamiento, estado de transacciones, soporte de conciliación, manejo de fallos y notificaciones al cliente."
+        },
+        {
+          "title": "Sistemas de Cuenta Seguros",
+          "description": "Autenticación, autorización, perfiles de cuenta, historial de actividad, controles por rol y patrones seguros de acceso a datos."
+        },
+        {
+          "title": "Paneles Financieros",
+          "description": "Interfaces claras de reporte para saldos, transacciones, liquidaciones, señales de riesgo y rendimiento operativo."
+        },
+        {
+          "title": "Soporte de Cumplimiento",
+          "description": "Trazas de auditoría, validación de datos, exportaciones de reportes, flujos de aprobación y patrones de implementación que apoyan revisión regulatoria."
+        }
+      ],
+      "additionalFeatures": [
+        "Integraciones con APIs bancarias y de pago",
+        "Herramientas de búsqueda y conciliación de transacciones",
+        "Flujos de aprobación y revisión por roles",
+        "Paneles de señales de fraude y alertas operativas",
+        "Exportación de datos y reportes de cumplimiento",
+        "Infraestructura segura y prácticas de despliegue"
+      ],
+      "techStackSubtitle": "ASP.NET, Go, PostgreSQL, SQL Server, Docker, AWS y Elasticsearch soportan flujos financieros seguros a escala productiva."
     },
     "ai": {
       "title": "Soluciones de IA",
-      "short": "Aplicaciones de inteligencia artificial, modelos de aprendizaje automático y automatización inteligente para procesos de negocio."
+      "short": "Aplicaciones de inteligencia artificial, modelos de aprendizaje automático y automatización inteligente para procesos de negocio.",
+      "description": "Construimos productos con IA y flujos de automatización que convierten datos, documentos y decisiones repetibles del negocio en capacidades de software prácticas. El foco está en valor medible, integración responsable e interfaces que ayudan a las personas a confiar en los resultados.",
+      "coreFeaturesTitle": "Sistemas de IA diseñados alrededor de flujos reales",
+      "coreFeaturesSubtitle": "La IA útil empieza con el proceso de negocio, los datos disponibles, las decisiones que se apoyan y la revisión humana necesaria para generar confianza.",
+      "coreFeatures": [
+        {
+          "title": "Diseño de Productos con IA",
+          "description": "Descubrimiento de casos de uso, mapeo de flujos, patrones de interacción con modelos, estados de revisión y diseño de interfaces para tareas asistidas por IA."
+        },
+        {
+          "title": "Modelos de Aprendizaje Automático",
+          "description": "Selección de modelos, preparación de datos, soporte de entrenamiento, evaluación e integración en aplicaciones de producción."
+        },
+        {
+          "title": "Automatización Inteligente",
+          "description": "Automatización para manejo documental, clasificación, enrutamiento, recomendaciones, extracción de datos y operaciones repetitivas."
+        },
+        {
+          "title": "Monitoreo y Feedback",
+          "description": "Revisión de resultados, señales de confianza, ciclos de feedback, analítica de uso y mejoras para funciones de IA desplegadas."
+        }
+      ],
+      "additionalFeatures": [
+        "Inteligencia documental y extracción estructurada",
+        "Flujos de recomendación y clasificación",
+        "Búsqueda asistida por IA e interfaces de conocimiento",
+        "Colas de revisión y aprobación humana",
+        "Evaluación de modelos y seguimiento de rendimiento",
+        "Integración con plataformas de negocio existentes"
+      ],
+      "techStackSubtitle": "TensorFlow, PostgreSQL, Docker, AWS, Elasticsearch, Firebase y GraphQL ofrecen una base flexible para aplicaciones impulsadas por IA."
     }
   },
   "home": {

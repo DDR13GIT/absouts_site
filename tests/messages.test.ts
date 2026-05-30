@@ -53,6 +53,12 @@ describe("locale messages", () => {
       for (const slug of requiredSubservices) {
         expect(localeMessages.subservices[slug].title).toBeTruthy();
         expect(localeMessages.subservices[slug].short).toBeTruthy();
+        expect(localeMessages.subservices[slug].description).toBeTruthy();
+        expect(localeMessages.subservices[slug].coreFeaturesTitle).toBeTruthy();
+        expect(localeMessages.subservices[slug].coreFeaturesSubtitle).toBeTruthy();
+        expect(localeMessages.subservices[slug].coreFeatures).toHaveLength(4);
+        expect(localeMessages.subservices[slug].additionalFeatures.length).toBeGreaterThan(0);
+        expect(localeMessages.subservices[slug].techStackSubtitle).toBeTruthy();
       }
     }
   });

@@ -344,37 +344,284 @@
     }
   },
   "subservices": {
+    "detail": {
+      "back": "Back to Software",
+      "badge": "Software Service",
+      "additionalBadge": "Delivery Scope",
+      "additionalTitle": "Additional Capabilities",
+      "techTitle": "Technology Stack"
+    },
     "ecommerce": {
       "title": "E-commerce Development",
-      "short": "Complete e-commerce solutions with modern platforms, payment integration, and user-friendly interfaces designed to drive sales and improve customer experience."
+      "short": "Complete e-commerce solutions with modern platforms, payment integration, and user-friendly interfaces designed to drive sales and improve customer experience.",
+      "description": "We design and build commerce platforms that connect product discovery, checkout, payments, inventory, fulfillment, and customer support into one reliable buying experience. Each build is shaped around conversion, operational control, and the ability to grow without replacing the platform later.",
+      "coreFeaturesTitle": "Commerce foundations built for growth",
+      "coreFeaturesSubtitle": "From storefront architecture to payment flows, we focus on the systems that keep digital commerce fast, measurable, and easy to manage.",
+      "coreFeatures": [
+        {
+          "title": "Custom Storefronts",
+          "description": "Responsive shopping experiences with clean catalog navigation, product detail pages, cart flows, and checkout journeys tuned for customer confidence."
+        },
+        {
+          "title": "Payment Integration",
+          "description": "Secure payment gateway setup, transaction handling, tax logic, order confirmations, and failure-state handling across regional requirements."
+        },
+        {
+          "title": "Inventory and Orders",
+          "description": "Back-office tools for product data, stock visibility, order processing, fulfillment coordination, returns, and customer account management."
+        },
+        {
+          "title": "Performance Optimization",
+          "description": "Fast-loading pages, search-friendly structure, analytics instrumentation, and conversion-focused improvements for long-term revenue growth."
+        }
+      ],
+      "additionalFeatures": [
+        "Product catalog and variant management",
+        "Customer accounts and saved addresses",
+        "Promotions, coupons, and campaign landing pages",
+        "Shipping, tax, and fulfillment workflow integration",
+        "Analytics dashboards for sales and customer behavior",
+        "Admin tools for merchandising and content updates"
+      ],
+      "techStackSubtitle": "We combine modern frontend frameworks, API services, databases, cloud hosting, and deployment tooling to keep commerce platforms fast and maintainable."
     },
     "mobile": {
       "title": "Mobile App Development",
-      "short": "Native and cross-platform mobile applications for iOS and Android with modern UI/UX design and seamless user experience."
+      "short": "Native and cross-platform mobile applications for iOS and Android with modern UI/UX design and seamless user experience.",
+      "description": "We build mobile applications that feel natural on every device while staying practical to maintain across product releases. Our teams cover product flows, interface systems, backend integration, testing, release support, and post-launch improvements.",
+      "coreFeaturesTitle": "Mobile products with a clear release path",
+      "coreFeaturesSubtitle": "Each app is planned around the user journey, device constraints, API dependencies, and the operational work needed after launch.",
+      "coreFeatures": [
+        {
+          "title": "Cross-platform Delivery",
+          "description": "Shared mobile codebases where they make sense, with native-quality interaction patterns for iOS and Android users."
+        },
+        {
+          "title": "Product UX and UI",
+          "description": "Mobile-first screens, navigation, onboarding, forms, gestures, and accessibility details designed for real daily use."
+        },
+        {
+          "title": "Backend Integration",
+          "description": "Secure connections to APIs, authentication, push notifications, file handling, payments, location services, and analytics."
+        },
+        {
+          "title": "Store Readiness",
+          "description": "Build pipelines, device testing, release packaging, app-store submission support, and monitoring after launch."
+        }
+      ],
+      "additionalFeatures": [
+        "Authentication and profile management",
+        "Push notifications and in-app messaging",
+        "Offline-ready flows for unstable networks",
+        "Camera, file, location, and payment integrations",
+        "Crash reporting and product analytics",
+        "Maintenance releases for OS and device changes"
+      ],
+      "techStackSubtitle": "Our mobile stack connects React, Node.js, Firebase, GraphQL, PostgreSQL, AWS, and Docker into dependable app delivery pipelines."
     },
     "cloud": {
       "title": "Cloud Infrastructure Solutions",
-      "short": "Scalable cloud infrastructure with automated deployment, monitoring, and optimization for maximum reliability and performance."
+      "short": "Scalable cloud infrastructure with automated deployment, monitoring, and optimization for maximum reliability and performance.",
+      "description": "We help teams move from fragile hosting to structured cloud environments with clear deployment, monitoring, security, and scaling practices. The result is infrastructure that supports product growth without becoming an operational burden.",
+      "coreFeaturesTitle": "Cloud environments that teams can trust",
+      "coreFeaturesSubtitle": "We design infrastructure around reliability, repeatable delivery, observability, and the cost controls needed for steady operation.",
+      "coreFeatures": [
+        {
+          "title": "Cloud Architecture",
+          "description": "Environment planning, service selection, networking, storage, compute, and scaling patterns matched to the application workload."
+        },
+        {
+          "title": "Deployment Automation",
+          "description": "CI/CD pipelines, container workflows, release checks, rollback paths, and environment promotion for predictable delivery."
+        },
+        {
+          "title": "Monitoring and Alerting",
+          "description": "Health checks, logs, metrics, alerts, and incident visibility so teams can respond before users feel the impact."
+        },
+        {
+          "title": "Security and Optimization",
+          "description": "Access control, secret handling, backup plans, performance tuning, and cost reviews to keep platforms secure and efficient."
+        }
+      ],
+      "additionalFeatures": [
+        "Cloud migration planning and execution",
+        "Containerization and runtime configuration",
+        "Database deployment and backup strategy",
+        "Environment separation for development and production",
+        "Infrastructure documentation and runbooks",
+        "Cost and performance optimization reviews"
+      ],
+      "techStackSubtitle": "AWS, Docker, GitLab, Node.js, Django, PostgreSQL, and Elasticsearch give us a practical foundation for resilient cloud operations."
     },
     "testing": {
       "title": "Software Testing & QA",
-      "short": "Comprehensive quality assurance and testing services that keep software reliable, secure, and performant across platforms."
+      "short": "Comprehensive quality assurance and testing services that keep software reliable, secure, and performant across platforms.",
+      "description": "We provide testing and QA support that reduces release risk and gives teams clear evidence about product quality. Our approach covers manual validation, automation, regression coverage, performance checks, and issue reporting that developers can act on quickly.",
+      "coreFeaturesTitle": "Quality coverage across the release cycle",
+      "coreFeaturesSubtitle": "Testing is planned around business-critical paths, supported platforms, release cadence, and the defects most likely to affect customers.",
+      "coreFeatures": [
+        {
+          "title": "Functional Testing",
+          "description": "Scenario-based validation for user flows, forms, permissions, integrations, edge cases, and acceptance criteria."
+        },
+        {
+          "title": "Automation Strategy",
+          "description": "Automated regression suites for high-value workflows, integrated into CI pipelines where they support faster releases."
+        },
+        {
+          "title": "Performance Checks",
+          "description": "Load, responsiveness, stability, and resource-use testing to catch issues before production traffic exposes them."
+        },
+        {
+          "title": "Defect Reporting",
+          "description": "Clear reproduction steps, severity guidance, screenshots, environment details, and retest notes for efficient resolution."
+        }
+      ],
+      "additionalFeatures": [
+        "Regression suites for recurring release cycles",
+        "Cross-browser and cross-device testing",
+        "API testing and data validation",
+        "Accessibility and usability review support",
+        "Release sign-off documentation",
+        "QA process setup for growing engineering teams"
+      ],
+      "techStackSubtitle": "Docker, GitLab, Node.js, Django, PostgreSQL, Elasticsearch, and AWS support reliable test environments and automated quality gates."
     },
     "legaltech": {
       "title": "LegalTech Solutions",
-      "short": "Legal case management, document automation, compliance solutions, and workflow optimization for modern law practices."
+      "short": "Legal case management, document automation, compliance solutions, and workflow optimization for modern law practices.",
+      "description": "We build legal technology platforms that organize matter data, documents, deadlines, communication, and compliance workflows into secure digital systems. Each solution is designed for traceability, permissions, and practical adoption by legal teams.",
+      "coreFeaturesTitle": "Digital workflows for modern legal teams",
+      "coreFeaturesSubtitle": "Legal software needs more than forms and storage. It needs structured records, secure access, auditability, and tools that match real case work.",
+      "coreFeatures": [
+        {
+          "title": "Case Management",
+          "description": "Matter records, task tracking, deadlines, contacts, notes, and activity history organized around daily legal operations."
+        },
+        {
+          "title": "Document Automation",
+          "description": "Template-driven document generation, review flows, version control, storage, search, and structured metadata."
+        },
+        {
+          "title": "Compliance Workflows",
+          "description": "Permission models, audit trails, approval paths, retention logic, and reporting for regulated legal processes."
+        },
+        {
+          "title": "Search and Reporting",
+          "description": "Fast access to matters, documents, clauses, activity, and performance data through tailored dashboards and filters."
+        }
+      ],
+      "additionalFeatures": [
+        "Role-based access for internal and external users",
+        "Secure client portals and document exchange",
+        "Calendar, deadline, and reminder workflows",
+        "Matter intake and conflict-check support",
+        "Audit logs and compliance reporting",
+        "Migration from spreadsheets and legacy tools"
+      ],
+      "techStackSubtitle": "Django, PostgreSQL, React, ASP.NET, Elasticsearch, Docker, and AWS support secure, searchable, and maintainable legal platforms."
     },
     "webportal": {
       "title": "Web Portal Development",
-      "short": "Enterprise portals, customer portals, and content management systems with modern architecture and seamless user experience."
+      "short": "Enterprise portals, customer portals, and content management systems with modern architecture and seamless user experience.",
+      "description": "We create web portals that bring users, content, services, data, and workflows into one coherent digital destination. Portals are built around permissions, content management, integration points, and user journeys that need to stay clear as the platform grows.",
+      "coreFeaturesTitle": "Portals that connect people and workflows",
+      "coreFeaturesSubtitle": "A useful portal gives each user the right information, actions, and status at the right time without forcing teams into manual coordination.",
+      "coreFeatures": [
+        {
+          "title": "Portal Architecture",
+          "description": "Information architecture, routing, content models, permissions, and page systems designed for long-term maintainability."
+        },
+        {
+          "title": "User Dashboards",
+          "description": "Role-specific views for customers, partners, employees, or administrators with the tasks and data each group needs."
+        },
+        {
+          "title": "CMS and Content Tools",
+          "description": "Editable content areas, publishing flows, media handling, structured data, and governance for non-technical teams."
+        },
+        {
+          "title": "System Integration",
+          "description": "Connections to APIs, CRMs, databases, authentication providers, analytics, and internal business systems."
+        }
+      ],
+      "additionalFeatures": [
+        "Customer, partner, and employee portal workflows",
+        "Role-based navigation and access control",
+        "Content publishing and approval flows",
+        "Search, filtering, and self-service knowledge bases",
+        "Notifications, forms, and request tracking",
+        "Operational dashboards for administrators"
+      ],
+      "techStackSubtitle": "React, Node.js, GraphQL, PostgreSQL, AWS, Docker, and GitLab let us build portals that are fast, connected, and easy to evolve."
     },
     "fintech": {
       "title": "Fintech Solutions",
-      "short": "Financial applications, banking solutions, payment processing, and financial technology platforms with robust security and compliance."
+      "short": "Financial applications, banking solutions, payment processing, and financial technology platforms with robust security and compliance.",
+      "description": "We develop financial technology platforms where security, data integrity, auditability, and user trust are core product requirements. Our work spans payment workflows, financial dashboards, transaction systems, compliance support, and operational tooling.",
+      "coreFeaturesTitle": "Financial software built around trust",
+      "coreFeaturesSubtitle": "Fintech delivery requires careful handling of transactions, identity, permissions, reporting, and the operational controls behind every workflow.",
+      "coreFeatures": [
+        {
+          "title": "Payment Workflows",
+          "description": "Payment initiation, processing flows, transaction status, reconciliation support, failure handling, and customer notifications."
+        },
+        {
+          "title": "Secure Account Systems",
+          "description": "Authentication, authorization, account profiles, activity history, role controls, and secure data access patterns."
+        },
+        {
+          "title": "Financial Dashboards",
+          "description": "Clear reporting interfaces for balances, transactions, settlements, risk signals, and operational performance."
+        },
+        {
+          "title": "Compliance Support",
+          "description": "Audit trails, data validation, reporting exports, approval flows, and implementation patterns that support regulatory review."
+        }
+      ],
+      "additionalFeatures": [
+        "Banking and payment API integrations",
+        "Transaction search and reconciliation tools",
+        "Role-based approval and review workflows",
+        "Fraud-signal dashboards and operational alerts",
+        "Data export and compliance reporting",
+        "Secure infrastructure and deployment practices"
+      ],
+      "techStackSubtitle": "ASP.NET, Go, PostgreSQL, SQL Server, Docker, AWS, and Elasticsearch support secure financial workflows at production scale."
     },
     "ai": {
       "title": "AI Solutions",
-      "short": "Artificial intelligence applications, machine learning models, and intelligent automation solutions for business processes."
+      "short": "Artificial intelligence applications, machine learning models, and intelligent automation solutions for business processes.",
+      "description": "We build AI-enabled products and automation workflows that turn business data, documents, and repeatable decisions into practical software capabilities. The focus is measurable value, responsible integration, and interfaces that help people trust the output.",
+      "coreFeaturesTitle": "AI systems shaped around real workflows",
+      "coreFeaturesSubtitle": "Useful AI starts with the business process, the data available, the decisions being supported, and the human review required for confidence.",
+      "coreFeatures": [
+        {
+          "title": "AI Product Design",
+          "description": "Use-case discovery, workflow mapping, model interaction patterns, review states, and interface design for AI-assisted tasks."
+        },
+        {
+          "title": "Machine Learning Models",
+          "description": "Model selection, data preparation, training support, evaluation, and integration into production applications."
+        },
+        {
+          "title": "Intelligent Automation",
+          "description": "Automation for document handling, classification, routing, recommendations, data extraction, and repetitive operations."
+        },
+        {
+          "title": "Monitoring and Feedback",
+          "description": "Output review, confidence signals, feedback loops, usage analytics, and improvement cycles for deployed AI features."
+        }
+      ],
+      "additionalFeatures": [
+        "Document intelligence and structured extraction",
+        "Recommendation and classification workflows",
+        "AI-assisted search and knowledge interfaces",
+        "Human review and approval queues",
+        "Model evaluation and performance tracking",
+        "Integration with existing business platforms"
+      ],
+      "techStackSubtitle": "TensorFlow, PostgreSQL, Docker, AWS, Elasticsearch, Firebase, and GraphQL provide a flexible foundation for AI-powered applications."
     }
   },
   "home": {
