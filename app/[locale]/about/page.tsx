@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import {
   Award,
@@ -11,6 +12,8 @@ import {
 import { Hero, SectionHeading, Reveal, Cta } from "@/components/sections";
 import { ABOUT, BACKGROUNDS, LEADERSHIP_PHOTOS } from "@/lib/assets";
 import { cn } from "@/lib/utils/cn";
+import { buildMetadata } from "@/lib/seo/metadata";
+import { JsonLd, organizationSchema } from "@/lib/seo/structured-data";
 
 const VALUE_ICONS = {
   excellence: Award,
@@ -27,6 +30,23 @@ const LEADERS = [
   { key: "razwanKader", photo: LEADERSHIP_PHOTOS.razwanKader },
   { key: "pritamKumarDas", photo: LEADERSHIP_PHOTOS.pritamKumarDas },
 ] as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.about" });
+
+  return buildMetadata({
+    locale,
+    title: t("title"),
+    description: t("description"),
+    path: "/about",
+    keywords: "Absouts, outsourcing company, global delivery, BPO, software development",
+  });
+}
 
 export default async function AboutPage({
   params,
@@ -47,6 +67,7 @@ export default async function AboutPage({
 
   return (
     <>
+      <JsonLd data={organizationSchema()} />
       {/* ─── HERO ────────────────────────────────────────────────────────── */}
       <Hero
         layout="banner"

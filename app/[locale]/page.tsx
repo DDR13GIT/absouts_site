@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { ShieldCheck, Globe2, Award, TrendingUp } from "lucide-react";
 import {
@@ -12,6 +13,8 @@ import {
 import { getDepartmentsInOrder } from "@/lib/services";
 import { BACKGROUNDS } from "@/lib/assets";
 import { cn } from "@/lib/utils/cn";
+import { buildMetadata } from "@/lib/seo/metadata";
+import { JsonLd, organizationSchema } from "@/lib/seo/structured-data";
 
 // Map department slug -> message key under home.services / services.departments.
 const DEPT_MESSAGE_KEY: Record<string, "cloudAccounting" | "bpo" | "software"> = {
@@ -26,6 +29,23 @@ const WHY_ICONS = {
   security: ShieldCheck,
   scalability: TrendingUp,
 } as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.home" });
+
+  return buildMetadata({
+    locale,
+    title: t("title"),
+    description: t("description"),
+    path: "/",
+    keywords: "cloud accounting, BPO services, software development, outsourcing",
+  });
+}
 
 export default async function HomePage({
   params,
@@ -51,6 +71,7 @@ export default async function HomePage({
 
   return (
     <>
+      <JsonLd data={organizationSchema()} />
       {/* ─── HERO: asymmetric split, copy + image bento ─────────────────── */}
       <Hero
         eyebrow={t("hero.badge")}

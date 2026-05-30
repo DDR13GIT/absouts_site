@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import {
   Handshake,
@@ -18,6 +19,7 @@ import {
 import { getDepartmentsInOrder } from "@/lib/services";
 import { BACKGROUNDS } from "@/lib/assets";
 import { cn } from "@/lib/utils/cn";
+import { buildMetadata } from "@/lib/seo/metadata";
 
 const DEPT_MESSAGE_KEY: Record<string, "cloudAccounting" | "bpo" | "software"> = {
   "cloud-accounting": "cloudAccounting",
@@ -37,6 +39,23 @@ const BENEFIT_ICONS = {
   efficiency: Gauge,
   scalability: Scaling,
 } as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.services" });
+
+  return buildMetadata({
+    locale,
+    title: t("title"),
+    description: t("description"),
+    path: "/services",
+    keywords: "outsourcing services, cloud accounting, BPO, software development",
+  });
+}
 
 export default async function ServicesPage({
   params,

@@ -1,11 +1,31 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Archive, Headphones, PackageCheck, UsersRound } from "lucide-react";
 import { Cta, Hero, Reveal, SectionHeading } from "@/components/sections";
 import { ServiceBlock, type ServiceBlockData } from "@/components/services/service-block";
 import { BACKGROUNDS } from "@/lib/assets";
+import { absoluteUrl, buildMetadata, localizedPath } from "@/lib/seo/metadata";
+import { JsonLd, breadcrumbSchema, serviceSchema } from "@/lib/seo/structured-data";
 
 const OPERATING_ICONS = [Archive, PackageCheck, Headphones, UsersRound] as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.bpo" });
+
+  return buildMetadata({
+    locale,
+    title: t("title"),
+    description: t("description"),
+    path: "/services/bpo",
+    keywords: "BPO, business process outsourcing, back office support, customer support",
+  });
+}
 
 export default async function BpoPage({
   params,
@@ -15,9 +35,18 @@ export default async function BpoPage({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "departments.bpo" });
   const services = t.raw("services") as ServiceBlockData[];
+  const url = localizedPath(locale, "/services/bpo");
 
   return (
     <>
+      <JsonLd data={serviceSchema({ name: t("title"), description: t("hero.subtitle"), url })} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: absoluteUrl(localizedPath(locale, "/")) },
+          { name: "Services", url: absoluteUrl(localizedPath(locale, "/services")) },
+          { name: t("title"), url: absoluteUrl(url) },
+        ])}
+      />
       <Hero
         layout="banner"
         eyebrow={t("hero.badge")}

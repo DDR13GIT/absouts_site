@@ -20,10 +20,22 @@
         "cardDescription": "Soporte contable remoto alineado con tus sistemas, calendario de cierre y necesidades de decisión."
       },
       "metrics": [
-        { "value": "8", "label": "Líneas de servicio contable" },
-        { "value": "EE. UU.", "label": "Experiencia con empresas" },
-        { "value": "Nube", "label": "Modelo seguro de entrega" },
-        { "value": "Auditoría", "label": "Documentación preparada" }
+        {
+          "value": "8",
+          "label": "Líneas de servicio contable"
+        },
+        {
+          "value": "EE. UU.",
+          "label": "Experiencia con empresas"
+        },
+        {
+          "value": "Nube",
+          "label": "Modelo seguro de entrega"
+        },
+        {
+          "value": "Auditoría",
+          "label": "Documentación preparada"
+        }
       ],
       "intro": {
         "badge": "Control Financiero",
@@ -54,7 +66,10 @@
           ],
           "advantage": "Experiencia rentable y flexibilidad.",
           "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Remoto", "Escalable"]
+          "tags": [
+            "Remoto",
+            "Escalable"
+          ]
         },
         {
           "icon": "/assets/Asset 11_1757767623440.png",
@@ -69,7 +84,10 @@
           ],
           "advantage": "Documentación lista para auditoría y precisión.",
           "image": "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Precisión", "Cumplimiento"]
+          "tags": [
+            "Precisión",
+            "Cumplimiento"
+          ]
         },
         {
           "icon": "/assets/Asset 12_1757767623440.png",
@@ -84,7 +102,10 @@
           ],
           "advantage": "Prevención de fraude e integridad de datos.",
           "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Seguridad", "Integridad"]
+          "tags": [
+            "Seguridad",
+            "Integridad"
+          ]
         },
         {
           "icon": "/assets/Asset 18_1757767623441.png",
@@ -99,7 +120,10 @@
           ],
           "advantage": "Información basada en datos para crecer.",
           "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Información", "Estrategia"]
+          "tags": [
+            "Información",
+            "Estrategia"
+          ]
         },
         {
           "icon": "/assets/Asset 10_1757767623440.png",
@@ -114,7 +138,10 @@
           ],
           "advantage": "Mejor gestión del capital de trabajo.",
           "image": "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Flujo de Caja", "Eficiencia"]
+          "tags": [
+            "Flujo de Caja",
+            "Eficiencia"
+          ]
         },
         {
           "icon": "/assets/Asset 9_1757767623440.png",
@@ -129,7 +156,10 @@
           ],
           "advantage": "Menos desperdicio y existencias optimizadas.",
           "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Logística", "Control"]
+          "tags": [
+            "Logística",
+            "Control"
+          ]
         },
         {
           "icon": "/assets/Asset 17_1757767623440.png",
@@ -144,7 +174,10 @@
           ],
           "advantage": "Satisfacción de empleados y cumplimiento.",
           "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800",
-          "tags": ["RRHH", "Cumplimiento"]
+          "tags": [
+            "RRHH",
+            "Cumplimiento"
+          ]
         },
         {
           "icon": "/assets/Asset 13_1757767623440.png",
@@ -159,7 +192,10 @@
           ],
           "advantage": "Minimización de riesgos y optimización fiscal.",
           "image": "https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Planificación", "Ahorro"]
+          "tags": [
+            "Planificación",
+            "Ahorro"
+          ]
         }
       ],
       "cta": {
@@ -220,7 +256,11 @@
           ],
           "advantage": "Mayor eficiencia operativa y seguridad de datos reforzada.",
           "image": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Organización", "Seguridad", "Digitalización"]
+          "tags": [
+            "Organización",
+            "Seguridad",
+            "Digitalización"
+          ]
         },
         {
           "icon": "/assets/Asset 9_1757767623440.png",
@@ -235,7 +275,11 @@
           ],
           "advantage": "Tiempos de respuesta más rápidos y menos errores de procesamiento.",
           "image": "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Logística", "Velocidad", "Precisión"]
+          "tags": [
+            "Logística",
+            "Velocidad",
+            "Precisión"
+          ]
         },
         {
           "icon": "/assets/Asset 16_1757767623440.png",
@@ -250,7 +294,11 @@
           ],
           "advantage": "Mejores tiempos de respuesta y mayor satisfacción del cliente.",
           "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Soporte 24/7", "Multicanal", "Satisfacción"]
+          "tags": [
+            "Soporte 24/7",
+            "Multicanal",
+            "Satisfacción"
+          ]
         },
         {
           "icon": "/assets/Asset 17_1757767623440.png",
@@ -265,7 +313,11 @@
           ],
           "advantage": "Administración optimizada y cumplimiento asegurado.",
           "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Talento", "Cumplimiento", "Beneficios"]
+          "tags": [
+            "Talento",
+            "Cumplimiento",
+            "Beneficios"
+          ]
         },
         {
           "icon": "/assets/Asset 12_1757767623440.png",
@@ -280,7 +332,11 @@
           ],
           "advantage": "Menores riesgos legales y tranquilidad.",
           "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Gestión de Riesgos", "Listo para Auditoría", "Estándares"]
+          "tags": [
+            "Gestión de Riesgos",
+            "Listo para Auditoría",
+            "Estándares"
+          ]
         }
       ],
       "cta": {
@@ -900,21 +956,66 @@
       "title": "Beneficios y Ventajas",
       "lead": "Apoyamos a las personas con beneficios prácticos, herramientas útiles y un ambiente de trabajo creado para un desempeño sostenido.",
       "items": [
-        { "title": "Salario Competitivo", "description": "Paquetes de compensación competitivos con bonos por desempeño y revisiones salariales periódicas." },
-        { "title": "Grandes Colegas y Mentores", "description": "Trabaja junto a profesionales con experiencia que valoran la mentoría y el intercambio de conocimiento." },
-        { "title": "Herramientas y Tecnologías", "description": "Acceso a herramientas actuales de desarrollo, licencias de software y sistemas confiables de entrega." },
-        { "title": "Cultura Basada en la Confianza", "description": "Un ambiente de trabajo abierto basado en respeto mutuo, transparencia y colaboración." },
-        { "title": "Capacitación y Viajes Internacionales", "description": "Oportunidades para conferencias, programas de capacitación y visitas seleccionadas a clientes en el exterior." },
-        { "title": "Formación e Intercambio de Conocimiento", "description": "Sesiones de capacitación, talleres, certificaciones y eventos internos de aprendizaje." },
-        { "title": "Crecimiento y Desarrollo Profesional", "description": "Rutas claras de crecimiento respaldadas por mentoría y desarrollo de habilidades." },
-        { "title": "Evaluación Anual de Desempeño", "description": "Revisiones justas con retroalimentación constructiva y planificación de crecimiento." },
-        { "title": "Buen Equilibrio Trabajo Vida", "description": "Prácticas laborales flexibles y respeto por el tiempo personal y el bienestar." },
-        { "title": "Comida y Bebidas", "description": "Comidas, snacks, bebidas y almuerzos para jornadas de equipo." },
-        { "title": "Cobertura de Seguro de Vida y Salud", "description": "Soporte de seguro de salud y vida para miembros del equipo y familias elegibles." },
-        { "title": "Bonos y Asignaciones", "description": "Bonos por desempeño, bonos festivos y asignaciones seleccionadas de transporte o comunicación." },
-        { "title": "Ambiente de Trabajo Sólido", "description": "Espacios modernos, mobiliario ergonómico y áreas para colaboración enfocada." },
-        { "title": "Licencias y Vacaciones Pagadas", "description": "Tiempo libre pagado, licencia por enfermedad, licencia familiar y políticas de vacaciones." },
-        { "title": "Salidas y Eventos de Empresa", "description": "Actividades de integración, retiros, eventos de celebración y reuniones sociales." }
+        {
+          "title": "Salario Competitivo",
+          "description": "Paquetes de compensación competitivos con bonos por desempeño y revisiones salariales periódicas."
+        },
+        {
+          "title": "Grandes Colegas y Mentores",
+          "description": "Trabaja junto a profesionales con experiencia que valoran la mentoría y el intercambio de conocimiento."
+        },
+        {
+          "title": "Herramientas y Tecnologías",
+          "description": "Acceso a herramientas actuales de desarrollo, licencias de software y sistemas confiables de entrega."
+        },
+        {
+          "title": "Cultura Basada en la Confianza",
+          "description": "Un ambiente de trabajo abierto basado en respeto mutuo, transparencia y colaboración."
+        },
+        {
+          "title": "Capacitación y Viajes Internacionales",
+          "description": "Oportunidades para conferencias, programas de capacitación y visitas seleccionadas a clientes en el exterior."
+        },
+        {
+          "title": "Formación e Intercambio de Conocimiento",
+          "description": "Sesiones de capacitación, talleres, certificaciones y eventos internos de aprendizaje."
+        },
+        {
+          "title": "Crecimiento y Desarrollo Profesional",
+          "description": "Rutas claras de crecimiento respaldadas por mentoría y desarrollo de habilidades."
+        },
+        {
+          "title": "Evaluación Anual de Desempeño",
+          "description": "Revisiones justas con retroalimentación constructiva y planificación de crecimiento."
+        },
+        {
+          "title": "Buen Equilibrio Trabajo Vida",
+          "description": "Prácticas laborales flexibles y respeto por el tiempo personal y el bienestar."
+        },
+        {
+          "title": "Comida y Bebidas",
+          "description": "Comidas, snacks, bebidas y almuerzos para jornadas de equipo."
+        },
+        {
+          "title": "Cobertura de Seguro de Vida y Salud",
+          "description": "Soporte de seguro de salud y vida para miembros del equipo y familias elegibles."
+        },
+        {
+          "title": "Bonos y Asignaciones",
+          "description": "Bonos por desempeño, bonos festivos y asignaciones seleccionadas de transporte o comunicación."
+        },
+        {
+          "title": "Ambiente de Trabajo Sólido",
+          "description": "Espacios modernos, mobiliario ergonómico y áreas para colaboración enfocada."
+        },
+        {
+          "title": "Licencias y Vacaciones Pagadas",
+          "description": "Tiempo libre pagado, licencia por enfermedad, licencia familiar y políticas de vacaciones."
+        },
+        {
+          "title": "Salidas y Eventos de Empresa",
+          "description": "Actividades de integración, retiros, eventos de celebración y reuniones sociales."
+        }
       ]
     },
     "detail": {
@@ -933,9 +1034,21 @@
       "testimonials": {
         "title": "Lo Que Dice Nuestro Equipo",
         "items": [
-          { "quote": "Trabajar en Absouts ha sido una experiencia increíble. El equipo apoya, los proyectos retan y siempre hay espacio para crecer.", "author": "Sarah Ahmed", "position": "Desarrolladora Senior de Software" },
-          { "quote": "El equilibrio entre trabajo y vida aquí es excepcional. La gerencia se preocupa por el bienestar y el desarrollo profesional.", "author": "Razwan Hassan", "position": "Contador en la Nube" },
-          { "quote": "Aprendí más en mi primer año aquí que en mis tres roles anteriores juntos. El programa de mentoría es excelente.", "author": "Maria Rodriguez", "position": "Ejecutiva de Desarrollo de Negocios" }
+          {
+            "quote": "Trabajar en Absouts ha sido una experiencia increíble. El equipo apoya, los proyectos retan y siempre hay espacio para crecer.",
+            "author": "Sarah Ahmed",
+            "position": "Desarrolladora Senior de Software"
+          },
+          {
+            "quote": "El equilibrio entre trabajo y vida aquí es excepcional. La gerencia se preocupa por el bienestar y el desarrollo profesional.",
+            "author": "Razwan Hassan",
+            "position": "Contador en la Nube"
+          },
+          {
+            "quote": "Aprendí más en mi primer año aquí que en mis tres roles anteriores juntos. El programa de mentoría es excelente.",
+            "author": "Maria Rodriguez",
+            "position": "Ejecutiva de Desarrollo de Negocios"
+          }
         ]
       }
     },
@@ -1040,5 +1153,260 @@
     "termsOfService": "Términos de Servicio",
     "rights": "Todos los derechos reservados.",
     "followUs": "Síguenos"
+  },
+  "seo": {
+    "home": {
+      "title": "Absouts - Soluciones Globales de Externalización",
+      "description": "Servicios de contabilidad en la nube, BPO y desarrollo de software para empresas que necesitan soporte externo preciso y escalable."
+    },
+    "about": {
+      "title": "Acerca de Absouts - Experiencia en Externalización",
+      "description": "Conoce Absouts, su liderazgo, sus valores y su modelo global de entrega para contabilidad en la nube, BPO y desarrollo de software."
+    },
+    "services": {
+      "title": "Servicios - Contabilidad en la Nube, BPO y Software",
+      "description": "Explora los servicios de Absouts en operaciones financieras, externalización de procesos y desarrollo de software a medida."
+    },
+    "cloudAccounting": {
+      "title": "Servicios de Contabilidad en la Nube - Absouts",
+      "description": "Teneduría de libros, nómina, conciliación, reportes, cumplimiento fiscal y operaciones financieras en la nube con Absouts."
+    },
+    "bpo": {
+      "title": "Servicios de Externalización de Procesos - Absouts",
+      "description": "Soporte BPO estructurado para operaciones administrativas, atención al cliente, gestión de datos y entrega escalable."
+    },
+    "software": {
+      "title": "Servicios de Desarrollo de Software - Absouts",
+      "description": "Servicios de software web, móvil, nube, pruebas, fintech, legaltech, ecommerce e IA con Absouts."
+    },
+    "softwareSubservice": {
+      "title": "{service} - Desarrollo de Software Absouts",
+      "description": "Servicios de {service} de Absouts, entregados por equipos de software con experiencia y flujos de ingeniería prácticos."
+    },
+    "careers": {
+      "title": "Carreras en Absouts",
+      "description": "Explora vacantes en Absouts y únete a equipos que entregan contabilidad en la nube, BPO y software para clientes globales."
+    },
+    "jobDetail": {
+      "title": "{jobTitle} - Carreras en Absouts",
+      "description": "Revisa el puesto {jobTitle} en Absouts, con responsabilidades, requisitos, beneficios y detalles de postulación."
+    },
+    "contact": {
+      "title": "Contacta a Absouts",
+      "description": "Contacta a Absouts para soporte de externalización en contabilidad en la nube, BPO y desarrollo de software en mercados globales."
+    },
+    "privacy": {
+      "title": "Política de Privacidad - Absouts",
+      "description": "Lee cómo Absouts recopila, usa, protege y conserva información personal cuando usas nuestro sitio web y servicios."
+    },
+    "terms": {
+      "title": "Términos de Servicio - Absouts",
+      "description": "Lee los términos que rigen el acceso y uso del sitio web, los servicios y las ofertas comerciales de Absouts."
+    },
+    "notFound": {
+      "title": "404 - Página No Encontrada - Absouts",
+      "description": "No se pudo encontrar la página que buscas. Vuelve a Absouts para explorar nuestros servicios."
+    }
+  },
+  "legal": {
+    "privacy": {
+      "label": "Legal",
+      "title": "Política de Privacidad",
+      "subtitle": "Tu privacidad es importante para nosotros. Esta política explica cómo recopilamos, usamos y protegemos tu información.",
+      "lastUpdated": "Última Actualización",
+      "sections": [
+        {
+          "title": "Introducción",
+          "paragraphs": [
+            "Absouts (\"nosotros\" o \"nuestro\") se compromete a proteger tu privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos tu información cuando visitas nuestro sitio web o utilizas nuestros servicios. Lee atentamente esta política. Si no estás de acuerdo con sus términos, no accedas al sitio.",
+            "Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento y por cualquier motivo. Te informaremos de los cambios actualizando la fecha de Última Actualización. Te recomendamos revisar esta política periódicamente para mantenerte informado."
+          ]
+        },
+        {
+          "title": "Información que Recopilamos",
+          "paragraphs": [
+            "Podemos recopilar información personal identificable que nos proporcionas voluntariamente cuando te registras en el sitio web, manifiestas interés en nuestros productos o servicios, participas en actividades del sitio o nos contactas mediante formularios o correo electrónico.",
+            "La información personal puede incluir datos de nombre y contacto, información profesional, datos de comunicación, preferencias de marketing e intereses.",
+            "Cuando visitas nuestro sitio web, podemos recopilar automáticamente dirección IP, tipo de navegador, sistema operativo, información del dispositivo, páginas visitadas, tiempo en página, rutas de navegación, sitios de referencia, cookies y tecnologías similares."
+          ]
+        },
+        {
+          "title": "Cómo Usamos tu Información",
+          "paragraphs": [
+            "Usamos la información recopilada para proporcionar, operar y mantener nuestros servicios, responder consultas, brindar soporte, enviar avisos técnicos y mensajes administrativos, comunicar productos y servicios, analizar tendencias de uso, mejorar el sitio web, atender amenazas de seguridad, cumplir obligaciones legales, hacer cumplir nuestros términos, procesar transacciones y gestionar cuentas."
+          ]
+        },
+        {
+          "title": "Divulgación de tu Información",
+          "paragraphs": [
+            "Podemos compartir tu información con proveedores que prestan servicios en nuestro nombre, en relación con transferencias comerciales, cuando la ley lo exige, o cuando sea necesario para proteger intereses vitales y derechos legales, investigar incumplimientos, prevenir fraude, atender riesgos de seguridad o respaldar litigios."
+          ]
+        },
+        {
+          "title": "Seguridad de los Datos",
+          "paragraphs": [
+            "Implementamos medidas técnicas y organizativas adecuadas para proteger la información personal. Sin embargo, ninguna transmisión electrónica por internet ni tecnología de almacenamiento puede garantizar seguridad absoluta.",
+            "Mantenemos medidas como cifrado, servidores seguros, controles de acceso y evaluaciones periódicas de seguridad para proteger los datos contra acceso, alteración, divulgación o destrucción no autorizados."
+          ]
+        },
+        {
+          "title": "Retención de Datos",
+          "paragraphs": [
+            "Conservamos la información personal solo durante el tiempo necesario para los fines descritos en esta Política de Privacidad. También conservamos y usamos información cuando sea necesario para cumplir obligaciones legales, resolver disputas, hacer cumplir políticas y analizar el uso para seguridad y mejora del servicio."
+          ]
+        },
+        {
+          "title": "Tus Derechos de Privacidad",
+          "paragraphs": [
+            "Según tu ubicación, puedes tener derecho a acceder, corregir, eliminar, oponerte, restringir el procesamiento, recibir una copia portable o retirar el consentimiento respecto de tu información personal. Para ejercer estos derechos, contáctanos con los datos indicados al final de esta política."
+          ]
+        },
+        {
+          "title": "Cookies y Tecnologías de Seguimiento",
+          "paragraphs": [
+            "Usamos cookies y tecnologías similares para registrar actividad en nuestro sitio web y almacenar cierta información. Puedes configurar tu navegador para rechazar cookies o indicar cuándo se envían, aunque algunas partes del sitio podrían no funcionar correctamente sin ellas."
+          ]
+        },
+        {
+          "title": "Sitios Web de Terceros",
+          "paragraphs": [
+            "Nuestro sitio web puede contener enlaces a sitios de terceros. No somos responsables de sus prácticas de privacidad ni de su contenido, y te recomendamos leer sus políticas de privacidad."
+          ]
+        },
+        {
+          "title": "Privacidad de Menores",
+          "paragraphs": [
+            "Nuestros servicios no están dirigidos a menores de 18 años. No recopilamos conscientemente información personal de menores de 18 años. Si sabemos que recopilamos esa información sin consentimiento parental verificado, tomaremos medidas para eliminarla de nuestros servidores."
+          ]
+        },
+        {
+          "title": "Transferencias Internacionales de Datos",
+          "paragraphs": [
+            "Tu información puede transferirse y mantenerse en equipos ubicados fuera de tu estado, provincia, país o jurisdicción. Tomaremos las medidas necesarias para que tus datos se traten de forma segura y conforme a esta Política de Privacidad."
+          ]
+        },
+        {
+          "title": "Contacto",
+          "paragraphs": [
+            "Si tienes preguntas sobre esta Política de Privacidad o deseas ejercer tus derechos, contacta a Absouts en support@absouts.com, por teléfono al +880 1234 567 890 o en nuestra oficina en Dhaka, Bangladesh."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "label": "Legal",
+      "title": "Términos de Servicio",
+      "subtitle": "Lee cuidadosamente estos términos y condiciones antes de utilizar nuestros servicios.",
+      "lastUpdated": "Última Actualización",
+      "sections": [
+        {
+          "title": "Aceptación de los Términos",
+          "paragraphs": [
+            "Estos Términos de Servicio (\"Términos\") constituyen un acuerdo legalmente vinculante entre tú y Absouts (\"Compañía\", \"nosotros\" o \"nuestro\") sobre tu acceso y uso de nuestro sitio web, servicios y productos. Al acceder o usar nuestros servicios, aceptas quedar sujeto a estos Términos y a nuestra Política de Privacidad.",
+            "Si no aceptas todos estos Términos, tienes prohibido usar nuestros servicios y debes interrumpir su uso inmediatamente.",
+            "Nos reservamos el derecho de cambiar o modificar estos Términos en cualquier momento y a nuestra sola discreción. Si realizamos cambios, avisaremos actualizando la fecha superior. Tu uso continuado de los servicios después de publicar Términos revisados significa que aceptas los cambios."
+          ]
+        },
+        {
+          "title": "Derechos de Propiedad Intelectual",
+          "paragraphs": [
+            "Salvo indicación en contrario, nuestro sitio web y servicios, incluidos código fuente, bases de datos, funcionalidad, software, diseños, audio, video, texto, fotografías, gráficos, marcas, marcas de servicio y logotipos, son de nuestra propiedad, están bajo nuestro control o nos han sido licenciados.",
+            "El Contenido y las Marcas están protegidos por leyes de derechos de autor, marcas, propiedad intelectual y competencia desleal de Bangladesh y por convenios internacionales.",
+            "Excepto según lo permitido expresamente en estos Términos, ninguna parte de nuestros servicios ni ningún Contenido o Marca puede copiarse, reproducirse, agregarse, republicarse, cargarse, publicarse, exhibirse públicamente, codificarse, traducirse, transmitirse, distribuirse, venderse, licenciarse o explotarse con fines comerciales sin autorización previa por escrito."
+          ]
+        },
+        {
+          "title": "Declaraciones del Usuario",
+          "paragraphs": [
+            "Al usar nuestros servicios, declaras y garantizas que tienes capacidad legal, cumplirás estos Términos, no eres menor de 18 años, no accederás mediante medios automatizados o no humanos, no usarás los servicios para fines ilegales o no autorizados, no infringirás leyes aplicables y proporcionarás información veraz y precisa."
+          ]
+        },
+        {
+          "title": "Actividades Prohibidas",
+          "paragraphs": [
+            "No puedes acceder ni usar nuestros servicios para fines distintos de aquellos para los que los ofrecemos. Las actividades prohibidas incluyen extracción sistemática de datos, interferencia con funciones de seguridad, enlaces o marcos no autorizados, fraude, uso indebido del soporte, automatización, interrupción del servicio, suplantación, publicidad no autorizada, transmisión de malware, acoso, eliminación de avisos de propiedad, evasión de restricciones, copia de software o ingeniería inversa."
+          ]
+        },
+        {
+          "title": "Servicios y Productos",
+          "paragraphs": [
+            "Prestamos servicios de externalización de procesos, desarrollo de software, contabilidad en la nube y servicios relacionados. Procuramos mostrar nuestros servicios con precisión, pero nos reservamos el derecho de modificarlos o discontinuarlos, rechazar servicios, actualizar descripciones y precios, y limitar su alcance.",
+            "No garantizamos que los servicios estén siempre disponibles, sean ininterrumpidos, oportunos, seguros o libres de errores. Podemos cambiar, suspender o discontinuar todo o parte de los servicios en cualquier momento sin aviso."
+          ]
+        },
+        {
+          "title": "Datos del Usuario y Privacidad",
+          "paragraphs": [
+            "Mantenemos ciertos datos que transmites a nuestros servicios para gestionar su rendimiento y uso. Aunque realizamos copias de seguridad rutinarias, eres responsable de los datos que transmites o que se relacionan con tu actividad en los servicios.",
+            "Aceptas que no tendremos responsabilidad por pérdida o corrupción de dichos datos. Para más información sobre el tratamiento de datos, consulta nuestra Política de Privacidad."
+          ]
+        },
+        {
+          "title": "Tarifas y Pagos",
+          "paragraphs": [
+            "Algunos servicios pueden requerir el pago de tarifas. Aceptas pagar todas las tarifas asociadas con tu uso de los servicios según las políticas de precios, pago y facturación vigentes al momento del vencimiento.",
+            "Las tarifas no son reembolsables salvo que se indique lo contrario en un acuerdo escrito separado. Podemos cambiar tarifas con aviso razonable. Eres responsable de los impuestos aplicables. La falta de pago puede causar suspensión o terminación. Los procesadores de pago de terceros pueden aplicar sus propios términos y políticas de privacidad."
+          ]
+        },
+        {
+          "title": "Limitación de Responsabilidad",
+          "paragraphs": [
+            "En la máxima medida permitida por la ley, ni nosotros ni nuestros directores, empleados o agentes seremos responsables por daños directos, indirectos, consecuentes, ejemplares, incidentales, especiales o punitivos, incluidos lucro cesante, pérdida de ingresos o datos, derivados del uso de nuestros servicios, incluso si se nos informó de la posibilidad de dichos daños.",
+            "Nuestra responsabilidad frente a ti por cualquier causa y sin importar la forma de acción estará limitada al monto que nos hayas pagado durante los seis meses anteriores al surgimiento de la causa de acción."
+          ]
+        },
+        {
+          "title": "Indemnización",
+          "paragraphs": [
+            "Aceptas defendernos, indemnizarnos y mantenernos indemnes, incluidas nuestras subsidiarias, afiliadas, directivos, agentes, socios y empleados, frente a cualquier pérdida, daño, responsabilidad, reclamación, demanda, honorarios legales o gastos presentados por un tercero debido a tu uso de los servicios, incumplimiento de estos Términos, incumplimiento de declaraciones y garantías, violación de derechos de terceros o acto perjudicial hacia otro usuario."
+          ]
+        },
+        {
+          "title": "Descargo de Responsabilidad",
+          "paragraphs": [
+            "Nuestros servicios se proporcionan en estado actual y según disponibilidad. Aceptas que el uso de los servicios es bajo tu propio riesgo. En la máxima medida permitida por la ley, rechazamos todas las garantías expresas o implícitas, incluidas comerciabilidad, idoneidad para un propósito particular y no infracción.",
+            "No ofrecemos garantías ni declaraciones sobre la exactitud o integridad del contenido del servicio o de sitios enlazados, y no asumimos responsabilidad por errores, lesiones, acceso no autorizado, interrupciones, código dañino, omisiones o pérdidas derivadas del contenido disponible mediante nuestros servicios."
+          ]
+        },
+        {
+          "title": "Terminación",
+          "paragraphs": [
+            "Estos Términos permanecen vigentes mientras uses nuestros servicios. Nos reservamos el derecho, a nuestra sola discreción y sin aviso ni responsabilidad, de negar acceso y uso de los servicios a cualquier persona por cualquier motivo, incluido el incumplimiento de estos Términos o de la ley aplicable.",
+            "Si terminamos o suspendemos tu cuenta, tienes prohibido registrar una nueva cuenta con tu nombre, un nombre falso, un nombre prestado o el nombre de un tercero."
+          ]
+        },
+        {
+          "title": "Ley Aplicable",
+          "paragraphs": [
+            "Estos Términos se rigen por las leyes de Bangladesh. Absouts y tú aceptan irrevocablemente que los tribunales de Bangladesh tendrán jurisdicción exclusiva para resolver cualquier disputa relacionada con estos Términos."
+          ]
+        },
+        {
+          "title": "Resolución de Disputas",
+          "paragraphs": [
+            "Cualquier acción legal presentada por ti o por nosotros deberá iniciarse o tramitarse en los tribunales de Bangladesh. Las partes aceptan la sede y jurisdicción de dichos tribunales y renuncian a defensas por falta de jurisdicción personal o foro inconveniente.",
+            "Te animamos a contactarnos primero para resolver disputas de manera informal. Si no puede resolverse informalmente, la disputa se resolverá mediante arbitraje vinculante conforme a las leyes de Bangladesh."
+          ]
+        },
+        {
+          "title": "Divisibilidad y Renuncia",
+          "paragraphs": [
+            "Si alguna disposición de estos Términos se considera ilegal, nula o inaplicable, seguirá siendo exigible en la máxima medida permitida por la ley, y la parte inaplicable se considerará separada sin afectar las disposiciones restantes.",
+            "La falta de ejercicio de un derecho o de exigencia de cumplimiento bajo estos Términos no afecta la posibilidad de ejercer ese derecho o exigir cumplimiento posteriormente, y la renuncia a un incumplimiento no implica renuncia a incumplimientos posteriores."
+          ]
+        },
+        {
+          "title": "Contacto",
+          "paragraphs": [
+            "Si tienes preguntas sobre estos Términos de Servicio, contacta a Absouts en support@absouts.com, por teléfono al +880 1234 567 890 o en nuestra oficina en Dhaka, Bangladesh."
+          ]
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "title": "404 Página No Encontrada",
+    "description": "La página que buscas no existe. Revisa la URL o vuelve a la página de inicio.",
+    "action": "Volver al Inicio"
   }
 }

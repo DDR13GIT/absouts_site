@@ -1,5 +1,6 @@
 import * as Icons from "lucide-react";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { ArrowRight, type LucideProps } from "lucide-react";
 import { Badge, Button, Card } from "@/components/ui";
@@ -8,6 +9,8 @@ import { Link } from "@/i18n/navigation";
 import { BACKGROUNDS } from "@/lib/assets";
 import { SUBSERVICES } from "@/lib/services";
 import { cn } from "@/lib/utils/cn";
+import { absoluteUrl, buildMetadata, localizedPath } from "@/lib/seo/metadata";
+import { JsonLd, breadcrumbSchema, serviceSchema } from "@/lib/seo/structured-data";
 
 const CARD_TONES: Record<string, string> = {
   ecommerce: "bg-med-clementine/14 text-med-terra border-med-clementine/30",
@@ -22,6 +25,23 @@ const CARD_TONES: Record<string, string> = {
 
 type IconComponent = React.ComponentType<LucideProps>;
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.software" });
+
+  return buildMetadata({
+    locale,
+    title: t("title"),
+    description: t("description"),
+    path: "/services/software",
+    keywords: "software development, web development, mobile apps, cloud engineering, QA testing",
+  });
+}
+
 export default async function SoftwarePage({
   params,
 }: {
@@ -31,9 +51,18 @@ export default async function SoftwarePage({
   const t = await getTranslations({ locale, namespace: "departments.software" });
   const subT = await getTranslations({ locale, namespace: "subservices" });
   const process = t.raw("process.items") as { title: string; description: string }[];
+  const url = localizedPath(locale, "/services/software");
 
   return (
     <>
+      <JsonLd data={serviceSchema({ name: t("title"), description: t("hero.subtitle"), url })} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: absoluteUrl(localizedPath(locale, "/")) },
+          { name: "Services", url: absoluteUrl(localizedPath(locale, "/services")) },
+          { name: t("title"), url: absoluteUrl(url) },
+        ])}
+      />
       <Hero
         layout="banner"
         eyebrow={t("hero.badge")}

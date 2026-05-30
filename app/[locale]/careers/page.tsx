@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Briefcase, Globe, TrendingUp, Users } from "lucide-react";
 import { connection } from "next/server";
 import { getTranslations } from "next-intl/server";
@@ -6,15 +7,34 @@ import { PerksBenefits } from "@/components/careers/perks-benefits";
 import { Card, CardContent } from "@/components/ui";
 import { Hero, Reveal, SectionHeading } from "@/components/sections";
 import { getPublishedJobs, type JobListItem } from "@/lib/db/queries";
+import { buildMetadata } from "@/lib/seo/metadata";
 
 export const dynamic = "force-dynamic";
 
 const whyIcons = [TrendingUp, Globe, Users];
 
-export default async function CareersPage() {
+type PageProps = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.careers" });
+
+  return buildMetadata({
+    locale,
+    title: t("title"),
+    description: t("description"),
+    path: "/careers",
+    keywords: "careers, jobs, Absouts careers, outsourcing jobs",
+  });
+}
+
+export default async function CareersPage({ params }: PageProps) {
   await connection();
 
-  const t = await getTranslations("careers");
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "careers" });
   let jobs: JobListItem[] = [];
   let jobsError = false;
 

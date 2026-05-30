@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { connection } from "next/server";
 import { ArrowLeft, Briefcase, Calendar, Clock, DollarSign, Mail, MapPin, Quote } from "lucide-react";
@@ -8,18 +9,53 @@ import { Badge, Button, Card, CardContent } from "@/components/ui";
 import { Link } from "@/i18n/navigation";
 import { Reveal, SectionHeading } from "@/components/sections";
 import { getJobById } from "@/lib/db/queries";
+import { buildMetadata } from "@/lib/seo/metadata";
 
 export const dynamic = "force-dynamic";
 
 type PageProps = {
-  params: Promise<{ id: string }>;
+  params: Promise<{ locale: string; id: string }>;
 };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale, id } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.jobDetail" });
+
+  try {
+    const job = await getJobById(id);
+
+    if (!job) {
+      return buildMetadata({
+        locale,
+        title: t("title", { jobTitle: "Role" }),
+        description: t("description", { jobTitle: "Role" }),
+        path: `/careers/${id}`,
+      });
+    }
+
+    return buildMetadata({
+      locale,
+      title: t("title", { jobTitle: job.title }),
+      description: t("description", { jobTitle: job.title }),
+      path: `/careers/${id}`,
+      keywords: `${job.title}, Absouts careers, jobs`,
+      type: "article",
+    });
+  } catch {
+    return buildMetadata({
+      locale,
+      title: t("title", { jobTitle: "Role" }),
+      description: t("description", { jobTitle: "Role" }),
+      path: `/careers/${id}`,
+    });
+  }
+}
 
 export default async function JobDetailPage({ params }: PageProps) {
   await connection();
 
-  const { id } = await params;
-  const t = await getTranslations("careers.detail");
+  const { locale, id } = await params;
+  const t = await getTranslations({ locale, namespace: "careers.detail" });
   const job = await getJobById(id);
 
   if (!job) notFound();

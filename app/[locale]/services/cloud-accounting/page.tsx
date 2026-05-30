@@ -1,11 +1,31 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Calculator, FileCheck2, LineChart, ShieldCheck } from "lucide-react";
 import { Cta, Hero, Reveal, SectionHeading } from "@/components/sections";
 import { ServiceBlock, type ServiceBlockData } from "@/components/services/service-block";
 import { BACKGROUNDS } from "@/lib/assets";
+import { absoluteUrl, buildMetadata, localizedPath } from "@/lib/seo/metadata";
+import { JsonLd, breadcrumbSchema, serviceSchema } from "@/lib/seo/structured-data";
 
 const METRIC_ICONS = [Calculator, FileCheck2, LineChart, ShieldCheck] as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.cloudAccounting" });
+
+  return buildMetadata({
+    locale,
+    title: t("title"),
+    description: t("description"),
+    path: "/services/cloud-accounting",
+    keywords: "cloud accounting, bookkeeping, payroll, tax compliance, finance operations",
+  });
+}
 
 export default async function CloudAccountingPage({
   params,
@@ -16,9 +36,24 @@ export default async function CloudAccountingPage({
   const t = await getTranslations({ locale, namespace: "departments.cloudAccounting" });
   const services = t.raw("services") as ServiceBlockData[];
   const metrics = t.raw("metrics") as { value: string; label: string }[];
+  const url = localizedPath(locale, "/services/cloud-accounting");
 
   return (
     <>
+      <JsonLd
+        data={serviceSchema({
+          name: t("title"),
+          description: t("hero.subtitle"),
+          url,
+        })}
+      />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", url: absoluteUrl(localizedPath(locale, "/")) },
+          { name: "Services", url: absoluteUrl(localizedPath(locale, "/services")) },
+          { name: t("title"), url: absoluteUrl(url) },
+        ])}
+      />
       <Hero
         layout="split"
         eyebrow={t("hero.badge")}

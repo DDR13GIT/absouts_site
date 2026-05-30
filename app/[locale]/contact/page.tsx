@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Facebook, Instagram, Mail, MapPin, Phone, Twitter, Youtube } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { ContactForm } from "@/components/forms/contact-form";
@@ -5,6 +6,8 @@ import { LazyMap } from "@/components/map/lazy-map";
 import { Card, CardContent } from "@/components/ui";
 import { Hero, Reveal, SectionHeading } from "@/components/sections";
 import { COMPANY } from "@/lib/utils/constants";
+import { buildMetadata } from "@/lib/seo/metadata";
+import { JsonLd, organizationSchema } from "@/lib/seo/structured-data";
 
 type SocialLink = {
   label: string;
@@ -18,14 +21,33 @@ const socialIcons = {
   YouTube: Youtube,
 };
 
-export default async function ContactPage() {
-  const t = await getTranslations("contact");
+type PageProps = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.contact" });
+
+  return buildMetadata({
+    locale,
+    title: t("title"),
+    description: t("description"),
+    path: "/contact",
+    keywords: "contact Absouts, outsourcing support, BPO contact, software development contact",
+  });
+}
+
+export default async function ContactPage({ params }: PageProps) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "contact" });
   const socials: SocialLink[] = "socials" in COMPANY && Array.isArray(COMPANY.socials)
     ? COMPANY.socials as SocialLink[]
     : [];
 
   return (
     <>
+      <JsonLd data={organizationSchema()} />
       <Hero
         layout="banner"
         eyebrow={t("hero.badge")}

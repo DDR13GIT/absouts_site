@@ -20,10 +20,22 @@
         "cardDescription": "Remote accounting support aligned to your systems, close calendar, and decision-making needs."
       },
       "metrics": [
-        { "value": "8", "label": "Accounting service lines" },
-        { "value": "US", "label": "Company experience" },
-        { "value": "Cloud", "label": "Secure delivery model" },
-        { "value": "Audit", "label": "Ready documentation" }
+        {
+          "value": "8",
+          "label": "Accounting service lines"
+        },
+        {
+          "value": "US",
+          "label": "Company experience"
+        },
+        {
+          "value": "Cloud",
+          "label": "Secure delivery model"
+        },
+        {
+          "value": "Audit",
+          "label": "Ready documentation"
+        }
       ],
       "intro": {
         "badge": "Financial Control",
@@ -54,7 +66,10 @@
           ],
           "advantage": "Cost-effective expertise and flexibility.",
           "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Remote", "Scalable"]
+          "tags": [
+            "Remote",
+            "Scalable"
+          ]
         },
         {
           "icon": "/assets/Asset 11_1757767623440.png",
@@ -69,7 +84,10 @@
           ],
           "advantage": "Audit-ready documentation and accuracy.",
           "image": "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Accuracy", "Compliance"]
+          "tags": [
+            "Accuracy",
+            "Compliance"
+          ]
         },
         {
           "icon": "/assets/Asset 12_1757767623440.png",
@@ -84,7 +102,10 @@
           ],
           "advantage": "Fraud prevention and data integrity.",
           "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Security", "Integrity"]
+          "tags": [
+            "Security",
+            "Integrity"
+          ]
         },
         {
           "icon": "/assets/Asset 18_1757767623441.png",
@@ -99,7 +120,10 @@
           ],
           "advantage": "Data-driven insights for growth.",
           "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Insights", "Strategy"]
+          "tags": [
+            "Insights",
+            "Strategy"
+          ]
         },
         {
           "icon": "/assets/Asset 10_1757767623440.png",
@@ -114,7 +138,10 @@
           ],
           "advantage": "Improved working capital management.",
           "image": "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Cash Flow", "Efficiency"]
+          "tags": [
+            "Cash Flow",
+            "Efficiency"
+          ]
         },
         {
           "icon": "/assets/Asset 9_1757767623440.png",
@@ -129,7 +156,10 @@
           ],
           "advantage": "Minimized waste and optimized stock.",
           "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Logistics", "Control"]
+          "tags": [
+            "Logistics",
+            "Control"
+          ]
         },
         {
           "icon": "/assets/Asset 17_1757767623440.png",
@@ -144,7 +174,10 @@
           ],
           "advantage": "Employee satisfaction and compliance.",
           "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800",
-          "tags": ["HR", "Compliance"]
+          "tags": [
+            "HR",
+            "Compliance"
+          ]
         },
         {
           "icon": "/assets/Asset 13_1757767623440.png",
@@ -159,7 +192,10 @@
           ],
           "advantage": "Risk minimization and tax optimization.",
           "image": "https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Planning", "Savings"]
+          "tags": [
+            "Planning",
+            "Savings"
+          ]
         }
       ],
       "cta": {
@@ -220,7 +256,11 @@
           ],
           "advantage": "Improved operational efficiency and enhanced data security.",
           "image": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Organization", "Security", "Digitization"]
+          "tags": [
+            "Organization",
+            "Security",
+            "Digitization"
+          ]
         },
         {
           "icon": "/assets/Asset 9_1757767623440.png",
@@ -235,7 +275,11 @@
           ],
           "advantage": "Faster turnaround times and reduced processing errors.",
           "image": "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Logistics", "Speed", "Accuracy"]
+          "tags": [
+            "Logistics",
+            "Speed",
+            "Accuracy"
+          ]
         },
         {
           "icon": "/assets/Asset 16_1757767623440.png",
@@ -250,7 +294,11 @@
           ],
           "advantage": "Improved response times and higher customer satisfaction.",
           "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
-          "tags": ["24/7 Support", "Multi-channel", "Satisfaction"]
+          "tags": [
+            "24/7 Support",
+            "Multi-channel",
+            "Satisfaction"
+          ]
         },
         {
           "icon": "/assets/Asset 17_1757767623440.png",
@@ -265,7 +313,11 @@
           ],
           "advantage": "Streamlined administration and ensured compliance.",
           "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Talent", "Compliance", "Benefits"]
+          "tags": [
+            "Talent",
+            "Compliance",
+            "Benefits"
+          ]
         },
         {
           "icon": "/assets/Asset 12_1757767623440.png",
@@ -280,7 +332,11 @@
           ],
           "advantage": "Reduced legal risks and peace of mind.",
           "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
-          "tags": ["Risk Management", "Audit Ready", "Standards"]
+          "tags": [
+            "Risk Management",
+            "Audit Ready",
+            "Standards"
+          ]
         }
       ],
       "cta": {
@@ -900,21 +956,66 @@
       "title": "Perks and Benefits",
       "lead": "We support people with practical benefits, useful tools, and a work environment built for sustained performance.",
       "items": [
-        { "title": "Competitive Salary", "description": "Market-competitive compensation packages with performance-based bonuses and regular salary reviews." },
-        { "title": "Great Colleagues and Mentors", "description": "Work alongside experienced professionals who care about mentoring and knowledge sharing." },
-        { "title": "Tools and Technologies", "description": "Access current development tools, software licenses, and reliable delivery systems." },
-        { "title": "Culture Based on Trust", "description": "An open work environment built on mutual respect, transparency, and teamwork." },
-        { "title": "International Training and Travel", "description": "Opportunities for conferences, training programs, and selected client visits abroad." },
-        { "title": "Schooling and Knowledge Sharing", "description": "Regular training sessions, workshops, certifications, and internal learning events." },
-        { "title": "Career Growth and Development", "description": "Clear growth paths supported by mentorship and skill development." },
-        { "title": "Annual Performance Evaluation", "description": "Fair performance reviews with constructive feedback and growth planning." },
-        { "title": "Sound Work Life Balance", "description": "Flexible working practices and respect for personal time and well-being." },
-        { "title": "Food and Drinks", "description": "Complimentary meals, snacks, beverages, and catered lunches during team days." },
-        { "title": "Life and Health Insurance Coverage", "description": "Health and life insurance support for team members and eligible families." },
-        { "title": "Bonuses and Allowances", "description": "Performance bonuses, festival bonuses, and selected transportation or communication allowances." },
-        { "title": "Strong Work Environment", "description": "Modern workspaces, ergonomic furniture, and areas for focused collaboration." },
-        { "title": "Paid Leaves and Vacations", "description": "Paid time off, sick leave, family leave, and vacation policies." },
-        { "title": "Company Outings and Events", "description": "Team building activities, retreats, celebration events, and social gatherings." }
+        {
+          "title": "Competitive Salary",
+          "description": "Market-competitive compensation packages with performance-based bonuses and regular salary reviews."
+        },
+        {
+          "title": "Great Colleagues and Mentors",
+          "description": "Work alongside experienced professionals who care about mentoring and knowledge sharing."
+        },
+        {
+          "title": "Tools and Technologies",
+          "description": "Access current development tools, software licenses, and reliable delivery systems."
+        },
+        {
+          "title": "Culture Based on Trust",
+          "description": "An open work environment built on mutual respect, transparency, and teamwork."
+        },
+        {
+          "title": "International Training and Travel",
+          "description": "Opportunities for conferences, training programs, and selected client visits abroad."
+        },
+        {
+          "title": "Schooling and Knowledge Sharing",
+          "description": "Regular training sessions, workshops, certifications, and internal learning events."
+        },
+        {
+          "title": "Career Growth and Development",
+          "description": "Clear growth paths supported by mentorship and skill development."
+        },
+        {
+          "title": "Annual Performance Evaluation",
+          "description": "Fair performance reviews with constructive feedback and growth planning."
+        },
+        {
+          "title": "Sound Work Life Balance",
+          "description": "Flexible working practices and respect for personal time and well-being."
+        },
+        {
+          "title": "Food and Drinks",
+          "description": "Complimentary meals, snacks, beverages, and catered lunches during team days."
+        },
+        {
+          "title": "Life and Health Insurance Coverage",
+          "description": "Health and life insurance support for team members and eligible families."
+        },
+        {
+          "title": "Bonuses and Allowances",
+          "description": "Performance bonuses, festival bonuses, and selected transportation or communication allowances."
+        },
+        {
+          "title": "Strong Work Environment",
+          "description": "Modern workspaces, ergonomic furniture, and areas for focused collaboration."
+        },
+        {
+          "title": "Paid Leaves and Vacations",
+          "description": "Paid time off, sick leave, family leave, and vacation policies."
+        },
+        {
+          "title": "Company Outings and Events",
+          "description": "Team building activities, retreats, celebration events, and social gatherings."
+        }
       ]
     },
     "detail": {
@@ -933,9 +1034,21 @@
       "testimonials": {
         "title": "What Our Team Says",
         "items": [
-          { "quote": "Working at Absouts has been an incredible journey. The team is supportive, the projects are challenging, and there is always room for growth.", "author": "Sarah Ahmed", "position": "Senior Software Developer" },
-          { "quote": "The work life balance here is exceptional. Management cares about employee wellbeing and professional development.", "author": "Razwan Hassan", "position": "Cloud Accountant" },
-          { "quote": "I learned more in my first year here than in my previous three roles combined. The mentorship program is outstanding.", "author": "Maria Rodriguez", "position": "Business Development Executive" }
+          {
+            "quote": "Working at Absouts has been an incredible journey. The team is supportive, the projects are challenging, and there is always room for growth.",
+            "author": "Sarah Ahmed",
+            "position": "Senior Software Developer"
+          },
+          {
+            "quote": "The work life balance here is exceptional. Management cares about employee wellbeing and professional development.",
+            "author": "Razwan Hassan",
+            "position": "Cloud Accountant"
+          },
+          {
+            "quote": "I learned more in my first year here than in my previous three roles combined. The mentorship program is outstanding.",
+            "author": "Maria Rodriguez",
+            "position": "Business Development Executive"
+          }
         ]
       }
     },
@@ -1040,5 +1153,260 @@
     "termsOfService": "Terms of Service",
     "rights": "All rights reserved.",
     "followUs": "Follow us"
+  },
+  "seo": {
+    "home": {
+      "title": "Absouts - Global Outsourcing Solutions",
+      "description": "Cloud accounting, BPO, and software development services for businesses that need precise, scalable outsourcing support."
+    },
+    "about": {
+      "title": "About Absouts - Outsourcing Expertise Across Markets",
+      "description": "Learn about Absouts, our leadership, values, and global delivery model for cloud accounting, BPO, and software development."
+    },
+    "services": {
+      "title": "Services - Cloud Accounting, BPO, and Software Development",
+      "description": "Explore Absouts services across finance operations, business process outsourcing, and custom software delivery."
+    },
+    "cloudAccounting": {
+      "title": "Cloud Accounting Services - Absouts",
+      "description": "Remote bookkeeping, payroll, reconciliation, reporting, tax compliance, and cloud finance operations from Absouts."
+    },
+    "bpo": {
+      "title": "Business Process Outsourcing Services - Absouts",
+      "description": "Structured BPO support for back-office operations, customer service, data management, and scalable service delivery."
+    },
+    "software": {
+      "title": "Software Development Services - Absouts",
+      "description": "Custom web, mobile, cloud, testing, fintech, legaltech, ecommerce, and AI software services from Absouts."
+    },
+    "softwareSubservice": {
+      "title": "{service} - Absouts Software Development",
+      "description": "{service} services from Absouts, delivered by experienced software teams with practical engineering workflows."
+    },
+    "careers": {
+      "title": "Careers at Absouts",
+      "description": "Explore open roles at Absouts and join teams building cloud accounting, BPO, and software delivery for global clients."
+    },
+    "jobDetail": {
+      "title": "{jobTitle} - Careers at Absouts",
+      "description": "Review the {jobTitle} role at Absouts, including responsibilities, requirements, benefits, and application details."
+    },
+    "contact": {
+      "title": "Contact Absouts",
+      "description": "Contact Absouts for cloud accounting, BPO, and software development outsourcing support across Bangladesh, the UK, and global markets."
+    },
+    "privacy": {
+      "title": "Privacy Policy - Absouts",
+      "description": "Read how Absouts collects, uses, protects, and retains personal information when you use our website and services."
+    },
+    "terms": {
+      "title": "Terms of Service - Absouts",
+      "description": "Read the terms that govern access to and use of Absouts website, services, and business offerings."
+    },
+    "notFound": {
+      "title": "404 - Page Not Found - Absouts",
+      "description": "The page you are looking for could not be found. Return to Absouts to explore our services."
+    }
+  },
+  "legal": {
+    "privacy": {
+      "label": "Legal",
+      "title": "Privacy Policy",
+      "subtitle": "Your privacy is important to us. This policy explains how we collect, use, and protect your information.",
+      "lastUpdated": "Last Updated",
+      "sections": [
+        {
+          "title": "Introduction",
+          "paragraphs": [
+            "Absouts (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.",
+            "We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the Last Updated date of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates."
+          ]
+        },
+        {
+          "title": "Information We Collect",
+          "paragraphs": [
+            "We may collect personally identifiable information that you voluntarily provide to us when you register on the website, express interest in our products or services, participate in website activities, or contact us through forms or email.",
+            "The personal information we collect may include name and contact data, professional information, communication data, marketing preferences, and interests.",
+            "When you visit our website, we may automatically collect IP address, browser type, operating system, device information, pages visited, time spent on pages, navigation paths, referring websites, cookies, and similar tracking technologies."
+          ]
+        },
+        {
+          "title": "How We Use Your Information",
+          "paragraphs": [
+            "We use the information we collect to provide, operate, and maintain our services, respond to inquiries, provide customer support, send technical notices and administrative messages, communicate about products and services, analyze usage trends, improve our website, address security threats, comply with legal obligations, enforce our terms, process transactions, and manage accounts."
+          ]
+        },
+        {
+          "title": "Disclosure of Your Information",
+          "paragraphs": [
+            "We may share your information with service providers who perform services on our behalf, in connection with business transfers, when legally required, or when necessary to protect vital interests and legal rights, investigate policy violations, prevent fraud, address safety concerns, or support litigation."
+          ]
+        },
+        {
+          "title": "Data Security",
+          "paragraphs": [
+            "We implement appropriate technical and organizational security measures designed to protect personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure.",
+            "We maintain security measures including encryption, secure servers, access controls, and regular security assessments to protect data from unauthorized access, alteration, disclosure, or destruction."
+          ]
+        },
+        {
+          "title": "Data Retention",
+          "paragraphs": [
+            "We retain personal information only for as long as necessary for the purposes described in this Privacy Policy. We also retain and use information as needed to comply with legal obligations, resolve disputes, enforce policies, and analyze usage for security and service improvement."
+          ]
+        },
+        {
+          "title": "Your Privacy Rights",
+          "paragraphs": [
+            "Depending on your location, you may have rights to access, correct, delete, object to, restrict processing of, receive a portable copy of, or withdraw consent for your personal information. To exercise these rights, contact us using the information at the end of this policy."
+          ]
+        },
+        {
+          "title": "Cookies and Tracking Technologies",
+          "paragraphs": [
+            "We use cookies and similar tracking technologies to track activity on our website and store certain information. You can instruct your browser to refuse cookies or indicate when a cookie is being sent, although some parts of the website may not function properly without cookies."
+          ]
+        },
+        {
+          "title": "Third-Party Websites",
+          "paragraphs": [
+            "Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of those sites, and we encourage you to read their privacy policies."
+          ]
+        },
+        {
+          "title": "Children's Privacy",
+          "paragraphs": [
+            "Our services are not directed to individuals under 18. We do not knowingly collect personal information from children under 18. If we learn that we collected such information without verified parental consent, we will take steps to remove it from our servers."
+          ]
+        },
+        {
+          "title": "International Data Transfers",
+          "paragraphs": [
+            "Your information may be transferred to and maintained on computers outside your state, province, country, or jurisdiction. We will take necessary steps to ensure your data is treated securely and in accordance with this Privacy Policy."
+          ]
+        },
+        {
+          "title": "Contact Us",
+          "paragraphs": [
+            "If you have questions about this Privacy Policy or wish to exercise your privacy rights, contact Absouts at support@absouts.com, by phone at +880 1234 567 890, or at our office in Dhaka, Bangladesh."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "label": "Legal",
+      "title": "Terms of Service",
+      "subtitle": "Please read these terms and conditions carefully before using our services.",
+      "lastUpdated": "Last Updated",
+      "sections": [
+        {
+          "title": "Agreement to Terms",
+          "paragraphs": [
+            "These Terms of Service (\"Terms\") constitute a legally binding agreement between you and Absouts (\"Company,\" \"we,\" \"us,\" or \"our\") concerning your access to and use of our website, services, and products. By accessing or using our services, you agree to be bound by these Terms and our Privacy Policy.",
+            "If you do not agree with all of these Terms, you are expressly prohibited from using our services and must discontinue use immediately.",
+            "We reserve the right to change or modify these Terms at any time and in our sole discretion. If we make changes, we will provide notice by updating the date at the top of these Terms. Your continued use of our services after revised Terms are posted means you accept the changes."
+          ]
+        },
+        {
+          "title": "Intellectual Property Rights",
+          "paragraphs": [
+            "Unless otherwise indicated, our website and services, including source code, databases, functionality, software, website designs, audio, video, text, photographs, graphics, trademarks, service marks, and logos, are owned or controlled by us or licensed to us.",
+            "The Content and Marks are protected by copyright, trademark, intellectual property, and unfair competition laws of Bangladesh and international conventions.",
+            "Except as expressly provided in these Terms, no part of our services and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or exploited for a commercial purpose without our prior written permission."
+          ]
+        },
+        {
+          "title": "User Representations",
+          "paragraphs": [
+            "By using our services, you represent and warrant that you have legal capacity, will comply with these Terms, are not under 18, will not access services through automated or non-human means, will not use services for illegal or unauthorized purposes, will not violate applicable law, and will provide truthful and accurate information."
+          ]
+        },
+        {
+          "title": "Prohibited Activities",
+          "paragraphs": [
+            "You may not access or use our services for any purpose other than those we make available. Prohibited activities include systematic data retrieval, interference with security features, unauthorized framing or linking, fraud, misuse of support services, automated system use, service disruption, impersonation, unauthorized advertising, malware transmission, harassment, removal of proprietary notices, access restriction bypassing, software copying, or reverse engineering."
+          ]
+        },
+        {
+          "title": "Services and Products",
+          "paragraphs": [
+            "We provide business process outsourcing, software development, cloud accounting, and related services. We make every effort to display our services accurately, but we reserve the right to modify or discontinue services, refuse service, update descriptions and pricing, and limit service scope.",
+            "We cannot guarantee that services will always be available, uninterrupted, timely, secure, or error-free. We may change, suspend, or discontinue all or part of our services at any time without notice."
+          ]
+        },
+        {
+          "title": "User Data and Privacy",
+          "paragraphs": [
+            "We maintain certain data you transmit to our services for managing service performance and usage. Although we perform routine backups, you are responsible for data you transmit or that relates to your service activity.",
+            "You agree that we shall have no liability for loss or corruption of such data. For information about how we handle data, refer to our Privacy Policy."
+          ]
+        },
+        {
+          "title": "Fees and Payment",
+          "paragraphs": [
+            "Certain services may require payment of fees. You agree to pay all fees associated with your use of our services according to the pricing, payment, and billing policies in effect when payment is due.",
+            "Fees are non-refundable unless otherwise stated in a separate written agreement. We may change fees upon reasonable notice. You are responsible for applicable taxes. Failure to pay may result in suspension or termination of services. Third-party payment processors may apply their own terms and privacy policies."
+          ]
+        },
+        {
+          "title": "Limitation of Liability",
+          "paragraphs": [
+            "To the fullest extent permitted by law, we and our directors, employees, or agents will not be liable for direct, indirect, consequential, exemplary, incidental, special, or punitive damages, including lost profit, revenue, or data, arising from your use of our services, even if advised of the possibility of such damages.",
+            "Our liability to you for any cause and regardless of action form will be limited to the amount paid by you to us during the six month period before the cause of action arose."
+          ]
+        },
+        {
+          "title": "Indemnification",
+          "paragraphs": [
+            "You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, officers, agents, partners, and employees, from any loss, damage, liability, claim, demand, attorneys' fees, or expenses made by a third party due to your use of our services, breach of these Terms, breach of representations and warranties, violation of third-party rights, or harmful act toward another user."
+          ]
+        },
+        {
+          "title": "Disclaimer",
+          "paragraphs": [
+            "Our services are provided on an as-is and as-available basis. You agree that use of our services is at your sole risk. To the fullest extent permitted by law, we disclaim all warranties, express or implied, including merchantability, fitness for a particular purpose, and non-infringement.",
+            "We make no warranties or representations about the accuracy or completeness of service content or linked website content, and we assume no liability for errors, personal injury, unauthorized access, service interruption, harmful code, omissions, or loss arising from content made available through our services."
+          ]
+        },
+        {
+          "title": "Termination",
+          "paragraphs": [
+            "These Terms remain in full force while you use our services. We reserve the right, in our sole discretion and without notice or liability, to deny access to and use of our services to any person for any reason, including breach of these Terms or applicable law.",
+            "If we terminate or suspend your account, you are prohibited from registering a new account under your name, a false name, a borrowed name, or the name of any third party."
+          ]
+        },
+        {
+          "title": "Governing Law",
+          "paragraphs": [
+            "These Terms are governed by the laws of Bangladesh. Absouts and you irrevocably consent that the courts of Bangladesh have exclusive jurisdiction to resolve any dispute arising in connection with these Terms."
+          ]
+        },
+        {
+          "title": "Dispute Resolution",
+          "paragraphs": [
+            "Any legal action brought by either you or us shall be commenced or prosecuted in the courts of Bangladesh. The parties consent to venue and jurisdiction in those courts and waive defenses of lack of personal jurisdiction and forum non conveniens.",
+            "We encourage you to contact us first to resolve disputes informally. If a dispute cannot be resolved informally, it will be resolved through binding arbitration in accordance with the laws of Bangladesh."
+          ]
+        },
+        {
+          "title": "Severability and Waiver",
+          "paragraphs": [
+            "If any provision of these Terms is determined to be unlawful, void, or unenforceable, it will nonetheless be enforceable to the fullest extent permitted by law, and the unenforceable portion will be deemed severed without affecting remaining provisions.",
+            "Failure to exercise a right or require performance under these Terms does not affect the ability to exercise that right or require performance later, and waiver of a breach does not waive any subsequent breach."
+          ]
+        },
+        {
+          "title": "Contact Us",
+          "paragraphs": [
+            "If you have questions about these Terms of Service, contact Absouts at support@absouts.com, by phone at +880 1234 567 890, or at our office in Dhaka, Bangladesh."
+          ]
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "title": "404 Page Not Found",
+    "description": "The page you are looking for does not exist. Please check the URL or return to the homepage.",
+    "action": "Back to Home"
   }
 }
