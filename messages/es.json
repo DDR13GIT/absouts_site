@@ -836,6 +836,200 @@
       "secondary": "Acerca de Absouts"
     }
   },
+  "careers": {
+    "hero": {
+      "badge": "Únete a Nuestro Equipo",
+      "title": "Construye tu Carrera con Absouts",
+      "subtitle": "Trabaja con un equipo global de subcontratación en contabilidad en la nube, BPO y entrega de software. Crece mediante mentoría práctica, clientes internacionales y responsabilidad clara."
+    },
+    "why": {
+      "title": "¿Por Qué Elegir Absouts?",
+      "lead": "Las personas se unen a nosotros por trabajo significativo, desarrollo profesional constante y una cultura que mantiene estándares altos sin perder el ritmo humano del equipo.",
+      "items": [
+        {
+          "title": "Oportunidades de Crecimiento",
+          "description": "Rutas de avance profesional con programas continuos de aprendizaje y desarrollo profesional."
+        },
+        {
+          "title": "Exposición Global",
+          "description": "Trabaja con clientes internacionales y obtén exposición a mercados, estándares y tecnologías diversos."
+        },
+        {
+          "title": "Cultura Colaborativa",
+          "description": "Únete a un ambiente de apoyo que valora el trabajo en equipo, la innovación y la excelencia operativa."
+        }
+      ]
+    },
+    "openings": {
+      "badge": "Oportunidades Actuales",
+      "title": "Vacantes Actuales",
+      "lead": "Explora roles activos y postúlate con un enlace a tu currículum o portafolio. Nuestro equipo de reclutamiento revisa cada solicitud directamente."
+    },
+    "jobCard": {
+      "apply": "Postular Ahora",
+      "details": "Ver Detalles",
+      "postedOneDay": "Publicado hace 1 día",
+      "postedDays": "Publicado hace {count} días",
+      "postedWeeks": "Publicado hace {count, plural, one {# semana} other {# semanas}}",
+      "postedMonths": "Publicado hace {count, plural, one {# mes} other {# meses}}"
+    },
+    "process": {
+      "title": "Proceso de Solicitud",
+      "lead": "Un proceso enfocado mantiene las solicitudes claras, respetuosas y fáciles de seguir.",
+      "items": [
+        {
+          "title": "Postular en Línea",
+          "description": "Envía tu solicitud mediante el formulario en línea con la URL de tu currículum o portafolio."
+        },
+        {
+          "title": "Revisión Inicial",
+          "description": "Nuestro equipo revisa tus calificaciones y ajuste al rol."
+        },
+        {
+          "title": "Entrevista",
+          "description": "Conoce al equipo para conversaciones técnicas, operativas y culturales."
+        },
+        {
+          "title": "Bienvenida",
+          "description": "Completa la incorporación y empieza a contribuir con un primer plan claro."
+        }
+      ]
+    },
+    "perks": {
+      "badge": "Beneficios para Empleados",
+      "title": "Beneficios y Ventajas",
+      "lead": "Apoyamos a las personas con beneficios prácticos, herramientas útiles y un ambiente de trabajo creado para un desempeño sostenido.",
+      "items": [
+        { "title": "Salario Competitivo", "description": "Paquetes de compensación competitivos con bonos por desempeño y revisiones salariales periódicas." },
+        { "title": "Grandes Colegas y Mentores", "description": "Trabaja junto a profesionales con experiencia que valoran la mentoría y el intercambio de conocimiento." },
+        { "title": "Herramientas y Tecnologías", "description": "Acceso a herramientas actuales de desarrollo, licencias de software y sistemas confiables de entrega." },
+        { "title": "Cultura Basada en la Confianza", "description": "Un ambiente de trabajo abierto basado en respeto mutuo, transparencia y colaboración." },
+        { "title": "Capacitación y Viajes Internacionales", "description": "Oportunidades para conferencias, programas de capacitación y visitas seleccionadas a clientes en el exterior." },
+        { "title": "Formación e Intercambio de Conocimiento", "description": "Sesiones de capacitación, talleres, certificaciones y eventos internos de aprendizaje." },
+        { "title": "Crecimiento y Desarrollo Profesional", "description": "Rutas claras de crecimiento respaldadas por mentoría y desarrollo de habilidades." },
+        { "title": "Evaluación Anual de Desempeño", "description": "Revisiones justas con retroalimentación constructiva y planificación de crecimiento." },
+        { "title": "Buen Equilibrio Trabajo Vida", "description": "Prácticas laborales flexibles y respeto por el tiempo personal y el bienestar." },
+        { "title": "Comida y Bebidas", "description": "Comidas, snacks, bebidas y almuerzos para jornadas de equipo." },
+        { "title": "Cobertura de Seguro de Vida y Salud", "description": "Soporte de seguro de salud y vida para miembros del equipo y familias elegibles." },
+        { "title": "Bonos y Asignaciones", "description": "Bonos por desempeño, bonos festivos y asignaciones seleccionadas de transporte o comunicación." },
+        { "title": "Ambiente de Trabajo Sólido", "description": "Espacios modernos, mobiliario ergonómico y áreas para colaboración enfocada." },
+        { "title": "Licencias y Vacaciones Pagadas", "description": "Tiempo libre pagado, licencia por enfermedad, licencia familiar y políticas de vacaciones." },
+        { "title": "Salidas y Eventos de Empresa", "description": "Actividades de integración, retiros, eventos de celebración y reuniones sociales." }
+      ]
+    },
+    "detail": {
+      "back": "Volver a Carreras",
+      "aboutRole": "Acerca de Este Rol",
+      "openStatus": "Esta posición está abierta actualmente para solicitudes.",
+      "requirements": "Requisitos y Calificaciones",
+      "benefits": "Lo Que Ofrecemos",
+      "detailsTitle": "Detalles del Puesto",
+      "salary": "Rango Salarial",
+      "experience": "Experiencia Requerida",
+      "deadline": "Fecha Límite de Solicitud",
+      "contact": "Contacto",
+      "apply": "Postular a Esta Posición",
+      "skills": "Habilidades Requeridas",
+      "testimonials": {
+        "title": "Lo Que Dice Nuestro Equipo",
+        "items": [
+          { "quote": "Trabajar en Absouts ha sido una experiencia increíble. El equipo apoya, los proyectos retan y siempre hay espacio para crecer.", "author": "Sarah Ahmed", "position": "Desarrolladora Senior de Software" },
+          { "quote": "El equilibrio entre trabajo y vida aquí es excepcional. La gerencia se preocupa por el bienestar y el desarrollo profesional.", "author": "Razwan Hassan", "position": "Contador en la Nube" },
+          { "quote": "Aprendí más en mi primer año aquí que en mis tres roles anteriores juntos. El programa de mentoría es excelente.", "author": "Maria Rodriguez", "position": "Ejecutiva de Desarrollo de Negocios" }
+        ]
+      }
+    },
+    "noJobs": "No hay vacantes abiertas en este momento. Por favor, vuelve a consultar más tarde.",
+    "jobsUnavailable": "No podemos cargar las vacantes actuales en este momento. Por favor, vuelve más tarde para nuevas oportunidades."
+  },
+  "contact": {
+    "hero": {
+      "badge": "Ponte en Contacto",
+      "title": "Contacta a Absouts",
+      "subtitle": "¿Listo para transformar tus operaciones con soporte de subcontratación enfocado? Envía los detalles y nuestro equipo responderá con próximos pasos prácticos."
+    },
+    "info": {
+      "title": "Ponte en Contacto",
+      "lead": "Llega al equipo adecuado para consultas de servicios, conversaciones operativas o coordinación de oficinas.",
+      "email": "Correo Electrónico",
+      "telephone": "Teléfono",
+      "mobile": "Móvil"
+    },
+    "socials": "Síguenos en redes sociales",
+    "formTitle": "Envíanos un Mensaje",
+    "formLead": "Comparte tus requisitos y dirigiremos la consulta al equipo adecuado.",
+    "offices": {
+      "title": "Nuestras Oficinas",
+      "lead": "Visita o coordina con nuestros equipos en Bangladesh y el Reino Unido."
+    },
+    "map": {
+      "title": "Mapa de Ubicación de la Oficina",
+      "loading": "Cargando mapa...",
+      "loadingInteractive": "Cargando mapa interactivo..."
+    }
+  },
+  "forms": {
+    "contact": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "company": "Empresa",
+      "serviceInterest": "Servicio de Interés",
+      "servicePlaceholder": "Contabilidad en la nube, BPO, software u otra necesidad",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "successTitle": "Mensaje Enviado",
+      "successDescription": "Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.",
+      "errorTitle": "No se Pudo Enviar",
+      "errorDescription": "Hubo un error al enviar tu mensaje. Inténtalo de nuevo.",
+      "invalidDescription": "Revisa los campos marcados e inténtalo de nuevo.",
+      "errors": {
+        "firstName": "El nombre es obligatorio.",
+        "lastName": "El apellido es obligatorio.",
+        "email": "Introduce un correo electrónico válido.",
+        "message": "El mensaje debe tener al menos 10 caracteres."
+      }
+    },
+    "application": {
+      "title": "Postular a {jobTitle}",
+      "description": "Pega la URL de tu currículum o portafolio e indícanos cómo contactarte.",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "experience": "Años de Experiencia",
+      "experiencePlaceholder": "Selecciona tu nivel de experiencia",
+      "experienceOptions": {
+        "0-1": "0-1 años",
+        "2-3": "2-3 años",
+        "4-5": "4-5 años",
+        "6-10": "6-10 años",
+        "10+": "10+ años"
+      },
+      "resumeUrl": "URL de Currículum/Portafolio",
+      "coverLetter": "Carta de Presentación",
+      "coverLetterPlaceholder": "Cuéntanos por qué te interesa esta posición.",
+      "privacyConsent": "Acepto el procesamiento de mis datos personales para fines de reclutamiento.",
+      "cancel": "Cancelar",
+      "submit": "Enviar Solicitud",
+      "submitting": "Enviando...",
+      "successTitle": "Solicitud Enviada",
+      "successDescription": "Tu solicitud de empleo se envió correctamente.",
+      "errorTitle": "No se Pudo Enviar",
+      "errorDescription": "Hubo un error al enviar tu solicitud. Inténtalo de nuevo.",
+      "invalidDescription": "Revisa los campos marcados e inténtalo de nuevo.",
+      "errors": {
+        "firstName": "El nombre es obligatorio.",
+        "lastName": "El apellido es obligatorio.",
+        "email": "Introduce un correo electrónico válido.",
+        "phone": "Introduce un número de teléfono válido.",
+        "experience": "Selecciona tu nivel de experiencia.",
+        "resumeUrl": "Pega una URL válida de currículum o portafolio.",
+        "privacyConsent": "Debes aceptar antes de enviar."
+      }
+    }
+  },
   "footer": {
     "tagline": "Externalización de precisión para un mundo conectado. Contabilidad en la nube, BPO y desarrollo de software que escala con tu ambición.",
     "servicesHeading": "Servicios",

@@ -836,6 +836,200 @@
       "secondary": "About Absouts"
     }
   },
+  "careers": {
+    "hero": {
+      "badge": "Join Our Team",
+      "title": "Build Your Career With Absouts",
+      "subtitle": "Work with a global outsourcing team across cloud accounting, BPO, and software delivery. Grow through practical mentorship, international client work, and clear ownership."
+    },
+    "why": {
+      "title": "Why Choose Absouts?",
+      "lead": "People join us for meaningful work, steady professional development, and a culture that keeps standards high without losing the human rhythm of the team.",
+      "items": [
+        {
+          "title": "Growth Opportunities",
+          "description": "Career advancement paths with continuous learning programs and professional development."
+        },
+        {
+          "title": "Global Exposure",
+          "description": "Work with international clients and gain exposure to diverse markets, standards, and technologies."
+        },
+        {
+          "title": "Collaborative Culture",
+          "description": "Join a supportive environment that values teamwork, innovation, and operational excellence."
+        }
+      ]
+    },
+    "openings": {
+      "badge": "Current Opportunities",
+      "title": "Current Openings",
+      "lead": "Explore active roles and apply with a resume or portfolio link. Our recruiting team reviews each submission directly."
+    },
+    "jobCard": {
+      "apply": "Apply Now",
+      "details": "Show Details",
+      "postedOneDay": "Posted 1 day ago",
+      "postedDays": "Posted {count} days ago",
+      "postedWeeks": "Posted {count, plural, one {# week ago} other {# weeks ago}}",
+      "postedMonths": "Posted {count, plural, one {# month ago} other {# months ago}}"
+    },
+    "process": {
+      "title": "Application Process",
+      "lead": "A focused process keeps applications clear, respectful, and easy to follow.",
+      "items": [
+        {
+          "title": "Apply Online",
+          "description": "Submit your application through the online form with your resume or portfolio URL."
+        },
+        {
+          "title": "Initial Review",
+          "description": "Our team reviews your qualifications and role fit."
+        },
+        {
+          "title": "Interview",
+          "description": "Meet the team for technical, operational, and culture conversations."
+        },
+        {
+          "title": "Welcome",
+          "description": "Complete onboarding and start contributing with a clear first plan."
+        }
+      ]
+    },
+    "perks": {
+      "badge": "Employee Benefits",
+      "title": "Perks and Benefits",
+      "lead": "We support people with practical benefits, useful tools, and a work environment built for sustained performance.",
+      "items": [
+        { "title": "Competitive Salary", "description": "Market-competitive compensation packages with performance-based bonuses and regular salary reviews." },
+        { "title": "Great Colleagues and Mentors", "description": "Work alongside experienced professionals who care about mentoring and knowledge sharing." },
+        { "title": "Tools and Technologies", "description": "Access current development tools, software licenses, and reliable delivery systems." },
+        { "title": "Culture Based on Trust", "description": "An open work environment built on mutual respect, transparency, and teamwork." },
+        { "title": "International Training and Travel", "description": "Opportunities for conferences, training programs, and selected client visits abroad." },
+        { "title": "Schooling and Knowledge Sharing", "description": "Regular training sessions, workshops, certifications, and internal learning events." },
+        { "title": "Career Growth and Development", "description": "Clear growth paths supported by mentorship and skill development." },
+        { "title": "Annual Performance Evaluation", "description": "Fair performance reviews with constructive feedback and growth planning." },
+        { "title": "Sound Work Life Balance", "description": "Flexible working practices and respect for personal time and well-being." },
+        { "title": "Food and Drinks", "description": "Complimentary meals, snacks, beverages, and catered lunches during team days." },
+        { "title": "Life and Health Insurance Coverage", "description": "Health and life insurance support for team members and eligible families." },
+        { "title": "Bonuses and Allowances", "description": "Performance bonuses, festival bonuses, and selected transportation or communication allowances." },
+        { "title": "Strong Work Environment", "description": "Modern workspaces, ergonomic furniture, and areas for focused collaboration." },
+        { "title": "Paid Leaves and Vacations", "description": "Paid time off, sick leave, family leave, and vacation policies." },
+        { "title": "Company Outings and Events", "description": "Team building activities, retreats, celebration events, and social gatherings." }
+      ]
+    },
+    "detail": {
+      "back": "Back to Careers",
+      "aboutRole": "About This Role",
+      "openStatus": "This position is currently open for applications.",
+      "requirements": "Requirements and Qualifications",
+      "benefits": "What We Offer",
+      "detailsTitle": "Job Details",
+      "salary": "Salary Range",
+      "experience": "Experience Required",
+      "deadline": "Application Deadline",
+      "contact": "Contact",
+      "apply": "Apply for This Position",
+      "skills": "Required Skills",
+      "testimonials": {
+        "title": "What Our Team Says",
+        "items": [
+          { "quote": "Working at Absouts has been an incredible journey. The team is supportive, the projects are challenging, and there is always room for growth.", "author": "Sarah Ahmed", "position": "Senior Software Developer" },
+          { "quote": "The work life balance here is exceptional. Management cares about employee wellbeing and professional development.", "author": "Razwan Hassan", "position": "Cloud Accountant" },
+          { "quote": "I learned more in my first year here than in my previous three roles combined. The mentorship program is outstanding.", "author": "Maria Rodriguez", "position": "Business Development Executive" }
+        ]
+      }
+    },
+    "noJobs": "There are no open positions right now. Please check back later.",
+    "jobsUnavailable": "We cannot load current openings right now. Please check back later for new opportunities."
+  },
+  "contact": {
+    "hero": {
+      "badge": "Get in Touch",
+      "title": "Contact Absouts",
+      "subtitle": "Ready to transform your operations with focused outsourcing support? Send the details and our team will respond with practical next steps."
+    },
+    "info": {
+      "title": "Get in Touch",
+      "lead": "Reach the right desk for service inquiries, operations discussions, or office coordination.",
+      "email": "Email",
+      "telephone": "Telephone",
+      "mobile": "Mobile"
+    },
+    "socials": "Follow our social media",
+    "formTitle": "Send Us a Message",
+    "formLead": "Share your requirements and we will route the inquiry to the right team.",
+    "offices": {
+      "title": "Our Office Locations",
+      "lead": "Visit or coordinate with our teams in Bangladesh and the United Kingdom."
+    },
+    "map": {
+      "title": "Office Location Map",
+      "loading": "Loading map...",
+      "loadingInteractive": "Loading interactive map..."
+    }
+  },
+  "forms": {
+    "contact": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "company": "Company",
+      "serviceInterest": "Service Interest",
+      "servicePlaceholder": "Cloud accounting, BPO, software, or another need",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "successTitle": "Message Sent",
+      "successDescription": "Thank you for your message. We will get back to you soon.",
+      "errorTitle": "Submission Failed",
+      "errorDescription": "There was an error sending your message. Please try again.",
+      "invalidDescription": "Please review the highlighted fields and try again.",
+      "errors": {
+        "firstName": "First name is required.",
+        "lastName": "Last name is required.",
+        "email": "Please enter a valid email address.",
+        "message": "Message must be at least 10 characters."
+      }
+    },
+    "application": {
+      "title": "Apply for {jobTitle}",
+      "description": "Paste a resume or portfolio URL and tell us how to reach you.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "experience": "Years of Experience",
+      "experiencePlaceholder": "Select experience level",
+      "experienceOptions": {
+        "0-1": "0-1 years",
+        "2-3": "2-3 years",
+        "4-5": "4-5 years",
+        "6-10": "6-10 years",
+        "10+": "10+ years"
+      },
+      "resumeUrl": "Resume/Portfolio URL",
+      "coverLetter": "Cover Letter",
+      "coverLetterPlaceholder": "Tell us why you are interested in this position.",
+      "privacyConsent": "I agree to the processing of my personal data for recruitment purposes.",
+      "cancel": "Cancel",
+      "submit": "Submit Application",
+      "submitting": "Submitting...",
+      "successTitle": "Application Submitted",
+      "successDescription": "Your job application has been submitted successfully.",
+      "errorTitle": "Submission Failed",
+      "errorDescription": "There was an error submitting your application. Please try again.",
+      "invalidDescription": "Please review the highlighted fields and try again.",
+      "errors": {
+        "firstName": "First name is required.",
+        "lastName": "Last name is required.",
+        "email": "Please enter a valid email address.",
+        "phone": "Please enter a valid phone number.",
+        "experience": "Please select your experience level.",
+        "resumeUrl": "Please paste a valid resume or portfolio URL.",
+        "privacyConsent": "You must agree before submitting."
+      }
+    }
+  },
   "footer": {
     "tagline": "Precision outsourcing for a connected world. Cloud accounting, BPO, and software development that scales with your ambition.",
     "servicesHeading": "Services",

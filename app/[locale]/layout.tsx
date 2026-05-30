@@ -7,6 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { Toaster } from "@/components/ui";
 
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
 
@@ -27,6 +28,7 @@ export default async function LocaleLayout({
           {/* pt-16 offsets the fixed navbar height so page content starts below it */}
           <main className="flex-1 pt-16">{children}</main>
           <Footer />
+          <Toaster />
         </NextIntlClientProvider>
         <Analytics />
         <SpeedInsights />
