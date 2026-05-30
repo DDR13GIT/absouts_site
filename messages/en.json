@@ -8,13 +8,373 @@
   },
   "departments": {
     "cloudAccounting": {
-      "title": "Cloud Accounting"
+      "title": "Cloud Accounting",
+      "hero": {
+        "badge": "Cloud Accounting",
+        "title": "Cloud Accounting That Keeps Your Financial Operations Precise",
+        "subtitle": "End-to-end bookkeeping, reporting, payroll, and tax compliance handled with secure cloud workflows, clear accountability, and practical automation.",
+        "primary": "Talk to Accounting",
+        "secondary": "Back to Services",
+        "cardLabel": "Operating Rhythm",
+        "cardValue": "Clean books, current reports",
+        "cardDescription": "Remote accounting support aligned to your systems, close calendar, and decision-making needs."
+      },
+      "metrics": [
+        { "value": "8", "label": "Accounting service lines" },
+        { "value": "US", "label": "Company experience" },
+        { "value": "Cloud", "label": "Secure delivery model" },
+        { "value": "Audit", "label": "Ready documentation" }
+      ],
+      "intro": {
+        "badge": "Financial Control",
+        "title": "A Practical Finance Desk Without the Full-Time Overhead",
+        "lead": "Our accounting team keeps transaction records, reconciliations, payroll, reporting, and compliance moving in one controlled workflow.",
+        "points": [
+          "Structured monthly close support with transparent handoffs and documentation.",
+          "Operational finance coverage across payables, receivables, inventory, payroll, and tax.",
+          "Reporting that turns routine accounting data into usable management insight.",
+          "Flexible remote support that scales with transaction volume and business complexity."
+        ]
+      },
+      "labels": {
+        "whatWeProvide": "What We Provide",
+        "keyAdvantage": "Key Advantage"
+      },
+      "services": [
+        {
+          "icon": "/assets/Asset 4_1757767623439.png",
+          "title": "Virtual Accounting Services",
+          "subtitle": "Professional support without overhead",
+          "description": "Access experienced accounting professionals remotely. We integrate seamlessly with your operations, delivering comprehensive financial oversight tailored to your business needs.",
+          "whatWeProvide": [
+            "Dedicated accounting professionals",
+            "Flexible engagement models",
+            "Remote access to real-time data",
+            "Scalable support"
+          ],
+          "advantage": "Cost-effective expertise and flexibility.",
+          "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Remote", "Scalable"]
+        },
+        {
+          "icon": "/assets/Asset 11_1757767623440.png",
+          "title": "Professional Book-keeping",
+          "subtitle": "Accurate records you can trust",
+          "description": "Meticulous recording of every financial transaction. We ensure all sales, expenses, and payments are properly documented, creating a solid foundation for analysis.",
+          "whatWeProvide": [
+            "Daily sales & revenue tracking",
+            "Expense & vendor management",
+            "Payroll & benefits recording",
+            "Statutory obligation tracking"
+          ],
+          "advantage": "Audit-ready documentation and accuracy.",
+          "image": "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Accuracy", "Compliance"]
+        },
+        {
+          "icon": "/assets/Asset 12_1757767623440.png",
+          "title": "Bank Reconciliation",
+          "subtitle": "Every dollar accounted for",
+          "description": "Systematic matching of internal records against bank statements. This critical process acts as your financial safety net, detecting errors and preventing fraud.",
+          "whatWeProvide": [
+            "Monthly account reconciliation",
+            "Discrepancy resolution",
+            "Findings documentation",
+            "Suspicious activity alerts"
+          ],
+          "advantage": "Fraud prevention and data integrity.",
+          "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Security", "Integrity"]
+        },
+        {
+          "icon": "/assets/Asset 18_1757767623441.png",
+          "title": "MIS Reporting & Analytics",
+          "subtitle": "Data into actionable intelligence",
+          "description": "Comprehensive reports translating complex data into insights. Identify trends, spot opportunities, and make confident strategic decisions with our customized reports.",
+          "whatWeProvide": [
+            "Profit & loss analysis",
+            "Cash flow forecasting",
+            "Budget vs. actual tracking",
+            "KPI dashboards"
+          ],
+          "advantage": "Data-driven insights for growth.",
+          "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Insights", "Strategy"]
+        },
+        {
+          "icon": "/assets/Asset 10_1757767623440.png",
+          "title": "AP/AR Management",
+          "subtitle": "Optimize your cash flow cycle",
+          "description": "Systematic tracking of payments to maintain healthy cash flow. We monitor outstanding invoices and manage payment schedules to ensure financial stability.",
+          "whatWeProvide": [
+            "Vendor bill processing",
+            "Discount optimization",
+            "Invoice tracking & follow-up",
+            "Collection management"
+          ],
+          "advantage": "Improved working capital management.",
+          "image": "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Cash Flow", "Efficiency"]
+        },
+        {
+          "icon": "/assets/Asset 9_1757767623440.png",
+          "title": "Inventory Management",
+          "subtitle": "Right products, right time",
+          "description": "Complete visibility over your inventory. We monitor stock levels and track movements to ensure efficient supply chain operations and prevent stockouts.",
+          "whatWeProvide": [
+            "Real-time stock tracking",
+            "Purchase & sales monitoring",
+            "Turnover rate analysis",
+            "Reorder point optimization"
+          ],
+          "advantage": "Minimized waste and optimized stock.",
+          "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Logistics", "Control"]
+        },
+        {
+          "icon": "/assets/Asset 17_1757767623440.png",
+          "title": "Payroll Management",
+          "subtitle": "Seamless processing for teams",
+          "description": "Precision in salary, tax, and benefits processing. We ensure accurate compensation delivery while maintaining full compliance with labor regulations.",
+          "whatWeProvide": [
+            "Salary & wage calculation",
+            "Tax & statutory compliance",
+            "Benefits administration",
+            "Tax filing assistance"
+          ],
+          "advantage": "Employee satisfaction and compliance.",
+          "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800",
+          "tags": ["HR", "Compliance"]
+        },
+        {
+          "icon": "/assets/Asset 13_1757767623440.png",
+          "title": "Tax Planning & Compliance",
+          "subtitle": "Optimal financial outcomes",
+          "description": "Expert preparation of direct and indirect tax returns. We ensure on-time compliance and identify strategic deductions to optimize your tax liabilities.",
+          "whatWeProvide": [
+            "Income Tax preparation",
+            "GST filing & compliance",
+            "Deduction identification",
+            "Audit support"
+          ],
+          "advantage": "Risk minimization and tax optimization.",
+          "image": "https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Planning", "Savings"]
+        }
+      ],
+      "cta": {
+        "title": "Ready to Streamline Your Finances?",
+        "description": "Let us handle the numbers so you can focus on growing your business. Get in touch for a customized accounting solution.",
+        "primary": "Get Started",
+        "secondary": "View All Services"
+      }
     },
     "bpo": {
-      "title": "Business Process Outsourcing"
+      "title": "Business Process Outsourcing",
+      "hero": {
+        "badge": "Business Process Outsourcing",
+        "title": "Back-Office Operations Built for Consistency",
+        "subtitle": "Delegated operational tasks executed with consistent accuracy and measurable efficiency gains, reducing overhead while stabilizing process quality.",
+        "primary": "Discuss Operations",
+        "secondary": "Back to Services"
+      },
+      "operatingModel": {
+        "badge": "Operating Model",
+        "title": "Process Support That Feels Embedded, Not Bolted On",
+        "lead": "We take on repeatable administrative workflows with documented handoffs, service levels, and escalation paths so your internal team can stay focused on core work.",
+        "imageCaption": "Structured teams for document, order, support, HR, and compliance workflows.",
+        "points": [
+          {
+            "title": "Documented Workflows",
+            "description": "Clear steps, ownership, and quality checks for every outsourced process."
+          },
+          {
+            "title": "Operational Visibility",
+            "description": "Status, exceptions, and handoffs are tracked so work never disappears into a black box."
+          },
+          {
+            "title": "Service Discipline",
+            "description": "Response standards, escalation rules, and review cycles keep delivery predictable."
+          },
+          {
+            "title": "Flexible Coverage",
+            "description": "Support can scale by process, volume, channel, or business season."
+          }
+        ]
+      },
+      "labels": {
+        "whatWeProvide": "What We Provide",
+        "keyAdvantage": "Key Advantage"
+      },
+      "services": [
+        {
+          "icon": "/assets/Asset 7_1757767623439.png",
+          "title": "Document Management Services",
+          "subtitle": "Streamlined systems ensure critical information is properly categorized, securely stored, and instantly accessible when needed.",
+          "description": "We transform chaotic physical and digital files into organized, searchable assets. Our comprehensive management systems ensure your data is secure, compliant, and always at your fingertips.",
+          "whatWeProvide": [
+            "Digital and physical document organization",
+            "Secure cloud-based storage & backup",
+            "Indexing and categorization systems",
+            "Quick retrieval & version control"
+          ],
+          "advantage": "Improved operational efficiency and enhanced data security.",
+          "image": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Organization", "Security", "Digitization"]
+        },
+        {
+          "icon": "/assets/Asset 9_1757767623440.png",
+          "title": "Order Processing & Fulfillment",
+          "subtitle": "End-to-end order lifecycle management with real-time inventory updates and seamless logistics coordination.",
+          "description": "From the moment an order is placed to its final delivery, we manage the entire lifecycle. We ensure accuracy, speed, and transparency in your fulfillment operations.",
+          "whatWeProvide": [
+            "Order entry and verification",
+            "Payment processing & confirmation",
+            "Inventory allocation & updates",
+            "Returns and exchange processing"
+          ],
+          "advantage": "Faster turnaround times and reduced processing errors.",
+          "image": "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Logistics", "Speed", "Accuracy"]
+        },
+        {
+          "icon": "/assets/Asset 16_1757767623440.png",
+          "title": "Email & Chat Support Services",
+          "subtitle": "Professional multi-channel support that maintains your brand voice while ensuring prompt, efficient resolution.",
+          "description": "Our dedicated support teams act as an extension of your brand. We handle inquiries with professionalism and empathy, ensuring every customer feels valued and heard.",
+          "whatWeProvide": [
+            "Customer inquiries & support requests",
+            "Vendor and supplier correspondence",
+            "Prompt response with SLA adherence",
+            "Issue escalation & resolution tracking"
+          ],
+          "advantage": "Improved response times and higher customer satisfaction.",
+          "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
+          "tags": ["24/7 Support", "Multi-channel", "Satisfaction"]
+        },
+        {
+          "icon": "/assets/Asset 17_1757767623440.png",
+          "title": "HR Support Services",
+          "subtitle": "Comprehensive employee record management and benefits administration that handles HR complexities.",
+          "description": "We manage the administrative burden of HR so you can focus on your people. From records to benefits, we ensure your workforce is supported and compliant.",
+          "whatWeProvide": [
+            "Employee personnel files maintenance",
+            "Onboarding & offboarding documentation",
+            "Benefits eligibility & processing",
+            "Leave and attendance management"
+          ],
+          "advantage": "Streamlined administration and ensured compliance.",
+          "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Talent", "Compliance", "Benefits"]
+        },
+        {
+          "icon": "/assets/Asset 12_1757767623440.png",
+          "title": "Compliance & Regulatory Support",
+          "subtitle": "Proactive monitoring and implementation of compliance frameworks that protect your business from legal risks.",
+          "description": "Navigate the complex landscape of regulations with confidence. We monitor changes, manage documentation, and ensure your business remains audit-ready at all times.",
+          "whatWeProvide": [
+            "Regulatory filing preparation",
+            "Industry-specific compliance tracking",
+            "Audit trail maintenance",
+            "Incident reporting & corrective action"
+          ],
+          "advantage": "Reduced legal risks and peace of mind.",
+          "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Risk Management", "Audit Ready", "Standards"]
+        }
+      ],
+      "cta": {
+        "title": "Ready to Stabilize Your Operations?",
+        "description": "Hand off the recurring work with confidence. We will define the process, service levels, and delivery team around your workflow.",
+        "primary": "Start a BPO Conversation",
+        "secondary": "View All Services"
+      }
     },
     "software": {
-      "title": "Software Development"
+      "title": "Software Development",
+      "hero": {
+        "badge": "Software Development",
+        "title": "Software Outsourcing & IT Solutions",
+        "subtitle": "Custom software development, mobile applications, cloud infrastructure optimization, and specialized solutions tailored for various industries.",
+        "primary": "Plan a Build",
+        "secondary": "Back to Services"
+      },
+      "intro": {
+        "badge": "Delivery Framework",
+        "title": "Full-Cycle Engineering for Products, Platforms, and Internal Systems",
+        "lead": "We cover architecture, implementation, integration, quality assurance, deployment, and ongoing improvement through focused software delivery teams."
+      },
+      "process": {
+        "items": [
+          {
+            "title": "Scope the Outcome",
+            "description": "Clarify users, workflows, systems, constraints, and the business result the software needs to support."
+          },
+          {
+            "title": "Design the Architecture",
+            "description": "Choose the right platform, data model, integration approach, and delivery plan before writing production code."
+          },
+          {
+            "title": "Build in Iterations",
+            "description": "Ship working increments with review points, quality checks, and clear progress visibility."
+          },
+          {
+            "title": "Operate and Improve",
+            "description": "Support deployment, monitoring, maintenance, and roadmap improvements after release."
+          }
+        ]
+      },
+      "services": {
+        "badge": "Software Capabilities",
+        "title": "Eight Specialist Delivery Tracks",
+        "lead": "Each track links to a focused service detail page so the next implementation phase can expand the full delivery model."
+      },
+      "handoff": {
+        "badge": "Umbrella Page",
+        "title": "Each software track is ready for its own detailed page.",
+        "description": "The cards already link to the future sub-service routes under /services/software/<slug>, keeping this page as the high-level software entry point.",
+        "button": "Talk to Software"
+      },
+      "cta": {
+        "title": "Need a Software Team That Understands the Business Context?",
+        "description": "Bring us the workflow, product idea, or platform problem. We will shape the delivery team and technical path around it.",
+        "primary": "Get in Touch",
+        "secondary": "View All Services"
+      }
+    }
+  },
+  "subservices": {
+    "ecommerce": {
+      "title": "E-commerce Development",
+      "short": "Complete e-commerce solutions with modern platforms, payment integration, and user-friendly interfaces designed to drive sales and improve customer experience."
+    },
+    "mobile": {
+      "title": "Mobile App Development",
+      "short": "Native and cross-platform mobile applications for iOS and Android with modern UI/UX design and seamless user experience."
+    },
+    "cloud": {
+      "title": "Cloud Infrastructure Solutions",
+      "short": "Scalable cloud infrastructure with automated deployment, monitoring, and optimization for maximum reliability and performance."
+    },
+    "testing": {
+      "title": "Software Testing & QA",
+      "short": "Comprehensive quality assurance and testing services that keep software reliable, secure, and performant across platforms."
+    },
+    "legaltech": {
+      "title": "LegalTech Solutions",
+      "short": "Legal case management, document automation, compliance solutions, and workflow optimization for modern law practices."
+    },
+    "webportal": {
+      "title": "Web Portal Development",
+      "short": "Enterprise portals, customer portals, and content management systems with modern architecture and seamless user experience."
+    },
+    "fintech": {
+      "title": "Fintech Solutions",
+      "short": "Financial applications, banking solutions, payment processing, and financial technology platforms with robust security and compliance."
+    },
+    "ai": {
+      "title": "AI Solutions",
+      "short": "Artificial intelligence applications, machine learning models, and intelligent automation solutions for business processes."
     }
   },
   "home": {

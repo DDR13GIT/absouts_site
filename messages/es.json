@@ -8,13 +8,373 @@
   },
   "departments": {
     "cloudAccounting": {
-      "title": "Contabilidad en la Nube"
+      "title": "Contabilidad en la Nube",
+      "hero": {
+        "badge": "Contabilidad en la Nube",
+        "title": "Contabilidad en la Nube para Mantener Operaciones Financieras Precisas",
+        "subtitle": "Teneduría de libros, reportes, nómina y cumplimiento fiscal de extremo a extremo mediante flujos seguros en la nube, responsabilidad clara y automatización práctica.",
+        "primary": "Hablar con Contabilidad",
+        "secondary": "Volver a Servicios",
+        "cardLabel": "Ritmo Operativo",
+        "cardValue": "Libros claros, reportes al día",
+        "cardDescription": "Soporte contable remoto alineado con tus sistemas, calendario de cierre y necesidades de decisión."
+      },
+      "metrics": [
+        { "value": "8", "label": "Líneas de servicio contable" },
+        { "value": "EE. UU.", "label": "Experiencia con empresas" },
+        { "value": "Nube", "label": "Modelo seguro de entrega" },
+        { "value": "Auditoría", "label": "Documentación preparada" }
+      ],
+      "intro": {
+        "badge": "Control Financiero",
+        "title": "Un Equipo Financiero Práctico sin la Carga de Contratación Completa",
+        "lead": "Nuestro equipo contable mantiene registros, conciliaciones, nómina, reportes y cumplimiento dentro de un flujo de trabajo controlado.",
+        "points": [
+          "Soporte estructurado para cierres mensuales con entregas y documentación transparentes.",
+          "Cobertura financiera operativa en cuentas por pagar, cuentas por cobrar, inventario, nómina e impuestos.",
+          "Reportes que convierten datos contables rutinarios en información útil para la gestión.",
+          "Soporte remoto flexible que escala con el volumen de transacciones y la complejidad del negocio."
+        ]
+      },
+      "labels": {
+        "whatWeProvide": "Qué Proporcionamos",
+        "keyAdvantage": "Ventaja Clave"
+      },
+      "services": [
+        {
+          "icon": "/assets/Asset 4_1757767623439.png",
+          "title": "Servicios de Contabilidad Virtual",
+          "subtitle": "Soporte profesional sin gastos generales",
+          "description": "Accede a profesionales contables experimentados de forma remota. Nos integramos sin fricción con tus operaciones y entregamos supervisión financiera integral adaptada a las necesidades de tu negocio.",
+          "whatWeProvide": [
+            "Profesionales contables dedicados",
+            "Modelos de colaboración flexibles",
+            "Acceso remoto a datos en tiempo real",
+            "Soporte escalable"
+          ],
+          "advantage": "Experiencia rentable y flexibilidad.",
+          "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Remoto", "Escalable"]
+        },
+        {
+          "icon": "/assets/Asset 11_1757767623440.png",
+          "title": "Teneduría de Libros Profesional",
+          "subtitle": "Registros precisos en los que puedes confiar",
+          "description": "Registro meticuloso de cada transacción financiera. Garantizamos que ventas, gastos y pagos queden documentados correctamente, creando una base sólida para el análisis.",
+          "whatWeProvide": [
+            "Seguimiento diario de ventas e ingresos",
+            "Gestión de gastos y proveedores",
+            "Registro de nómina y beneficios",
+            "Seguimiento de obligaciones legales"
+          ],
+          "advantage": "Documentación lista para auditoría y precisión.",
+          "image": "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Precisión", "Cumplimiento"]
+        },
+        {
+          "icon": "/assets/Asset 12_1757767623440.png",
+          "title": "Conciliación Bancaria",
+          "subtitle": "Cada dólar contabilizado",
+          "description": "Comparación sistemática de registros internos contra estados bancarios. Este proceso crítico funciona como una red de seguridad financiera, detectando errores y previniendo fraude.",
+          "whatWeProvide": [
+            "Conciliación mensual de cuentas",
+            "Resolución de discrepancias",
+            "Documentación de hallazgos",
+            "Alertas de actividad sospechosa"
+          ],
+          "advantage": "Prevención de fraude e integridad de datos.",
+          "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Seguridad", "Integridad"]
+        },
+        {
+          "icon": "/assets/Asset 18_1757767623441.png",
+          "title": "Reportes MIS y Analítica",
+          "subtitle": "Datos convertidos en inteligencia accionable",
+          "description": "Reportes integrales que traducen datos complejos en información clara. Identifica tendencias, detecta oportunidades y toma decisiones estratégicas con nuestros reportes personalizados.",
+          "whatWeProvide": [
+            "Análisis de pérdidas y ganancias",
+            "Proyección de flujo de caja",
+            "Seguimiento de presupuesto frente a resultados",
+            "Paneles de KPI"
+          ],
+          "advantage": "Información basada en datos para crecer.",
+          "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Información", "Estrategia"]
+        },
+        {
+          "icon": "/assets/Asset 10_1757767623440.png",
+          "title": "Gestión de Cuentas por Pagar y Cobrar",
+          "subtitle": "Optimiza tu ciclo de flujo de caja",
+          "description": "Seguimiento sistemático de pagos para mantener un flujo de caja saludable. Monitoreamos facturas pendientes y gestionamos calendarios de pago para asegurar estabilidad financiera.",
+          "whatWeProvide": [
+            "Procesamiento de facturas de proveedores",
+            "Optimización de descuentos",
+            "Seguimiento y gestión de facturas",
+            "Gestión de cobros"
+          ],
+          "advantage": "Mejor gestión del capital de trabajo.",
+          "image": "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Flujo de Caja", "Eficiencia"]
+        },
+        {
+          "icon": "/assets/Asset 9_1757767623440.png",
+          "title": "Gestión de Inventario",
+          "subtitle": "Productos correctos, en el momento correcto",
+          "description": "Visibilidad completa sobre tu inventario. Monitoreamos niveles de existencias y movimientos para asegurar operaciones eficientes de cadena de suministro y evitar faltantes.",
+          "whatWeProvide": [
+            "Seguimiento de existencias en tiempo real",
+            "Monitoreo de compras y ventas",
+            "Análisis de rotación de inventario",
+            "Optimización de puntos de reorden"
+          ],
+          "advantage": "Menos desperdicio y existencias optimizadas.",
+          "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Logística", "Control"]
+        },
+        {
+          "icon": "/assets/Asset 17_1757767623440.png",
+          "title": "Gestión de Nómina",
+          "subtitle": "Procesamiento fluido para equipos",
+          "description": "Precisión en el procesamiento de salarios, impuestos y beneficios. Aseguramos compensaciones correctas mientras mantenemos pleno cumplimiento de las regulaciones laborales.",
+          "whatWeProvide": [
+            "Cálculo de salarios y remuneraciones",
+            "Cumplimiento fiscal y legal",
+            "Administración de beneficios",
+            "Asistencia en declaraciones fiscales"
+          ],
+          "advantage": "Satisfacción de empleados y cumplimiento.",
+          "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800",
+          "tags": ["RRHH", "Cumplimiento"]
+        },
+        {
+          "icon": "/assets/Asset 13_1757767623440.png",
+          "title": "Planificación y Cumplimiento Fiscal",
+          "subtitle": "Resultados financieros óptimos",
+          "description": "Preparación experta de declaraciones de impuestos directos e indirectos. Aseguramos cumplimiento a tiempo e identificamos deducciones estratégicas para optimizar tus obligaciones fiscales.",
+          "whatWeProvide": [
+            "Preparación de Impuesto sobre la Renta",
+            "Presentación y cumplimiento de GST",
+            "Identificación de deducciones",
+            "Soporte de auditoría"
+          ],
+          "advantage": "Minimización de riesgos y optimización fiscal.",
+          "image": "https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Planificación", "Ahorro"]
+        }
+      ],
+      "cta": {
+        "title": "¿Listo para Optimizar tus Finanzas?",
+        "description": "Déjanos manejar los números para que puedas enfocarte en hacer crecer tu negocio. Contáctanos para una solución contable personalizada.",
+        "primary": "Comenzar",
+        "secondary": "Ver Todos los Servicios"
+      }
     },
     "bpo": {
-      "title": "Subcontratación de Procesos de Negocio"
+      "title": "Subcontratación de Procesos de Negocio",
+      "hero": {
+        "badge": "Subcontratación de Procesos de Negocio",
+        "title": "Operaciones Administrativas Construidas para la Consistencia",
+        "subtitle": "Tareas operativas delegadas y ejecutadas con precisión constante y ganancias medibles de eficiencia, reduciendo gastos generales y estabilizando la calidad del proceso.",
+        "primary": "Hablar de Operaciones",
+        "secondary": "Volver a Servicios"
+      },
+      "operatingModel": {
+        "badge": "Modelo Operativo",
+        "title": "Soporte de Procesos que se Siente Integrado, no Añadido",
+        "lead": "Asumimos flujos administrativos repetibles con entregas documentadas, niveles de servicio y rutas de escalamiento para que tu equipo interno se enfoque en el trabajo principal.",
+        "imageCaption": "Equipos estructurados para documentos, pedidos, soporte, RRHH y cumplimiento.",
+        "points": [
+          {
+            "title": "Flujos Documentados",
+            "description": "Pasos claros, responsables y controles de calidad para cada proceso subcontratado."
+          },
+          {
+            "title": "Visibilidad Operativa",
+            "description": "Estados, excepciones y entregas se rastrean para que el trabajo nunca quede oculto."
+          },
+          {
+            "title": "Disciplina de Servicio",
+            "description": "Estándares de respuesta, reglas de escalamiento y ciclos de revisión mantienen una entrega predecible."
+          },
+          {
+            "title": "Cobertura Flexible",
+            "description": "El soporte puede escalar por proceso, volumen, canal o temporada del negocio."
+          }
+        ]
+      },
+      "labels": {
+        "whatWeProvide": "Qué Proporcionamos",
+        "keyAdvantage": "Ventaja Clave"
+      },
+      "services": [
+        {
+          "icon": "/assets/Asset 7_1757767623439.png",
+          "title": "Servicios de Gestión Documental",
+          "subtitle": "Sistemas optimizados aseguran que la información crítica esté categorizada, almacenada de forma segura y disponible al instante cuando se necesita.",
+          "description": "Transformamos archivos físicos y digitales caóticos en activos organizados y buscables. Nuestros sistemas integrales garantizan que tus datos estén seguros, cumplan normas y estén siempre al alcance.",
+          "whatWeProvide": [
+            "Organización de documentos físicos y digitales",
+            "Almacenamiento y respaldo seguro en la nube",
+            "Sistemas de indexación y categorización",
+            "Recuperación rápida y control de versiones"
+          ],
+          "advantage": "Mayor eficiencia operativa y seguridad de datos reforzada.",
+          "image": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Organización", "Seguridad", "Digitalización"]
+        },
+        {
+          "icon": "/assets/Asset 9_1757767623440.png",
+          "title": "Procesamiento y Cumplimiento de Pedidos",
+          "subtitle": "Gestión integral del ciclo de vida del pedido con actualizaciones de inventario en tiempo real y coordinación logística fluida.",
+          "description": "Desde que se realiza un pedido hasta su entrega final, gestionamos todo el ciclo de vida. Aseguramos precisión, velocidad y transparencia en tus operaciones de cumplimiento.",
+          "whatWeProvide": [
+            "Ingreso y verificación de pedidos",
+            "Procesamiento y confirmación de pagos",
+            "Asignación y actualización de inventario",
+            "Procesamiento de devoluciones y cambios"
+          ],
+          "advantage": "Tiempos de respuesta más rápidos y menos errores de procesamiento.",
+          "image": "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Logística", "Velocidad", "Precisión"]
+        },
+        {
+          "icon": "/assets/Asset 16_1757767623440.png",
+          "title": "Servicios de Soporte por Email y Chat",
+          "subtitle": "Soporte profesional multicanal que mantiene la voz de tu marca y asegura resolución rápida y eficiente.",
+          "description": "Nuestros equipos de soporte dedicados actúan como una extensión de tu marca. Gestionamos consultas con profesionalismo y empatía para que cada cliente se sienta valorado y escuchado.",
+          "whatWeProvide": [
+            "Consultas de clientes y solicitudes de soporte",
+            "Correspondencia con proveedores y socios",
+            "Respuesta rápida con cumplimiento de SLA",
+            "Escalamiento de problemas y seguimiento de resolución"
+          ],
+          "advantage": "Mejores tiempos de respuesta y mayor satisfacción del cliente.",
+          "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Soporte 24/7", "Multicanal", "Satisfacción"]
+        },
+        {
+          "icon": "/assets/Asset 17_1757767623440.png",
+          "title": "Servicios de Soporte de RRHH",
+          "subtitle": "Gestión integral de expedientes de empleados y administración de beneficios para manejar la complejidad de RRHH.",
+          "description": "Gestionamos la carga administrativa de RRHH para que puedas enfocarte en tu gente. Desde registros hasta beneficios, aseguramos que tu fuerza laboral esté respaldada y en cumplimiento.",
+          "whatWeProvide": [
+            "Mantenimiento de expedientes de empleados",
+            "Documentación de incorporación y salida",
+            "Elegibilidad y procesamiento de beneficios",
+            "Gestión de licencias y asistencia"
+          ],
+          "advantage": "Administración optimizada y cumplimiento asegurado.",
+          "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Talento", "Cumplimiento", "Beneficios"]
+        },
+        {
+          "icon": "/assets/Asset 12_1757767623440.png",
+          "title": "Soporte de Cumplimiento y Regulación",
+          "subtitle": "Monitoreo proactivo e implementación de marcos de cumplimiento que protegen tu negocio de riesgos legales.",
+          "description": "Navega el complejo entorno regulatorio con confianza. Monitoreamos cambios, gestionamos documentación y mantenemos tu negocio preparado para auditorías en todo momento.",
+          "whatWeProvide": [
+            "Preparación de presentaciones regulatorias",
+            "Seguimiento de cumplimiento por industria",
+            "Mantenimiento de trazabilidad de auditoría",
+            "Reporte de incidentes y acciones correctivas"
+          ],
+          "advantage": "Menores riesgos legales y tranquilidad.",
+          "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
+          "tags": ["Gestión de Riesgos", "Listo para Auditoría", "Estándares"]
+        }
+      ],
+      "cta": {
+        "title": "¿Listo para Estabilizar tus Operaciones?",
+        "description": "Entrega el trabajo recurrente con confianza. Definiremos el proceso, los niveles de servicio y el equipo de entrega alrededor de tu flujo.",
+        "primary": "Iniciar una Conversación BPO",
+        "secondary": "Ver Todos los Servicios"
+      }
     },
     "software": {
-      "title": "Desarrollo de Software"
+      "title": "Desarrollo de Software",
+      "hero": {
+        "badge": "Desarrollo de Software",
+        "title": "Subcontratación de Software y Soluciones TI",
+        "subtitle": "Desarrollo de software personalizado, aplicaciones móviles, optimización de infraestructura en la nube y soluciones especializadas para diversas industrias.",
+        "primary": "Planear un Desarrollo",
+        "secondary": "Volver a Servicios"
+      },
+      "intro": {
+        "badge": "Marco de Entrega",
+        "title": "Ingeniería de Ciclo Completo para Productos, Plataformas y Sistemas Internos",
+        "lead": "Cubrimos arquitectura, implementación, integración, aseguramiento de calidad, despliegue y mejora continua mediante equipos de software enfocados."
+      },
+      "process": {
+        "items": [
+          {
+            "title": "Definir el Resultado",
+            "description": "Aclarar usuarios, flujos, sistemas, restricciones y el resultado comercial que el software debe respaldar."
+          },
+          {
+            "title": "Diseñar la Arquitectura",
+            "description": "Elegir plataforma, modelo de datos, enfoque de integración y plan de entrega antes de escribir código de producción."
+          },
+          {
+            "title": "Construir por Iteraciones",
+            "description": "Entregar incrementos funcionales con puntos de revisión, controles de calidad y visibilidad clara del avance."
+          },
+          {
+            "title": "Operar y Mejorar",
+            "description": "Dar soporte al despliegue, monitoreo, mantenimiento y mejoras de hoja de ruta después del lanzamiento."
+          }
+        ]
+      },
+      "services": {
+        "badge": "Capacidades de Software",
+        "title": "Ocho Líneas Especializadas de Entrega",
+        "lead": "Cada línea enlaza a una página de servicio específica para que la siguiente fase amplíe el modelo completo de entrega."
+      },
+      "handoff": {
+        "badge": "Página General",
+        "title": "Cada línea de software está lista para su propia página detallada.",
+        "description": "Las tarjetas ya enlazan a las futuras rutas de subservicio bajo /services/software/<slug>, manteniendo esta página como entrada general al área de software.",
+        "button": "Hablar con Software"
+      },
+      "cta": {
+        "title": "¿Necesitas un Equipo de Software que Entienda el Contexto del Negocio?",
+        "description": "Tráenos el flujo de trabajo, la idea de producto o el problema de plataforma. Diseñaremos el equipo de entrega y la ruta técnica alrededor de ello.",
+        "primary": "Contáctanos",
+        "secondary": "Ver Todos los Servicios"
+      }
+    }
+  },
+  "subservices": {
+    "ecommerce": {
+      "title": "Desarrollo de E-commerce",
+      "short": "Soluciones completas de comercio electrónico con plataformas modernas, integración de pagos e interfaces amigables diseñadas para impulsar ventas y mejorar la experiencia del cliente."
+    },
+    "mobile": {
+      "title": "Desarrollo de Aplicaciones Móviles",
+      "short": "Aplicaciones móviles nativas y multiplataforma para iOS y Android con diseño UI/UX moderno y experiencia de usuario fluida."
+    },
+    "cloud": {
+      "title": "Soluciones de Infraestructura en la Nube",
+      "short": "Infraestructura en la nube escalable con despliegue automatizado, monitoreo y optimización para máxima confiabilidad y rendimiento."
+    },
+    "testing": {
+      "title": "Pruebas de Software y QA",
+      "short": "Servicios integrales de aseguramiento de calidad y pruebas para mantener el software confiable, seguro y eficiente en distintas plataformas."
+    },
+    "legaltech": {
+      "title": "Soluciones LegalTech",
+      "short": "Gestión de casos legales, automatización documental, soluciones de cumplimiento y optimización de flujos para prácticas legales modernas."
+    },
+    "webportal": {
+      "title": "Desarrollo de Portales Web",
+      "short": "Portales empresariales, portales de clientes y sistemas de gestión de contenido con arquitectura moderna y experiencia de usuario fluida."
+    },
+    "fintech": {
+      "title": "Soluciones Fintech",
+      "short": "Aplicaciones financieras, soluciones bancarias, procesamiento de pagos y plataformas de tecnología financiera con seguridad y cumplimiento robustos."
+    },
+    "ai": {
+      "title": "Soluciones de IA",
+      "short": "Aplicaciones de inteligencia artificial, modelos de aprendizaje automático y automatización inteligente para procesos de negocio."
     }
   },
   "home": {
