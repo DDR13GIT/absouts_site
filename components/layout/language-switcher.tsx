@@ -69,7 +69,7 @@ export function LanguageSwitcher() {
   return (
     <Select value={locale} onValueChange={handleChange}>
       <SelectTrigger
-        className="h-9 w-auto min-w-0 gap-2 border-white/20 bg-white/10 px-2.5 text-sm text-white backdrop-blur-sm hover:bg-white/20 focus-visible:ring-brand-accent"
+        className="h-10 w-auto min-w-0 gap-2 rounded-full border-brand-primary/10 bg-white/70 px-3 text-sm text-brand-primary shadow-[0_8px_28px_-16px_rgb(11_11_68/0.22)] backdrop-blur-md hover:bg-white focus-visible:ring-brand-accent"
         aria-label="Select language"
       >
         <CurrentFlag className="h-3.5 w-5 shrink-0 rounded-[1px]" />

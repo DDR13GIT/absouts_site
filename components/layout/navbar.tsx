@@ -85,32 +85,25 @@ export function Navbar() {
     <>
       <header
         className={cn(
-          // Layout
+          // Layout — transparent floating header (no solid bar); the pill carries the chrome
           "fixed inset-x-0 top-0 z-40 w-full",
-          // Motion: translate on scroll, transition ease-out-expo
+          // Motion: translate on scroll, ease-out-expo (via inline style)
           // Reduced-motion fallback: opacity only (handled via @media in globals)
-          "transition-[transform,background-color,backdrop-filter,box-shadow]",
-          "duration-300",
-          // Custom easing: cubic-bezier(0.23, 1, 0.32, 1) = ease-out-expo
-          // Applied via inline style for precision (Tailwind default easing is weak)
+          "transition-transform duration-300",
           hidden && "-translate-y-full",
-          // Background: transparent at top → solid brand on scroll
-          scrolled
-            ? "bg-brand-primary/95 backdrop-blur-md shadow-[0_2px_24px_rgb(0,0,0/0.18)]"
-            : "bg-brand-primary/80 backdrop-blur-sm",
         )}
         style={{ transitionTimingFunction: "cubic-bezier(0.23, 1, 0.32, 1)" }}
         aria-label="Main navigation"
       >
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-          {/* Logo */}
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+          {/* Logo (dark mark over light page backgrounds) */}
           <Link
             href="/"
             className={cn(
               "shrink-0 rounded-lg",
               "focus-visible:outline-none focus-visible:ring-2",
               "focus-visible:ring-brand-accent focus-visible:ring-offset-2",
-              "focus-visible:ring-offset-brand-primary",
+              "focus-visible:ring-offset-bg-base",
             )}
             aria-label="Absouts — home"
           >
@@ -119,21 +112,23 @@ export function Navbar() {
               alt="Absouts"
               width={120}
               height={40}
-              className="h-9 w-auto object-contain"
+              className="h-8 w-auto object-contain"
               priority
             />
           </Link>
 
-          {/* Center pill nav — desktop */}
-          <nav
-            className="hidden lg:flex"
-            aria-label="Site sections"
-          >
+          {/* Center pill nav — desktop floating glass pill */}
+          <nav className="hidden lg:flex" aria-label="Site sections">
             <ul
               className={cn(
                 "flex items-center gap-1 rounded-full px-2 py-1.5",
-                "bg-white/10 backdrop-blur-sm",
+                "border border-brand-primary/10 bg-white/70 backdrop-blur-md",
+                "transition-shadow duration-300",
+                scrolled
+                  ? "shadow-[0_12px_36px_-14px_rgb(11_11_68/0.28)]"
+                  : "shadow-[0_8px_28px_-16px_rgb(11_11_68/0.22)]",
               )}
+              style={{ transitionTimingFunction: "cubic-bezier(0.23, 1, 0.32, 1)" }}
               role="list"
             >
               {NAV_LINKS.map(({ key, href }) => {
@@ -146,17 +141,16 @@ export function Navbar() {
                         "relative inline-flex items-center rounded-full px-4 py-1.5",
                         "text-sm font-medium leading-none",
                         "transition-[background-color,color] duration-150 ease-out",
-                        // Focus ring inside the pill — offset 0 so it hugs the shape
                         "focus-visible:outline-none focus-visible:ring-2",
                         "focus-visible:ring-brand-accent focus-visible:ring-offset-0",
                         active
-                          ? "bg-white/20 text-white"
-                          : "text-white/80 hover:bg-white/10 hover:text-white",
+                          ? "bg-brand-primary/10 text-brand-primary"
+                          : "text-text-secondary hover:bg-brand-primary/5 hover:text-brand-primary",
                       )}
                       aria-current={active ? "page" : undefined}
                     >
                       {t(key as NavKey)}
-                      {/* Underline indicator — scales in from center on active */}
+                      {/* Underline indicator on active */}
                       {active && (
                         <span
                           className="absolute bottom-0.5 left-1/2 h-px w-4 -translate-x-1/2 rounded-full bg-brand-accent"
@@ -174,17 +168,19 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             <LanguageSwitcher />
 
-            {/* Mobile hamburger — only below lg */}
+            {/* Mobile hamburger — floating glass button, only below lg */}
             <button
               type="button"
               className={cn(
                 "flex lg:hidden items-center justify-center",
-                "h-9 w-9 rounded-lg",
-                "text-white/80 transition-colors duration-150",
-                "hover:bg-white/10 hover:text-white",
+                "h-10 w-10 rounded-full",
+                "border border-brand-primary/10 bg-white/70 backdrop-blur-md",
+                "text-brand-primary transition-colors duration-150",
+                "shadow-[0_8px_28px_-16px_rgb(11_11_68/0.22)]",
+                "hover:bg-white",
                 "focus-visible:outline-none focus-visible:ring-2",
                 "focus-visible:ring-brand-accent focus-visible:ring-offset-2",
-                "focus-visible:ring-offset-brand-primary",
+                "focus-visible:ring-offset-bg-base",
                 "active:scale-[0.97]",
               )}
               aria-label="Open navigation menu"
