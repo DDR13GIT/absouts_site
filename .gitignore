@@ -19,3 +19,4 @@ tsconfig.tsbuildinfo
 .playwright-mcp/
 /home-*.png
 /*-screenshot*.png
+/review-*.png
