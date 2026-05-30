@@ -16,26 +16,29 @@ type FeatureCopy = {
   description: string;
 };
 
+// On-brand accents drawn from the brand + Mediterranean @theme palette.
+// Each sub-service keeps a distinct identity without splintering the system
+// into off-palette "rainbow" gradients.
 const ACCENT_CLASSES: Record<SubServiceSlug, string> = {
-  ecommerce: "bg-gradient-to-br from-orange-500 to-rose-600",
-  mobile: "bg-gradient-to-br from-violet-600 to-indigo-700",
-  cloud: "bg-gradient-to-br from-sky-500 to-blue-700",
-  testing: "bg-gradient-to-br from-emerald-500 to-teal-700",
-  legaltech: "bg-gradient-to-br from-slate-600 to-gray-800",
-  webportal: "bg-gradient-to-br from-cyan-500 to-blue-600",
-  fintech: "bg-gradient-to-br from-green-600 to-emerald-800",
-  ai: "bg-gradient-to-br from-purple-600 to-fuchsia-700",
+  ecommerce: "bg-gradient-to-br from-med-clementine to-med-terra",
+  mobile: "bg-gradient-to-br from-med-french to-brand-secondary",
+  cloud: "bg-gradient-to-br from-brand-accent to-med-sky",
+  testing: "bg-gradient-to-br from-med-olive to-med-herb",
+  legaltech: "bg-gradient-to-br from-brand-primary to-brand-secondary",
+  webportal: "bg-gradient-to-br from-med-sky to-brand-accent",
+  fintech: "bg-gradient-to-br from-med-calendula to-med-clementine",
+  ai: "bg-gradient-to-br from-brand-secondary to-brand-accent",
 };
 
 const TINT_CLASSES: Record<SubServiceSlug, string> = {
   ecommerce: "bg-med-clementine/14 border-med-clementine/30 text-med-terra",
-  mobile: "bg-bg-section/55 border-brand-secondary/18 text-brand-secondary",
+  mobile: "bg-med-french/16 border-med-french/32 text-brand-secondary",
   cloud: "bg-brand-accent/12 border-brand-accent/28 text-brand-secondary",
   testing: "bg-med-olive/16 border-med-olive/32 text-med-herb",
   legaltech: "bg-brand-primary/8 border-brand-primary/18 text-brand-primary",
   webportal: "bg-med-sky/24 border-med-sky/45 text-brand-secondary",
-  fintech: "bg-success/36 border-med-olive/30 text-med-herb",
-  ai: "bg-med-calendula/22 border-med-calendula/42 text-med-terra",
+  fintech: "bg-med-calendula/22 border-med-calendula/42 text-med-terra",
+  ai: "bg-brand-accent/12 border-brand-accent/28 text-brand-secondary",
 };
 
 export async function SubServiceTemplate({ slug }: { slug: SubServiceSlug }) {
