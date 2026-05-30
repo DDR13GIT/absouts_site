@@ -89,10 +89,6 @@ export default async function AboutPage({
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-tr from-brand-primary/30 to-transparent"
-            />
           </Reveal>
           <div className="flex flex-col gap-6">
             <SectionHeading title={t("foundation.title")} />

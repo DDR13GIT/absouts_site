@@ -95,7 +95,7 @@ export default async function CloudAccountingPage({
               sizes="(max-width: 1024px) 100vw, 45vw"
               className="object-cover opacity-80"
             />
-            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-tr from-brand-primary/85 via-brand-primary/30 to-transparent" />
+            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-tr from-neutral-dark/85 via-neutral-dark/40 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
               <div className="max-w-sm rounded-2xl bg-white p-5 shadow-[0_20px_48px_-24px_rgb(11_11_68/0.42)]">
                 <p className="font-mono text-xs font-medium uppercase tracking-[0.16em] text-brand-secondary">

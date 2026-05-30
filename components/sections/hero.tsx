@@ -66,7 +66,7 @@ export function Hero({
             />
             <div
               aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-b from-brand-primary/85 via-brand-primary/80 to-brand-primary"
+              className="absolute inset-0 bg-brand-primary"
             />
           </>
         ) : (

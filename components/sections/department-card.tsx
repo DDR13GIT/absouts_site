@@ -63,7 +63,7 @@ export function DepartmentCard({
       {/* Scrim for legibility */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-t from-brand-primary via-brand-primary/65 to-brand-primary/15"
+        className="absolute inset-0 bg-gradient-to-t from-neutral-dark/85 via-neutral-dark/40 to-transparent"
       />
 
       {/* Content */}

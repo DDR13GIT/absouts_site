@@ -96,7 +96,7 @@ export default async function BpoPage({
               sizes="(max-width: 1024px) 100vw, 45vw"
               className="object-cover"
             />
-            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-brand-primary/60 via-brand-primary/10 to-transparent" />
+            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-neutral-dark/85 via-neutral-dark/40 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <p className="max-w-sm text-pretty text-2xl font-bold leading-tight tracking-tight text-white">
                 {t("operatingModel.imageCaption")}

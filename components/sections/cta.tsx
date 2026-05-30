@@ -45,7 +45,7 @@ export function Cta({
             />
             <div
               aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-r from-brand-primary via-brand-primary/85 to-brand-primary/40"
+              className="absolute inset-0 bg-brand-primary"
             />
           </>
         ) : (

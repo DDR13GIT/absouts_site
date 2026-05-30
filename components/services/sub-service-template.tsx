@@ -17,14 +17,14 @@ type FeatureCopy = {
 };
 
 const ACCENT_CLASSES: Record<SubServiceSlug, string> = {
-  ecommerce: "bg-gradient-to-br from-brand-primary to-brand-secondary",
-  mobile: "bg-gradient-to-br from-brand-primary to-brand-secondary",
-  cloud: "bg-gradient-to-br from-brand-primary to-brand-secondary",
-  testing: "bg-gradient-to-br from-brand-primary to-brand-secondary",
-  legaltech: "bg-gradient-to-br from-brand-primary to-brand-secondary",
-  webportal: "bg-gradient-to-br from-brand-primary to-brand-secondary",
-  fintech: "bg-gradient-to-br from-brand-secondary to-success",
-  ai: "bg-gradient-to-br from-brand-secondary to-success",
+  ecommerce: "bg-brand-primary",
+  mobile: "bg-brand-primary",
+  cloud: "bg-brand-primary",
+  testing: "bg-brand-primary",
+  legaltech: "bg-brand-primary",
+  webportal: "bg-brand-primary",
+  fintech: "bg-brand-secondary",
+  ai: "bg-brand-secondary",
 };
 
 const TINT_CLASSES: Record<SubServiceSlug, string> = {
@@ -123,7 +123,7 @@ export async function SubServiceTemplate({ slug }: { slug: SubServiceSlug }) {
                 />
                 <div
                   aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-br from-brand-primary/95 via-brand-primary/82 to-brand-secondary/70"
+                  className="absolute inset-0 bg-brand-primary"
                 />
                 <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-8">
                   <div className="grid gap-3 sm:grid-cols-2">
