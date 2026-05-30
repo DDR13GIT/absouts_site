@@ -140,7 +140,7 @@ export default async function ContactPage({ params }: PageProps) {
 function ContactBlock({ icon, title, items }: { icon: React.ReactNode; title: string; items: string[] }) {
   return (
     <div className="flex gap-4">
-      <div className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-brand-accent/10 text-brand-accent">
+      <div className="flex size-11 shrink-0 items-center justify-center rounded-lg border border-brand-primary/10 bg-bg-darker text-brand-primary">
         {icon}
       </div>
       <div>

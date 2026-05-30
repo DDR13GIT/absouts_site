@@ -42,7 +42,7 @@ export function JobListCard({ job, onApply }: JobListCardProps) {
         {job.skills.length ? (
           <div className="flex flex-wrap gap-2">
             {job.skills.map((skill) => (
-              <Badge key={skill} variant="secondary" className="bg-bg-section/70 text-brand-primary">
+              <Badge key={skill} variant="secondary" className="border-brand-primary/10 bg-bg-darker text-brand-primary">
                 {skill}
               </Badge>
             ))}

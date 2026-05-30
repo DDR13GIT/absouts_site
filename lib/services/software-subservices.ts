@@ -10,7 +10,7 @@ export const SUBSERVICES: SubServiceConfig[] = [
   {
     slug: "ecommerce" as SubServiceSlug,
     iconKey: "ShoppingCart",
-    gradient: { from: "orange-500", to: "rose-600" },
+    gradient: { from: "brand-primary", to: "brand-secondary" },
     coreFeatureCount: 4,
     technologies: [
       tech("React", "react"),
@@ -25,7 +25,7 @@ export const SUBSERVICES: SubServiceConfig[] = [
   {
     slug: "mobile" as SubServiceSlug,
     iconKey: "Smartphone",
-    gradient: { from: "violet-600", to: "indigo-700" },
+    gradient: { from: "brand-primary", to: "brand-secondary" },
     coreFeatureCount: 4,
     technologies: [
       tech("React", "react"),
@@ -40,7 +40,7 @@ export const SUBSERVICES: SubServiceConfig[] = [
   {
     slug: "cloud" as SubServiceSlug,
     iconKey: "Cloud",
-    gradient: { from: "sky-500", to: "blue-700" },
+    gradient: { from: "brand-primary", to: "brand-secondary" },
     coreFeatureCount: 4,
     technologies: [
       tech("AWS", "aws"),
@@ -55,7 +55,7 @@ export const SUBSERVICES: SubServiceConfig[] = [
   {
     slug: "testing" as SubServiceSlug,
     iconKey: "TestTube",
-    gradient: { from: "emerald-500", to: "teal-700" },
+    gradient: { from: "brand-primary", to: "brand-secondary" },
     coreFeatureCount: 4,
     technologies: [
       tech("Docker", "docker"),
@@ -70,7 +70,7 @@ export const SUBSERVICES: SubServiceConfig[] = [
   {
     slug: "legaltech" as SubServiceSlug,
     iconKey: "Scale",
-    gradient: { from: "slate-600", to: "gray-800" },
+    gradient: { from: "brand-primary", to: "brand-secondary" },
     coreFeatureCount: 4,
     technologies: [
       tech("Django", "django"),
@@ -85,7 +85,7 @@ export const SUBSERVICES: SubServiceConfig[] = [
   {
     slug: "webportal" as SubServiceSlug,
     iconKey: "Globe",
-    gradient: { from: "cyan-500", to: "blue-600" },
+    gradient: { from: "brand-primary", to: "brand-secondary" },
     coreFeatureCount: 4,
     technologies: [
       tech("React", "react"),
@@ -100,7 +100,7 @@ export const SUBSERVICES: SubServiceConfig[] = [
   {
     slug: "fintech" as SubServiceSlug,
     iconKey: "CreditCard",
-    gradient: { from: "green-600", to: "emerald-800" },
+    gradient: { from: "brand-secondary", to: "success" },
     coreFeatureCount: 4,
     technologies: [
       tech("ASP.NET", "aspnet"),
@@ -115,7 +115,7 @@ export const SUBSERVICES: SubServiceConfig[] = [
   {
     slug: "ai" as SubServiceSlug,
     iconKey: "Sparkles",
-    gradient: { from: "purple-600", to: "fuchsia-700" },
+    gradient: { from: "brand-secondary", to: "success" },
     coreFeatureCount: 4,
     technologies: [
       tech("TensorFlow", "tensorflow"),

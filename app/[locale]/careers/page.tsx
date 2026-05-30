@@ -68,7 +68,7 @@ export default async function CareersPage({ params }: PageProps) {
                 <Reveal key={item.title} delay={index * 70}>
                   <Card className="h-full border-neutral-dark/10 bg-bg-surface shadow-[var(--shadow-subtle)]">
                     <CardContent className="space-y-4 p-6 text-center">
-                      <div className="mx-auto flex size-14 items-center justify-center rounded-xl bg-brand-accent/10 text-brand-accent">
+                      <div className="mx-auto flex size-14 items-center justify-center rounded-xl border border-brand-primary/10 bg-bg-darker text-brand-primary">
                         <Icon className="size-7" />
                       </div>
                       <h2 className="text-xl font-semibold text-brand-primary">{item.title}</h2>

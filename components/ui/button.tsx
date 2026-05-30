@@ -43,8 +43,8 @@ export const buttonVariants = cva(
           "hover:bg-brand-primary/8",
         ],
         destructive: [
-          "bg-[#c0392b] text-white",
-          "hover:bg-[#a93226]",
+          "bg-brand-primary text-white",
+          "hover:bg-brand-primary/90",
           "shadow-[var(--shadow-subtle)]",
         ],
       },

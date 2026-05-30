@@ -94,7 +94,7 @@ export default async function JobDetailPage({ params }: PageProps) {
                       <h2 className="text-xl font-semibold text-brand-primary">{t("aboutRole")}</h2>
                       <p className="leading-relaxed text-text-secondary">{job.description}</p>
                     </div>
-                    <div className="rounded-lg border border-brand-accent/20 bg-brand-accent/10 p-4">
+                    <div className="rounded-lg border border-success/60 bg-success/40 p-4">
                       <p className="font-medium text-brand-primary">{t("openStatus")}</p>
                     </div>
                   </CardContent>
@@ -147,7 +147,7 @@ export default async function JobDetailPage({ params }: PageProps) {
                     <h2 className="text-lg font-semibold text-brand-primary">{t("skills")}</h2>
                     <div className="flex flex-wrap gap-2">
                       {job.skills.map((skill) => (
-                        <Badge key={skill} variant="secondary" className="bg-bg-section/70 text-brand-primary">
+                        <Badge key={skill} variant="secondary" className="border-brand-primary/10 bg-bg-darker text-brand-primary">
                           {skill}
                         </Badge>
                       ))}

@@ -27,14 +27,14 @@ export async function sendContactEmail(data: Omit<ContactInput, "website">) {
         <html>
           <head>
             <style>
-              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333333; }
               .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-              .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px 8px 0 0; }
-              .content { background: #f9f9f9; padding: 20px; border-radius: 0 0 8px 8px; }
+              .header { background: linear-gradient(135deg, #364c84 0%, #4a5fa0 100%); color: white; padding: 20px; border-radius: 8px 8px 0 0; }
+              .content { background: #f4f2ea; padding: 20px; border-radius: 0 0 8px 8px; }
               .field { margin-bottom: 15px; }
-              .label { font-weight: bold; color: #667eea; }
+              .label { font-weight: bold; color: #364c84; }
               .value { margin-top: 5px; }
-              .message-box { background: white; padding: 15px; border-left: 4px solid #667eea; margin-top: 10px; white-space: pre-wrap; }
+              .message-box { background: white; padding: 15px; border-left: 4px solid #95b1ee; margin-top: 10px; white-space: pre-wrap; }
             </style>
           </head>
           <body>
@@ -88,15 +88,15 @@ export async function sendApplicationEmail(data: Omit<ApplicationInput, "website
         <html>
           <head>
             <style>
-              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333333; }
               .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-              .header { background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 20px; border-radius: 8px 8px 0 0; }
-              .content { background: #f9f9f9; padding: 20px; border-radius: 0 0 8px 8px; }
+              .header { background: linear-gradient(135deg, #364c84 0%, #4a5fa0 100%); color: white; padding: 20px; border-radius: 8px 8px 0 0; }
+              .content { background: #f4f2ea; padding: 20px; border-radius: 0 0 8px 8px; }
               .field { margin-bottom: 15px; }
-              .label { font-weight: bold; color: #059669; }
+              .label { font-weight: bold; color: #364c84; }
               .value { margin-top: 5px; }
-              .cover-letter-box { background: white; padding: 15px; border-left: 4px solid #10b981; margin-top: 10px; white-space: pre-wrap; }
-              .resume-link { display: inline-block; background: #10b981; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+              .cover-letter-box { background: white; padding: 15px; border-left: 4px solid #95b1ee; margin-top: 10px; white-space: pre-wrap; }
+              .resume-link { display: inline-block; background: #364c84; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
             </style>
           </head>
           <body>
@@ -107,9 +107,9 @@ export async function sendApplicationEmail(data: Omit<ApplicationInput, "website
               <div class="content">
                 <div class="field">
                   <div class="label">Position Applied:</div>
-                  <div class="value" style="font-size: 18px; font-weight: 600; color: #059669;">${escapeHtml(data.jobId)}</div>
+                  <div class="value" style="font-size: 18px; font-weight: 600; color: #364c84;">${escapeHtml(data.jobId)}</div>
                 </div>
-                <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
+                <hr style="border: none; border-top: 1px solid #d0d9f5; margin: 20px 0;">
                 <div class="field">
                   <div class="label">Applicant Name:</div>
                   <div class="value">${escapeHtml(data.firstName)} ${escapeHtml(data.lastName)}</div>
@@ -138,10 +138,10 @@ export async function sendApplicationEmail(data: Omit<ApplicationInput, "website
                     <div class="cover-letter-box">${escapeHtml(data.coverLetter)}</div>
                   </div>
                 ` : ""}
-                <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
+                <hr style="border: none; border-top: 1px solid #d0d9f5; margin: 20px 0;">
                 <div class="field">
                   <div class="label">Submitted:</div>
-                  <div class="value" style="font-size: 12px; color: #666;">${new Date().toLocaleString()}</div>
+                  <div class="value" style="font-size: 12px; color: #555861;">${new Date().toLocaleString()}</div>
                 </div>
               </div>
             </div>

@@ -23,24 +23,24 @@ export function BlobBackground({ className, onDark = false }: BlobBackgroundProp
         className={cn(
           "absolute -top-24 left-[8%] h-72 w-72 rounded-full blur-3xl mix-blend-multiply animate-blob",
           onDark
-            ? "bg-brand-accent/25 mix-blend-screen"
-            : "bg-brand-accent/20"
+            ? "bg-brand-accent/12 mix-blend-screen"
+            : "bg-brand-accent/6"
         )}
       />
       <div
         className={cn(
           "absolute top-10 right-[12%] h-80 w-80 rounded-full blur-3xl mix-blend-multiply animate-blob animation-delay-2000",
           onDark
-            ? "bg-brand-secondary/30 mix-blend-screen"
-            : "bg-med-sky/40"
+            ? "bg-brand-secondary/14 mix-blend-screen"
+            : "bg-success/10"
         )}
       />
       <div
         className={cn(
           "absolute bottom-[-4rem] left-1/3 h-72 w-72 rounded-full blur-3xl mix-blend-multiply animate-blob animation-delay-4000",
           onDark
-            ? "bg-med-calendula/20 mix-blend-screen"
-            : "bg-med-calendula/30"
+            ? "bg-success/12 mix-blend-screen"
+            : "bg-success/10"
         )}
       />
     </div>

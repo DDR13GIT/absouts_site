@@ -47,7 +47,7 @@ export function ServiceBlock({
         aria-hidden="true"
         className={cn(
           "absolute top-12 h-64 w-64 rounded-full blur-3xl",
-          tone === "cloud" ? "bg-brand-accent/10" : "bg-med-calendula/18",
+          tone === "cloud" ? "bg-brand-accent/6" : "bg-success/10",
           flipped ? "right-[-5rem]" : "left-[-5rem]"
         )}
       />
@@ -119,8 +119,8 @@ export function ServiceBlock({
           </div>
 
           <div className="border-t border-brand-primary/10 pt-6">
-            <div className="flex gap-4 rounded-2xl border border-brand-accent/18 bg-brand-accent/8 p-5 shadow-[0_14px_34px_-24px_rgb(39_170_225/0.55)]">
-              <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-brand-accent/15 text-brand-secondary">
+            <div className="flex gap-4 rounded-2xl border border-success/60 bg-success/40 p-5 shadow-[0_14px_34px_-24px_rgb(54_76_132/0.24)]">
+              <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-success/60 text-brand-primary">
                 <ArrowRight className="size-5" aria-hidden="true" strokeWidth={1.8} />
               </span>
               <div className="flex flex-col gap-1">
@@ -140,7 +140,7 @@ export function ServiceBlock({
             aria-hidden="true"
             className={cn(
               "absolute inset-0 rounded-3xl",
-              tone === "cloud" ? "bg-brand-accent/16" : "bg-med-clementine/18",
+              tone === "cloud" ? "bg-bg-surface border border-brand-primary/10" : "bg-bg-base border border-brand-primary/10",
               flipped ? "translate-x-4 rotate-2" : "-translate-x-4 -rotate-2"
             )}
           />

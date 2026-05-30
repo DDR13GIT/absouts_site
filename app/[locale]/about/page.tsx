@@ -166,7 +166,7 @@ export default async function AboutPage({
               const Icon = VALUE_ICONS[key];
               return (
                 <Reveal key={key} delay={(i % 3) * 60} as="div" className="flex flex-col gap-3">
-                  <span className="flex size-11 items-center justify-center rounded-xl bg-brand-accent/12 text-brand-secondary">
+                  <span className="flex size-11 items-center justify-center rounded-xl border border-brand-primary/10 bg-bg-darker text-brand-primary">
                     <Icon className="size-5" aria-hidden="true" strokeWidth={1.75} />
                   </span>
                   <h3 className="text-lg font-semibold text-brand-primary">

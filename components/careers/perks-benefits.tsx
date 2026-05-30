@@ -58,7 +58,7 @@ export async function PerksBenefits() {
           <Reveal key={title} delay={index * 35}>
             <Card className="h-full border-neutral-dark/10 bg-bg-surface shadow-[var(--shadow-subtle)]">
               <CardContent className="flex h-full gap-4 p-6">
-                <div className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-brand-accent/10 text-brand-accent">
+                <div className="flex size-11 shrink-0 items-center justify-center rounded-lg border border-brand-primary/10 bg-bg-darker text-brand-primary">
                   <Icon className="size-5" />
                 </div>
                 <div className="space-y-2">

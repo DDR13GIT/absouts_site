@@ -13,14 +13,14 @@ import { absoluteUrl, buildMetadata, localizedPath } from "@/lib/seo/metadata";
 import { JsonLd, breadcrumbSchema, serviceSchema } from "@/lib/seo/structured-data";
 
 const CARD_TONES: Record<string, string> = {
-  ecommerce: "bg-med-clementine/14 text-med-terra border-med-clementine/30",
-  mobile: "bg-bg-section/55 text-brand-secondary border-brand-secondary/18",
-  cloud: "bg-brand-accent/12 text-brand-secondary border-brand-accent/28",
-  testing: "bg-med-olive/16 text-med-herb border-med-olive/32",
-  legaltech: "bg-brand-primary/8 text-brand-primary border-brand-primary/18",
-  webportal: "bg-med-sky/24 text-brand-secondary border-med-sky/45",
-  fintech: "bg-success/36 text-med-herb border-med-olive/30",
-  ai: "bg-med-calendula/22 text-med-terra border-med-calendula/42",
+  ecommerce: "bg-bg-darker text-brand-primary border-brand-primary/10",
+  mobile: "bg-bg-darker text-brand-primary border-brand-primary/10",
+  cloud: "bg-bg-darker text-brand-primary border-brand-primary/10",
+  testing: "bg-bg-darker text-brand-primary border-brand-primary/10",
+  legaltech: "bg-bg-darker text-brand-primary border-brand-primary/10",
+  webportal: "bg-bg-darker text-brand-primary border-brand-primary/10",
+  fintech: "bg-bg-darker text-brand-primary border-brand-primary/10",
+  ai: "bg-bg-darker text-brand-primary border-brand-primary/10",
 };
 
 type IconComponent = React.ComponentType<LucideProps>;
