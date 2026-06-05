@@ -1,10 +1,12 @@
 node_modules
-dist
 .DS_Store
-server/public
-vite.config.ts.*
 *.tar.gz
 .local
+
+# Next.js
+.next/
+out/
+tsconfig.tsbuildinfo
 
 # Environment variables
 .env
@@ -12,3 +14,11 @@ vite.config.ts.*
 .env.*.local
 .env.production
 
+
+# Playwright / local screenshots
+.playwright-mcp/
+/home-*.png
+/*-screenshot*.png
+/review-*.png
+/recolor-*.png
+/grad-*.png

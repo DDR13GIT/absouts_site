@@ -1,0 +1,1461 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "services": "Servicios",
+    "careers": "Carrera",
+    "contact": "Contáctanos"
+  },
+  "departments": {
+    "cloudAccounting": {
+      "title": "Contabilidad en la Nube",
+      "hero": {
+        "badge": "Contabilidad en la Nube",
+        "title": "Contabilidad en la Nube para Mantener Operaciones Financieras Precisas",
+        "subtitle": "Teneduría de libros, reportes, nómina y cumplimiento fiscal de extremo a extremo mediante flujos seguros en la nube, responsabilidad clara y automatización práctica.",
+        "primary": "Hablar con Contabilidad",
+        "secondary": "Volver a Servicios",
+        "cardLabel": "Ritmo Operativo",
+        "cardValue": "Libros claros, reportes al día",
+        "cardDescription": "Soporte contable remoto alineado con tus sistemas, calendario de cierre y necesidades de decisión."
+      },
+      "metrics": [
+        {
+          "value": "8",
+          "label": "Líneas de servicio contable"
+        },
+        {
+          "value": "EE. UU.",
+          "label": "Experiencia con empresas"
+        },
+        {
+          "value": "Nube",
+          "label": "Modelo seguro de entrega"
+        },
+        {
+          "value": "Auditoría",
+          "label": "Documentación preparada"
+        }
+      ],
+      "intro": {
+        "badge": "Control Financiero",
+        "title": "Un Equipo Financiero Práctico sin la Carga de Contratación Completa",
+        "lead": "Nuestro equipo contable mantiene registros, conciliaciones, nómina, reportes y cumplimiento dentro de un flujo de trabajo controlado.",
+        "points": [
+          "Soporte estructurado para cierres mensuales con entregas y documentación transparentes.",
+          "Cobertura financiera operativa en cuentas por pagar, cuentas por cobrar, inventario, nómina e impuestos.",
+          "Reportes que convierten datos contables rutinarios en información útil para la gestión.",
+          "Soporte remoto flexible que escala con el volumen de transacciones y la complejidad del negocio."
+        ]
+      },
+      "labels": {
+        "whatWeProvide": "Qué Proporcionamos",
+        "keyAdvantage": "Ventaja Clave"
+      },
+      "services": [
+        {
+          "icon": "/assets/Asset 4_1757767623439.png",
+          "title": "Servicios de Contabilidad Virtual",
+          "subtitle": "Soporte profesional sin gastos generales",
+          "description": "Accede a profesionales contables experimentados de forma remota. Nos integramos sin fricción con tus operaciones y entregamos supervisión financiera integral adaptada a las necesidades de tu negocio.",
+          "whatWeProvide": [
+            "Profesionales contables dedicados",
+            "Modelos de colaboración flexibles",
+            "Acceso remoto a datos en tiempo real",
+            "Soporte escalable"
+          ],
+          "advantage": "Experiencia rentable y flexibilidad.",
+          "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800",
+          "tags": [
+            "Remoto",
+            "Escalable"
+          ]
+        },
+        {
+          "icon": "/assets/Asset 11_1757767623440.png",
+          "title": "Teneduría de Libros Profesional",
+          "subtitle": "Registros precisos en los que puedes confiar",
+          "description": "Registro meticuloso de cada transacción financiera. Garantizamos que ventas, gastos y pagos queden documentados correctamente, creando una base sólida para el análisis.",
+          "whatWeProvide": [
+            "Seguimiento diario de ventas e ingresos",
+            "Gestión de gastos y proveedores",
+            "Registro de nómina y beneficios",
+            "Seguimiento de obligaciones legales"
+          ],
+          "advantage": "Documentación lista para auditoría y precisión.",
+          "image": "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?auto=format&fit=crop&q=80&w=800",
+          "tags": [
+            "Precisión",
+            "Cumplimiento"
+          ]
+        },
+        {
+          "icon": "/assets/Asset 12_1757767623440.png",
+          "title": "Conciliación Bancaria",
+          "subtitle": "Cada dólar contabilizado",
+          "description": "Comparación sistemática de registros internos contra estados bancarios. Este proceso crítico funciona como una red de seguridad financiera, detectando errores y previniendo fraude.",
+          "whatWeProvide": [
+            "Conciliación mensual de cuentas",
+            "Resolución de discrepancias",
+            "Documentación de hallazgos",
+            "Alertas de actividad sospechosa"
+          ],
+          "advantage": "Prevención de fraude e integridad de datos.",
+          "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
+          "tags": [
+            "Seguridad",
+            "Integridad"
+          ]
+        },
+        {
+          "icon": "/assets/Asset 18_1757767623441.png",
+          "title": "Reportes MIS y Analítica",
+          "subtitle": "Datos convertidos en inteligencia accionable",
+          "description": "Reportes integrales que traducen datos complejos en información clara. Identifica tendencias, detecta oportunidades y toma decisiones estratégicas con nuestros reportes personalizados.",
+          "whatWeProvide": [
+            "Análisis de pérdidas y ganancias",
+            "Proyección de flujo de caja",
+            "Seguimiento de presupuesto frente a resultados",
+            "Paneles de KPI"
+          ],
+          "advantage": "Información basada en datos para crecer.",
+          "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+          "tags": [
+            "Información",
+            "Estrategia"
+          ]
+        },
+        {
+          "icon": "/assets/Asset 10_1757767623440.png",
+          "title": "Gestión de Cuentas por Pagar y Cobrar",
+          "subtitle": "Optimiza tu ciclo de flujo de caja",
+          "description": "Seguimiento sistemático de pagos para mantener un flujo de caja saludable. Monitoreamos facturas pendientes y gestionamos calendarios de pago para asegurar estabilidad financiera.",
+          "whatWeProvide": [
+            "Procesamiento de facturas de proveedores",
+            "Optimización de descuentos",
+            "Seguimiento y gestión de facturas",
+            "Gestión de cobros"
+          ],
+          "advantage": "Mejor gestión del capital de trabajo.",
+          "image": "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&q=80&w=800",
+          "tags": [
+            "Flujo de Caja",
+            "Eficiencia"
+          ]
+        },
+        {
+          "icon": "/assets/Asset 9_1757767623440.png",
+          "title": "Gestión de Inventario",
+          "subtitle": "Productos correctos, en el momento correcto",
+          "description": "Visibilidad completa sobre tu inventario. Monitoreamos niveles de existencias y movimientos para asegurar operaciones eficientes de cadena de suministro y evitar faltantes.",
+          "whatWeProvide": [
+            "Seguimiento de existencias en tiempo real",
+            "Monitoreo de compras y ventas",
+            "Análisis de rotación de inventario",
+            "Optimización de puntos de reorden"
+          ],
+          "advantage": "Menos desperdicio y existencias optimizadas.",
+          "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+          "tags": [
+            "Logística",
+            "Control"
+          ]
+        },
+        {
+          "icon": "/assets/Asset 17_1757767623440.png",
+          "title": "Gestión de Nómina",
+          "subtitle": "Procesamiento fluido para equipos",
+          "description": "Precisión en el procesamiento de salarios, impuestos y beneficios. Aseguramos compensaciones correctas mientras mantenemos pleno cumplimiento de las regulaciones laborales.",
+          "whatWeProvide": [
+            "Cálculo de salarios y remuneraciones",
+            "Cumplimiento fiscal y legal",
+            "Administración de beneficios",
+            "Asistencia en declaraciones fiscales"
+          ],
+          "advantage": "Satisfacción de empleados y cumplimiento.",
+          "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800",
+          "tags": [
+            "RRHH",
+            "Cumplimiento"
+          ]
+        },
+        {
+          "icon": "/assets/Asset 13_1757767623440.png",
+          "title": "Planificación y Cumplimiento Fiscal",
+          "subtitle": "Resultados financieros óptimos",
+          "description": "Preparación experta de declaraciones de impuestos directos e indirectos. Aseguramos cumplimiento a tiempo e identificamos deducciones estratégicas para optimizar tus obligaciones fiscales.",
+          "whatWeProvide": [
+            "Preparación de Impuesto sobre la Renta",
+            "Presentación y cumplimiento de GST",
+            "Identificación de deducciones",
+            "Soporte de auditoría"
+          ],
+          "advantage": "Minimización de riesgos y optimización fiscal.",
+          "image": "https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?auto=format&fit=crop&q=80&w=800",
+          "tags": [
+            "Planificación",
+            "Ahorro"
+          ]
+        }
+      ],
+      "cta": {
+        "title": "¿Listo para Optimizar tus Finanzas?",
+        "description": "Déjanos manejar los números para que puedas enfocarte en hacer crecer tu negocio. Contáctanos para una solución contable personalizada.",
+        "primary": "Comenzar",
+        "secondary": "Ver Todos los Servicios"
+      }
+    },
+    "bpo": {
+      "title": "Subcontratación de Procesos de Negocio",
+      "hero": {
+        "badge": "Subcontratación de Procesos de Negocio",
+        "title": "Operaciones Administrativas Construidas para la Consistencia",
+        "subtitle": "Tareas operativas delegadas y ejecutadas con precisión constante y ganancias medibles de eficiencia, reduciendo gastos generales y estabilizando la calidad del proceso.",
+        "primary": "Hablar de Operaciones",
+        "secondary": "Volver a Servicios"
+      },
+      "metrics": [
+        {
+          "value": "24/7",
+          "label": "Cobertura operativa"
+        },
+        {
+          "value": "Multi",
+          "label": "Soporte omnicanal"
+        },
+        {
+          "value": "SLA",
+          "label": "Entrega garantizada"
+        },
+        {
+          "value": "Escala",
+          "label": "Equipos flexibles"
+        }
+      ],
+      "operatingModel": {
+        "badge": "Modelo Operativo",
+        "title": "Soporte de Procesos que se Siente Integrado, no Añadido",
+        "lead": "Asumimos flujos administrativos repetibles con entregas documentadas, niveles de servicio y rutas de escalamiento para que tu equipo interno se enfoque en el trabajo principal.",
+        "imageCaption": "Equipos estructurados para documentos, pedidos, soporte, RRHH y cumplimiento.",
+        "points": [
+          {
+            "title": "Flujos Documentados",
+            "description": "Pasos claros, responsables y controles de calidad para cada proceso subcontratado."
+          },
+          {
+            "title": "Visibilidad Operativa",
+            "description": "Estados, excepciones y entregas se rastrean para que el trabajo nunca quede oculto."
+          },
+          {
+            "title": "Disciplina de Servicio",
+            "description": "Estándares de respuesta, reglas de escalamiento y ciclos de revisión mantienen una entrega predecible."
+          },
+          {
+            "title": "Cobertura Flexible",
+            "description": "El soporte puede escalar por proceso, volumen, canal o temporada del negocio."
+          }
+        ]
+      },
+      "labels": {
+        "whatWeProvide": "Qué Proporcionamos",
+        "keyAdvantage": "Ventaja Clave"
+      },
+      "services": [
+        {
+          "icon": "/assets/Asset 7_1757767623439.png",
+          "title": "Servicios de Gestión Documental",
+          "subtitle": "Sistemas optimizados aseguran que la información crítica esté categorizada, almacenada de forma segura y disponible al instante cuando se necesita.",
+          "description": "Transformamos archivos físicos y digitales caóticos en activos organizados y buscables. Nuestros sistemas integrales garantizan que tus datos estén seguros, cumplan normas y estén siempre al alcance.",
+          "whatWeProvide": [
+            "Organización de documentos físicos y digitales",
+            "Almacenamiento y respaldo seguro en la nube",
+            "Sistemas de indexación y categorización",
+            "Recuperación rápida y control de versiones"
+          ],
+          "advantage": "Mayor eficiencia operativa y seguridad de datos reforzada.",
+          "image": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&q=80&w=800",
+          "tags": [
+            "Organización",
+            "Seguridad",
+            "Digitalización"
+          ]
+        },
+        {
+          "icon": "/assets/Asset 9_1757767623440.png",
+          "title": "Procesamiento y Cumplimiento de Pedidos",
+          "subtitle": "Gestión integral del ciclo de vida del pedido con actualizaciones de inventario en tiempo real y coordinación logística fluida.",
+          "description": "Desde que se realiza un pedido hasta su entrega final, gestionamos todo el ciclo de vida. Aseguramos precisión, velocidad y transparencia en tus operaciones de cumplimiento.",
+          "whatWeProvide": [
+            "Ingreso y verificación de pedidos",
+            "Procesamiento y confirmación de pagos",
+            "Asignación y actualización de inventario",
+            "Procesamiento de devoluciones y cambios"
+          ],
+          "advantage": "Tiempos de respuesta más rápidos y menos errores de procesamiento.",
+          "image": "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&q=80&w=800",
+          "tags": [
+            "Logística",
+            "Velocidad",
+            "Precisión"
+          ]
+        },
+        {
+          "icon": "/assets/Asset 16_1757767623440.png",
+          "title": "Servicios de Soporte por Email y Chat",
+          "subtitle": "Soporte profesional multicanal que mantiene la voz de tu marca y asegura resolución rápida y eficiente.",
+          "description": "Nuestros equipos de soporte dedicados actúan como una extensión de tu marca. Gestionamos consultas con profesionalismo y empatía para que cada cliente se sienta valorado y escuchado.",
+          "whatWeProvide": [
+            "Consultas de clientes y solicitudes de soporte",
+            "Correspondencia con proveedores y socios",
+            "Respuesta rápida con cumplimiento de SLA",
+            "Escalamiento de problemas y seguimiento de resolución"
+          ],
+          "advantage": "Mejores tiempos de respuesta y mayor satisfacción del cliente.",
+          "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
+          "tags": [
+            "Soporte 24/7",
+            "Multicanal",
+            "Satisfacción"
+          ]
+        },
+        {
+          "icon": "/assets/Asset 17_1757767623440.png",
+          "title": "Servicios de Soporte de RRHH",
+          "subtitle": "Gestión integral de expedientes de empleados y administración de beneficios para manejar la complejidad de RRHH.",
+          "description": "Gestionamos la carga administrativa de RRHH para que puedas enfocarte en tu gente. Desde registros hasta beneficios, aseguramos que tu fuerza laboral esté respaldada y en cumplimiento.",
+          "whatWeProvide": [
+            "Mantenimiento de expedientes de empleados",
+            "Documentación de incorporación y salida",
+            "Elegibilidad y procesamiento de beneficios",
+            "Gestión de licencias y asistencia"
+          ],
+          "advantage": "Administración optimizada y cumplimiento asegurado.",
+          "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800",
+          "tags": [
+            "Talento",
+            "Cumplimiento",
+            "Beneficios"
+          ]
+        },
+        {
+          "icon": "/assets/Asset 12_1757767623440.png",
+          "title": "Soporte de Cumplimiento y Regulación",
+          "subtitle": "Monitoreo proactivo e implementación de marcos de cumplimiento que protegen tu negocio de riesgos legales.",
+          "description": "Navega el complejo entorno regulatorio con confianza. Monitoreamos cambios, gestionamos documentación y mantenemos tu negocio preparado para auditorías en todo momento.",
+          "whatWeProvide": [
+            "Preparación de presentaciones regulatorias",
+            "Seguimiento de cumplimiento por industria",
+            "Mantenimiento de trazabilidad de auditoría",
+            "Reporte de incidentes y acciones correctivas"
+          ],
+          "advantage": "Menores riesgos legales y tranquilidad.",
+          "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
+          "tags": [
+            "Gestión de Riesgos",
+            "Listo para Auditoría",
+            "Estándares"
+          ]
+        }
+      ],
+      "cta": {
+        "title": "¿Listo para Estabilizar tus Operaciones?",
+        "description": "Entrega el trabajo recurrente con confianza. Definiremos el proceso, los niveles de servicio y el equipo de entrega alrededor de tu flujo.",
+        "primary": "Iniciar una Conversación BPO",
+        "secondary": "Ver Todos los Servicios"
+      }
+    },
+    "software": {
+      "title": "Desarrollo de Software",
+      "hero": {
+        "badge": "Desarrollo de Software",
+        "title": "Subcontratación de Software y Soluciones TI",
+        "subtitle": "Desarrollo de software personalizado, aplicaciones móviles, optimización de infraestructura en la nube y soluciones especializadas para diversas industrias.",
+        "primary": "Planear un Desarrollo",
+        "secondary": "Volver a Servicios"
+      },
+      "metrics": [
+        {
+          "value": "8",
+          "label": "Dominios de ingeniería"
+        },
+        {
+          "value": "Total",
+          "label": "Entrega de ciclo completo"
+        },
+        {
+          "value": "Cloud",
+          "label": "Arquitectura nativa"
+        },
+        {
+          "value": "QA",
+          "label": "Pruebas integradas"
+        }
+      ],
+      "intro": {
+        "badge": "Marco de Entrega",
+        "title": "Ingeniería de Ciclo Completo para Productos, Plataformas y Sistemas Internos",
+        "lead": "Cubrimos arquitectura, implementación, integración, aseguramiento de calidad, despliegue y mejora continua mediante equipos de software enfocados."
+      },
+      "process": {
+        "items": [
+          {
+            "title": "Definir el Resultado",
+            "description": "Aclarar usuarios, flujos, sistemas, restricciones y el resultado comercial que el software debe respaldar."
+          },
+          {
+            "title": "Diseñar la Arquitectura",
+            "description": "Elegir plataforma, modelo de datos, enfoque de integración y plan de entrega antes de escribir código de producción."
+          },
+          {
+            "title": "Construir por Iteraciones",
+            "description": "Entregar incrementos funcionales con puntos de revisión, controles de calidad y visibilidad clara del avance."
+          },
+          {
+            "title": "Operar y Mejorar",
+            "description": "Dar soporte al despliegue, monitoreo, mantenimiento y mejoras de hoja de ruta después del lanzamiento."
+          }
+        ]
+      },
+      "services": {
+        "badge": "Capacidades de Software",
+        "title": "Ocho Líneas Especializadas de Entrega",
+        "lead": "Cada línea enlaza a una página de servicio específica para que la siguiente fase amplíe el modelo completo de entrega."
+      },
+      "handoff": {
+        "badge": "Página General",
+        "title": "Cada línea de software está lista para su propia página detallada.",
+        "description": "Las tarjetas ya enlazan a las futuras rutas de subservicio bajo /services/software/<slug>, manteniendo esta página como entrada general al área de software.",
+        "button": "Hablar con Software"
+      },
+      "cta": {
+        "title": "¿Necesitas un Equipo de Software que Entienda el Contexto del Negocio?",
+        "description": "Tráenos el flujo de trabajo, la idea de producto o el problema de plataforma. Diseñaremos el equipo de entrega y la ruta técnica alrededor de ello.",
+        "primary": "Contáctanos",
+        "secondary": "Ver Todos los Servicios"
+      }
+    }
+  },
+  "subservices": {
+    "detail": {
+      "back": "Volver a Software",
+      "badge": "Servicio de Software",
+      "featuresBadge": "Lo que construimos",
+      "additionalBadge": "Alcance de Entrega",
+      "additionalTitle": "Capacidades Adicionales",
+      "techTitle": "Stack Tecnológico",
+      "techBadge": "Herramientas",
+      "ctaTitle": "¿Tienes algo que construir?",
+      "ctaDescription": "Cuéntanos dónde estás y a dónde quieres llegar. Trazaremos la ruta más rápida desde la idea hasta una plataforma que tu equipo pueda operar con confianza.",
+      "ctaPrimary": "Inicia una conversación",
+      "ctaSecondary": "Todos los servicios de software"
+    },
+    "ecommerce": {
+      "title": "Desarrollo de E-commerce",
+      "short": "Soluciones completas de comercio electrónico con plataformas modernas, integración de pagos e interfaces amigables diseñadas para impulsar ventas y mejorar la experiencia del cliente.",
+      "description": "Diseñamos y construimos plataformas de comercio que conectan descubrimiento de productos, checkout, pagos, inventario, cumplimiento y atención al cliente en una experiencia de compra confiable. Cada desarrollo se adapta a la conversión, el control operativo y la capacidad de crecer sin reemplazar la plataforma más adelante.",
+      "coreFeaturesTitle": "Bases de comercio creadas para crecer",
+      "coreFeaturesSubtitle": "Desde la arquitectura del escaparate hasta los flujos de pago, nos enfocamos en los sistemas que mantienen el comercio digital rápido, medible y fácil de gestionar.",
+      "coreFeatures": [
+        {
+          "title": "Escaparates Personalizados",
+          "description": "Experiencias de compra responsivas con navegación clara de catálogo, páginas de producto, carrito y checkout diseñados para generar confianza."
+        },
+        {
+          "title": "Integración de Pagos",
+          "description": "Configuración segura de pasarelas de pago, manejo de transacciones, lógica fiscal, confirmaciones de pedido y estados de error según requisitos regionales."
+        },
+        {
+          "title": "Inventario y Pedidos",
+          "description": "Herramientas administrativas para datos de producto, visibilidad de stock, procesamiento de pedidos, cumplimiento, devoluciones y cuentas de cliente."
+        },
+        {
+          "title": "Optimización de Rendimiento",
+          "description": "Páginas de carga rápida, estructura preparada para buscadores, instrumentación analítica y mejoras enfocadas en conversión para crecimiento sostenido."
+        }
+      ],
+      "additionalFeatures": [
+        "Gestión de catálogo y variantes de producto",
+        "Cuentas de cliente y direcciones guardadas",
+        "Promociones, cupones y páginas de campaña",
+        "Integración de envíos, impuestos y cumplimiento",
+        "Paneles de análisis para ventas y comportamiento del cliente",
+        "Herramientas administrativas para merchandising y contenido"
+      ],
+      "techStackSubtitle": "Combinamos frameworks frontend modernos, servicios API, bases de datos, hosting en la nube y tooling de despliegue para mantener plataformas de comercio rápidas y mantenibles."
+    },
+    "mobile": {
+      "title": "Desarrollo de Aplicaciones Móviles",
+      "short": "Aplicaciones móviles nativas y multiplataforma para iOS y Android con diseño UI/UX moderno y experiencia de usuario fluida.",
+      "description": "Construimos aplicaciones móviles que se sienten naturales en cada dispositivo y siguen siendo prácticas de mantener durante las versiones del producto. Nuestros equipos cubren flujos de producto, sistemas de interfaz, integración backend, pruebas, soporte de lanzamiento y mejoras posteriores.",
+      "coreFeaturesTitle": "Productos móviles con una ruta clara de lanzamiento",
+      "coreFeaturesSubtitle": "Cada app se planifica alrededor del recorrido del usuario, las limitaciones del dispositivo, las dependencias de API y el trabajo operativo necesario después del lanzamiento.",
+      "coreFeatures": [
+        {
+          "title": "Entrega Multiplataforma",
+          "description": "Bases de código móvil compartidas cuando aportan valor, con patrones de interacción de calidad nativa para usuarios de iOS y Android."
+        },
+        {
+          "title": "UX y UI de Producto",
+          "description": "Pantallas mobile-first, navegación, onboarding, formularios, gestos y detalles de accesibilidad diseñados para uso diario real."
+        },
+        {
+          "title": "Integración Backend",
+          "description": "Conexiones seguras a APIs, autenticación, notificaciones push, manejo de archivos, pagos, servicios de ubicación y analítica."
+        },
+        {
+          "title": "Preparación para Tiendas",
+          "description": "Pipelines de build, pruebas en dispositivos, empaquetado de versiones, soporte para publicación en tiendas y monitoreo tras el lanzamiento."
+        }
+      ],
+      "additionalFeatures": [
+        "Autenticación y gestión de perfiles",
+        "Notificaciones push y mensajes dentro de la app",
+        "Flujos preparados para trabajar con redes inestables",
+        "Integraciones de cámara, archivos, ubicación y pagos",
+        "Reportes de fallos y analítica de producto",
+        "Versiones de mantenimiento por cambios de sistemas operativos y dispositivos"
+      ],
+      "techStackSubtitle": "Nuestro stack móvil conecta React, Node.js, Firebase, GraphQL, PostgreSQL, AWS y Docker en pipelines confiables de entrega de apps."
+    },
+    "cloud": {
+      "title": "Soluciones de Infraestructura en la Nube",
+      "short": "Infraestructura en la nube escalable con despliegue automatizado, monitoreo y optimización para máxima confiabilidad y rendimiento.",
+      "description": "Ayudamos a los equipos a pasar de hosting frágil a entornos cloud estructurados con prácticas claras de despliegue, monitoreo, seguridad y escalado. El resultado es una infraestructura que sostiene el crecimiento del producto sin convertirse en una carga operativa.",
+      "coreFeaturesTitle": "Entornos cloud en los que los equipos pueden confiar",
+      "coreFeaturesSubtitle": "Diseñamos infraestructura alrededor de confiabilidad, entrega repetible, observabilidad y controles de costo necesarios para operar con estabilidad.",
+      "coreFeatures": [
+        {
+          "title": "Arquitectura Cloud",
+          "description": "Planificación de entornos, selección de servicios, redes, almacenamiento, cómputo y patrones de escalado alineados con la carga de la aplicación."
+        },
+        {
+          "title": "Automatización de Despliegues",
+          "description": "Pipelines CI/CD, flujos con contenedores, verificaciones de release, rutas de rollback y promoción de entornos para una entrega predecible."
+        },
+        {
+          "title": "Monitoreo y Alertas",
+          "description": "Health checks, logs, métricas, alertas y visibilidad de incidentes para que los equipos respondan antes de que los usuarios perciban el impacto."
+        },
+        {
+          "title": "Seguridad y Optimización",
+          "description": "Control de accesos, manejo de secretos, planes de backup, ajuste de rendimiento y revisiones de costo para mantener plataformas seguras y eficientes."
+        }
+      ],
+      "additionalFeatures": [
+        "Planificación y ejecución de migraciones cloud",
+        "Containerización y configuración de runtime",
+        "Despliegue de bases de datos y estrategia de backup",
+        "Separación de entornos de desarrollo y producción",
+        "Documentación de infraestructura y runbooks",
+        "Revisiones de optimización de costo y rendimiento"
+      ],
+      "techStackSubtitle": "AWS, Docker, GitLab, Node.js, Django, PostgreSQL y Elasticsearch nos dan una base práctica para operaciones cloud resilientes."
+    },
+    "testing": {
+      "title": "Pruebas de Software y QA",
+      "short": "Servicios integrales de aseguramiento de calidad y pruebas para mantener el software confiable, seguro y eficiente en distintas plataformas.",
+      "description": "Brindamos soporte de pruebas y QA que reduce el riesgo de lanzamiento y da a los equipos evidencia clara sobre la calidad del producto. Nuestro enfoque cubre validación manual, automatización, regresión, rendimiento y reportes de incidencias que los desarrolladores pueden resolver con rapidez.",
+      "coreFeaturesTitle": "Cobertura de calidad durante todo el ciclo de release",
+      "coreFeaturesSubtitle": "Las pruebas se planifican alrededor de rutas críticas del negocio, plataformas soportadas, cadencia de lanzamiento y defectos con mayor impacto para los clientes.",
+      "coreFeatures": [
+        {
+          "title": "Pruebas Funcionales",
+          "description": "Validación basada en escenarios para flujos de usuario, formularios, permisos, integraciones, casos límite y criterios de aceptación."
+        },
+        {
+          "title": "Estrategia de Automatización",
+          "description": "Suites automatizadas de regresión para flujos de alto valor, integradas en pipelines CI cuando ayudan a acelerar los lanzamientos."
+        },
+        {
+          "title": "Verificaciones de Rendimiento",
+          "description": "Pruebas de carga, capacidad de respuesta, estabilidad y uso de recursos para detectar problemas antes de que el tráfico de producción los exponga."
+        },
+        {
+          "title": "Reporte de Defectos",
+          "description": "Pasos claros de reproducción, severidad, capturas, detalles de entorno y notas de retest para una resolución eficiente."
+        }
+      ],
+      "additionalFeatures": [
+        "Suites de regresión para ciclos recurrentes de release",
+        "Pruebas cross-browser y cross-device",
+        "Pruebas de API y validación de datos",
+        "Soporte de revisión de accesibilidad y usabilidad",
+        "Documentación de aprobación de release",
+        "Configuración de procesos QA para equipos de ingeniería en crecimiento"
+      ],
+      "techStackSubtitle": "Docker, GitLab, Node.js, Django, PostgreSQL, Elasticsearch y AWS soportan entornos de prueba confiables y controles de calidad automatizados."
+    },
+    "legaltech": {
+      "title": "Soluciones LegalTech",
+      "short": "Gestión de casos legales, automatización documental, soluciones de cumplimiento y optimización de flujos para prácticas legales modernas.",
+      "description": "Construimos plataformas legaltech que organizan datos de asuntos, documentos, vencimientos, comunicación y flujos de cumplimiento en sistemas digitales seguros. Cada solución se diseña para trazabilidad, permisos y adopción práctica por equipos legales.",
+      "coreFeaturesTitle": "Flujos digitales para equipos legales modernos",
+      "coreFeaturesSubtitle": "El software legal necesita más que formularios y almacenamiento. Necesita registros estructurados, acceso seguro, auditabilidad y herramientas que reflejen el trabajo real de los casos.",
+      "coreFeatures": [
+        {
+          "title": "Gestión de Casos",
+          "description": "Registros de asuntos, seguimiento de tareas, vencimientos, contactos, notas e historial de actividad organizados alrededor de la operación legal diaria."
+        },
+        {
+          "title": "Automatización Documental",
+          "description": "Generación de documentos con plantillas, flujos de revisión, control de versiones, almacenamiento, búsqueda y metadatos estructurados."
+        },
+        {
+          "title": "Flujos de Cumplimiento",
+          "description": "Modelos de permisos, trazas de auditoría, rutas de aprobación, lógica de retención y reportes para procesos legales regulados."
+        },
+        {
+          "title": "Búsqueda y Reportes",
+          "description": "Acceso rápido a asuntos, documentos, cláusulas, actividad y datos de rendimiento mediante paneles y filtros a medida."
+        }
+      ],
+      "additionalFeatures": [
+        "Acceso por roles para usuarios internos y externos",
+        "Portales seguros para clientes e intercambio documental",
+        "Calendarios, vencimientos y flujos de recordatorios",
+        "Intake de asuntos y soporte para revisión de conflictos",
+        "Logs de auditoría y reportes de cumplimiento",
+        "Migración desde hojas de cálculo y herramientas heredadas"
+      ],
+      "techStackSubtitle": "Django, PostgreSQL, React, ASP.NET, Elasticsearch, Docker y AWS soportan plataformas legales seguras, buscables y mantenibles."
+    },
+    "webportal": {
+      "title": "Desarrollo de Portales Web",
+      "short": "Portales empresariales, portales de clientes y sistemas de gestión de contenido con arquitectura moderna y experiencia de usuario fluida.",
+      "description": "Creamos portales web que reúnen usuarios, contenido, servicios, datos y flujos de trabajo en un destino digital coherente. Los portales se construyen alrededor de permisos, gestión de contenido, puntos de integración y recorridos de usuario que deben seguir claros a medida que la plataforma crece.",
+      "coreFeaturesTitle": "Portales que conectan personas y flujos de trabajo",
+      "coreFeaturesSubtitle": "Un portal útil entrega a cada usuario la información, acciones y estado correctos en el momento correcto, sin obligar a los equipos a coordinar todo manualmente.",
+      "coreFeatures": [
+        {
+          "title": "Arquitectura de Portal",
+          "description": "Arquitectura de información, rutas, modelos de contenido, permisos y sistemas de páginas diseñados para mantenerse en el tiempo."
+        },
+        {
+          "title": "Paneles de Usuario",
+          "description": "Vistas por rol para clientes, socios, empleados o administradores con las tareas y datos que necesita cada grupo."
+        },
+        {
+          "title": "CMS y Herramientas de Contenido",
+          "description": "Áreas editables, flujos de publicación, manejo de medios, datos estructurados y gobierno para equipos no técnicos."
+        },
+        {
+          "title": "Integración de Sistemas",
+          "description": "Conexiones con APIs, CRMs, bases de datos, proveedores de autenticación, analítica y sistemas internos de negocio."
+        }
+      ],
+      "additionalFeatures": [
+        "Flujos para portales de clientes, socios y empleados",
+        "Navegación y control de acceso por roles",
+        "Flujos de publicación y aprobación de contenido",
+        "Búsqueda, filtros y bases de conocimiento de autoservicio",
+        "Notificaciones, formularios y seguimiento de solicitudes",
+        "Paneles operativos para administradores"
+      ],
+      "techStackSubtitle": "React, Node.js, GraphQL, PostgreSQL, AWS, Docker y GitLab nos permiten construir portales rápidos, conectados y fáciles de evolucionar."
+    },
+    "fintech": {
+      "title": "Soluciones Fintech",
+      "short": "Aplicaciones financieras, soluciones bancarias, procesamiento de pagos y plataformas de tecnología financiera con seguridad y cumplimiento robustos.",
+      "description": "Desarrollamos plataformas fintech donde la seguridad, la integridad de datos, la auditabilidad y la confianza del usuario son requisitos centrales del producto. Nuestro trabajo abarca flujos de pago, paneles financieros, sistemas transaccionales, soporte de cumplimiento y herramientas operativas.",
+      "coreFeaturesTitle": "Software financiero construido alrededor de la confianza",
+      "coreFeaturesSubtitle": "La entrega fintech exige manejo cuidadoso de transacciones, identidad, permisos, reportes y controles operativos detrás de cada flujo.",
+      "coreFeatures": [
+        {
+          "title": "Flujos de Pago",
+          "description": "Inicio de pagos, procesamiento, estado de transacciones, soporte de conciliación, manejo de fallos y notificaciones al cliente."
+        },
+        {
+          "title": "Sistemas de Cuenta Seguros",
+          "description": "Autenticación, autorización, perfiles de cuenta, historial de actividad, controles por rol y patrones seguros de acceso a datos."
+        },
+        {
+          "title": "Paneles Financieros",
+          "description": "Interfaces claras de reporte para saldos, transacciones, liquidaciones, señales de riesgo y rendimiento operativo."
+        },
+        {
+          "title": "Soporte de Cumplimiento",
+          "description": "Trazas de auditoría, validación de datos, exportaciones de reportes, flujos de aprobación y patrones de implementación que apoyan revisión regulatoria."
+        }
+      ],
+      "additionalFeatures": [
+        "Integraciones con APIs bancarias y de pago",
+        "Herramientas de búsqueda y conciliación de transacciones",
+        "Flujos de aprobación y revisión por roles",
+        "Paneles de señales de fraude y alertas operativas",
+        "Exportación de datos y reportes de cumplimiento",
+        "Infraestructura segura y prácticas de despliegue"
+      ],
+      "techStackSubtitle": "ASP.NET, Go, PostgreSQL, SQL Server, Docker, AWS y Elasticsearch soportan flujos financieros seguros a escala productiva."
+    },
+    "ai": {
+      "title": "Soluciones de IA",
+      "short": "Aplicaciones de inteligencia artificial, modelos de aprendizaje automático y automatización inteligente para procesos de negocio.",
+      "description": "Construimos productos con IA y flujos de automatización que convierten datos, documentos y decisiones repetibles del negocio en capacidades de software prácticas. El foco está en valor medible, integración responsable e interfaces que ayudan a las personas a confiar en los resultados.",
+      "coreFeaturesTitle": "Sistemas de IA diseñados alrededor de flujos reales",
+      "coreFeaturesSubtitle": "La IA útil empieza con el proceso de negocio, los datos disponibles, las decisiones que se apoyan y la revisión humana necesaria para generar confianza.",
+      "coreFeatures": [
+        {
+          "title": "Diseño de Productos con IA",
+          "description": "Descubrimiento de casos de uso, mapeo de flujos, patrones de interacción con modelos, estados de revisión y diseño de interfaces para tareas asistidas por IA."
+        },
+        {
+          "title": "Modelos de Aprendizaje Automático",
+          "description": "Selección de modelos, preparación de datos, soporte de entrenamiento, evaluación e integración en aplicaciones de producción."
+        },
+        {
+          "title": "Automatización Inteligente",
+          "description": "Automatización para manejo documental, clasificación, enrutamiento, recomendaciones, extracción de datos y operaciones repetitivas."
+        },
+        {
+          "title": "Monitoreo y Feedback",
+          "description": "Revisión de resultados, señales de confianza, ciclos de feedback, analítica de uso y mejoras para funciones de IA desplegadas."
+        }
+      ],
+      "additionalFeatures": [
+        "Inteligencia documental y extracción estructurada",
+        "Flujos de recomendación y clasificación",
+        "Búsqueda asistida por IA e interfaces de conocimiento",
+        "Colas de revisión y aprobación humana",
+        "Evaluación de modelos y seguimiento de rendimiento",
+        "Integración con plataformas de negocio existentes"
+      ],
+      "techStackSubtitle": "TensorFlow, PostgreSQL, Docker, AWS, Elasticsearch, Firebase y GraphQL ofrecen una base flexible para aplicaciones impulsadas por IA."
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Excelencia Global en Subcontratación",
+      "title": "Transforma Tu Negocio con Soluciones Expertas de Subcontratación",
+      "subtitle": "Ofrecemos servicios integrales de subcontratación—desde Contabilidad en la Nube y BPO hasta Desarrollo de Software—alineando la última tecnología con las mejores prácticas de la industria para ayudarte a operar eficientemente y crecer.",
+      "letsTalk": "Hablemos",
+      "findTalent": "Encontrar Talento",
+      "learnMore": "Saber Más",
+      "metrics": {
+        "talents": "540+",
+        "talentsLabel": "Talentos Contratados",
+        "clients": "40+",
+        "clientsLabel": "Clientes de Confianza",
+        "retention": "95%",
+        "retentionLabel": "Tasa de Retención"
+      },
+      "imageAlt1": "Un equipo de subcontratación colaborando en una oficina moderna",
+      "imageAlt2": "Un profesional revisando informes financieros en pantalla",
+      "bentoGrid": {
+        "growth": {
+          "badge": "Crecimiento",
+          "description": "Aumento medio de eficiencia del cliente"
+        }
+      }
+    },
+    "services": {
+      "badge": "Nuestros Servicios",
+      "title": "Soluciones Integrales de Subcontratación",
+      "subtitle": "Soluciones de extremo a extremo para tus necesidades operativas y tecnológicas, entregadas por un único socio responsable.",
+      "explore": "Explorar",
+      "cloudAccounting": {
+        "title": "Contabilidad en la Nube",
+        "description": "Contabilidad virtual, nómina, teneduría de libros y cumplimiento fiscal sobre plataformas en la nube seguras, con experiencia práctica atendiendo a empresas con sede en EE. UU."
+      },
+      "bpo": {
+        "title": "Subcontratación de Procesos de Negocio",
+        "description": "Optimiza las funciones comerciales esenciales y mejora la eficiencia operativa con nuestros servicios integrales de BPO."
+      },
+      "software": {
+        "title": "Desarrollo de Software",
+        "description": "Desarrollo de software personalizado y soluciones TI adaptadas para diversas industrias y necesidades comerciales."
+      }
+    },
+    "whyChooseUs": {
+      "badge": "Por Qué Absouts",
+      "title": "Un Socio Construido sobre Confianza y Precisión",
+      "subtitle": "Respaldados por una herencia de contaduría pública y un modelo de entrega global que escala con tu ambición.",
+      "items": {
+        "expertise": {
+          "title": "Experiencia Profesional Certificada",
+          "description": "Propiedad de una división dedicada de una reconocida firma de Contadores Públicos, lo que fundamenta cada proyecto en rigor profesional."
+        },
+        "global": {
+          "title": "Entrega Global",
+          "description": "Un equipo distribuido que atiende a clientes en EE. UU., Reino Unido y más allá, alineado con tu zona horaria y estándares."
+        },
+        "security": {
+          "title": "Seguridad de Datos",
+          "description": "Infraestructura avanzada y estrictas prácticas de cumplimiento protegen tus datos en cada paso."
+        },
+        "scalability": {
+          "title": "Diseñado para Escalar",
+          "description": "Modelos de colaboración flexibles que crecen con tu negocio, desde una sola función hasta una oficina administrativa completa."
+        }
+      }
+    },
+    "cta": {
+      "title": "Construyamos Juntos tu Oficina Administrativa",
+      "description": "Cuéntanos qué necesitas subcontratar. Diseñaremos un modelo de entrega en torno a tus objetivos, estándares y zona horaria.",
+      "primary": "Contáctanos",
+      "secondary": "Ver Servicios"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Líder Global en Subcontratación",
+      "title": "Acerca de Absouts",
+      "subtitle": "Una entidad global de subcontratación enfocada en Contabilidad en la Nube, Subcontratación de Procesos de Negocio y Desarrollo de Software, simplificando los procesos comerciales y la gestión tecnológica para clientes en todo el mundo."
+    },
+    "foundation": {
+      "title": "Nuestra Fundación y Asociación",
+      "description1": "Absouts es propiedad de K D Roy & CO, una división dedicada de la reconocida firma de Contadores Públicos Adhikary Roy & Co., en colaboración estratégica con LTR Consultants, una prominente firma consultora y asesora legal con sede en Bangladesh.",
+      "description2": "Esta asociación aprovecha una amplia experiencia profesional, liderazgo en la industria y una reputación establecida para entregar soluciones integrales de subcontratación y consultoría a nivel global."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Proporcionar soluciones integradas de contabilidad, BPO y subcontratación de software que empoderen a las empresas de todo el mundo para operar eficientemente, innovar y crecer de manera sostenible."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Convertirnos en un líder global confiable conocido por resolver desafíos comerciales y tecnológicos a través de servicios de subcontratación confiables."
+    },
+    "values": {
+      "badge": "Valores Fundamentales",
+      "title": "Nuestros Valores",
+      "excellence": {
+        "title": "Excelencia",
+        "description": "Entregamos consistentemente servicios de alta calidad, mejorando continuamente y utilizando las mejores prácticas."
+      },
+      "innovation": {
+        "title": "Innovación",
+        "description": "Utilizamos la tecnología más reciente y métodos creativos para entregar soluciones avanzadas."
+      },
+      "integrity": {
+        "title": "Integridad",
+        "description": "Siempre operamos de manera honesta, transparente y responsable, protegiendo los datos del cliente."
+      },
+      "clientSuccess": {
+        "title": "Éxito del Cliente",
+        "description": "Entendemos las necesidades únicas de nuestros clientes y entregamos soluciones que apoyan directamente sus objetivos comerciales."
+      },
+      "collaboration": {
+        "title": "Colaboración",
+        "description": "Construimos relaciones sólidas con clientes y socios, trabajando juntos hacia el éxito compartido."
+      },
+      "globalPartnership": {
+        "title": "Asociación Global",
+        "description": "Estamos comprometidos a construir relaciones confiables y a largo plazo con clientes de todo el mundo."
+      }
+    },
+    "leadership": {
+      "badge": "Equipo de Liderazgo",
+      "title": "Nuestro Liderazgo",
+      "subtitle": "Profesionales experimentados que guían a Absouts con profunda experiencia en contabilidad, operaciones y tecnología.",
+      "kdRoy": {
+        "name": "K D Roy, FCA (ICAB), ACA (ICAEW)",
+        "position": "Director Ejecutivo",
+        "description": "Lidera la entidad estableciendo su dirección y objetivos generales. Responsable de desarrollar nuevas oportunidades de negocio en todo el mundo y de garantizar que las actividades de la entidad respalden tanto sus objetivos como el éxito del cliente. Cuenta con amplia experiencia práctica gestionando servicios de contabilidad virtual y nómina para empresas con sede en EE. UU."
+      },
+      "enamKhan": {
+        "name": "Enam H. Khan, FCA (ICAB), ACA (ICAEW), FCCA",
+        "position": "Director de Operaciones",
+        "description": "Garantiza operaciones diarias fluidas perfeccionando procesos, guiando equipos multifuncionales y haciendo cumplir la calidad y el cumplimiento. Entrega servicios confiables de BPO y software que impulsan el crecimiento de la empresa, fomentando la mejora continua y la responsabilidad."
+      },
+      "razwanKader": {
+        "name": "Razwan Kader",
+        "position": "Director de Tecnología",
+        "description": "Un líder tecnológico experimentado con profunda experiencia en ingeniería de software y arquitectura de sistemas. Impulsa la visión tecnológica de la empresa, alineando la estrategia técnica con los objetivos comerciales. Sobresale en la construcción de equipos de alto rendimiento y en la entrega de soluciones escalables y confiables."
+      },
+      "pritamKumarDas": {
+        "name": "Pritam Kumar Das",
+        "position": "Jefe de Desarrollo de Negocios",
+        "description": "Impulsa la entrega fluida de todas las soluciones de BPO y software supervisando cada proyecto para cumplir con los estándares internacionales de calidad y cumplimiento. Monitorea de cerca las operaciones diarias y mantiene la excelencia para que los clientes reciban consistentemente servicios confiables y eficientes."
+      }
+    },
+    "cta": {
+      "title": "Trabaja con un Equipo que Respalda sus Estándares",
+      "description": "Desde la contabilidad en la nube hasta el software, nuestros equipos de liderazgo y entrega mantienen cada proyecto en el mismo nivel profesional.",
+      "primary": "Explorar Nuestros Servicios",
+      "secondary": "Contáctanos"
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "Soluciones Integrales",
+      "title": "Nuestros Servicios",
+      "subtitle": "Soluciones integrales de subcontratación diseñadas para satisfacer las diversas demandas operativas y tecnológicas de las empresas de hoy."
+    },
+    "departments": {
+      "explore": "Explorar",
+      "cloudAccounting": {
+        "title": "Contabilidad en la Nube",
+        "description": "Contabilidad virtual, nómina, teneduría de libros y cumplimiento fiscal sobre plataformas en la nube seguras, con experiencia comprobada atendiendo a empresas con sede en EE. UU.",
+        "button": "Explorar Contabilidad en la Nube"
+      },
+      "bpo": {
+        "title": "Subcontratación de Procesos de Negocio",
+        "description": "Optimiza las funciones comerciales esenciales y mejora la eficiencia operativa con nuestros servicios integrales de BPO.",
+        "button": "Explorar Servicios BPO"
+      },
+      "software": {
+        "title": "Desarrollo de Software",
+        "description": "Desarrollo de software personalizado y soluciones TI adaptadas para diversas industrias y necesidades comerciales.",
+        "button": "Explorar Soluciones TI"
+      }
+    },
+    "pillars": {
+      "badge": "Pilares de Servicio",
+      "title": "Nuestros Pilares de Servicio Integrados",
+      "subtitle": "Cuatro disciplinas que sustentan cada proyecto, desde la primera consulta hasta el soporte continuo.",
+      "clientRelationship": {
+        "title": "Gestión de Relaciones con Clientes",
+        "description": "Participación activa desde la consulta hasta la finalización y soporte continuo."
+      },
+      "serviceDelivery": {
+        "title": "Entrega de Servicios",
+        "description": "Ejecución integral utilizando procesos estandarizados y tecnologías avanzadas."
+      },
+      "technology": {
+        "title": "Tecnología e Infraestructura",
+        "description": "Infraestructura tecnológica avanzada que garantiza la seguridad de datos y el cumplimiento."
+      },
+      "talent": {
+        "title": "Desarrollo de Talento",
+        "description": "Reclutamiento estratégico y capacitación continua para una fuerza laboral capacitada."
+      }
+    },
+    "benefits": {
+      "title": "Por Qué Nuestros Servicios Se Destacan",
+      "vendorManagement": {
+        "title": "Gestión Simplificada de Proveedores",
+        "description": "Gestión simplificada con soluciones integradas."
+      },
+      "efficiency": {
+        "title": "Mayor Eficiencia",
+        "description": "Eficiencia operativa mejorada en todas las funciones."
+      },
+      "scalability": {
+        "title": "Escalabilidad Robusta",
+        "description": "Soluciones que crecen con las necesidades de tu negocio."
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Subcontratar con Confianza?",
+      "description": "Elige un departamento o combínalos. Definiremos el alcance del trabajo, asignaremos el equipo adecuado y entregaremos según tus estándares.",
+      "primary": "Contáctanos",
+      "secondary": "Acerca de Absouts"
+    }
+  },
+  "careers": {
+    "hero": {
+      "badge": "Únete a Nuestro Equipo",
+      "title": "Construye tu Carrera con Absouts",
+      "subtitle": "Trabaja con un equipo global de subcontratación en contabilidad en la nube, BPO y entrega de software. Crece mediante mentoría práctica, clientes internacionales y responsabilidad clara."
+    },
+    "why": {
+      "title": "¿Por Qué Elegir Absouts?",
+      "lead": "Las personas se unen a nosotros por trabajo significativo, desarrollo profesional constante y una cultura que mantiene estándares altos sin perder el ritmo humano del equipo.",
+      "items": [
+        {
+          "title": "Oportunidades de Crecimiento",
+          "description": "Rutas de avance profesional con programas continuos de aprendizaje y desarrollo profesional."
+        },
+        {
+          "title": "Exposición Global",
+          "description": "Trabaja con clientes internacionales y obtén exposición a mercados, estándares y tecnologías diversos."
+        },
+        {
+          "title": "Cultura Colaborativa",
+          "description": "Únete a un ambiente de apoyo que valora el trabajo en equipo, la innovación y la excelencia operativa."
+        }
+      ]
+    },
+    "openings": {
+      "badge": "Oportunidades Actuales",
+      "title": "Vacantes Actuales",
+      "lead": "Explora roles activos y postúlate con un enlace a tu currículum o portafolio. Nuestro equipo de reclutamiento revisa cada solicitud directamente."
+    },
+    "jobCard": {
+      "apply": "Postular Ahora",
+      "details": "Ver Detalles",
+      "postedOneDay": "Publicado hace 1 día",
+      "postedDays": "Publicado hace {count} días",
+      "postedWeeks": "Publicado hace {count, plural, one {# semana} other {# semanas}}",
+      "postedMonths": "Publicado hace {count, plural, one {# mes} other {# meses}}"
+    },
+    "process": {
+      "title": "Proceso de Solicitud",
+      "lead": "Un proceso enfocado mantiene las solicitudes claras, respetuosas y fáciles de seguir.",
+      "items": [
+        {
+          "title": "Postular en Línea",
+          "description": "Envía tu solicitud mediante el formulario en línea con la URL de tu currículum o portafolio."
+        },
+        {
+          "title": "Revisión Inicial",
+          "description": "Nuestro equipo revisa tus calificaciones y ajuste al rol."
+        },
+        {
+          "title": "Entrevista",
+          "description": "Conoce al equipo para conversaciones técnicas, operativas y culturales."
+        },
+        {
+          "title": "Bienvenida",
+          "description": "Completa la incorporación y empieza a contribuir con un primer plan claro."
+        }
+      ]
+    },
+    "perks": {
+      "badge": "Beneficios para Empleados",
+      "title": "Beneficios y Ventajas",
+      "lead": "Apoyamos a las personas con beneficios prácticos, herramientas útiles y un ambiente de trabajo creado para un desempeño sostenido.",
+      "items": [
+        {
+          "title": "Salario Competitivo",
+          "description": "Paquetes de compensación competitivos con bonos por desempeño y revisiones salariales periódicas."
+        },
+        {
+          "title": "Grandes Colegas y Mentores",
+          "description": "Trabaja junto a profesionales con experiencia que valoran la mentoría y el intercambio de conocimiento."
+        },
+        {
+          "title": "Herramientas y Tecnologías",
+          "description": "Acceso a herramientas actuales de desarrollo, licencias de software y sistemas confiables de entrega."
+        },
+        {
+          "title": "Cultura Basada en la Confianza",
+          "description": "Un ambiente de trabajo abierto basado en respeto mutuo, transparencia y colaboración."
+        },
+        {
+          "title": "Capacitación y Viajes Internacionales",
+          "description": "Oportunidades para conferencias, programas de capacitación y visitas seleccionadas a clientes en el exterior."
+        },
+        {
+          "title": "Formación e Intercambio de Conocimiento",
+          "description": "Sesiones de capacitación, talleres, certificaciones y eventos internos de aprendizaje."
+        },
+        {
+          "title": "Crecimiento y Desarrollo Profesional",
+          "description": "Rutas claras de crecimiento respaldadas por mentoría y desarrollo de habilidades."
+        },
+        {
+          "title": "Evaluación Anual de Desempeño",
+          "description": "Revisiones justas con retroalimentación constructiva y planificación de crecimiento."
+        },
+        {
+          "title": "Buen Equilibrio Trabajo Vida",
+          "description": "Prácticas laborales flexibles y respeto por el tiempo personal y el bienestar."
+        },
+        {
+          "title": "Comida y Bebidas",
+          "description": "Comidas, snacks, bebidas y almuerzos para jornadas de equipo."
+        },
+        {
+          "title": "Cobertura de Seguro de Vida y Salud",
+          "description": "Soporte de seguro de salud y vida para miembros del equipo y familias elegibles."
+        },
+        {
+          "title": "Bonos y Asignaciones",
+          "description": "Bonos por desempeño, bonos festivos y asignaciones seleccionadas de transporte o comunicación."
+        },
+        {
+          "title": "Ambiente de Trabajo Sólido",
+          "description": "Espacios modernos, mobiliario ergonómico y áreas para colaboración enfocada."
+        },
+        {
+          "title": "Licencias y Vacaciones Pagadas",
+          "description": "Tiempo libre pagado, licencia por enfermedad, licencia familiar y políticas de vacaciones."
+        },
+        {
+          "title": "Salidas y Eventos de Empresa",
+          "description": "Actividades de integración, retiros, eventos de celebración y reuniones sociales."
+        }
+      ]
+    },
+    "detail": {
+      "back": "Volver a Carreras",
+      "aboutRole": "Acerca de Este Rol",
+      "openStatus": "Esta posición está abierta actualmente para solicitudes.",
+      "requirements": "Requisitos y Calificaciones",
+      "benefits": "Lo Que Ofrecemos",
+      "detailsTitle": "Detalles del Puesto",
+      "salary": "Rango Salarial",
+      "experience": "Experiencia Requerida",
+      "deadline": "Fecha Límite de Solicitud",
+      "contact": "Contacto",
+      "apply": "Postular a Esta Posición",
+      "skills": "Habilidades Requeridas",
+      "testimonials": {
+        "title": "Lo Que Dice Nuestro Equipo",
+        "items": [
+          {
+            "quote": "Trabajar en Absouts ha sido una experiencia increíble. El equipo apoya, los proyectos retan y siempre hay espacio para crecer.",
+            "author": "Sarah Ahmed",
+            "position": "Desarrolladora Senior de Software"
+          },
+          {
+            "quote": "El equilibrio entre trabajo y vida aquí es excepcional. La gerencia se preocupa por el bienestar y el desarrollo profesional.",
+            "author": "Razwan Hassan",
+            "position": "Contador en la Nube"
+          },
+          {
+            "quote": "Aprendí más en mi primer año aquí que en mis tres roles anteriores juntos. El programa de mentoría es excelente.",
+            "author": "Maria Rodriguez",
+            "position": "Ejecutiva de Desarrollo de Negocios"
+          }
+        ]
+      }
+    },
+    "noJobs": "No hay vacantes abiertas en este momento. Por favor, vuelve a consultar más tarde.",
+    "jobsUnavailable": "No podemos cargar las vacantes actuales en este momento. Por favor, vuelve más tarde para nuevas oportunidades."
+  },
+  "contact": {
+    "hero": {
+      "badge": "Ponte en Contacto",
+      "title": "Contacta a Absouts",
+      "subtitle": "¿Listo para transformar tus operaciones con soporte de subcontratación enfocado? Envía los detalles y nuestro equipo responderá con próximos pasos prácticos."
+    },
+    "info": {
+      "title": "Ponte en Contacto",
+      "lead": "Llega al equipo adecuado para consultas de servicios, conversaciones operativas o coordinación de oficinas.",
+      "email": "Correo Electrónico",
+      "telephone": "Teléfono",
+      "mobile": "Móvil"
+    },
+    "socials": "Síguenos en redes sociales",
+    "formTitle": "Envíanos un Mensaje",
+    "formLead": "Comparte tus requisitos y dirigiremos la consulta al equipo adecuado.",
+    "offices": {
+      "title": "Nuestras Oficinas",
+      "lead": "Visita o coordina con nuestros equipos en Bangladesh y el Reino Unido."
+    },
+    "map": {
+      "title": "Mapa de Ubicación de la Oficina",
+      "loading": "Cargando mapa...",
+      "loadingInteractive": "Cargando mapa interactivo..."
+    }
+  },
+  "forms": {
+    "contact": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "company": "Empresa",
+      "serviceInterest": "Servicio de Interés",
+      "servicePlaceholder": "Contabilidad en la nube, BPO, software u otra necesidad",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "successTitle": "Mensaje Enviado",
+      "successDescription": "Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.",
+      "errorTitle": "No se Pudo Enviar",
+      "errorDescription": "Hubo un error al enviar tu mensaje. Inténtalo de nuevo.",
+      "invalidDescription": "Revisa los campos marcados e inténtalo de nuevo.",
+      "errors": {
+        "firstName": "El nombre es obligatorio.",
+        "lastName": "El apellido es obligatorio.",
+        "email": "Introduce un correo electrónico válido.",
+        "message": "El mensaje debe tener al menos 10 caracteres."
+      }
+    },
+    "application": {
+      "title": "Postular a {jobTitle}",
+      "description": "Pega la URL de tu currículum o portafolio e indícanos cómo contactarte.",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "experience": "Años de Experiencia",
+      "experiencePlaceholder": "Selecciona tu nivel de experiencia",
+      "experienceOptions": {
+        "0-1": "0-1 años",
+        "2-3": "2-3 años",
+        "4-5": "4-5 años",
+        "6-10": "6-10 años",
+        "10+": "10+ años"
+      },
+      "resumeUrl": "URL de Currículum/Portafolio",
+      "coverLetter": "Carta de Presentación",
+      "coverLetterPlaceholder": "Cuéntanos por qué te interesa esta posición.",
+      "privacyConsent": "Acepto el procesamiento de mis datos personales para fines de reclutamiento.",
+      "cancel": "Cancelar",
+      "submit": "Enviar Solicitud",
+      "submitting": "Enviando...",
+      "successTitle": "Solicitud Enviada",
+      "successDescription": "Tu solicitud de empleo se envió correctamente.",
+      "errorTitle": "No se Pudo Enviar",
+      "errorDescription": "Hubo un error al enviar tu solicitud. Inténtalo de nuevo.",
+      "invalidDescription": "Revisa los campos marcados e inténtalo de nuevo.",
+      "errors": {
+        "firstName": "El nombre es obligatorio.",
+        "lastName": "El apellido es obligatorio.",
+        "email": "Introduce un correo electrónico válido.",
+        "phone": "Introduce un número de teléfono válido.",
+        "experience": "Selecciona tu nivel de experiencia.",
+        "resumeUrl": "Pega una URL válida de currículum o portafolio.",
+        "privacyConsent": "Debes aceptar antes de enviar."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Externalización de precisión para un mundo conectado. Contabilidad en la nube, BPO y desarrollo de software que escala con tu ambición.",
+    "servicesHeading": "Servicios",
+    "companyHeading": "Empresa",
+    "contactHeading": "Contacto",
+    "getInTouch": "Contáctanos",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "rights": "Todos los derechos reservados.",
+    "followUs": "Síguenos"
+  },
+  "seo": {
+    "home": {
+      "title": "Absouts - Soluciones Globales de Externalización",
+      "description": "Servicios de contabilidad en la nube, BPO y desarrollo de software para empresas que necesitan soporte externo preciso y escalable."
+    },
+    "about": {
+      "title": "Acerca de Absouts - Experiencia en Externalización",
+      "description": "Conoce Absouts, su liderazgo, sus valores y su modelo global de entrega para contabilidad en la nube, BPO y desarrollo de software."
+    },
+    "services": {
+      "title": "Servicios - Contabilidad en la Nube, BPO y Software",
+      "description": "Explora los servicios de Absouts en operaciones financieras, externalización de procesos y desarrollo de software a medida."
+    },
+    "cloudAccounting": {
+      "title": "Servicios de Contabilidad en la Nube - Absouts",
+      "description": "Teneduría de libros, nómina, conciliación, reportes, cumplimiento fiscal y operaciones financieras en la nube con Absouts."
+    },
+    "bpo": {
+      "title": "Servicios de Externalización de Procesos - Absouts",
+      "description": "Soporte BPO estructurado para operaciones administrativas, atención al cliente, gestión de datos y entrega escalable."
+    },
+    "software": {
+      "title": "Servicios de Desarrollo de Software - Absouts",
+      "description": "Servicios de software web, móvil, nube, pruebas, fintech, legaltech, ecommerce e IA con Absouts."
+    },
+    "softwareSubservice": {
+      "title": "{service} - Desarrollo de Software Absouts",
+      "description": "Servicios de {service} de Absouts, entregados por equipos de software con experiencia y flujos de ingeniería prácticos."
+    },
+    "careers": {
+      "title": "Carreras en Absouts",
+      "description": "Explora vacantes en Absouts y únete a equipos que entregan contabilidad en la nube, BPO y software para clientes globales."
+    },
+    "jobDetail": {
+      "title": "{jobTitle} - Carreras en Absouts",
+      "description": "Revisa el puesto {jobTitle} en Absouts, con responsabilidades, requisitos, beneficios y detalles de postulación."
+    },
+    "contact": {
+      "title": "Contacta a Absouts",
+      "description": "Contacta a Absouts para soporte de externalización en contabilidad en la nube, BPO y desarrollo de software en mercados globales."
+    },
+    "privacy": {
+      "title": "Política de Privacidad - Absouts",
+      "description": "Lee cómo Absouts recopila, usa, protege y conserva información personal cuando usas nuestro sitio web y servicios."
+    },
+    "terms": {
+      "title": "Términos de Servicio - Absouts",
+      "description": "Lee los términos que rigen el acceso y uso del sitio web, los servicios y las ofertas comerciales de Absouts."
+    },
+    "notFound": {
+      "title": "404 - Página No Encontrada - Absouts",
+      "description": "No se pudo encontrar la página que buscas. Vuelve a Absouts para explorar nuestros servicios."
+    }
+  },
+  "legal": {
+    "privacy": {
+      "label": "Legal",
+      "title": "Política de Privacidad",
+      "subtitle": "Tu privacidad es importante para nosotros. Esta política explica cómo recopilamos, usamos y protegemos tu información.",
+      "lastUpdated": "Última Actualización",
+      "sections": [
+        {
+          "title": "Introducción",
+          "paragraphs": [
+            "Absouts (\"nosotros\" o \"nuestro\") se compromete a proteger tu privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos tu información cuando visitas nuestro sitio web o utilizas nuestros servicios. Lee atentamente esta política. Si no estás de acuerdo con sus términos, no accedas al sitio.",
+            "Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento y por cualquier motivo. Te informaremos de los cambios actualizando la fecha de Última Actualización. Te recomendamos revisar esta política periódicamente para mantenerte informado."
+          ]
+        },
+        {
+          "title": "Información que Recopilamos",
+          "paragraphs": [
+            "Podemos recopilar información personal identificable que nos proporcionas voluntariamente cuando te registras en el sitio web, manifiestas interés en nuestros productos o servicios, participas en actividades del sitio o nos contactas mediante formularios o correo electrónico.",
+            "La información personal puede incluir datos de nombre y contacto, información profesional, datos de comunicación, preferencias de marketing e intereses.",
+            "Cuando visitas nuestro sitio web, podemos recopilar automáticamente dirección IP, tipo de navegador, sistema operativo, información del dispositivo, páginas visitadas, tiempo en página, rutas de navegación, sitios de referencia, cookies y tecnologías similares."
+          ]
+        },
+        {
+          "title": "Cómo Usamos tu Información",
+          "paragraphs": [
+            "Usamos la información recopilada para proporcionar, operar y mantener nuestros servicios, responder consultas, brindar soporte, enviar avisos técnicos y mensajes administrativos, comunicar productos y servicios, analizar tendencias de uso, mejorar el sitio web, atender amenazas de seguridad, cumplir obligaciones legales, hacer cumplir nuestros términos, procesar transacciones y gestionar cuentas."
+          ]
+        },
+        {
+          "title": "Divulgación de tu Información",
+          "paragraphs": [
+            "Podemos compartir tu información con proveedores que prestan servicios en nuestro nombre, en relación con transferencias comerciales, cuando la ley lo exige, o cuando sea necesario para proteger intereses vitales y derechos legales, investigar incumplimientos, prevenir fraude, atender riesgos de seguridad o respaldar litigios."
+          ]
+        },
+        {
+          "title": "Seguridad de los Datos",
+          "paragraphs": [
+            "Implementamos medidas técnicas y organizativas adecuadas para proteger la información personal. Sin embargo, ninguna transmisión electrónica por internet ni tecnología de almacenamiento puede garantizar seguridad absoluta.",
+            "Mantenemos medidas como cifrado, servidores seguros, controles de acceso y evaluaciones periódicas de seguridad para proteger los datos contra acceso, alteración, divulgación o destrucción no autorizados."
+          ]
+        },
+        {
+          "title": "Retención de Datos",
+          "paragraphs": [
+            "Conservamos la información personal solo durante el tiempo necesario para los fines descritos en esta Política de Privacidad. También conservamos y usamos información cuando sea necesario para cumplir obligaciones legales, resolver disputas, hacer cumplir políticas y analizar el uso para seguridad y mejora del servicio."
+          ]
+        },
+        {
+          "title": "Tus Derechos de Privacidad",
+          "paragraphs": [
+            "Según tu ubicación, puedes tener derecho a acceder, corregir, eliminar, oponerte, restringir el procesamiento, recibir una copia portable o retirar el consentimiento respecto de tu información personal. Para ejercer estos derechos, contáctanos con los datos indicados al final de esta política."
+          ]
+        },
+        {
+          "title": "Cookies y Tecnologías de Seguimiento",
+          "paragraphs": [
+            "Usamos cookies y tecnologías similares para registrar actividad en nuestro sitio web y almacenar cierta información. Puedes configurar tu navegador para rechazar cookies o indicar cuándo se envían, aunque algunas partes del sitio podrían no funcionar correctamente sin ellas."
+          ]
+        },
+        {
+          "title": "Sitios Web de Terceros",
+          "paragraphs": [
+            "Nuestro sitio web puede contener enlaces a sitios de terceros. No somos responsables de sus prácticas de privacidad ni de su contenido, y te recomendamos leer sus políticas de privacidad."
+          ]
+        },
+        {
+          "title": "Privacidad de Menores",
+          "paragraphs": [
+            "Nuestros servicios no están dirigidos a menores de 18 años. No recopilamos conscientemente información personal de menores de 18 años. Si sabemos que recopilamos esa información sin consentimiento parental verificado, tomaremos medidas para eliminarla de nuestros servidores."
+          ]
+        },
+        {
+          "title": "Transferencias Internacionales de Datos",
+          "paragraphs": [
+            "Tu información puede transferirse y mantenerse en equipos ubicados fuera de tu estado, provincia, país o jurisdicción. Tomaremos las medidas necesarias para que tus datos se traten de forma segura y conforme a esta Política de Privacidad."
+          ]
+        },
+        {
+          "title": "Contacto",
+          "paragraphs": [
+            "Si tienes preguntas sobre esta Política de Privacidad o deseas ejercer tus derechos, contacta a Absouts en support@absouts.com, por teléfono al +880 1234 567 890 o en nuestra oficina en Dhaka, Bangladesh."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "label": "Legal",
+      "title": "Términos de Servicio",
+      "subtitle": "Lee cuidadosamente estos términos y condiciones antes de utilizar nuestros servicios.",
+      "lastUpdated": "Última Actualización",
+      "sections": [
+        {
+          "title": "Aceptación de los Términos",
+          "paragraphs": [
+            "Estos Términos de Servicio (\"Términos\") constituyen un acuerdo legalmente vinculante entre tú y Absouts (\"Compañía\", \"nosotros\" o \"nuestro\") sobre tu acceso y uso de nuestro sitio web, servicios y productos. Al acceder o usar nuestros servicios, aceptas quedar sujeto a estos Términos y a nuestra Política de Privacidad.",
+            "Si no aceptas todos estos Términos, tienes prohibido usar nuestros servicios y debes interrumpir su uso inmediatamente.",
+            "Nos reservamos el derecho de cambiar o modificar estos Términos en cualquier momento y a nuestra sola discreción. Si realizamos cambios, avisaremos actualizando la fecha superior. Tu uso continuado de los servicios después de publicar Términos revisados significa que aceptas los cambios."
+          ]
+        },
+        {
+          "title": "Derechos de Propiedad Intelectual",
+          "paragraphs": [
+            "Salvo indicación en contrario, nuestro sitio web y servicios, incluidos código fuente, bases de datos, funcionalidad, software, diseños, audio, video, texto, fotografías, gráficos, marcas, marcas de servicio y logotipos, son de nuestra propiedad, están bajo nuestro control o nos han sido licenciados.",
+            "El Contenido y las Marcas están protegidos por leyes de derechos de autor, marcas, propiedad intelectual y competencia desleal de Bangladesh y por convenios internacionales.",
+            "Excepto según lo permitido expresamente en estos Términos, ninguna parte de nuestros servicios ni ningún Contenido o Marca puede copiarse, reproducirse, agregarse, republicarse, cargarse, publicarse, exhibirse públicamente, codificarse, traducirse, transmitirse, distribuirse, venderse, licenciarse o explotarse con fines comerciales sin autorización previa por escrito."
+          ]
+        },
+        {
+          "title": "Declaraciones del Usuario",
+          "paragraphs": [
+            "Al usar nuestros servicios, declaras y garantizas que tienes capacidad legal, cumplirás estos Términos, no eres menor de 18 años, no accederás mediante medios automatizados o no humanos, no usarás los servicios para fines ilegales o no autorizados, no infringirás leyes aplicables y proporcionarás información veraz y precisa."
+          ]
+        },
+        {
+          "title": "Actividades Prohibidas",
+          "paragraphs": [
+            "No puedes acceder ni usar nuestros servicios para fines distintos de aquellos para los que los ofrecemos. Las actividades prohibidas incluyen extracción sistemática de datos, interferencia con funciones de seguridad, enlaces o marcos no autorizados, fraude, uso indebido del soporte, automatización, interrupción del servicio, suplantación, publicidad no autorizada, transmisión de malware, acoso, eliminación de avisos de propiedad, evasión de restricciones, copia de software o ingeniería inversa."
+          ]
+        },
+        {
+          "title": "Servicios y Productos",
+          "paragraphs": [
+            "Prestamos servicios de externalización de procesos, desarrollo de software, contabilidad en la nube y servicios relacionados. Procuramos mostrar nuestros servicios con precisión, pero nos reservamos el derecho de modificarlos o discontinuarlos, rechazar servicios, actualizar descripciones y precios, y limitar su alcance.",
+            "No garantizamos que los servicios estén siempre disponibles, sean ininterrumpidos, oportunos, seguros o libres de errores. Podemos cambiar, suspender o discontinuar todo o parte de los servicios en cualquier momento sin aviso."
+          ]
+        },
+        {
+          "title": "Datos del Usuario y Privacidad",
+          "paragraphs": [
+            "Mantenemos ciertos datos que transmites a nuestros servicios para gestionar su rendimiento y uso. Aunque realizamos copias de seguridad rutinarias, eres responsable de los datos que transmites o que se relacionan con tu actividad en los servicios.",
+            "Aceptas que no tendremos responsabilidad por pérdida o corrupción de dichos datos. Para más información sobre el tratamiento de datos, consulta nuestra Política de Privacidad."
+          ]
+        },
+        {
+          "title": "Tarifas y Pagos",
+          "paragraphs": [
+            "Algunos servicios pueden requerir el pago de tarifas. Aceptas pagar todas las tarifas asociadas con tu uso de los servicios según las políticas de precios, pago y facturación vigentes al momento del vencimiento.",
+            "Las tarifas no son reembolsables salvo que se indique lo contrario en un acuerdo escrito separado. Podemos cambiar tarifas con aviso razonable. Eres responsable de los impuestos aplicables. La falta de pago puede causar suspensión o terminación. Los procesadores de pago de terceros pueden aplicar sus propios términos y políticas de privacidad."
+          ]
+        },
+        {
+          "title": "Limitación de Responsabilidad",
+          "paragraphs": [
+            "En la máxima medida permitida por la ley, ni nosotros ni nuestros directores, empleados o agentes seremos responsables por daños directos, indirectos, consecuentes, ejemplares, incidentales, especiales o punitivos, incluidos lucro cesante, pérdida de ingresos o datos, derivados del uso de nuestros servicios, incluso si se nos informó de la posibilidad de dichos daños.",
+            "Nuestra responsabilidad frente a ti por cualquier causa y sin importar la forma de acción estará limitada al monto que nos hayas pagado durante los seis meses anteriores al surgimiento de la causa de acción."
+          ]
+        },
+        {
+          "title": "Indemnización",
+          "paragraphs": [
+            "Aceptas defendernos, indemnizarnos y mantenernos indemnes, incluidas nuestras subsidiarias, afiliadas, directivos, agentes, socios y empleados, frente a cualquier pérdida, daño, responsabilidad, reclamación, demanda, honorarios legales o gastos presentados por un tercero debido a tu uso de los servicios, incumplimiento de estos Términos, incumplimiento de declaraciones y garantías, violación de derechos de terceros o acto perjudicial hacia otro usuario."
+          ]
+        },
+        {
+          "title": "Descargo de Responsabilidad",
+          "paragraphs": [
+            "Nuestros servicios se proporcionan en estado actual y según disponibilidad. Aceptas que el uso de los servicios es bajo tu propio riesgo. En la máxima medida permitida por la ley, rechazamos todas las garantías expresas o implícitas, incluidas comerciabilidad, idoneidad para un propósito particular y no infracción.",
+            "No ofrecemos garantías ni declaraciones sobre la exactitud o integridad del contenido del servicio o de sitios enlazados, y no asumimos responsabilidad por errores, lesiones, acceso no autorizado, interrupciones, código dañino, omisiones o pérdidas derivadas del contenido disponible mediante nuestros servicios."
+          ]
+        },
+        {
+          "title": "Terminación",
+          "paragraphs": [
+            "Estos Términos permanecen vigentes mientras uses nuestros servicios. Nos reservamos el derecho, a nuestra sola discreción y sin aviso ni responsabilidad, de negar acceso y uso de los servicios a cualquier persona por cualquier motivo, incluido el incumplimiento de estos Términos o de la ley aplicable.",
+            "Si terminamos o suspendemos tu cuenta, tienes prohibido registrar una nueva cuenta con tu nombre, un nombre falso, un nombre prestado o el nombre de un tercero."
+          ]
+        },
+        {
+          "title": "Ley Aplicable",
+          "paragraphs": [
+            "Estos Términos se rigen por las leyes de Bangladesh. Absouts y tú aceptan irrevocablemente que los tribunales de Bangladesh tendrán jurisdicción exclusiva para resolver cualquier disputa relacionada con estos Términos."
+          ]
+        },
+        {
+          "title": "Resolución de Disputas",
+          "paragraphs": [
+            "Cualquier acción legal presentada por ti o por nosotros deberá iniciarse o tramitarse en los tribunales de Bangladesh. Las partes aceptan la sede y jurisdicción de dichos tribunales y renuncian a defensas por falta de jurisdicción personal o foro inconveniente.",
+            "Te animamos a contactarnos primero para resolver disputas de manera informal. Si no puede resolverse informalmente, la disputa se resolverá mediante arbitraje vinculante conforme a las leyes de Bangladesh."
+          ]
+        },
+        {
+          "title": "Divisibilidad y Renuncia",
+          "paragraphs": [
+            "Si alguna disposición de estos Términos se considera ilegal, nula o inaplicable, seguirá siendo exigible en la máxima medida permitida por la ley, y la parte inaplicable se considerará separada sin afectar las disposiciones restantes.",
+            "La falta de ejercicio de un derecho o de exigencia de cumplimiento bajo estos Términos no afecta la posibilidad de ejercer ese derecho o exigir cumplimiento posteriormente, y la renuncia a un incumplimiento no implica renuncia a incumplimientos posteriores."
+          ]
+        },
+        {
+          "title": "Contacto",
+          "paragraphs": [
+            "Si tienes preguntas sobre estos Términos de Servicio, contacta a Absouts en support@absouts.com, por teléfono al +880 1234 567 890 o en nuestra oficina en Dhaka, Bangladesh."
+          ]
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "title": "404 Página No Encontrada",
+    "description": "La página que buscas no existe. Revisa la URL o vuelve a la página de inicio.",
+    "action": "Volver al Inicio"
+  }
+}

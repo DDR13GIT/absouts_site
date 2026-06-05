@@ -1,0 +1,248 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand — original Absouts palette (restored to match main branch) */
+  --color-brand-primary: #0b0b44;     /* Deep navy */
+  --color-brand-secondary: #2b3990;   /* Royal blue */
+  --color-brand-accent: #27aae1;      /* Cyan */
+
+  /* Mediterranean accent palette (matches main index.css) */
+  --color-mediterranean-olive: #9caa8c;       /* Muted sage green */
+  --color-mediterranean-herb: #5d6f5f;        /* Deeper earthy green */
+  --color-mediterranean-french: #6b8db2;      /* Soft dusty blue */
+  --color-mediterranean-clementine: #dc8b6a;  /* Warm coral-orange */
+  --color-mediterranean-calendula: #f5c56b;   /* Soft golden yellow */
+  --color-mediterranean-sky: #b5c9d9;         /* Pale powdery blue */
+  --color-mediterranean-terra: #a6704e;       /* Warm rust-brown */
+  --color-mediterranean-linen: #eae6dc;       /* Soft off-white/cream */
+
+  /* med-* aliases kept for any lingering short-name usages */
+  --color-med-olive: #9caa8c;
+  --color-med-herb: #5d6f5f;
+  --color-med-french: #6b8db2;
+  --color-med-clementine: #dc8b6a;
+  --color-med-calendula: #f5c56b;
+  --color-med-sky: #b5c9d9;
+  --color-med-terra: #a6704e;
+  --color-med-linen: #eae6dc;
+
+  /* Surfaces */
+  --color-bg-base: #fffdf5;           /* Ivory */
+  --color-bg-base-darker: #f8f5ee;    /* Soft darker ivory */
+  --color-bg-darker: #f8f5ee;         /* alias kept for existing usages */
+  --color-bg-section: #d0d9f5;        /* Pale lavender-blue */
+  --color-bg-surface: #ffffff;
+  --color-success: #e7f1ab;           /* Lemonade green */
+  --color-neutral-dark: #333333;      /* Charcoal */
+
+  /* Text */
+  --color-text-primary: #0b0b44;      /* headings — navy */
+  --color-text-secondary: #6e6f72;    /* body — slate gray */
+  --color-text-muted: #939598;
+
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --radius: 0.75rem;
+  --shadow-subtle: 0 2px 8px rgb(0 0 0 / 0.06);
+  --shadow-medium: 0 4px 16px rgb(0 0 0 / 0.06);
+  --shadow-strong: 0 8px 24px rgb(0 0 0 / 0.06);
+
+  --animate-blob: blob 7s infinite ease-in-out;
+}
+
+@keyframes blob {
+  0%   { transform: translate3d(0,0,0) scale(1); }
+  33%  { transform: translate3d(30px,-50px,0) scale(1.1); }
+  66%  { transform: translate3d(-20px,20px,0) scale(0.9); }
+  100% { transform: translate3d(0,0,0) scale(1); }
+}
+
+/* ─── UI primitive animation keyframes ─────────────────────────────────────
+   Restrained motion per Emil Kowalski:
+   - Enter from scale(0.95) + opacity 0, never from scale(0)
+   - Exit faster than enter (asymmetric)
+   - ease-out for entering UI elements (immediate, responsive feel)
+   - Durations: 150-300ms for UI elements
+   - prefers-reduced-motion: keep opacity only, strip transforms
+   ──────────────────────────────────────────────────────────────────────── */
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes zoom-in-95 {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes zoom-out-95 {
+  from { opacity: 1; transform: scale(1); }
+  to   { opacity: 0; transform: scale(0.95); }
+}
+
+/* Toast: slides up from bottom on enter */
+@keyframes slide-in-from-bottom {
+  from { opacity: 0; transform: translateY(1rem); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Toast: slides right on exit (swipe gesture feel) */
+@keyframes slide-out-to-right {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(100%); }
+}
+
+/* Navbar mobile drawer: slides down from top on enter, up on exit */
+@keyframes slide-in-from-top {
+  from { opacity: 0; transform: translateY(-100%); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-out-to-top {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-100%); }
+}
+
+/* Subtle slide for staggered nav items (small translateY) */
+@keyframes slide-in-from-top-2 {
+  from { opacity: 0; transform: translateY(-0.5rem); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Utility classes used by dialog, select, toast components */
+@utility animate-in {
+  animation-fill-mode: both;
+}
+
+@utility animate-out {
+  animation-fill-mode: both;
+}
+
+@utility fade-in {
+  animation-name: fade-in;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@utility fade-out {
+  animation-name: fade-out;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@utility zoom-in-95 {
+  animation-name: zoom-in-95;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@utility zoom-out-95 {
+  animation-name: zoom-out-95;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@utility slide-in-from-bottom-4 {
+  animation-name: slide-in-from-bottom;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@utility slide-out-to-right-full {
+  animation-name: slide-out-to-right;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@utility slide-in-from-top {
+  animation-name: slide-in-from-top;
+  animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+@utility slide-out-to-top {
+  animation-name: slide-out-to-top;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@utility slide-in-from-top-2 {
+  animation-name: slide-in-from-top-2;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Duration overrides used in components */
+@utility duration-125 { animation-duration: 125ms; }
+@utility duration-150 { animation-duration: 150ms; }
+@utility duration-175 { animation-duration: 175ms; }
+@utility duration-200 { animation-duration: 200ms; }
+@utility duration-300 { animation-duration: 300ms; }
+
+/* Reduced motion: strip transforms, keep opacity */
+@media (prefers-reduced-motion: reduce) {
+  @keyframes zoom-in-95 {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes zoom-out-95 {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  @keyframes slide-in-from-bottom {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes slide-out-to-right {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  @keyframes slide-in-from-top {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes slide-out-to-top {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  @keyframes slide-in-from-top-2 {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+}
+
+@layer base {
+  body {
+    background: var(--color-bg-base);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.animation-delay-2000 { animation-delay: 2s; }
+.animation-delay-4000 { animation-delay: 4s; }
+
+/* ─── Scroll-reveal (see components/sections/reveal.tsx) ───────────────────
+   Entering content: translate up 16px + fade, ease-out-expo, 600ms.
+   CSS-driven so it runs off the main thread. Fires once via data-shown.
+   prefers-reduced-motion: opacity only, no translate. */
+.reveal-target {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 600ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform, opacity;
+}
+.reveal-target[data-shown] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-target {
+    transform: none;
+    transition: opacity 300ms ease;
+  }
+  .reveal-target[data-shown] {
+    transform: none;
+  }
+}
