@@ -5,7 +5,6 @@ import {
   SelectContent,
   SelectItem,
   SelectTrigger,
-  SelectValue,
 } from "@/components/ui/select";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
@@ -65,15 +64,16 @@ export function LanguageSwitcher() {
   }
 
   const CurrentFlag = LOCALE_META[locale]?.Flag ?? FlagUS;
+  const currentLabel = LOCALE_META[locale]?.label ?? locale;
 
   return (
     <Select value={locale} onValueChange={handleChange}>
       <SelectTrigger
-        className="h-10 w-auto min-w-0 gap-2 rounded-full border-brand-primary/10 bg-white/70 px-3 text-sm text-brand-primary shadow-[0_8px_28px_-16px_rgb(11_11_68/0.22)] backdrop-blur-md hover:bg-white focus-visible:ring-brand-accent"
+        className="h-auto w-auto min-w-[120px] gap-2 rounded-full border-0 bg-neutral-dark px-4 py-2 text-sm font-light tracking-wide text-white shadow-[var(--shadow-medium)] transition-all duration-200 hover:scale-105 hover:bg-slate-900 focus-visible:ring-brand-accent [&>svg:last-child]:text-white/55"
         aria-label="Select language"
       >
         <CurrentFlag className="h-3.5 w-5 shrink-0 rounded-[1px]" />
-        <SelectValue />
+        <span>{currentLabel}</span>
       </SelectTrigger>
       <SelectContent className="min-w-[9rem]">
         {routing.locales.map((loc) => {

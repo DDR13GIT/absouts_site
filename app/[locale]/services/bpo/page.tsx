@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Archive, Headphones, PackageCheck, UsersRound } from "lucide-react";
@@ -35,6 +34,7 @@ export default async function BpoPage({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "departments.bpo" });
   const services = t.raw("services") as ServiceBlockData[];
+  const metrics = t.raw("metrics") as { value: string; label: string }[];
   const url = localizedPath(locale, "/services/bpo");
 
   return (
@@ -48,19 +48,40 @@ export default async function BpoPage({
         ])}
       />
       <Hero
-        layout="banner"
+        layout="split"
         eyebrow={t("hero.badge")}
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
         actions={[
-          { label: t("hero.primary"), href: "/contact", variant: "secondary" },
+          { label: t("hero.primary"), href: "/contact" },
           { label: t("hero.secondary"), href: "/services", variant: "outline" },
         ]}
-        backgroundImage={BACKGROUNDS.bpo}
+        footer={
+          <div className="grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
+            {metrics.map((metric, index) => {
+              const Icon = OPERATING_ICONS[index] ?? Archive;
+              return (
+                <Reveal
+                  key={metric.label}
+                  delay={index * 50}
+                  className="rounded-2xl border border-brand-primary/10 bg-bg-surface p-4 shadow-[var(--shadow-subtle)]"
+                >
+                  <Icon className="mb-3 size-5 text-brand-secondary" aria-hidden="true" strokeWidth={1.8} />
+                  <div className="text-xl font-bold tracking-tight text-brand-primary">
+                    {metric.value}
+                  </div>
+                  <div className="mt-1 text-xs font-medium leading-snug text-text-secondary">
+                    {metric.label}
+                  </div>
+                </Reveal>
+              );
+            })}
+          </div>
+        }
       />
 
       <section className="bg-bg-base px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
-        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16">
+        <div className="mx-auto max-w-7xl">
           <div className="flex flex-col gap-8">
             <SectionHeading
               eyebrow={t("operatingModel.badge")}
@@ -88,21 +109,6 @@ export default async function BpoPage({
               })}
             </div>
           </div>
-          <Reveal delay={80} className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-brand-primary shadow-[0_24px_60px_-32px_rgb(11_11_68/0.5)]">
-            <Image
-              src={BACKGROUNDS.bpo}
-              alt=""
-              fill
-              sizes="(max-width: 1024px) 100vw, 45vw"
-              className="object-cover"
-            />
-            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-neutral-dark/85 via-neutral-dark/40 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6">
-              <p className="max-w-sm text-pretty text-2xl font-bold leading-tight tracking-tight text-white">
-                {t("operatingModel.imageCaption")}
-              </p>
-            </div>
-          </Reveal>
         </div>
       </section>
 

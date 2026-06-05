@@ -1,296 +1,132 @@
 import Image from "next/image";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import {
+  Linkedin,
+  Twitter,
+  Facebook,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 import { LOGO } from "@/lib/assets";
 import { COMPANY } from "@/lib/utils/constants";
-import { getDepartmentsInOrder } from "@/lib/services/departments";
 import { Link } from "@/i18n/navigation";
-import { Button } from "@/components/ui";
-import { cn } from "@/lib/utils/cn";
 
-// ─── Impeccable principles applied ───────────────────────────────────────────
-// • Spacing rhythm: varied — footer uses px-6 md:px-8 (tight-to-wide per breakpoint),
-//   section gaps differ from column-item gaps (no uniform monotony).
-// • Three departments in ORDER (cloud-accounting=1, bpo=2, software=3) via getDepartmentsInOrder().
-// • Contact column: first office + primary phone + primary email from COMPANY constants.
-// • Legal row separated visually with a subtle border; copyright inline with legal links.
-// • "Get in Touch" uses Button asChild=false (solid brand-primary CTA).
-// • Social icons: adequate 40×40px hit area with hover states.
-// • Color: bg-brand-primary (deep navy) with brand-accent accents; no gradient text.
-// ─────────────────────────────────────────────────────────────────────────────
-
-const DEPT_SLUG_TO_LABEL_KEY: Record<string, string> = {
-  "cloud-accounting": "cloudAccounting",
-  bpo: "bpo",
-  software: "software",
-};
-
-const DEPT_HREF: Record<string, string> = {
-  "cloud-accounting": "/services/cloud-accounting",
-  bpo: "/services/bpo",
-  software: "/services/software",
-};
-
-function FooterLink({
-  href,
-  children,
-  className,
-}: {
-  href: string;
-  children: React.ReactNode;
-  className?: string;
-}) {
-  return (
-    <Link
-      href={href}
-      className={cn(
-        "text-white/70 transition-colors duration-150 ease-out",
-        "hover:text-white",
-        "focus-visible:outline-none focus-visible:ring-2",
-        "focus-visible:ring-brand-accent focus-visible:rounded-sm",
-        className,
-      )}
-    >
-      {children}
-    </Link>
-  );
-}
+// Footer — ported 1:1 from the main branch: dark navy surface, four columns
+// (brand / services / company / contact), legal bar at the bottom.
 
 export function Footer() {
   const t = useTranslations("footer");
-  const tDepts = useTranslations("departments");
-  const departments = getDepartmentsInOrder();
   const year = new Date().getFullYear();
-  const primaryOffice = COMPANY.offices[0];
 
   return (
-    <footer
-      className="bg-brand-primary text-white"
-      aria-labelledby="footer-heading"
-    >
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
-
-      {/* ── Main grid ──────────────────────────────────────────────────────── */}
-      <div className="mx-auto max-w-7xl px-4 pt-16 pb-10 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[2fr_1fr_1fr_1.5fr]">
-          {/* Brand column */}
-          <div className="flex flex-col gap-5">
-            <Link
-              href="/"
-              className="inline-block w-fit rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent"
-              aria-label="Absouts — home"
-            >
+    <footer className="bg-neutral-dark text-white py-16" data-testid="footer">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Company info */}
+          <div>
+            <div className="flex items-center space-x-3 mb-6">
               <Image
-                src={LOGO.light}
+                src={LOGO.dark}
                 alt="Absouts"
-                width={130}
-                height={44}
-                className="h-10 w-auto object-contain"
+                width={140}
+                height={32}
+                className="h-8 w-auto object-contain"
               />
-            </Link>
-
-            <p className="max-w-xs text-sm leading-relaxed text-white/70">
-              {t("tagline")}
+            </div>
+            <p className="text-white/80 mb-4">
+              Global outsourcing solutions for Cloud Accounting, BPO, and Software Development.
             </p>
-
-            {/* Social links */}
-            <div className="flex items-center gap-2" aria-label={t("followUs")}>
+            <div className="flex space-x-4">
               <a
                 href="https://www.linkedin.com/company/absouts"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Absouts on LinkedIn"
-                className={cn(
-                  "flex h-10 w-10 items-center justify-center rounded-lg",
-                  "text-white/60 transition-colors duration-150",
-                  "hover:bg-white/10 hover:text-white",
-                  "focus-visible:outline-none focus-visible:ring-2",
-                  "focus-visible:ring-brand-accent",
-                  "active:scale-[0.97]",
-                )}
+                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
               >
-                <Linkedin className="size-4.5" aria-hidden="true" />
+                <Linkedin className="h-4 w-4" />
               </a>
               <a
                 href="https://twitter.com/absouts"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Absouts on X (Twitter)"
-                className={cn(
-                  "flex h-10 w-10 items-center justify-center rounded-lg",
-                  "text-white/60 transition-colors duration-150",
-                  "hover:bg-white/10 hover:text-white",
-                  "focus-visible:outline-none focus-visible:ring-2",
-                  "focus-visible:ring-brand-accent",
-                  "active:scale-[0.97]",
-                )}
+                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
               >
-                <Twitter className="size-4.5" aria-hidden="true" />
+                <Twitter className="h-4 w-4" />
               </a>
               <a
                 href="https://www.facebook.com/absouts"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Absouts on Facebook"
-                className={cn(
-                  "flex h-10 w-10 items-center justify-center rounded-lg",
-                  "text-white/60 transition-colors duration-150",
-                  "hover:bg-white/10 hover:text-white",
-                  "focus-visible:outline-none focus-visible:ring-2",
-                  "focus-visible:ring-brand-accent",
-                  "active:scale-[0.97]",
-                )}
+                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
               >
-                <Facebook className="size-4.5" aria-hidden="true" />
+                <Facebook className="h-4 w-4" />
               </a>
             </div>
           </div>
 
-          {/* Services column */}
-          <nav aria-label="Services">
-            <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-brand-accent">
-              {t("servicesHeading")}
-            </h3>
-            <ul className="flex flex-col gap-3" role="list">
-              {departments.map((dept) => {
-                const labelKey = DEPT_SLUG_TO_LABEL_KEY[dept.slug];
-                return (
-                  <li key={dept.slug}>
-                    <FooterLink href={DEPT_HREF[dept.slug] ?? "/services"}>
-                      {tDepts(`${labelKey}.title` as Parameters<typeof tDepts>[0])}
-                    </FooterLink>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
-
-          {/* Company column */}
-          <nav aria-label="Company">
-            <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-brand-accent">
-              {t("companyHeading")}
-            </h3>
-            <ul className="flex flex-col gap-3" role="list">
-              <li>
-                <FooterLink href="/about">About</FooterLink>
-              </li>
-              <li>
-                <FooterLink href="/careers">Careers</FooterLink>
-              </li>
-              <li>
-                <FooterLink href="/contact">Contact</FooterLink>
-              </li>
-              <li>
-                <FooterLink href="/privacy">{t("privacyPolicy")}</FooterLink>
-              </li>
-              <li>
-                <FooterLink href="/terms">{t("termsOfService")}</FooterLink>
-              </li>
-            </ul>
-          </nav>
-
-          {/* Contact column */}
+          {/* Services */}
           <div>
-            <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-brand-accent">
-              {t("contactHeading")}
-            </h3>
-
-            <ul className="flex flex-col gap-3.5" role="list">
-              {/* Primary email */}
-              <li>
-                <a
-                  href={`mailto:${COMPANY.email}`}
-                  className={cn(
-                    "flex items-start gap-2.5 text-sm text-white/70",
-                    "transition-colors duration-150 hover:text-white",
-                    "focus-visible:outline-none focus-visible:ring-2",
-                    "focus-visible:ring-brand-accent focus-visible:rounded-sm",
-                  )}
-                >
-                  <Mail
-                    className="mt-0.5 size-4 shrink-0 text-brand-accent"
-                    aria-hidden="true"
-                  />
-                  <span>{COMPANY.email}</span>
-                </a>
-              </li>
-
-              {/* Primary phone */}
-              <li>
-                <a
-                  href={`tel:${COMPANY.phones[0].replace(/\s/g, "")}`}
-                  className={cn(
-                    "flex items-start gap-2.5 text-sm text-white/70",
-                    "transition-colors duration-150 hover:text-white",
-                    "focus-visible:outline-none focus-visible:ring-2",
-                    "focus-visible:ring-brand-accent focus-visible:rounded-sm",
-                  )}
-                >
-                  <Phone
-                    className="mt-0.5 size-4 shrink-0 text-brand-accent"
-                    aria-hidden="true"
-                  />
-                  <span>{COMPANY.phones[0]}</span>
-                </a>
-              </li>
-
-              {/* Office address */}
-              {primaryOffice && (
-                <li>
-                  <address className="flex items-start gap-2.5 not-italic">
-                    <MapPin
-                      className="mt-0.5 size-4 shrink-0 text-brand-accent"
-                      aria-hidden="true"
-                    />
-                    <div className="text-sm leading-relaxed text-white/70">
-                      <p className="font-medium text-white/90">
-                        {primaryOffice.title}
-                      </p>
-                      {primaryOffice.lines.map((line, i) => (
-                        <p key={i}>{line}</p>
-                      ))}
-                    </div>
-                  </address>
-                </li>
-              )}
+            <h3 className="text-xl font-bold mb-6">{t("servicesHeading")}</h3>
+            <ul className="space-y-3 text-white/80">
+              <li><Link href="/services/cloud-accounting" className="hover:text-brand-accent transition-colors">Cloud Accounting</Link></li>
+              <li><Link href="/services/bpo" className="hover:text-brand-accent transition-colors">BPO Services</Link></li>
+              <li><Link href="/services/software" className="hover:text-brand-accent transition-colors">Software Development</Link></li>
+              <li><Link href="/services" className="hover:text-brand-accent transition-colors">Payroll Management</Link></li>
+              <li><Link href="/services" className="hover:text-brand-accent transition-colors">Tax Services</Link></li>
             </ul>
+          </div>
 
-            {/* CTA */}
-            <div className="mt-6">
-              <Button
-                asChild
-                variant="outline"
-                size="md"
-                className="border-white/30 text-white hover:bg-white hover:text-brand-primary focus-visible:ring-white"
-              >
-                <Link href="/contact">{t("getInTouch")}</Link>
-              </Button>
-            </div>
+          {/* Company */}
+          <div>
+            <h3 className="text-xl font-bold mb-6">{t("companyHeading")}</h3>
+            <ul className="space-y-3 text-white/80">
+              <li><Link href="/about" className="hover:text-brand-accent transition-colors">About Us</Link></li>
+              <li><Link href="/careers" className="hover:text-brand-accent transition-colors">Careers</Link></li>
+              <li><Link href="/about" className="hover:text-brand-accent transition-colors">Leadership</Link></li>
+              <li><Link href="/contact" className="hover:text-brand-accent transition-colors">News &amp; Updates</Link></li>
+              <li><Link href="/contact" className="hover:text-brand-accent transition-colors">Partners</Link></li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3 className="text-xl font-bold mb-6">{t("contactHeading")}</h3>
+            <ul className="space-y-3 text-white/80">
+              <li className="flex items-center">
+                <Mail className="h-4 w-4 mr-3 text-brand-accent flex-shrink-0" />
+                {COMPANY.email}
+              </li>
+              <li className="flex items-start">
+                <Phone className="h-4 w-4 mr-3 text-brand-accent flex-shrink-0 mt-1" />
+                <div className="flex flex-col space-y-1">
+                  {COMPANY.phones.map((phone) => (
+                    <span key={phone}>{phone}</span>
+                  ))}
+                </div>
+              </li>
+              <li className="flex items-center">
+                <MapPin className="h-4 w-4 mr-3 text-brand-accent flex-shrink-0" />
+                Dhaka, Bangladesh
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      {/* ── Legal bar ──────────────────────────────────────────────────────── */}
-      <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-white/50 sm:flex-row sm:px-6 lg:px-8">
-          <p>
+        <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-white/60 text-sm">
             &copy; {year} {COMPANY.name}. {t("rights")}
           </p>
-          <div className="flex items-center gap-5">
-            <FooterLink
-              href="/privacy"
-              className="text-xs text-white/50 hover:text-white/80"
-            >
+          <div className="flex space-x-6 text-white/60 text-sm mt-4 md:mt-0">
+            <Link href="/privacy" className="hover:text-brand-accent transition-colors">
               {t("privacyPolicy")}
-            </FooterLink>
-            <FooterLink
-              href="/terms"
-              className="text-xs text-white/50 hover:text-white/80"
-            >
+            </Link>
+            <Link href="/terms" className="hover:text-brand-accent transition-colors">
               {t("termsOfService")}
-            </FooterLink>
+            </Link>
           </div>
         </div>
       </div>

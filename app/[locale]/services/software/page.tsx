@@ -3,7 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { ArrowRight, type LucideProps } from "lucide-react";
-import { Badge, Button, Card } from "@/components/ui";
+import { Card } from "@/components/ui";
 import { Cta, Hero, Reveal, SectionHeading } from "@/components/sections";
 import { Link } from "@/i18n/navigation";
 import { BACKGROUNDS } from "@/lib/assets";
@@ -11,6 +11,10 @@ import { SUBSERVICES } from "@/lib/services";
 import { cn } from "@/lib/utils/cn";
 import { absoluteUrl, buildMetadata, localizedPath } from "@/lib/seo/metadata";
 import { JsonLd, breadcrumbSchema, serviceSchema } from "@/lib/seo/structured-data";
+
+type IconComponent = React.ComponentType<LucideProps>;
+
+const METRIC_ICONS = [Icons.Code2, Icons.Layers, Icons.Cloud, Icons.ShieldCheck] as const;
 
 const CARD_TONES: Record<string, string> = {
   ecommerce: "bg-bg-darker text-brand-primary border-brand-primary/10",
@@ -22,8 +26,6 @@ const CARD_TONES: Record<string, string> = {
   fintech: "bg-bg-darker text-brand-primary border-brand-primary/10",
   ai: "bg-bg-darker text-brand-primary border-brand-primary/10",
 };
-
-type IconComponent = React.ComponentType<LucideProps>;
 
 export async function generateMetadata({
   params,
@@ -51,6 +53,7 @@ export default async function SoftwarePage({
   const t = await getTranslations({ locale, namespace: "departments.software" });
   const subT = await getTranslations({ locale, namespace: "subservices" });
   const process = t.raw("process.items") as { title: string; description: string }[];
+  const metrics = t.raw("metrics") as { value: string; label: string }[];
   const url = localizedPath(locale, "/services/software");
 
   return (
@@ -64,15 +67,36 @@ export default async function SoftwarePage({
         ])}
       />
       <Hero
-        layout="banner"
+        layout="split"
         eyebrow={t("hero.badge")}
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
         actions={[
-          { label: t("hero.primary"), href: "/contact", variant: "secondary" },
+          { label: t("hero.primary"), href: "/contact" },
           { label: t("hero.secondary"), href: "/services", variant: "outline" },
         ]}
-        backgroundImage={BACKGROUNDS.software}
+        footer={
+          <div className="grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
+            {metrics.map((metric, index) => {
+              const Icon = METRIC_ICONS[index] ?? Icons.Code2;
+              return (
+                <Reveal
+                  key={metric.label}
+                  delay={index * 50}
+                  className="rounded-2xl border border-brand-primary/10 bg-bg-surface p-4 shadow-[var(--shadow-subtle)]"
+                >
+                  <Icon className="mb-3 size-5 text-brand-secondary" aria-hidden="true" strokeWidth={1.8} />
+                  <div className="text-xl font-bold tracking-tight text-brand-primary">
+                    {metric.value}
+                  </div>
+                  <div className="mt-1 text-xs font-medium leading-snug text-text-secondary">
+                    {metric.label}
+                  </div>
+                </Reveal>
+              );
+            })}
+          </div>
+        }
       />
 
       <section className="relative isolate overflow-hidden px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
@@ -174,25 +198,6 @@ export default async function SoftwarePage({
               );
             })}
           </div>
-        </div>
-      </section>
-
-      <section className="px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 rounded-3xl border border-brand-primary/10 bg-bg-surface p-6 shadow-[var(--shadow-medium)] sm:p-8 lg:flex-row lg:items-center lg:justify-between">
-          <div>
-            <Badge variant="outline" className="mb-4">
-              {t("handoff.badge")}
-            </Badge>
-            <h2 className="max-w-2xl text-balance text-2xl font-bold leading-tight tracking-tight text-brand-primary sm:text-3xl">
-              {t("handoff.title")}
-            </h2>
-            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-text-secondary sm:text-base">
-              {t("handoff.description")}
-            </p>
-          </div>
-          <Button asChild size="lg" className="shrink-0">
-            <Link href="/contact">{t("handoff.button")}</Link>
-          </Button>
         </div>
       </section>
 

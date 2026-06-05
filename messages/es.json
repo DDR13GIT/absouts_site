@@ -1,10 +1,10 @@
 {
   "nav": {
     "home": "Inicio",
-    "about": "Acerca de",
+    "about": "Sobre Nosotros",
     "services": "Servicios",
     "careers": "Carrera",
-    "contact": "Contacto"
+    "contact": "Contáctanos"
   },
   "departments": {
     "cloudAccounting": {
@@ -214,6 +214,24 @@
         "primary": "Hablar de Operaciones",
         "secondary": "Volver a Servicios"
       },
+      "metrics": [
+        {
+          "value": "24/7",
+          "label": "Cobertura operativa"
+        },
+        {
+          "value": "Multi",
+          "label": "Soporte omnicanal"
+        },
+        {
+          "value": "SLA",
+          "label": "Entrega garantizada"
+        },
+        {
+          "value": "Escala",
+          "label": "Equipos flexibles"
+        }
+      ],
       "operatingModel": {
         "badge": "Modelo Operativo",
         "title": "Soporte de Procesos que se Siente Integrado, no Añadido",
@@ -355,6 +373,24 @@
         "primary": "Planear un Desarrollo",
         "secondary": "Volver a Servicios"
       },
+      "metrics": [
+        {
+          "value": "8",
+          "label": "Dominios de ingeniería"
+        },
+        {
+          "value": "Total",
+          "label": "Entrega de ciclo completo"
+        },
+        {
+          "value": "Cloud",
+          "label": "Arquitectura nativa"
+        },
+        {
+          "value": "QA",
+          "label": "Pruebas integradas"
+        }
+      ],
       "intro": {
         "badge": "Marco de Entrega",
         "title": "Ingeniería de Ciclo Completo para Productos, Plataformas y Sistemas Internos",
@@ -403,9 +439,15 @@
     "detail": {
       "back": "Volver a Software",
       "badge": "Servicio de Software",
+      "featuresBadge": "Lo que construimos",
       "additionalBadge": "Alcance de Entrega",
       "additionalTitle": "Capacidades Adicionales",
-      "techTitle": "Stack Tecnológico"
+      "techTitle": "Stack Tecnológico",
+      "techBadge": "Herramientas",
+      "ctaTitle": "¿Tienes algo que construir?",
+      "ctaDescription": "Cuéntanos dónde estás y a dónde quieres llegar. Trazaremos la ruta más rápida desde la idea hasta una plataforma que tu equipo pueda operar con confianza.",
+      "ctaPrimary": "Inicia una conversación",
+      "ctaSecondary": "Todos los servicios de software"
     },
     "ecommerce": {
       "title": "Desarrollo de E-commerce",
@@ -685,6 +727,7 @@
       "badge": "Excelencia Global en Subcontratación",
       "title": "Transforma Tu Negocio con Soluciones Expertas de Subcontratación",
       "subtitle": "Ofrecemos servicios integrales de subcontratación—desde Contabilidad en la Nube y BPO hasta Desarrollo de Software—alineando la última tecnología con las mejores prácticas de la industria para ayudarte a operar eficientemente y crecer.",
+      "letsTalk": "Hablemos",
       "findTalent": "Encontrar Talento",
       "learnMore": "Saber Más",
       "metrics": {
@@ -696,7 +739,13 @@
         "retentionLabel": "Tasa de Retención"
       },
       "imageAlt1": "Un equipo de subcontratación colaborando en una oficina moderna",
-      "imageAlt2": "Un profesional revisando informes financieros en pantalla"
+      "imageAlt2": "Un profesional revisando informes financieros en pantalla",
+      "bentoGrid": {
+        "growth": {
+          "badge": "Crecimiento",
+          "description": "Aumento medio de eficiencia del cliente"
+        }
+      }
     },
     "services": {
       "badge": "Nuestros Servicios",

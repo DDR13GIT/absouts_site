@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Calculator, FileCheck2, LineChart, ShieldCheck } from "lucide-react";
@@ -83,32 +82,6 @@ export default async function CloudAccountingPage({
                 </Reveal>
               );
             })}
-          </div>
-        }
-        media={
-          <div className="relative min-h-[28rem] overflow-hidden rounded-3xl bg-brand-primary shadow-[0_28px_70px_-34px_rgb(11_11_68/0.58)]">
-            <Image
-              src={BACKGROUNDS.cloudAccounting}
-              alt=""
-              fill
-              priority
-              sizes="(max-width: 1024px) 100vw, 45vw"
-              className="object-cover opacity-80"
-            />
-            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-tr from-neutral-dark/85 via-neutral-dark/40 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-              <div className="max-w-sm rounded-2xl bg-white p-5 shadow-[0_20px_48px_-24px_rgb(11_11_68/0.42)]">
-                <p className="font-mono text-xs font-medium uppercase tracking-[0.16em] text-brand-secondary">
-                  {t("hero.cardLabel")}
-                </p>
-                <p className="mt-3 text-2xl font-bold tracking-tight text-brand-primary">
-                  {t("hero.cardValue")}
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-text-secondary">
-                  {t("hero.cardDescription")}
-                </p>
-              </div>
-            </div>
           </div>
         }
       />

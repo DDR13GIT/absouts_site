@@ -1,34 +1,44 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand — new 6-color palette */
-  --color-brand-primary: #364c84;     /* Midnight Blue */
-  --color-brand-secondary: #4a5fa0;   /* readable mid-blue (for secondary text/icons on light) */
-  --color-brand-accent: #95b1ee;      /* Sky Blue — soft accent, replaces cyan */
+  /* Brand — original Absouts palette (restored to match main branch) */
+  --color-brand-primary: #0b0b44;     /* Deep navy */
+  --color-brand-secondary: #2b3990;   /* Royal blue */
+  --color-brand-accent: #27aae1;      /* Cyan */
 
-  /* Mediterranean palette retired — remapped onto the 6-color palette so any
-     lingering med-* usages stay on-palette (no warm/olive/coral tones remain). */
-  --color-med-olive: #95b1ee;
-  --color-med-herb: #4a5fa0;
-  --color-med-french: #95b1ee;
-  --color-med-clementine: #95b1ee;
-  --color-med-calendula: #e7f1ab;
-  --color-med-sky: #d0d9f5;
-  --color-med-terra: #4a5fa0;
-  --color-med-linen: #f4f2ea;
+  /* Mediterranean accent palette (matches main index.css) */
+  --color-mediterranean-olive: #9caa8c;       /* Muted sage green */
+  --color-mediterranean-herb: #5d6f5f;        /* Deeper earthy green */
+  --color-mediterranean-french: #6b8db2;      /* Soft dusty blue */
+  --color-mediterranean-clementine: #dc8b6a;  /* Warm coral-orange */
+  --color-mediterranean-calendula: #f5c56b;   /* Soft golden yellow */
+  --color-mediterranean-sky: #b5c9d9;         /* Pale powdery blue */
+  --color-mediterranean-terra: #a6704e;       /* Warm rust-brown */
+  --color-mediterranean-linen: #eae6dc;       /* Soft off-white/cream */
+
+  /* med-* aliases kept for any lingering short-name usages */
+  --color-med-olive: #9caa8c;
+  --color-med-herb: #5d6f5f;
+  --color-med-french: #6b8db2;
+  --color-med-clementine: #dc8b6a;
+  --color-med-calendula: #f5c56b;
+  --color-med-sky: #b5c9d9;
+  --color-med-terra: #a6704e;
+  --color-med-linen: #eae6dc;
 
   /* Surfaces */
-  --color-bg-base: #fffdf5;           /* Ivory Glow */
-  --color-bg-darker: #f4f2ea;         /* warm ivory step */
-  --color-bg-section: #d0d9f5;        /* Lavender Mist */
+  --color-bg-base: #fffdf5;           /* Ivory */
+  --color-bg-base-darker: #f8f5ee;    /* Soft darker ivory */
+  --color-bg-darker: #f8f5ee;         /* alias kept for existing usages */
+  --color-bg-section: #d0d9f5;        /* Pale lavender-blue */
   --color-bg-surface: #ffffff;
-  --color-success: #e7f1ab;           /* Lemonade Green */
+  --color-success: #e7f1ab;           /* Lemonade green */
   --color-neutral-dark: #333333;      /* Charcoal */
 
   /* Text */
-  --color-text-primary: #364c84;      /* headings — Midnight Blue */
-  --color-text-secondary: #555861;    /* body — charcoal gray */
-  --color-text-muted: #8a8d93;
+  --color-text-primary: #0b0b44;      /* headings — navy */
+  --color-text-secondary: #6e6f72;    /* body — slate gray */
+  --color-text-muted: #939598;
 
   --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
   --radius: 0.75rem;

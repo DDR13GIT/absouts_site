@@ -1,10 +1,10 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
+    "about": "About Us",
     "services": "Services",
     "careers": "Careers",
-    "contact": "Contact"
+    "contact": "Contact Us"
   },
   "departments": {
     "cloudAccounting": {
@@ -214,6 +214,24 @@
         "primary": "Discuss Operations",
         "secondary": "Back to Services"
       },
+      "metrics": [
+        {
+          "value": "24/7",
+          "label": "Operational coverage"
+        },
+        {
+          "value": "Multi",
+          "label": "Channel support"
+        },
+        {
+          "value": "SLA",
+          "label": "Backed delivery"
+        },
+        {
+          "value": "Scale",
+          "label": "Flexible teams"
+        }
+      ],
       "operatingModel": {
         "badge": "Operating Model",
         "title": "Process Support That Feels Embedded, Not Bolted On",
@@ -355,6 +373,24 @@
         "primary": "Plan a Build",
         "secondary": "Back to Services"
       },
+      "metrics": [
+        {
+          "value": "8",
+          "label": "Engineering domains"
+        },
+        {
+          "value": "Full",
+          "label": "Cycle delivery"
+        },
+        {
+          "value": "Cloud",
+          "label": "Native architecture"
+        },
+        {
+          "value": "QA",
+          "label": "Built-in testing"
+        }
+      ],
       "intro": {
         "badge": "Delivery Framework",
         "title": "Full-Cycle Engineering for Products, Platforms, and Internal Systems",
@@ -403,9 +439,15 @@
     "detail": {
       "back": "Back to Software",
       "badge": "Software Service",
+      "featuresBadge": "What we build",
       "additionalBadge": "Delivery Scope",
       "additionalTitle": "Additional Capabilities",
-      "techTitle": "Technology Stack"
+      "techTitle": "Technology Stack",
+      "techBadge": "Toolkit",
+      "ctaTitle": "Have something to build?",
+      "ctaDescription": "Tell us where you are and where you want to get to. We will map the fastest route from idea to a platform your team can run with confidence.",
+      "ctaPrimary": "Start a conversation",
+      "ctaSecondary": "All software services"
     },
     "ecommerce": {
       "title": "E-commerce Development",
@@ -685,6 +727,7 @@
       "badge": "Global Outsourcing Excellence",
       "title": "Transform Your Business with Expert Outsourcing Solutions",
       "subtitle": "We deliver comprehensive outsourcing services—from Cloud Accounting and BPO to Software Development—by aligning the latest technology with industry best practices to help you operate efficiently and grow.",
+      "letsTalk": "Let's Talk",
       "findTalent": "Find Talent",
       "learnMore": "Learn More",
       "metrics": {
@@ -696,7 +739,13 @@
         "retentionLabel": "Retention Rate"
       },
       "imageAlt1": "An outsourcing team collaborating in a modern office",
-      "imageAlt2": "A professional reviewing financial reports on screen"
+      "imageAlt2": "A professional reviewing financial reports on screen",
+      "bentoGrid": {
+        "growth": {
+          "badge": "Growth",
+          "description": "Average client efficiency gain"
+        }
+      }
     },
     "services": {
       "badge": "Our Services",

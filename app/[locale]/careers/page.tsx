@@ -52,10 +52,10 @@ export default async function CareersPage({ params }: PageProps) {
     <>
       <Hero
         layout="banner"
+        bannerTone="soft"
         eyebrow={t("hero.badge")}
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
-        backgroundImage="/assets/hero-bg2.jpg"
       />
 
       <section className="bg-bg-base px-4 py-16 sm:px-6 lg:px-8">

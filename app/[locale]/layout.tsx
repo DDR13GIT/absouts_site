@@ -25,8 +25,7 @@ export default async function LocaleLayout({
       <body className="min-h-screen flex flex-col">
         <NextIntlClientProvider>
           <Navbar />
-          {/* pt-16 offsets the fixed navbar height so page content starts below it */}
-          <main className="flex-1 pt-16">{children}</main>
+          <main className="flex-1">{children}</main>
           <Footer />
           <Toaster />
         </NextIntlClientProvider>

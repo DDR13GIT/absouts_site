@@ -20,6 +20,10 @@ export type SubServiceConfig = {
   technologies: Technology[];
   /** Number of core features listed in messages for this sub-service */
   coreFeatureCount: number;
+  /** Editorial hero photograph (Unsplash). */
+  image: string;
+  /** Mediterranean accent token suffix driving per-service color. */
+  accent: "terra" | "herb" | "french" | "clementine";
 };
 
 export type DepartmentConfig = {

@@ -9,9 +9,11 @@ function tech(name: string, key: keyof typeof TECHNOLOGY_LOGOS): Technology {
 export const SUBSERVICES: SubServiceConfig[] = [
   {
     slug: "ecommerce" as SubServiceSlug,
-    iconKey: "ShoppingCart",
+    iconKey: "Store",
     gradient: { from: "brand-primary", to: "brand-secondary" },
     coreFeatureCount: 4,
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1400&q=80",
+    accent: "terra",
     technologies: [
       tech("React", "react"),
       tech("Node.js", "nodejs"),
@@ -24,9 +26,11 @@ export const SUBSERVICES: SubServiceConfig[] = [
   },
   {
     slug: "mobile" as SubServiceSlug,
-    iconKey: "Smartphone",
+    iconKey: "TabletSmartphone",
     gradient: { from: "brand-primary", to: "brand-secondary" },
     coreFeatureCount: 4,
+    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1400&q=80",
+    accent: "herb",
     technologies: [
       tech("React", "react"),
       tech("Node.js", "nodejs"),
@@ -39,9 +43,11 @@ export const SUBSERVICES: SubServiceConfig[] = [
   },
   {
     slug: "cloud" as SubServiceSlug,
-    iconKey: "Cloud",
+    iconKey: "CloudCog",
     gradient: { from: "brand-primary", to: "brand-secondary" },
     coreFeatureCount: 4,
+    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1400&q=80",
+    accent: "french",
     technologies: [
       tech("AWS", "aws"),
       tech("Docker", "docker"),
@@ -54,9 +60,11 @@ export const SUBSERVICES: SubServiceConfig[] = [
   },
   {
     slug: "testing" as SubServiceSlug,
-    iconKey: "TestTube",
+    iconKey: "ClipboardCheck",
     gradient: { from: "brand-primary", to: "brand-secondary" },
     coreFeatureCount: 4,
+    image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1400&q=80",
+    accent: "clementine",
     technologies: [
       tech("Docker", "docker"),
       tech("GitLab", "gitlab"),
@@ -69,9 +77,11 @@ export const SUBSERVICES: SubServiceConfig[] = [
   },
   {
     slug: "legaltech" as SubServiceSlug,
-    iconKey: "Scale",
+    iconKey: "Gavel",
     gradient: { from: "brand-primary", to: "brand-secondary" },
     coreFeatureCount: 4,
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+    accent: "terra",
     technologies: [
       tech("Django", "django"),
       tech("PostgreSQL", "postgresql"),
@@ -84,9 +94,11 @@ export const SUBSERVICES: SubServiceConfig[] = [
   },
   {
     slug: "webportal" as SubServiceSlug,
-    iconKey: "Globe",
+    iconKey: "LayoutDashboard",
     gradient: { from: "brand-primary", to: "brand-secondary" },
     coreFeatureCount: 4,
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=80",
+    accent: "clementine",
     technologies: [
       tech("React", "react"),
       tech("Node.js", "nodejs"),
@@ -99,9 +111,11 @@ export const SUBSERVICES: SubServiceConfig[] = [
   },
   {
     slug: "fintech" as SubServiceSlug,
-    iconKey: "CreditCard",
+    iconKey: "Landmark",
     gradient: { from: "brand-secondary", to: "success" },
     coreFeatureCount: 4,
+    image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1400&q=80",
+    accent: "herb",
     technologies: [
       tech("ASP.NET", "aspnet"),
       tech("Go", "go"),
@@ -114,9 +128,11 @@ export const SUBSERVICES: SubServiceConfig[] = [
   },
   {
     slug: "ai" as SubServiceSlug,
-    iconKey: "Sparkles",
+    iconKey: "BrainCircuit",
     gradient: { from: "brand-secondary", to: "success" },
     coreFeatureCount: 4,
+    image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1400&q=80",
+    accent: "french",
     technologies: [
       tech("TensorFlow", "tensorflow"),
       tech("PostgreSQL", "postgresql"),

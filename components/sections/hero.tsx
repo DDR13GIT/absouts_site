@@ -19,6 +19,7 @@ type HeroAction = { label: string; href: string; variant?: "default" | "secondar
 
 type HeroProps = {
   layout?: "split" | "banner";
+  bannerTone?: "dark" | "soft";
   eyebrow?: string;
   title: React.ReactNode;
   subtitle?: string;
@@ -35,6 +36,7 @@ type HeroProps = {
 
 export function Hero({
   layout = "split",
+  bannerTone = "dark",
   eyebrow,
   title,
   subtitle,
@@ -46,6 +48,57 @@ export function Hero({
   className,
 }: HeroProps) {
   if (layout === "banner") {
+    if (bannerTone === "soft") {
+      return (
+        <section
+          className={cn(
+            "relative isolate overflow-hidden bg-[#fffdf8]",
+            "px-4 pb-20 pt-28 sm:px-6 sm:pb-24 sm:pt-32 lg:px-8",
+            className
+          )}
+        >
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 bg-[radial-gradient(circle_at_46%_15%,rgba(130,166,255,0.22),transparent_23rem),radial-gradient(circle_at_56%_35%,rgba(191,156,255,0.20),transparent_24rem),radial-gradient(circle_at_52%_69%,rgba(255,184,203,0.16),transparent_22rem)]"
+          />
+          <div
+            aria-hidden="true"
+            className="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-white/85 to-transparent"
+          />
+
+          <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center gap-5 text-center">
+            {eyebrow ? (
+              <Reveal>
+                <span className="inline-flex items-center gap-2 rounded-full border border-brand-accent/20 bg-success/20 px-5 py-2 text-sm font-medium text-brand-primary shadow-[var(--shadow-subtle)]">
+                  <span className="size-2 rounded-full bg-sky-400" aria-hidden="true" />
+                  {eyebrow}
+                </span>
+              </Reveal>
+            ) : null}
+            <Reveal delay={eyebrow ? 60 : 0}>
+              <h1 className="text-balance text-4xl font-bold leading-[1.05] tracking-tight text-brand-primary sm:text-5xl lg:text-6xl">
+                {title}
+              </h1>
+            </Reveal>
+            {subtitle ? (
+              <Reveal delay={eyebrow ? 120 : 60}>
+                <p className="max-w-[62ch] text-pretty text-base leading-relaxed text-text-secondary sm:text-xl">
+                  {subtitle}
+                </p>
+              </Reveal>
+            ) : null}
+            {actions?.length ? (
+              <Reveal delay={eyebrow ? 180 : 120} className="flex flex-wrap justify-center gap-3 pt-2">
+                {actions.map((a) => (
+                  <HeroButton key={a.href + a.label} action={a} />
+                ))}
+              </Reveal>
+            ) : null}
+          </div>
+        </section>
+      );
+    }
+
     return (
       <section
         className={cn(
@@ -110,14 +163,13 @@ export function Hero({
     <section
       className={cn(
         "relative isolate overflow-hidden bg-bg-base",
-        "px-4 pb-16 pt-20 sm:px-6 sm:pb-20 sm:pt-24 lg:px-8",
+        "px-4 pb-16 pt-24 sm:px-6 sm:pb-20 sm:pt-28 lg:px-8",
         className
       )}
     >
-      <BlobBackground />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-br from-bg-section/40 via-transparent to-transparent"
+        className="absolute inset-0 bg-[radial-gradient(circle_at_62%_4%,rgba(231,241,171,0.38),transparent_23rem),linear-gradient(100deg,#fffdf5_0%,#fffdf5_42%,#eef8ec_64%,#fffdf5_100%)]"
       />
 
       <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
